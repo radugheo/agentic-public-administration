@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir /s \"c:\\\\Users\\\\radu.gheorghe\\\\Desktop\\\\public-administration\")",
+      "Bash(dir:*)",
+      "Bash(uv init:*)",
+      "Bash(if exist main.py del main.py)",
+      "Bash(uv run pytest:*)",
+      "Bash(uv pip install:*)"
+    ]
+  }
+}
