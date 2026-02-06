@@ -1,0 +1,2261 @@
+GHID COMPLET PFA – PERSOANA FIZICA AUTORIZATA – ROMANIA
+Document informational detaliat, destinat utilizarii ca input pentru sisteme RAG
+
+SURSE PRINCIPALE FOLOSITE:
+https://dianex.ro/totul-despre-persoana-fizica-autorizata-sau-pfa/
+https://startco.ro/blog/ce-trebuie-sa-stii-inainte-sa-infiintezi-un-pfa/
+https://www.onrc.ro/index.php/ro/inmatriculari/persoane-fizice/persoane-fizice-autorizate-pfa
+https://www.regnet.ro/ce-ar-trebui-sa-stii-despre-pfa-in-2024/
+https://www.groupama.ro/ghiduri/ghid-taxe-pfa
+Codul Fiscal al Romaniei
+
+DEFINITIE PFA:
+Un PFA este o persoana fizica autorizata sa desfasoare activitati economice independente.
+PFA-ul functioneaza pe baza Codului Civil si Codului Fiscal.
+PFA-ul nu are personalitate juridica distincta.
+
+CINE POATE DESCHIDE PFA:
+Orice persoana fizica peste 18 ani.
+Cetateni romani sau UE.
+Persoane cu capacitate deplina de exercitiu.
+
+INFINTARE PFA:
+Rezervare denumire la ONRC.
+Stabilirea sediului profesional.
+Alegerea codurilor CAEN.
+Depunerea dosarului la ONRC.
+Primirea certificatului de inregistrare.
+
+DOCUMENTE NECESARE:
+CI titular.
+Dovada sediului.
+Declaratie pe proprie raspundere.
+Specimen de semnatura.
+
+CODURI CAEN:
+Maxim 5 coduri CAEN.
+Un cod principal.
+Codurile trebuie sa reflecte activitatea reala.
+
+OBLIGATII CONTABILE:
+Registrul de incasari si plati.
+Registrul de evidenta fiscala.
+Pastrarea documentelor 10 ani.
+
+IMPOZITARE:
+Impozit pe venit 10%.
+CAS 25% daca se depasesc plafoanele.
+CASS 10% daca se depasesc plafoanele.
+
+DECLARATIA UNICA:
+Se depune anual.
+Termen limita 25 mai.
+Include estimare si definitivare.
+
+TVA:
+Plafon TVA 395000 lei.
+Inregistrare obligatorie la depasire.
+
+RASPUNDERE:
+PFA raspunde cu patrimoniul personal.
+
+INCHIDERE PFA:
+Cerere de radiere la ONRC.
+Declaratie finala la ANAF.
+DEFINITIE PFA:
+Un PFA este o persoana fizica autorizata sa desfasoare activitati economice independente.
+PFA-ul functioneaza pe baza Codului Civil si Codului Fiscal.
+PFA-ul nu are personalitate juridica distincta.
+
+1. PFA este forma de organizare prin care o persoana fizica desfasoara activitati economice in mod independent si legal in Romania.
+Persoana Fizica Autorizata actioneaza in nume propriu si nu are personalitate juridica distincta de titular.
+Activitatea PFA este reglementata de Codul Civil, Codul Fiscal si legislatia ONRC.
+
+2. PFA raspunde pentru obligatiile sale cu intreg patrimoniul personal, neexistand separare completa intre bunurile personale si cele ale activitatii.
+Se poate constitui un patrimoniu de afectatiune, dar acesta nu elimina raspunderea personala.
+
+3. Orice persoana fizica ce a implinit 18 ani si are capacitate deplina de exercitiu poate infiinta un PFA.
+Cetatenii UE sau SEE pot infiinta PFA in Romania cu drept de rezidenta.
+
+4. Pentru anumite activitati este obligatorie dovada calificarii profesionale.
+Exemple: servicii medicale, contabile, juridice, transport, constructii specializate.
+
+5. Activitatea PFA este definita prin coduri CAEN.
+La infiintare pot fi alese maximum 5 coduri CAEN.
+Un cod CAEN este principal si defineste activitatea predominanta.
+
+6. Codurile CAEN influenteaza modul de impozitare si posibilitatea de aplicare a normei de venit.
+Nu toate codurile CAEN sunt eligibile pentru norma de venit.
+
+7. Sediul profesional al PFA este adresa unde se desfasoara activitatea sau unde se tine evidenta fiscala.
+Sediul poate fi la domiciliu, in spatiu inchiriat sau comodat.
+
+8. Pentru sediul la bloc poate fi necesar acordul vecinilor si al asociatiei de proprietari.
+
+9. Infiintarea PFA se face prin depunerea dosarului la Oficiul National al Registrului Comertului.
+Dosarul poate fi depus fizic sau online.
+
+10. Documentele necesare pentru infiintare includ actul de identitate, dovada sediului si declaratii pe proprie raspundere.
+Pentru anumite activitati se depun si diplome sau autorizatii.
+
+11. Dupa inregistrare, PFA primeste certificat de inregistrare si cod unic de identificare fiscala.
+
+12. PFA este inregistrat automat la ANAF.
+Titularul trebuie sa isi creeze cont in Spatiul Privat Virtual ANAF.
+
+13. PFA poate deschide cont bancar dedicat activitatii.
+Nu este obligatoriu prin lege, dar este recomandat pentru separarea tranzactiilor.
+
+14. PFA are obligatia de a emite factura pentru serviciile sau bunurile vandute.
+Factura trebuie sa contina elemente obligatorii prevazute de Codul Fiscal.
+
+15. Evidenta contabila a PFA se tine in partida simpla.
+Principalele registre sunt registrul de incasari si plati si registrul de evidenta fiscala.
+
+16. Cheltuielile deductibile sunt acele cheltuieli realizate in scopul desfasurarii activitatii.
+Exemple: chirie, utilitati, telefon, internet, echipamente, servicii profesionale.
+
+17. Unele cheltuieli sunt deductibile partial, cum ar fi autoturismul folosit mixt.
+
+18. PFA poate fi impozitat in sistem real sau la norma de venit.
+Sistemul real presupune impozitarea profitului real obtinut.
+
+19. Norma de venit presupune impozitare la o suma fixa stabilita anual de ANAF.
+Cheltuielile reale nu influenteaza taxele in acest sistem.
+
+20. Impozitul pe venit pentru PFA este de 10%.
+Baza de calcul este venitul impozabil.
+
+21. CAS reprezinta contributia la pensie si este de 25%.
+CAS devine obligatoriu daca venitul net depaseste 12 salarii minime brute pe economie.
+
+22. CASS reprezinta contributia la sanatate si este de 10%.
+CASS se datoreaza daca venitul net depaseste 6 salarii minime brute.
+
+23. Exemplu practic de calcul taxe PFA in sistem real.
+Venit brut anual: 120000 lei.
+Cheltuieli deductibile: 40000 lei.
+Venit net: 80000 lei.
+CAS: 25% din 12 salarii minime = aproximativ 12150 lei.
+CASS: 10% din 80000 lei = 8000 lei.
+Venit impozabil: 59850 lei.
+Impozit pe venit: 5985 lei.
+Total taxe anuale: 26135 lei.
+
+24. PFA devine platitor de TVA daca depaseste plafonul anual de 395000 lei cifra de afaceri.
+
+25. TVA poate fi aplicat optional inainte de depasirea plafonului.
+
+26. PFA poate avea clienti din afara Romaniei.
+Veniturile externe trebuie declarate si pot fi supuse conventiilor de evitare a dublei impuneri.
+
+27. Declaratia Unica este documentul fiscal principal al PFA.
+Se depune anual pana la 25 mai.
+
+28. PFA poate suspenda activitatea temporar la ONRC.
+Suspendarea poate fi de maximum 3 ani.
+
+29. Inchiderea definitiva a PFA presupune radiere de la ONRC si ANAF.
+
+30. PFA poate functiona in paralel cu un contract de munca.
+Contractul de munca poate influenta obligatia de plata a CAS sau CASS.
+
+31. Avantajele PFA includ costuri mici, infiintare rapida si control total.
+
+32. Dezavantajele PFA includ raspunderea personala si impozitarea progresiva prin contributii.
+
+33. Comparativ cu SRL, PFA este avantajos pentru venituri mici si medii.
+
+34. Planificarea fiscala este importanta pentru reducerea legala a taxelor.
+
+35. Un contabil este recomandat atunci cand activitatea devine complexa.
+
+36. Acest ghid are scop informativ si nu inlocuieste consultanta fiscala sau juridica.
+
+1. DEFINIȚIE ȘI CADRU LEGAL
+Persoana Fizică Autorizată (PFA) este cea mai simplă formă de organizare economică prin care o persoană fizică poate desfășura activități independente, folosindu-și în principal forța de muncă.
+
+Cadrul legal principal: OUG nr. 44/2008.
+
+Responsabilitate: PFA răspunde pentru obligațiile sale cu patrimoniul de afectațiune (dacă a fost constituit) și, în completare, cu întreg patrimoniul său.
+
+2. CONDIȚII PENTRU ÎNFIINȚARE
+Pentru a înființa un PFA, persoana fizică trebuie să îndeplinească următoarele:
+
+Vârsta minimă de 18 ani.
+
+Să nu aibă antecedente penale legate de infracțiuni economice (Cazier Fiscal curat).
+
+Pregătire profesională: Trebuie să demonstreze pregătirea sau experiența profesională în codurile CAEN solicitate (diplome, certificate, adeverințe de muncă).
+
+Sediul profesional: Deținerea unui spațiu (proprietate, închiriere, comodat).
+
+3. PROCESUL DE ÎNMATRICULARE (ONRC)
+Înregistrarea se face la Oficiul Național al Registrului Comerțului (ONRC).
+
+Documente necesare:
+
+Cerere de înregistrare.
+
+Anexa privind vectorul fiscal.
+
+Copie CI.
+
+Declarație pe proprie răspundere privind condițiile de funcționare.
+
+Dovada sediului (Contract comodat/închiriere).
+
+Acordul vecinilor și al asociației de proprietari (doar dacă se desfășoară activitate la sediu).
+
+Documente care atestă pregătirea profesională.
+
+Limitări: Un PFA poate avea maxim 5 clase de activități (coduri CAEN) și maxim 3 angajați.
+
+4. REGIMURI DE IMPOZITARE (ACTUALIZAT 2024-2025)
+PFA poate opta pentru unul dintre cele două regimuri fiscale:
+
+A. Sistem Real (Venit Net)
+Calcul: Impozitul se aplică pe diferența dintre Venituri Încasate și Cheltuieli Deductibile.
+
+Impozit pe venit: 10%.
+
+Avantaj: Ideal pentru activități cu cheltuieli mari (ex: comerț, producție).
+
+B. Normă de Venit
+Calcul: Statul stabilește o sumă fixă (norma) pe care o consideră profit, indiferent de cât câștigi real.
+
+Condiții: Venitul brut anual să nu depășească plafonul de 25.000 EUR (echivalent în RON). Dacă depășește, trece automat la sistem real din anul următor.
+
+Limitări: Nu toate codurile CAEN sunt eligibile pentru normă (ex: consultanța este exclusă).
+
+5. CONTRIBUȚII SOCIALE (CAS ȘI CASS)
+Contribuțiile se plătesc dacă venitul net depășește anumite plafoane raportate la Salariul Minim Brut pe Țară (SMBT).
+
+CAS (Pensie) - 25%:
+
+Dacă venitul < 12 salarii minime: Opțional.
+
+Dacă venitul este între 12 și 24 salarii: Se plătește 25% din plafonul de 12 salarii.
+
+Dacă venitul > 24 salarii: Se plătește 25% din plafonul de 24 salarii.
+
+CASS (Sănătate) - 10%:
+
+Se datorează 10% din venitul net, dar nu mai puțin de plafonul de 6 salarii (dacă venitul este sub acest prag, se face plată prin Declarația Unică pentru a fi asigurat) și nu mai mult de plafonul de 60 de salarii minime.
+
+6. OBLIGAȚII DECLARATIVE ȘI CONTABILE
+Declarația Unică (D212): Se depune anual (termen obișnuit 25 mai) pentru definitivarea anului anterior și estimarea anului curent.
+
+Contabilitate: În partidă simplă. Nu necesită contabil autorizat (CECCAR), deși este recomandat.
+
+Registre obligatorii:
+
+Registrul de Încasări și Plăți (RIP).
+
+Registrul Inventar.
+
+Registrul de Evidență Fiscală (doar la sistem real).
+
+Registrul Unic de Control (achiziționat de la ANAF).
+
+Facturare: Obligativitatea utilizării sistemului RO e-Factura pentru toate tranzacțiile B2B.
+
+7. TVA (TAXA PE VALOAREA ADĂUGATĂ)
+Plafon scutire: 300.000 RON cifră de afaceri anuală.
+
+Sub acest plafon, PFA-ul este neplătitor de TVA. Peste acest plafon, înregistrarea în scopuri de TVA este obligatorie.
+
+Cod de TVA Intracomunitar: Necesar pentru achiziții/servicii din UE (ex: reclame Facebook/Google, unelte software).
+
+8. AVANTAJE ȘI DEZAVANTAJE PFA
+Avantaje:
+
+Costuri mici de înființare și administrare.
+
+Acces direct la bani (poți scoate banii din cont oricând, fără dividende).
+
+Procedură simplă de radiere.
+
+Dezavantaje:
+
+Răspundere patrimonială extinsă.
+
+Taxare ridicată la venituri mari (din cauza plafoanelor de contribuții).
+
+Limitarea numărului de coduri CAEN și angajați.
+
+1. DECLARAȚII ȘI FISCALITATE (ANAF)
+Spațiul Privat Virtual (SPV): Locul principal pentru depunerea Declarației Unice și vizualizarea obligațiilor de plată.
+
+https://pfinternet.anaf.ro/
+
+Descărcare Formulare Fiscale (inclusiv Declarația Unică - D212): Lista actualizată cu fișierele PDF inteligente.
+
+https://static.anaf.ro/static/10/Anaf/Declaratii_R/212.html
+
+Sistemul RO e-Factura: Acces direct la platforma pentru transmiterea facturilor B2B.
+
+https://www.anaf.ro/anaf/internet/ANAF/servicii_online/e-factura
+
+Verificare Cazier Fiscal: Informații despre starea fiscală a persoanei fizice.
+
+https://www.anaf.ro/anaf/internet/ANAF/servicii_online/cazier_fiscal
+
+2. ÎNFIINȚARE ȘI MODIFICĂRI (ONRC)
+Portalul Servicii ONRC (Portal de e-servicii): Pentru rezervare denumire, înmatriculare online sau schimbare de sediu.
+
+https://myportal.onrc.ro/
+
+Formulare Tipizate ONRC: Modele de cereri pentru înregistrare, opțiune CAEN, etc.
+
+https://www.onrc.ro/index.php/ro/formulare-tipizate
+
+Verificare Disponibilitate Denumire:
+
+https://portal.onrc.ro/ONRCPortalWeb/ONRCPortal.portal?_nfpb=true&_pageLabel=servicii
+
+3. PLĂȚI ȘI CONTRIBUȚII
+Ghișeul.ro: Platforma oficială pentru plata taxelor, impozitului pe venit și a contribuțiilor (CAS, CASS) fără comision.
+
+https://www.ghiseul.ro/ghiseul/public/
+
+Verificare Calitate Asigurat (CNAS): Verifici dacă plata CASS a fost procesată și ești asigurat în sistemul de sănătate.
+
+https://cnas.ro/verificare-asigurati/
+
+4. NORME DE VENIT (VERIFICARE VALORI)
+Nomenclatorul Normelor de Venit pe județe: Lista publicată anual de ANAF cu valorile normelor de venit pentru fiecare județ și profesie.
+
+https://static.anaf.ro/static/10/Anaf/AsistentaContribuabili_r/Ghid_Plafoane_2024.pdf (Notă: Se caută secțiunea "Norme de venit" pe portalul ANAF pentru anul în curs).
+
+5. ALTE INSTRUMENTE
+Codul Fiscal Actualizat: Pentru verificarea bazei legale a deductibilităților.
+
+https://mfinante.gov.ro/cod-fiscal
+
+Verificare Agent Economic (VIES): Verificarea validității codului de TVA pentru tranzacții intracomunitare.
+
+https://ec.europa.eu/taxation_customs/vies/
+
+
+================================================================================
+GHID COMPLET PRIVIND PERSOANELE FIZICE AUTORIZATE (PFA) ÎN ROMÂNIA
+IMPOZITE, TAXE ȘI OBLIGAȚII FISCALE - 2025
+================================================================================
+Document de referință: Agenția Națională de Administrare Fiscală (ANAF)
+An fiscal: 2025
+Salariu minim brut pe țară 2025: 4.050 lei
+Ultima actualizare: 2025
+
+================================================================================
+SECȚIUNEA 1: CE ESTE PFA - DEFINIȚII ȘI CONCEPTE FUNDAMENTALE
+================================================================================
+
+1.1. DEFINIȚIA PFA
+--------------------------------------
+PFA = Persoană Fizică Autorizată
+
+PFA reprezintă forma juridică prin care o persoană fizică poate desfășura activități economice în mod independent, organizat și sistematic, pe riscul propriu.
+
+Bază legală: OUG nr. 44/2008 privind desfășurarea activităților economice de către persoanele fizice autorizate, întreprinderile individuale și întreprinderile familiale.
+
+1.2. FORME DE ORGANIZARE A ACTIVITĂȚII INDEPENDENTE
+--------------------------------------
+În România, activitățile independente se pot desfășura sub următoarele forme juridice:
+
+a) PFA - Persoană Fizică Autorizată
+b) II - Întreprindere Individuală
+c) IF - Întreprindere Familială
+d) PL - Profesii Liberale (avocați, medici, arhitecți, notari, consultanți fiscali etc.)
+
+1.3. DIFERENȚA ÎNTRE PFA ȘI SRL
+--------------------------------------
+PFA (Persoană Fizică Autorizată):
+- Persoană fizică care desfășoară activitate economică
+- Răspunde NELIMITAT cu patrimoniul personal pentru datorii
+- Regim fiscal special pentru persoane fizice
+- Înființare simplă și costuri reduse
+- Nu are capital social
+- Proprietarul = PFA-ul
+
+SRL (Societate cu Răspundere Limitată):
+- Persoană juridică distinctă
+- Răspunde LIMITAT cu capitalul social
+- Regim fiscal pentru persoane juridice
+- Procedură de înființare mai complexă
+- Capital social minim 200 lei (din 2025)
+- Proprietarii (asociați) ≠ SRL-ul
+
+1.4. CARACTERISTICI ESENȚIALE PFA
+--------------------------------------
+✓ Persoană fizică independentă
+✓ Activitate economică cu scop lucrativ
+✓ Răspundere patrimonială nelimitată
+✓ Titularul poate angaja personal (opțional)
+✓ Înregistrare la ONRC (Oficiul Național al Registrului Comerțului)
+✓ Autorizare obligatorie înainte de începerea activității
+✓ Cod unic de înregistrare (CUI) atribuit de ONRC
+
+================================================================================
+SECȚIUNEA 2: ÎNFIINȚAREA PFA
+================================================================================
+
+2.1. CONDIȚII PENTRU ÎNFIINȚAREA PFA
+--------------------------------------
+Condiții generale:
+- Vârstă minimă: 18 ani (sau 16 ani cu acordul părinților/tutorelui)
+- Capacitate deplină de exercițiu
+- Cetățean român SAU cetățean UE SAU cetățean din afara UE cu permis de ședere
+
+Restricții:
+- Nu pot fi PFA: funcționarii publici (cu excepții), militarii în activitate, magistrații
+- Activități interzise: gambling, producție armament, alte activități cu licențe speciale
+
+2.2. PAȘII PENTRU ÎNFIINȚAREA PFA
+--------------------------------------
+Pasul 1: Alegerea activității (cod CAEN)
+- Consultă nomenclatorul CAEN (Clasificarea Activităților din Economia Națională)
+- Poți selecta multiple coduri CAEN
+- Codul CAEN principal = activitatea principală
+
+Pasul 2: Alegerea denumirii
+- Denominarea: [Prenume Nume] - [Persoană Fizică Autorizată/PFA]
+- Exemplu: "Popescu Ion - Persoană Fizică Autorizată"
+- Poți adăuga firmă distinctă (opțional)
+
+Pasul 3: Pregătirea documentelor
+Documente necesare:
+a) Cerere de înregistrare (formular ONRC)
+b) Declarație pe propria răspundere privind îndeplinirea condițiilor
+c) Copie CI/BI
+d) Dovada sediului (contract de închiriere/comodat SAU act de proprietate)
+e) Autorizații/avize specifice (dacă este cazul)
+f) Dovada plății taxei de registratură
+
+Pasul 4: Depunerea la ONRC
+Modalități:
+- Online: prin portal.onrc.ro (cu semnătură electronică)
+- Fizic: la ghișeul ONRC competent teritorial
+- Prin reprezentant/împuternicit
+
+Taxe ONRC (2025):
+- Înregistrare PFA: GRATUITĂ (din 2020)
+- Taxe pentru certificate: variază (10-50 lei)
+
+Pasul 5: Obținerea documentelor
+După aprobare (2-5 zile lucrătoare), primești:
+- Certificat de înregistrare
+- Certificat constatator
+- CUI (Cod Unic de Înregistrare)
+
+Pasul 6: Înregistrare fiscală (automată)
+- ONRC transmite automat datele către ANAF
+- PFA-ul primește CUI care este și Cod de Identificare Fiscală
+- NU este necesară înregistrare separată la ANAF
+
+2.3. SEDIUL PFA
+--------------------------------------
+Opțiuni pentru sediu:
+a) Domiciliu personal (apartament/casă)
+   - Avantaj: fără costuri suplimentare
+   - Dezavantaj: poate necesita acordul asociației de proprietari
+
+b) Spațiu închiriat
+   - Necesită contract de închiriere valabil
+   - Poate fi birou, spațiu comercial etc.
+
+c) Sediu virtual/coworking
+   - Servicii specializate de domiciliere
+   - Costuri lunare variabile
+
+Documente pentru sediu:
+- Dacă proprietate: Certificat de urbanism + Act de proprietate
+- Dacă închiriere: Contract de închiriere + Acordul proprietarului
+- Dacă comodat: Contract de comodat (împrumut gratuit)
+
+================================================================================
+SECȚIUNEA 3: SISTEME DE IMPOZITARE PENTRU PFA
+================================================================================
+
+3.1. CELE DOUĂ SISTEME DE IMPOZITARE
+--------------------------------------
+În România, PFA-urile pot fi impozitate în două moduri:
+
+SISTEM 1: NORMA DE VENIT (sistem forfetar)
+SISTEM 2: SISTEM REAL (venit efectiv - cheltuieli deductibile)
+
+3.2. IMPOZITAREA LA NORMA DE VENIT
+--------------------------------------
+Definiție:
+Norma de venit = suma fixă anuală stabilită de ANAF pentru anumite activități, independent de veniturile reale realizate.
+
+Caracteristici:
+✓ Impozit calculat pe o sumă forfetară (norma)
+✓ Cheltuielile reale NU influențează impozitul
+✓ Contabilitate simplificată (doar venituri în RJIP - Registrul Jurnal de Încasări și Plăți)
+✓ Predictibilitate fiscală
+✓ Potrivit pentru activități cu cheltuieli reduse
+
+Condiții de aplicare (TOATE trebuie îndeplinite):
+1. Activitatea să fie inclusă în nomenclatorul de norme de venit ANAF
+2. Venitul brut anual să NU depășească 25.000 EUR (echivalent în lei)
+3. Să nu fi depășit plafonul de 25.000 EUR în anul anterior
+
+Activități comune la normă de venit:
+- Coafuri, frizerii, saloane de înfrumusețare
+- Reparații încălțăminte, croitorie
+- Comerț ambulant
+- Transport persoane (taxi, cu anumite condiții)
+- Activități meșteșugărești
+- Alte activități specificate în nomenclatorul ANAF
+
+Activități EXCLUSE de la norma de venit:
+- Profesii liberale (avocați, medici, arhitecți, consultanți)
+- Activități IT și software
+- Consultanță
+- Activități de învățământ privat
+- Multe altele
+
+Nomenclator norme de venit:
+- Publicat anual de ANAF
+- Diferă de la județ la județ
+- Disponibil pe: https://www.anaf.ro → Asistență contribuabili → Norme de venit
+
+Calcul impozit la normă de venit:
+Impozit = Normă de venit × 10%
+
+Exemplu:
+- Norma de venit pentru un coafor în București: 12.000 lei/an
+- Impozit: 12.000 × 10% = 1.200 lei/an
+- Indiferent dacă realizezi venit de 5.000 lei sau 100.000 lei (sub 25.000 EUR)
+
+Plafonul 25.000 EUR:
+- Calculat la cursul mediu anual BNR
+- Pentru 2024: 25.000 EUR × 4,9746 lei/EUR = 124.365 lei
+- Pentru 2025: se va calcula pe baza cursului mediu BNR 2025
+- Se ia în calcul totalul sumelor ÎNCASATE în RJIP
+
+Depășirea plafonului:
+- Dacă în 2024 ai depășit 25.000 EUR → Din 2025 OBLIGATORIU trecere la sistem real
+- Depășirea se notifică prin Declarația Unică până pe 31 ianuarie anul următor
+- Trecerea la sistem real = permanentă, NU poți reveni la normă
+
+3.3. IMPOZITAREA ÎN SISTEM REAL
+--------------------------------------
+Definiție:
+În sistem real, impozitul se calculează pe venitul NET (venituri - cheltuieli deductibile).
+
+Caracteristici:
+✓ Impozit pe profitul efectiv
+✓ Cheltuielile deductibile reduc baza impozabilă
+✓ Contabilitate în partidă simplă obligatorie
+✓ Necesită justificarea cheltuielilor
+✓ Flexibilitate fiscală
+
+Când se aplică sistem real:
+- Obligatoriu dacă activitatea NU este la normă de venit
+- Obligatoriu dacă ai depășit 25.000 EUR în anul anterior
+- Opțional: poți opta pentru sistem real chiar dacă ai dreptul la normă
+- Toate profesiile liberale: DOAR sistem real
+
+Calcul impozit în sistem real:
+
+Pasul 1: Calcularea venitului brut
+Venit brut = Totalul sumelor încasate în cursul anului
+
+Pasul 2: Calcularea venitului net
+Venit net = Venit brut - Cheltuieli deductibile
+
+Pasul 3: Calcularea venitului net recalculat
+Venit net recalculat = Venit net - Pierderi fiscale reportate (din anii anteriori)
+
+Pasul 4: Calcularea venitului impozabil
+Venit impozabil = Venit net recalculat - CAS datorată - CASS datorată
+
+Pasul 5: Calcularea impozitului
+Impozit = Venit impozabil × 10%
+
+Formula completă:
+Impozit = [(Venituri - Cheltuieli - Pierderi reportate - CAS - CASS)] × 10%
+
+3.4. CHELTUIELI DEDUCTIBILE ÎN SISTEM REAL
+--------------------------------------
+Cheltuieli deductibile = cheltuieli efectuate în scopul realizării de venituri, justificate cu documente.
+
+Categorii de cheltuieli deductibile:
+
+A. Cheltuieli cu bunurile
+- Materii prime și materiale
+- Mărfuri (pentru comerț)
+- Obiecte de inventar
+- Ambalaje
+
+B. Cheltuieli cu serviciile executate de terți
+- Servicii de consultanță
+- Servicii juridice, contabile
+- Servicii de marketing, publicitate
+- Chirii pentru spații/echipamente
+- Utilitați (apă, energie, internet, telefon)
+- Servicii de reparații și întreținere
+
+C. Cheltuieli cu personalul (dacă ai angajați)
+- Salarii brute
+- Contribuții sociale pentru angajați
+- Tichete de masă, cadouri (în limita legii)
+
+D. Cheltuieli cu amortizarea
+- Amortizarea mijloacelor fixe (clădiri, mașini, echipamente)
+- Calculată conform normelor fiscale
+
+E. Cheltuieli cu deplasările
+- Cheltuieli de transport (combustibil, amortizare mașină)
+- Cazare și diurnă în interes profesional
+- Bilete de transport
+
+F. Cheltuieli cu asigurările
+- Asigurări de bunuri folosite în activitate
+- Asigurări de răspundere civilă profesională
+
+G. Cheltuieli financiare
+- Dobânzi la credite contractate pentru activitate
+- Comisioane bancare
+
+H. Alte cheltuieli
+- Contribuții profesionale (cameră de comerț, asociații)
+- Cheltuieli de protocol (în limită de 2% din baza de calcul)
+- Sponsorizări și mecenat (în limită de 5% din cifra de afaceri)
+- Cheltuieli cu formarea profesională
+- Pierderi din creanțe neîncasate
+
+Condiții pentru deductibilitate:
+✓ Efectuate în scopul realizării de venituri
+✓ Justificate cu documente (facturi, bonuri fiscale, contracte)
+✓ Înregistrate corect în contabilitate
+✓ Plătite (principiul cash accounting)
+
+Cheltuieli NEDEDUCTIBILE (exemple):
+✗ Cheltuieli personale/familiale
+✗ Amenzi și penalități fiscale
+✗ Cheltuieli cu bunuri de folosință personală
+✗ TVA deductibilă (dacă ești plătitor TVA)
+✗ Impozitul pe venit
+✗ Cheltuieli fără documente justificative
+✗ Cheltuieli nejustificate ca fiind în interes profesional
+
+Cheltuieli cu mașina personală:
+- Dacă mașina este folosită MIXT (personal + profesional):
+  * Pot fi dedu se DOAR cheltuielile proporționale cu utilizarea profesională
+  * Necesită dovezi ale utilizării profesionale (foi de parcurs)
+  * Amortizarea: proporțional cu km profesionali
+  * Combustibil: pe bază de foi de parcurs
+- Dacă mașina este în patrimoniul PFA (factura pe PFA):
+  * Cheltuielile sunt deductibile integral
+  * Amortizare deductibilă
+  * Atenție la TVA (dacă ești plătitor)
+
+3.5. COMPARAȚIE SISTEM REAL vs. NORMĂ DE VENIT
+--------------------------------------
+
+NORMA DE VENIT:
+Avantaje:
+✓ Contabilitate simplă
+✓ Predictibilitate fiscală
+✓ Fără stres cu cheltuieli deductibile
+✓ Potrivit pentru activități cu cheltuieli mici
+
+Dezavantaje:
+✗ Plătești impozit chiar dacă nu ai profit
+✗ Limitat la anumite activități
+✗ Plafonul de 25.000 EUR
+✗ Nu poți deduce cheltuielile mari
+
+SISTEM REAL:
+Avantaje:
+✓ Impozit doar pe profit real
+✓ Poți deduce cheltuieli
+✓ Dacă ai pierdere, nu plătești impozit
+✓ Disponibil pentru toate activitățile
+✓ Fără plafon de venituri
+
+Dezavantaje:
+✗ Contabilitate mai complexă
+✗ Necesită documente justificative
+✗ Costuri cu contabilul (de obicei)
+✗ Imprevizibil fiscal
+
+Exemplu comparativ:
+Situație: Coafor în București
+- Normă de venit: 12.000 lei
+- Venituri reale anul: 80.000 lei
+- Cheltuieli reale: 50.000 lei
+
+La NORMĂ:
+- Impozit: 12.000 × 10% = 1.200 lei
+- Profit net după impozit: 80.000 - 1.200 = 78.800 lei
+
+La SISTEM REAL:
+- Venit net: 80.000 - 50.000 = 30.000 lei
+- Impozit: 30.000 × 10% = 3.000 lei (fără CAS/CASS pentru simplificare)
+- Profit net după impozit: 30.000 - 3.000 = 27.000 lei
+
+În acest caz, NORMA este mai avantajoasă.
+
+Dar dacă cheltuielile sunt 70.000 lei:
+- La normă: Impozit = 1.200 lei, profit = 8.800 lei
+- La sistem real: Venit net = 10.000 lei, Impozit = 1.000 lei, profit = 9.000 lei
+
+Decizie: depinde de raportul venituri/cheltuieli.
+
+================================================================================
+SECȚIUNEA 4: CONTRIBUȚII SOCIALE OBLIGATORII (CAS ȘI CASS)
+================================================================================
+
+4.1. DATE DE REFERINȚĂ 2025
+--------------------------------------
+Salariu minim brut pe țară (1 ianuarie 2025): 4.050 lei
+
+Praguri pentru contribuții sociale:
+- 6 salarii minime brute = 6 × 4.050 = 24.300 lei
+- 12 salarii minime brute = 12 × 4.050 = 48.600 lei
+- 24 salarii minime brute = 24 × 4.050 = 97.200 lei
+- 60 salarii minime brute = 60 × 4.050 = 243.000 lei
+
+IMPORTANT: Aceste praguri se stabilesc la 1 ianuarie și rămân fixe tot anul, chiar dacă salariul minim se modifică în cursul anului.
+
+4.2. CAS - CONTRIBUȚIA DE ASIGURĂRI SOCIALE (PENSII)
+--------------------------------------
+Cotă CAS: 25% (aplicată asupra bazei de calcul)
+
+CAS reprezintă contribuția la sistemul public de pensii.
+
+Baza de calcul CAS pentru PFA/activități independente:
+
+Situația 1: Venit net anual < 24.300 lei (< 6 salarii minime)
+Obligație: NU se datorează CAS
+Opțiune: Poți OPTA să plătești CAS (pentru stagiu de cotizare pensie)
+
+Situația 2: Venit net anual între 24.300 - 48.600 lei (6-12 salarii minime)
+Obligație: NU se datorează CAS obligatoriu
+Opțiune: Poți OPTA să plătești CAS
+
+Situația 3: Venit net anual între 48.600 - 97.200 lei (12-24 salarii minime)
+Obligație: DA, se datorează CAS
+Bază de calcul: 48.600 lei (12 salarii minime)
+CAS datorată: 48.600 × 25% = 12.150 lei/an
+
+Situația 4: Venit net anual ≥ 97.200 lei (≥ 24 salarii minime)
+Obligație: DA, se datorează CAS
+Bază de calcul: 97.200 lei (24 salarii minime)
+CAS datorată: 97.200 × 25% = 24.300 lei/an
+
+ATENȚIE LA NORMA DE VENIT:
+Pentru activități la normă de venit:
+- Baza de calcul CAS = NORMA de venit (nu venitul real)
+- Dacă norma < 6 salarii minime → fără CAS obligatorie
+- Dacă norma ≥ 12 salarii minime → CAS obligatorie
+
+Exemplu CAS:
+PFA în sistem real:
+- Venituri: 200.000 lei
+- Cheltuieli: 120.000 lei
+- Venit net: 80.000 lei
+- Încadrare: între 12-24 salarii minime (48.600 - 97.200)
+- Bază calcul CAS: 48.600 lei
+- CAS datorată: 48.600 × 25% = 12.150 lei
+
+Scutiri de la plata CAS:
+Sunt scutiți de CAS obligatorie:
+- Pensionarii (cu anumite excepții)
+- Persoane care au stagiul complet de cotizare
+- Persoane cu handicap grav
+- Alte categorii specifice prevăzute de lege
+
+Plata CAS:
+- Termen: până la 25 mai inclusiv, a anului următor celui de realizare a veniturilor
+- Se declară prin Declarația Unică (formularul 212)
+- Se achită în contul unic al Trezoreriei
+
+Plăți anticipate CAS:
+- Poți plăti CAS anticipat, oricând în cursul anului
+- Sumele achitate anticipat se scad din CAS datorată finală
+
+4.3. CASS - CONTRIBUȚIA DE ASIGURĂRI SOCIALE DE SĂNĂTATE
+--------------------------------------
+Cotă CASS: 10% (aplicată asupra bazei de calcul)
+
+CASS reprezintă contribuția pentru asigurarea medicală.
+
+Baza de calcul CASS pentru PFA/activități independente:
+
+Situația 1: Venit net anual < 24.300 lei (< 6 salarii minime)
+Obligație: NU se datorează CASS
+Calitate asigurat: NU (cu excepții - coasigurați, alte categorii)
+Opțiune: Poți OPTA să plătești CASS pentru a deveni asigurat
+
+Situația 2: Venit net anual între 24.300 - 48.600 lei (6-12 salarii minime)
+Obligație: DA, se datorează CASS
+Bază de calcul: 24.300 lei (6 salarii minime)
+CASS datorată: 24.300 × 10% = 2.430 lei/an
+Calitate asigurat: DA
+
+Situația 3: Venit net anual între 48.600 - 97.200 lei (12-24 salarii minime)
+Obligație: DA, se datorează CASS
+Bază de calcul: 48.600 lei (12 salarii minime)
+CASS datorată: 48.600 × 10% = 4.860 lei/an
+Calitate asigurat: DA
+
+Situația 4: Venit net anual ≥ 97.200 lei (≥ 24 salarii minime)
+Obligație: DA, se datorează CASS
+Bază de calcul: 97.200 lei (24 salarii minime)
+CASS datorată: 97.200 × 10% = 9.720 lei/an
+Calitate asigurat: DA
+
+Modificare importantă din 2025:
+Dacă înregistrezi PIERDERE FISCALĂ sau venit net = 0 → NU datorezi CASS (cu excepția activităților sportive).
+
+Exemplu CASS:
+PFA în sistem real:
+- Venituri: 150.000 lei
+- Cheltuieli: 90.000 lei
+- Venit net: 60.000 lei
+- Încadrare: între 12-24 salarii minime
+- Bază calcul CASS: 48.600 lei
+- CASS datorată: 48.600 × 10% = 4.860 lei
+
+Cumularea veniturilor pentru CASS:
+La stabilirea pragului de venit pentru CASS se CUMULEAZĂ:
+- Venituri din activități independente
+- Venituri din drepturi de proprietate intelectuală (drepturi de autor)
+- Venituri din asociere cu persoane juridice
+- Venituri din cedarea folosinței bunurilor (chirii)
+- Venituri din activități agricole, silvicultură, piscicultură
+- Venituri/câștiguri din investiții
+- Venituri din alte surse
+
+NU se iau în calcul pentru CASS:
+- Veniturile din salarii (CASS se reține la sursă)
+- Veniturile din pensii
+- Veniturile din asigurări sociale
+- Anumite transferuri de titluri de valoare (vezi excepții specifice)
+
+Plata CASS:
+- Termen: până la 25 mai inclusiv, a anului următor
+- Se declară prin Declarația Unică (formularul 212)
+- Se achită în contul unic al Trezoreriei
+
+4.4. OPȚIUNEA PENTRU PLATA CASS (ASIGURARE VOLUNTARĂ)
+--------------------------------------
+Cine poate opta:
+Persoanele fizice care NU au obligația de plată CASS (venit < 6 salarii minime) POT OPTA să plătească CASS pentru a deveni asigurați în sistemul public de sănătate.
+
+Cuantum opțiune CASS 2025:
+- Bază de calcul: 6 salarii minime = 24.300 lei
+- CASS pentru opțiune: 24.300 × 10% = 2.430 lei/an
+
+Cum se exercită opțiunea:
+- Prin depunerea Declarației Unice (formular 212), Capitolul II
+- Se poate depune oricând în cursul anului
+- Opțiunea produce efecte pentru anul în care se depune
+
+Plata CASS pentru opțiune:
+Se achită în 2 tranșe:
+- Tranșa 1: 25% la depunerea declarației = 2.430 × 25% = 607,50 lei
+- Tranșa 2: 75% până la 25 mai anul următor = 2.430 × 75% = 1.822,50 lei
+
+Beneficiu opțiune:
+- Dobândești calitatea de ASIGURAT
+- Acces la servicii medicale în sistemul public
+- Compensări medicamente
+- Concedii medicale
+
+Exemplu:
+Student care are un PFA cu venituri mici (10.000 lei/an):
+- Venit net < 24.300 lei → fără obligație CASS
+- Optează pentru CASS: plătește 2.430 lei
+- Devine asigurat, are acces la servicii medicale
+
+4.5. CALCULUL CAS ȘI CASS - EXEMPLE PRACTICE
+--------------------------------------
+
+EXEMPLU 1: PFA sistem real, venit mic
+Date:
+- Venituri: 50.000 lei
+- Cheltuieli: 35.000 lei
+- Venit net: 15.000 lei
+
+Analiză:
+- 15.000 lei < 24.300 lei (sub 6 salarii minime)
+
+Obligații:
+- CAS: NU se datorează (optional)
+- CASS: NU se datorează
+- Opțiune CASS: DA (2.430 lei pentru a fi asigurat)
+- Impozit: 15.000 × 10% = 1.500 lei
+
+EXEMPLU 2: PFA sistem real, venit mediu
+Date:
+- Venituri: 100.000 lei
+- Cheltuieli: 55.000 lei
+- Venit net: 45.000 lei
+
+Analiză:
+- 45.000 lei se încadrează între 24.300 - 48.600 lei (6-12 salarii minime)
+
+Obligații:
+- CAS: NU se datorează obligatoriu (optional)
+- CASS: DA
+  * Bază calcul: 24.300 lei
+  * CASS: 24.300 × 10% = 2.430 lei
+- Impozit:
+  * Venit impozabil: 45.000 - 2.430 (CASS) = 42.570 lei
+  * Impozit: 42.570 × 10% = 4.257 lei
+
+Total taxe: 2.430 + 4.257 = 6.687 lei
+
+EXEMPLU 3: PFA sistem real, venit mare
+Date:
+- Venituri: 300.000 lei
+- Cheltuieli: 180.000 lei
+- Venit net: 120.000 lei
+
+Analiză:
+- 120.000 lei depășește 97.200 lei (peste 24 salarii minime)
+
+Obligații:
+- CAS: DA
+  * Bază calcul: 97.200 lei
+  * CAS: 97.200 × 25% = 24.300 lei
+- CASS: DA
+  * Bază calcul: 97.200 lei
+  * CASS: 97.200 × 10% = 9.720 lei
+- Impozit:
+  * Venit impozabil: 120.000 - 24.300 (CAS) - 9.720 (CASS) = 85.980 lei
+  * Impozit: 85.980 × 10% = 8.598 lei
+
+Total taxe: 24.300 + 9.720 + 8.598 = 42.618 lei
+
+EXEMPLU 4: PFA la normă de venit
+Date:
+- Normă de venit: 18.000 lei
+- Venituri reale: 90.000 lei (sub 25.000 EUR)
+
+Analiză:
+- Normă 18.000 lei < 24.300 lei (sub 6 salarii minime)
+
+Obligații:
+- CAS: NU (normă < 6 salarii minime)
+- CASS: NU (normă < 6 salarii minime)
+- Opțiune CASS: DA (2.430 lei)
+- Impozit: 18.000 × 10% = 1.800 lei
+
+Total: 1.800 lei (sau 4.230 lei cu opțiune CASS)
+
+EXEMPLU 5: PFA cu venituri din mai multe surse
+Date:
+- Venit net PFA: 20.000 lei
+- Venit net chirii: 15.000 lei
+- Total venituri cumulate: 35.000 lei
+
+Analiză:
+- Venituri separate sub 24.300 lei
+- Venituri cumulate = 35.000 lei (între 6-12 salarii minime)
+
+Obligații:
+- CAS: NU (total < 48.600 lei)
+- CASS: DA
+  * Bază calcul: 24.300 lei
+  * CASS: 2.430 lei
+- Impozit PFA: (20.000 - 2.430 × proporție) × 10%
+- Impozit chirii: (15.000 - 2.430 × proporție) × 10%
+
+CASS se repartizează proporțional între sursele de venit.
+
+================================================================================
+SECȚIUNEA 5: DECLARAȚIA UNICĂ - FORMULARUL 212
+================================================================================
+
+5.1. CE ESTE DECLARAȚIA UNICĂ
+--------------------------------------
+Declarația Unică privind impozitul pe venit și contribuțiile sociale datorate de persoanele fizice (Formularul 212) este documentul prin care persoanele fizice declară:
+- Veniturile realizate în anul precedent
+- Impozitul pe venit datorat
+- Contribuțiile sociale (CAS și CASS)
+
+5.2. CINE DEPUNE DECLARAȚIA UNICĂ
+--------------------------------------
+Obligația de depunere:
+
+DA, trebuie să depui Declarația Unică dacă:
+✓ Ai PFA/II/IF în sistem real sau la normă
+✓ Ai venituri din profesii liberale
+✓ Ai venituri din chirii (cedarea folosinței bunurilor)
+✓ Ai venituri din drepturi de autor
+✓ Ai venituri din asociere cu persoane juridice
+✓ Ai venituri din activități agricole (peste anumite praguri)
+✓ Ai câștiguri din investiții peste 6 salarii minime (doar pentru CASS)
+✓ Optezi pentru plata CASS voluntar
+✓ Ai realizat venituri cumulate care impun declararea CAS/CASS
+
+NU trebuie să depui Declarația Unică dacă:
+✗ Ai doar venituri din salarii (se reține la sursă)
+✗ Ai doar venituri din pensii
+✗ Ai avut PFA dar venit = 0 și nicio altă obligație
+✗ Ai venituri din investiții sub 6 salarii minime (impozit reținut la sursă)
+
+5.3. STRUCTURA DECLARAȚIEI UNICE
+--------------------------------------
+Declarația Unică are 2 CAPITOLE:
+
+CAPITOLUL I: Date privind veniturile REALIZATE și contribuțiile sociale datorate
+- Se completează pentru veniturile din anul ANTERIOR
+- Se declară: venituri, cheltuieli, impozit, CAS, CASS
+- 8 secțiuni pentru diferite categorii de venituri
+
+CAPITOLUL II: Date privind CASS datorată pentru opțiunea de plată CASS
+- Se completează dacă OPTEZI pentru plata CASS în anul CURENT
+- Pentru persoane fără venituri sau cu venituri sub prag
+
+Modificare IMPORTANTĂ din 2025:
+NU se mai completează venituri ESTIMATE pentru anul curent.
+Declarația Unică se depune doar cu venituri REALIZATE efectiv în anul anterior.
+
+5.4. CAPITOLUL I - SECȚIUNI PENTRU PFA
+--------------------------------------
+Pentru PFA, sunt relevante următoarele secțiuni:
+
+Secțiunea I.1: Venituri din activități independente
+- Pentru PFA, II, IF, profesii liberale
+- Se declară: venituri, cheltuieli, venit net, pierderi
+
+Subsecțiunea I.1.1: Venituri și cheltuieli
+- Venituri brute încasate
+- Cheltuieli deductibile (la sistem real)
+- Venit net / pierdere
+
+Subsecțiunea I.1.2: Calcul venit net impozabil
+- Venit net recalculat (după deducerea pierderilor reportate)
+- Venit net impozabil (după deducerea CAS și CASS)
+
+Subsecțiunea I.1.3: CAS și CASS
+- Baze de calcul
+- Sume datorate
+- Încadrare în praguri
+
+5.5. TERMENE DECLARAȚIE UNICĂ
+--------------------------------------
+Termen general de depunere:
+Până la data de 25 MAI inclusiv, a anului următor celui de realizare a veniturilor.
+
+Pentru veniturile din 2024:
+- Depunere Declarație Unică: până la 26 mai 2025 (25 mai = duminică)
+
+Pentru veniturile din 2025:
+- Depunere Declarație Unică: până la 25 mai 2026
+
+Termen de plată impozit și contribuții:
+- Același cu termenul de depunere: 25 mai (inclusiv)
+
+Plăți anticipate:
+- Poți plăti anticipat oricând în cursul anului
+- Sumele plătite anticipat se scad din obligația finală
+
+5.6. DEPUNEREA DECLARAȚIEI UNICE
+--------------------------------------
+Modalități de depunere:
+
+1. ONLINE prin Spațiul Privat Virtual (SPV):
+- Accesează: www.anaf.ro → Autentificare SPV
+- Necesită: certificat digital calificat SAU autentificare cu CNP + parolă
+- Completezi formularul 212 electronic
+- Semnezi cu semnătură electronică
+- Transmiți online
+- Avantaj: rapid, fără deplasare, confirmare imediată
+
+2. ONLINE prin e-guvernare:
+- Accesează: www.e-guvernare.ro
+- Necesită: certificat digital calificat
+- Procedură similară SPV
+
+3. FIZIC la ANAF:
+- Completezi formularul 212 (descărcat de pe site ANAF sau luat de la ghișeu)
+- Depui la registratura ANAF competentă (după domiciliu fiscal)
+- Personal sau prin împuternicit
+- Primești dovada de depunere
+
+4. PRIN POȘTĂ:
+- Trimiți formularul completat cu confirmare de primire
+- La adresa organului fiscal competent
+
+Recomandare: Depunere online prin SPV = cel mai simplu și rapid.
+
+5.7. COMPLETAREA DECLARAȚIEI UNICE PENTRU PFA
+--------------------------------------
+Pași pentru completare (sistem real):
+
+Pas 1: Date de identificare
+- CNP
+- Nume, prenume
+- Domiciliu fiscal
+- Date de contact
+
+Pas 2: Secțiunea I.1.1 - Venituri și cheltuieli
+- Cod CAEN activitate principală
+- Venituri brute totale încasate în anul fiscal
+- Cheltuieli deductibile totale (cu documente)
+- Venit net = Venituri - Cheltuieli
+- SAU pierdere dacă cheltuieli > venituri
+
+Pas 3: Subsecțiunea I.1.2 - Venit net impozabil
+- Venit net din Pas 2
+- Minus: Pierderi fiscale reportate din anii anteriori
+- = Venit net recalculat
+- Minus: CAS datorată
+- Minus: CASS datorată
+- = Venit net impozabil
+
+Pas 4: Subsecțiunea I.1.3 - CAS și CASS
+- Verifici încadrarea în praguri (6, 12, 24 salarii minime)
+- Calculezi CAS (dacă este obligatorie)
+- Calculezi CASS (dacă este obligatorie)
+- Bifezi căsuțele corespunzătoare
+
+Pas 5: Calculul impozitului
+- Impozit = Venit net impozabil × 10%
+
+Pas 6: Verificare și transmitere
+- Verifici toate datele
+- Semnezi (electronic sau olograf)
+- Depui conform modalității alese
+
+5.8. COMPLETAREA PENTRU NORMĂ DE VENIT
+--------------------------------------
+Pentru PFA la normă de venit, completarea este mai simplă:
+
+- Se completează Secțiunea I.1.1
+- Cod CAEN
+- Norma de venit (din nomenclator ANAF)
+- NU se completează cheltuieli
+- Venit net = Norma de venit
+- Se calculează impozit: Normă × 10%
+- Se calculează CAS/CASS (dacă norma depășește pragurile)
+
+5.9. SANCȚIUNI PENTRU NEDEPUNEREA DECLARAȚIEI UNICE
+--------------------------------------
+Nedepunerea la termen:
+- Constituie contravenție
+- Amendă: conform Codului de Procedură Fiscală
+- Variază în funcție de întârziere
+
+Nedepunerea în 30 de zile de la expirarea termenului:
+- ANAF poate estima din oficiu obligațiile fiscale
+- Estimare nefavorabilă contribuabilului
+
+Depunere cu întârziere:
+- Poți depune oricând, chiar cu întârziere
+- Evită estimarea din oficiu
+- Totuși, risc de amendă
+
+Declarare incorectă:
+- Dacă ANAF descoperă erori → Decizie de impunere
+- Obligația corectă + dobânzi + penalități
+
+================================================================================
+SECȚIUNEA 6: TAXA PE VALOAREA ADĂUGATĂ (TVA)
+================================================================================
+
+6.1. TVA - CONCEPTE DE BAZĂ
+--------------------------------------
+TVA = Taxa pe Valoarea Adăugată
+
+Este un impozit indirect pe consumul de bunuri și servicii.
+
+Cotă TVA standard România: 19%
+Cotă TVA redusă: 9% (pentru anumite bunuri și servicii: alimente, medicamente, cărți, cazare, restaurant)
+Cotă TVA redusă: 5% (pentru locuințe în anumite condiții)
+
+6.2. ÎNREGISTRAREA ÎN SCOPURI DE TVA
+--------------------------------------
+PFA poate deveni plătitor de TVA în două moduri:
+
+A. OBLIGATORIU - Depășirea plafonului de scutire
+
+Plafon scutire TVA 2025: 395.000 lei (echivalent 88.500 EUR)
+
+Dacă cifra de afaceri (venituri din livrări/prestări taxabile) depășește 395.000 lei:
+- Obligație de înregistrare în scopuri de TVA
+- Termen: 10 zile de la depășire
+- Depui formular 070 la ANAF
+- Primești cod de înregistrare TVA (RO + CUI)
+
+B. OPȚIONAL - Înregistrare prin opțiune
+
+Chiar dacă nu ai depășit plafonul, POȚI solicita înregistrarea în scopuri de TVA.
+
+Avantaje înregistrare opțională:
+✓ Deduci TVA la achizițiile pentru activitate
+✓ Credibilitate mai mare (cod TVA)
+✓ Lucrezi mai ușor cu firme (B2B)
+
+Dezavantaje:
+✗ Obligații declarative suplimentare
+✗ Colectezi TVA (prețuri mai mari pentru clienți finali)
+✗ Contabilitate mai complexă
+
+6.3. OBLIGAȚII PENTRU PLĂTITORII DE TVA
+--------------------------------------
+Dacă ești înregistrat în scopuri de TVA:
+
+A. Facturare:
+- Emiti facturi cu TVA
+- Colectezi TVA de la clienți (TVA colectată)
+- Primești facturi cu TVA de la furnizori (TVA deductibilă)
+
+B. Declarații TVA:
+- Decontul de TVA (formularul 300)
+  * Lunar SAU trimestrial (în funcție de cifra de afaceri)
+  * Termen depunere: 25 a lunii următoare perioadei
+
+- Declarația 394 (Declarația informativă)
+  * Lunar SAU trimestrial
+  * Termen: 30 a lunii următoare perioadei (28/29 feb pentru ianuarie)
+
+C. RO e-Factura:
+- Obligatorie pentru toate tranzacțiile B2B (business-to-business)
+- Facturi în format XML
+- Transmise prin sistemul RO e-Factura
+- Termen transmitere: 5 zile de la emitere (se modifică periodic, verifică legislația)
+
+D. Plata TVA:
+- TVA de plată = TVA colectată - TVA deductibilă
+- Dacă TVA colectată > TVA deductibilă → plătești diferența
+- Dacă TVA deductibilă > TVA colectată → TVA de recuperat (rambursare)
+- Termen plată: 25 a lunii următoare
+
+6.4. TVA LA ÎNCASARE
+--------------------------------------
+Regim special pentru IMM-uri (inclusiv PFA).
+
+Condiții:
+- Cifra de afaceri < 4.500.000 lei
+- Nu ești în insolvență
+- Nu ai datorii fiscale
+
+Cum funcționează:
+- TVA se datorează la ÎNCASARE (nu la emiterea facturii)
+- TVA se deduce la PLATĂ (nu la primirea facturii)
+- Flux de numerar îmbunătățit
+
+Mențiune pe factură:
+"TVA la încasare conform art. 282¹ din Codul fiscal"
+
+6.5. EXEMPLE TVA
+--------------------------------------
+EXEMPLU 1: PFA fără TVA (sub plafon)
+Prestezi servicii de consultanță:
+- Preț serviciu: 1.000 lei
+- Factură către client: 1.000 lei (fără TVA)
+- Client plătește: 1.000 lei
+
+EXEMPLU 2: PFA cu TVA (peste plafon sau opțional)
+Prestezi servicii de consultanță:
+- Preț net: 1.000 lei
+- TVA 19%: 190 lei
+- Total factură: 1.190 lei
+- Client plătește: 1.190 lei
+- Tu colectezi 190 lei TVA pentru stat
+
+Achiziții (cu TVA):
+- Cumperi laptop: 3.000 lei + TVA 570 lei = 3.570 lei total
+- Plătești 3.570 lei
+- TVA deductibilă: 570 lei
+
+Decontul TVA:
+- TVA colectată: 190 lei
+- TVA deductibilă: 570 lei
+- TVA de recuperat: 380 lei (primești înapoi de la ANAF)
+
+================================================================================
+SECȚIUNEA 7: CONTABILITATEA PFA
+================================================================================
+
+7.1. EVIDENȚA CONTABILĂ OBLIGATORIE
+--------------------------------------
+Toate PFA-urile au obligația de a ține evidență contabilă.
+
+Tipuri de evidență:
+
+A. Pentru PFA la NORMĂ DE VENIT:
+Registrul Jurnal de Încasări și Plăți (RJIP)
+- Registru simplu
+- Înregistrezi doar încasările și plățile
+- Cronologic
+- NU e nevoie de cheltuieli detaliate
+
+B. Pentru PFA în SISTEM REAL:
+Contabilitate în partidă simplă
+- Mai complexă decât RJIP
+- Înregistrezi: venituri, cheltuieli, active, datorii
+- Conform OMFP 170/2015
+- Necesită registre: Registrul-Jurnal, Registrul-Inventar
+
+Notă: PFA-urile NU țin contabilitate în partidă dublă (ca SRL-urile).
+
+7.2. REGISTRUL JURNAL DE ÎNCASĂRI ȘI PLĂȚI (RJIP)
+--------------------------------------
+Obligatoriu pentru PFA la normă de venit.
+
+Structură RJIP:
+- Nr. crt.
+- Data operațiunii
+- Explicații (descrierea operațiunii)
+- Document justificativ (factură, bon, chitanță)
+- Încasări (venituri)
+- Plăți (cheltuieli)
+
+Exemplu RJIP:
+Nr | Data       | Explicații              | Document       | Încasări | Plăți
+1  | 05.01.2025 | Servicii coafură client | Fact 001       | 100      | -
+2  | 10.01.2025 | Achiziție șampon        | Fact 234       | -        | 50
+3  | 15.01.2025 | Servicii coafură client | Fact 002       | 150      | -
+
+Important pentru RJIP:
+- Toate sumele în lei
+- Ordine cronologică
+- Păstrare documente justificative
+
+7.3. CONTABILITATEA ÎN PARTIDĂ SIMPLĂ
+--------------------------------------
+Obligatorie pentru PFA în sistem real.
+
+Registre obligatorii:
+
+A. Registrul-Jurnal:
+- Toate operațiunile economice
+- Cronologic
+- Venituri și cheltuieli detaliate
+
+B. Registrul-Inventar:
+- Inventar active și datorii
+- La început de activitate
+- Anual (31 decembrie)
+- La încetarea activității
+
+Categorii înregistrate:
+- Venituri pe categorii (vânzări, prestări servicii etc.)
+- Cheltuieli pe categorii (materii prime, salarii, chirii etc.)
+- Active (mașini, echipamente, stocuri)
+- Datorii
+
+7.4. DOCUMENTE JUSTIFICATIVE
+--------------------------------------
+Pentru orice operațiune, TREBUIE document justificativ:
+
+Tipuri de documente:
+- Facturi fiscale (emise și primite)
+- Bonuri fiscale
+- Contracte
+- Chitanțe
+- Extrase bancare
+- Bonuri de consum (combustibil)
+- Foi de parcurs (pentru mașină)
+- Note de recepție
+- Procese-verbale
+
+Păstrare documente:
+- Termen legal: 10 ani de la închiderea exercițiului financiar
+- Format: original (hârtie sau electronic, dacă e cazul)
+
+7.5. FACTURAREA
+--------------------------------------
+PFA-ul are obligația de a emite facturi pentru serviciile/bunurile livrate.
+
+Tipuri de facturi:
+
+A. Factură fiscală (cu TVA) - dacă ești plătitor TVA
+B. Factură simplificată (fără TVA) - dacă nu ești plătitor TVA
+
+Elemente obligatorii pe factură:
+- Denumire: [Prenume Nume - PFA]
+- CUI
+- Adresa sediului
+- Număr factură (cronologic)
+- Data emiterii
+- Denumire client
+- Descriere bunuri/servicii
+- Cantitate
+- Preț unitar
+- Valoare totală
+- TVA (dacă aplicabil)
+- Semnătura
+
+Numerotare facturi:
+- Continuă, cronologică
+- Exemplu: 001/2025, 002/2025, etc.
+- O serie pe an (de obicei)
+
+E-Factura (RO e-Factura):
+- Obligatorie pentru tranzacții B2B (dacă ești plătitor TVA)
+- Format XML
+- Transmitere prin sistemul ANAF
+- Termen: 5 zile de la emitere
+
+7.6. APELARE SERVICII CONTABILE
+--------------------------------------
+Multe PFA-uri apelează la servicii de contabilitate externalizate.
+
+Opțiuni:
+
+A. Contabil independent / Firmă de contabilitate:
+- Cost lunar: 150 - 500+ lei (variază după complexitate)
+- Servicii: întocmire RJIP/contabilitate, declarații fiscale, consultanță
+
+B. Software contabilitate:
+- Aplicații online: SmartBill, Facturis, ObioSoft, etc.
+- Cost: 10 - 100 lei/lună
+- Generează facturi, RJIP, rapoarte
+
+C. Contabilitate proprie:
+- PFA la normă cu operațiuni simple poate ține singur RJIP
+- Necesită: cunoștințe minime, disciplină, timp
+- Risc: erori pot genera probleme cu ANAF
+
+Recomandare:
+- Normă de venit + operațiuni puține → poți singur sau soft ieftin
+- Sistem real sau operațiuni complexe → contabil profesionist
+
+================================================================================
+SECȚIUNEA 8: RADIEREA (ÎNCHIDEREA) PFA
+================================================================================
+
+8.1. CÂND SĂ RADIEZI PFA
+--------------------------------------
+Situații în care radiezi PFA:
+- Nu mai desfășori activitate și nu vrei să continui
+- Treci la o altă formă juridică (de ex. SRL)
+- Motive personale
+- Inactivitate prelungită
+
+Important:
+Simplul fapt că NU mai emiți facturi sau NU mai ai activitate NU înseamnă că PFA e închis.
+Dacă nu radiezi oficial, rămâi activ din punct de vedere fiscal și pot apărea obligații.
+
+8.2. CONDIȚII PENTRU RADIEREA PFA
+--------------------------------------
+Pentru a radia PFA, trebuie:
+✓ SĂ NU ai datorii restante la ANAF (impozite, contribuții, amenzi)
+✓ SĂ NU ai angajați (sau să îi concediezi înainte)
+✓ SĂ fi finalizat toate contractele în derulare
+✓ SĂ fi notificat clienții/partenerii (recomandat)
+
+Dacă ai datorii:
+- Radierea NU este posibilă până când achizi toate datoriile
+- SAU soliciți eșalonare la plată aprobată de ANAF
+- Alternativă: ANAF poate radia din OFICIU (dacă PFA e inactiv), dar cu consecințe negative
+
+8.3. PROCEDURA DE RADIERE PFA
+--------------------------------------
+Pasul 1: Verificarea situației fiscale
+- Accesează Spațiul Privat Virtual (SPV) pe ANAF
+- Verifici dacă ai datorii restante
+- Dacă ai datorii: le achiti sau soliciți eșalonare
+
+Pasul 2: Pregătirea documentelor
+Documente necesare pentru radiere:
+a) Cerere de radiere (formular tip ONRC)
+b) Copie după CI/BI
+c) Certificatul de înregistrare (original) - primit la înființare
+d) Certificatul constatator (original) - primit la înființare
+e) Dovada achitării datoriilor (dacă este cazul)
+
+Pasul 3: Depunerea dosarului la ONRC
+Modalități:
+- Online: prin portal.onrc.ro (cu semnătură electronică)
+- Fizic: la ghișeul ONRC competent teritorial
+- Prin reprezentant (cu procură)
+
+Costuri:
+- Radierea PFA este GRATUITĂ (din 2020)
+- Poți solicita certificate suplimentare (cu taxă mică)
+
+Pasul 4: Obținerea deciziei de radiere
+- ONRC procesează cererea în 2-5 zile lucrătoare
+- Primești Decizia de radiere
+- PFA este radiat din Registrul Comerțului
+
+Pasul 5: Notificarea ANAF
+- ONRC transmite automat informația către ANAF
+- SAU poți notifica și tu prin:
+  * Spațiul Privat Virtual (SPV)
+  * Formularul 070 (declarație de mențiuni)
+- ANAF actualizează evidențele fiscale
+
+8.4. DECLARAȚIA UNICĂ DUPĂ RADIEREA PFA
+--------------------------------------
+Modificare IMPORTANTĂ din 2025:
+
+Până în 2024:
+- După radierea PFA, trebuia să depui Declarația Unică în termen de 30 de zile
+
+Din 2025:
+- NU mai depui Declarația Unică imediat după radiere
+- Depui Declarația Unică în ANUL URMĂTOR, la termenul general (până pe 25 mai)
+
+Exemplu:
+- Radiezi PFA în iunie 2025
+- NU depui DU în iulie 2025
+- Depui Declarația Unică în 2026 (până pe 25 mai 2026) cu veniturile din 2025
+
+Această modificare elimină presiunea declarativă imediată și reduce riscul de erori.
+
+8.5. CONSECINȚE DUPĂ RADIEREA PFA
+--------------------------------------
+După radiere:
+
+✓ PFA încetează să existe oficial
+✓ Nu mai ai obligații fiscale viitoare ca PFA
+✓ NU mai poți emite facturi pe PFA
+✓ Încetează toate autorizațiile/avizele legate de PFA
+
+ATENȚIE:
+✗ Datoriile ANTERIOARE rămân (nu dispar prin radiere)
+✗ Răspunzi în continuare cu patrimoniul personal pentru datoriile PFA
+✗ ANAF poate urmări aceste datorii chiar după radiere
+
+8.6. RADIEREA DIN OFICIU DE CĂTRE ANAF
+--------------------------------------
+ANAF poate radia din oficiu un PFA în anumite situații:
+- PFA inactiv pe perioadă lungă
+- PFA cu datorii mari și fără perspective de recuperare
+- PFA care nu răspunde la solicitările ANAF
+
+Consecințe radiere din oficiu:
+✗ Sancțiuni fiscale
+✗ Înregistrare în bazele de date ANAF (poate afecta viitoarele autorizări)
+✗ Datoriile rămân și se urmăresc
+✗ Limitări în deschiderea unui nou PFA
+
+Recomandare: Radiază VOLUNTAR, nu aștepta radiere din oficiu.
+
+================================================================================
+SECȚIUNEA 9: ANGAJAȚII ÎN PFA
+================================================================================
+
+9.1. PFA POATE ANGAJA PERSONAL?
+--------------------------------------
+DA, PFA poate angaja salariați.
+
+Nu există restricții la numărul de angajați pentru PFA.
+
+Forme de angajare:
+- Contract individual de muncă (CIM) - cel mai comun
+- Contracte civile (de prestări servicii, drepturi de autor) - mai rar
+
+9.2. OBLIGAȚII PENTRU PFA CU ANGAJAȚI
+--------------------------------------
+Dacă angajezi personal, PFA devine ANGAJATOR cu obligații suplimentare:
+
+A. Obligații administrative:
+- Înregistrare ca angajator la ITM (Inspectoratul Teritorial de Muncă)
+- Înregistrare în Revisal (Registrul general de evidență a salariaților)
+- Contract de muncă individual scris
+- Fișa postului
+- RUNOS (Registrul Unic de Evidență a lucrătorilor)
+
+B. Obligații fiscale:
+- Reținere impozit pe salarii (10%)
+- Calculare și plată contribuții sociale pentru angajați:
+  * CAS salariat: 25% (reținut din salariu)
+  * CASS salariat: 10% (reținut din salariu)
+  * Contribuție la asigurări pentru muncă (CAM): 2,25% (suportată de angajator)
+- Depunere Declarație 112 (lunar)
+- Depunere alte declarații (Declarația 205, dacă e cazul)
+
+C. Alte obligații:
+- Asigurare de accidente de muncă și boli profesionale
+- Medicina muncii
+- SSM (Securitate și Sănătate în Muncă)
+- Respectarea legislației muncii
+
+9.3. COSTURI CU UN ANGAJAT (EXEMPLU 2025)
+--------------------------------------
+Exemplu: Angajezi o persoană cu salariu brut 5.000 lei
+
+Calcul:
+- Salariu brut: 5.000 lei
+- CAS angajat (25%): 1.250 lei (reținut din brut)
+- CASS angajat (10%): 500 lei (reținut din brut)
+- Impozit salariat (10% din brut - CAS - CASS): 325 lei
+- Salariu net primit de angajat: 5.000 - 1.250 - 500 - 325 = 2.925 lei
+
+Contribuții suportate de angajator (PFA):
+- CAM (2,25%): 112,50 lei
+
+Cost TOTAL pentru PFA:
+- Salariu brut: 5.000 lei
+- CAM: 112,50 lei
+- TOTAL: 5.112,50 lei/lună
+
+9.4. COLABORATORI FĂRĂ CONTRACT DE MUNCĂ
+--------------------------------------
+Alternative la angajare:
+
+A. Colaboratori PFA/SRL:
+- Colaborezi cu alte PFA-uri sau SRL-uri
+- Relație B2B (business-to-business)
+- Fără obligații de angajator
+- Emiteți facturi reciproc
+
+B. Convenții civile:
+- Contract de prestări servicii
+- Contract de drepturi de autor
+- Mai puține obligații decât CIM
+- Dar: pot fi recalificate de ITM ca raporturi de muncă dacă nu sunt conforme
+
+C. Zilieri:
+- Pentru activități agricole, construcții
+- Plăți pe zile lucrate
+- Reglementare specială
+
+================================================================================
+SECȚIUNEA 10: OBLIGAȚII DECLARATIVE ȘI TERMENE FISCALE
+================================================================================
+
+10.1. CALENDAR FISCAL PENTRU PFA
+--------------------------------------
+Obligații fiscale anuale:
+
+PÂNĂ LA 25 MAI:
+- Declarația Unică (formular 212) - pentru veniturile anului anterior
+- Plata impozitului pe venit
+- Plata CAS (dacă e datorată)
+- Plata CASS (dacă e datorată)
+
+Obligații pentru PFA cu TVA:
+
+LUNAR (dacă perioada fiscală = luna):
+Până la 25 a lunii următoare:
+- Decontul de TVA (formular 300)
+- Plata TVA
+
+Până la 30 a lunii următoare:
+- Declarația 394 (informativă TVA)
+
+TRIMESTRIAL (dacă perioada fiscală = trimestrul):
+Până la 25 a primei luni din trimestrul următor:
+- Decontul de TVA (formular 300)
+- Plata TVA
+
+Până la 30 a primei luni din trimestrul următor:
+- Declarația 394
+
+Obligații pentru PFA cu angajați:
+
+LUNAR:
+Până la 25 a lunii următoare:
+- Declarația 112 (obligații salarii și contribuții)
+- Plata contribuțiilor și impozitelor pentru salariați
+
+ANUAL:
+Până la 28 februarie:
+- Declarația 205 (pentru anumite venituri)
+
+10.2. FORMULARE FISCALE PRINCIPALE
+--------------------------------------
+Formularul 212: Declarația Unică privind impozitul pe venit și contribuțiile sociale
+- Cine: Toate PFA-urile și persoanele cu venituri independente
+- Când: Până la 25 mai a anului următor
+- Depunere: Online (SPV) sau fizic la ANAF
+
+Formularul 300: Decontul de TVA
+- Cine: PFA-uri înregistrate în scopuri de TVA
+- Când: Lunar sau trimestrial (25 a lunii următoare)
+- Depunere: Online (SPV)
+
+Formularul 394: Declarația informativă TVA
+- Cine: PFA-uri plătitoare de TVA
+- Când: Lunar sau trimestrial (30 a lunii următoare)
+- Depunere: Online (SPV)
+
+Formularul 112: Declarație privind obligațiile de plată a contribuțiilor sociale
+- Cine: PFA-uri cu angajați SAU alte situații specifice
+- Când: Lunar (25 a lunii următoare)
+- Depunere: Online (SPV)
+
+Formularul 070: Declarație de înregistrare fiscală / mențiuni
+- Cine: PFA-uri care se înregistrează TVA sau modifică date fiscale
+- Când: În termen de 10 zile de la modificare
+- Depunere: Online (SPV) sau fizic la ANAF
+
+Formularul 020: Declarație de înregistrare fiscală pentru persoane fizice cu CNP
+- Cine: Persoane fizice în anumite situații
+- Când: Variabil
+- Depunere: Fizic la ANAF
+
+10.3. SPAȚIUL PRIVAT VIRTUAL (SPV)
+--------------------------------------
+SPV = platforma online ANAF pentru contribuabili
+
+Accesare SPV:
+- URL: www.anaf.ro → Autentificare SPV
+- Metodă 1: Certificat digital calificat (semnătură electronică)
+- Metodă 2: CNP + parolă (dacă te-ai înregistrat)
+
+Funcționalități SPV:
+✓ Depunere declarații electronice (212, 300, 394, 112, etc.)
+✓ Vizualizare situație fiscală (datorii, plăți, decizii)
+✓ Descărcare certificate (fiscal, atestare, etc.)
+✓ Plata online a obligațiilor fiscale
+✓ Mesaje de la ANAF
+✓ Istoric declarații
+✓ Programări online
+
+Înregistrare în SPV:
+- Dacă nu ai certificat digital:
+  * Mergi la ANAF cu CI
+  * Soliciți credențiale pentru SPV
+  * Primești user + parolă
+- Dacă ai certificat digital:
+  * Te autentifici direct cu certificatul
+
+Recomandare: SPV este ESENȚIAL pentru PFA - învață să-l folosești.
+
+10.4. PLATA OBLIGAȚIILOR FISCALE
+--------------------------------------
+Modalități de plată:
+
+A. Online banking:
+- Din contul bancar personal
+- Beneficiar: Trezoreria Statului (IBAN specific pentru fiecare tip de obligație)
+- Important: specifici CNP + tip obligație în detalii plată
+
+B. Ghiseul.ro:
+- Platformă guvernamentală
+- Plăți cu cardul
+- Simplă și rapidă
+
+C. Fizic la bancă sau trezorerie:
+- Cu ordin de plată completat
+- Cash sau card
+
+D. Prin SPV:
+- Anumite plăți pot fi inițiate direct din SPV
+
+Coduri IBAN:
+- Fiecare județ are coduri IBAN specifice
+- Găsești pe www.anaf.ro → Plata obligațiilor → Coduri IBAN
+- Important: folosește IBAN-ul corect pentru tipul de obligație și județul tău
+
+Coduri obligații (pentru detalii plată):
+- Impozit pe venit: cod specific
+- CAS: cod specific
+- CASS: cod specific
+- TVA: cod specific
+- Liste complete pe site ANAF
+
+================================================================================
+SECȚIUNEA 11: SITUAȚII SPECIALE ȘI CAZURI PRACTICE
+================================================================================
+
+11.1. PFA CU VENITURI DIN MAI MULTE SURSE
+--------------------------------------
+Situație: PFA care are și alte venituri (chirii, drepturi de autor, dividende, etc.)
+
+Tratament fiscal:
+- Fiecare categorie de venit se impozitează separat
+- CUMULARE pentru stabilirea CAS și CASS
+- Declarația Unică - completezi toate secțiunile relevante
+
+Exemplu:
+- Venit net PFA: 30.000 lei
+- Venit net chirii: 20.000 lei
+- Total cumulate: 50.000 lei
+
+Analiză CASS:
+- Total = 50.000 lei (între 12-24 salarii minime)
+- Bază calcul CASS: 48.600 lei
+- CASS: 4.860 lei
+- Se repartizează proporțional între surse
+
+11.2. PFA + SALARIAT LA O FIRMĂ
+--------------------------------------
+Situație: Lucrezi ca salariat ȘI ai PFA
+
+Este LEGAL și PERMIS.
+
+Aspecte de reținut:
+- Pentru salariu: angajatorul reține impozit, CAS, CASS la sursă
+- Pentru PFA: declari și plătești separat prin Declarația Unică
+- CAS: Dacă plătești CAS ca salariat (la 12+ salarii minime) → poți fi scutit de CAS pentru PFA
+- CASS: Se cumulează veniturile pentru praguri
+
+Exemplu:
+- Salariu brut anual: 60.000 lei (angajatorul plătește CAS și CASS)
+- Venit net PFA: 30.000 lei
+
+Pentru PFA:
+- CAS: Posibil scutit (dacă deja plătești pentru salariu la 12+ salarii minime)
+- CASS: Verifici total venituri cumulate pentru prag
+- Impozit PFA: 30.000 × 10% = 3.000 lei
+
+11.3. PFA PENTRU ACTIVITĂȚI SEZONIERE
+--------------------------------------
+Situație: Activitate doar câteva luni pe an (ex: turism, agricultură)
+
+Opțiuni:
+A. Ții PFA-ul activ tot anul:
+- Avantaj: gata să lucrezi oricând
+- Dezavantaj: dacă ai venituri mici, tot trebuie să declari
+
+B. Închizi și redeschizi PFA:
+- Avantaj: fără obligații în off-season
+- Dezavantaj: procedură repetată, posibile costuri
+
+C. PFA inactiv (nerecomadat):
+- NU radiezi, dar NU ai activitate
+- Risc: ANAF poate radia din oficiu
+
+Recomandare: Ține PFA activ, declară veniturile reale (chiar dacă sunt mici sau zero în off-season).
+
+11.4. PIERDERI FISCALE ȘI REPORTAREA LOR
+--------------------------------------
+Situație: În sistem real, cheltuielile > veniturile = PIERDERE fiscală
+
+Pierdere fiscală = Cheltuieli - Venituri (când cheltuieli mai mari)
+
+Ce se întâmplă cu pierderile:
+- NU plătești impozit în anul cu pierdere (evident)
+- Pierderea se poate REPORTA în următorii 7 ani
+- Se deduce din veniturile nete viitoare
+
+Exemplu:
+Anul 1 (2024):
+- Venituri: 50.000 lei
+- Cheltuieli: 70.000 lei
+- Pierdere: 20.000 lei
+- Impozit: 0 lei
+
+Anul 2 (2025):
+- Venituri: 100.000 lei
+- Cheltuieli: 60.000 lei
+- Venit net: 40.000 lei
+- Minus pierdere reportată: 20.000 lei
+- Venit net recalculat: 20.000 lei
+- Impozit: 20.000 × 10% = 2.000 lei (în loc de 4.000 lei)
+
+11.5. TRECEREA DE LA NORMĂ LA SISTEM REAL
+--------------------------------------
+Situație: Ai fost la normă, acum treci la sistem real (obligatoriu sau opțional)
+
+Procedură:
+1. Depui Declarația Unică în care declari trecerea la sistem real
+2. Începi să ții contabilitate în partidă simplă
+3. Justifici cheltuielile cu documente
+
+Moment trecere:
+- Dacă OBLIGATORIU (depășit 25.000 EUR): de la 1 ianuarie anul următor
+- Dacă OPȚIONAL: poți opta oricând prin Declarația Unică
+
+ATENȚIE: Trecerea de la normă la sistem real este IREVERSIBILĂ. Nu poți reveni la normă.
+
+11.6. PFA PENTRU ACTIVITĂȚI IT
+--------------------------------------
+Situație specială: PFA-uri în domeniul IT
+
+Scutire de impozit pe venit pentru IT:
+- Până în 2028, anumite venituri din IT sunt SCUTITE de impozit pe venit
+- Condiții stricte (salariați, tipuri de activități, certificate)
+- Aplicabilă și pentru PFA? DA, dar mai rar (majoritatea sunt SRL-uri)
+
+În general, PFA-urile IT:
+- Sistem real (IT nu e la normă de venit)
+- Venituri mari → CAS și CASS la plafoane maxime
+- TVA: de obicei înregistrate
+- Pot beneficia de scutire impozit în anumite condiții
+
+11.7. PFA PENTRU PROFESII LIBERALE
+--------------------------------------
+Profesii liberale = activități reglementate de legi speciale și organizații profesionale
+
+Exemple:
+- Avocați (Baroul Avocaților)
+- Medici (Colegiul Medicilor)
+- Arhitecți (Ordinul Arhitecților)
+- Notari publici
+- Consultanți fiscali (Camera Consultanților Fiscali)
+- Experți contabili (CECCAR)
+- Psihologi, asistenți sociali, etc.
+
+Caracteristici PFA pentru profesii liberale:
+- DOAR sistem real (nu există normă de venit)
+- Înregistrare obligatorie la organizația profesională
+- Asigurare de răspundere profesională obligatorie (de obicei)
+- Regulamente deontologice specifice
+- Taxe de înscriere la organizația profesională (deductibile)
+
+Fiscalitate:
+- Identică cu alte PFA în sistem real
+- Impozit 10% pe venit net
+- CAS și CASS conform pragurilor
+
+11.8. PFA PENTRU ACTIVITĂȚI DE TRANSPORT
+--------------------------------------
+Situație: PFA pentru transport persoane (taxi, Uber, Bolt) sau transport mărfuri
+
+Particularități:
+
+A. Transport persoane (taxi):
+- Autorizație taxi de la Primărie
+- Licență transport de la ARR
+- Normă de venit sau sistem real (verifică nomenclator)
+- Cheltuieli semnificative: combustibil, amortizare mașină, RCA, ITP
+
+B. Transport mărfuri:
+- Licență transport mărfuri
+- De obicei sistem real
+- Cheltuieli mari cu vehiculul
+
+Mașina în patrimoniul PFA vs. personal:
+- Dacă cumperi mașina pe PFA (factura pe CUI): amortizare deductibilă integral
+- Dacă folosești mașina personală: doar proporțional cu km profesionali
+
+================================================================================
+SECȚIUNEA 12: AVANTAJE ȘI DEZAVANTAJE PFA
+================================================================================
+
+12.1. AVANTAJE PFA
+--------------------------------------
+✓ Înființare simplă și rapidă (2-5 zile)
+✓ Costuri de înființare: 0 lei (gratuită din 2020)
+✓ Proceduri administrative mai simple decât SRL
+✓ Flexibilitate în activitate
+✓ Posibilitatea de a lucra cu firme (B2B)
+✓ Impozit fix de 10% (predictibil)
+✓ La normă de venit: fiscalitate foarte simplă
+✓ Fără capital social necesar
+✓ Poți avea angajați
+✓ Posibilitatea opțiunii de impozitare (normă vs. sistem real inițial)
+
+12.2. DEZAVANTAJE PFA
+--------------------------------------
+✗ Răspundere NELIMITATĂ cu patrimoniul personal (risc major)
+✗ Contribuții sociale (CAS + CASS) pot fi mari
+✗ Limitat la anumite activități (unele necesită SRL)
+✗ Percepție mai puțin profesională decât SRL (pentru unii clienți)
+✗ Dificultăți la atragerea de investitori
+✗ Trecerea de la normă la sistem real = ireversibilă
+✗ Plafonul de 25.000 EUR pentru normă (restrictiv)
+✗ Contabilitate (chiar și simplificată) necesită disciplină
+
+12.3. CÂND SĂ ALEGI PFA
+--------------------------------------
+PFA este potrivit dacă:
+✓ Ești la început
+✓ Venituri mici-medii (sub 100.000 lei/an)
+✓ Activitate cu risc scăzut
+✓ Nu ai nevoie de investitori
+✓ Lucrezi singur sau cu max 2-3 angajați
+✓ Activitatea ta se califică pentru normă de venit
+✓ Vrei simplitate și costuri reduse
+
+12.4. CÂND SĂ ALEGI SRL ÎN LOC DE PFA
+--------------------------------------
+SRL este mai potrivit dacă:
+✓ Venituri mari (>100.000 - 200.000 lei/an)
+✓ Activitate cu risc mare (răspundere limitată e importantă)
+✓ Vrei să atragi investitori sau parteneri
+✓ Planifici creștere rapidă
+✓ Lucrezi cu clienți mari care preferă SRL-uri
+✓ Beneficiezi de regimul microîntreprinderii (impozit 1-3% pe cifra de afaceri)
+✓ Vrei separare clară patrimoniu personal - firma
+
+================================================================================
+SECȚIUNEA 13: ÎNTREBĂRI FRECVENTE (FAQ)
+================================================================================
+
+Q1: Pot avea PFA dacă sunt salariat?
+A: DA. Poți avea PFA și să fii salariat simultan. Este perfect legal. Declari separat veniturile din fiecare sursă.
+
+Q2: Cât costă să înființez un PFA?
+A: Înființarea PFA este GRATUITĂ din 2020. Poți avea costuri mici pentru certificate sau servicii opționale, dar procedura de bază e fără taxă.
+
+Q3: Cât timp durează să înființez un PFA?
+A: 2-5 zile lucrătoare de la depunerea dosarului complet la ONRC.
+
+Q4: Pot avea mai multe PFA-uri?
+A: NU. O persoană fizică poate avea UN SINGUR PFA. Dar poți avea multiple coduri CAEN (activități diferite) în același PFA.
+
+Q5: Trebuie să am contabil pentru PFA?
+A: Nu e obligatoriu, dar e RECOMANDAT, mai ales în sistem real. La normă de venit cu operațiuni simple, poți ține singur evidența.
+
+Q6: Cum aleg între normă de venit și sistem real?
+A: Depinde de raportul venituri/cheltuieli:
+- Cheltuieli mici (< 20% din venituri) → normă poate fi mai bună
+- Cheltuieli mari (> 50% din venituri) → sistem real probabil mai bun
+- Verifică nomenclatorul ANAF dacă activitatea ta e la normă
+
+Q7: Ce se întâmplă dacă depășesc 25.000 EUR la normă de venit?
+A: Din anul următor, OBLIGATORIU treci la sistem real. Trecerea e definitivă.
+
+Q8: Trebuie să mă înregistrez la TVA?
+A: OBLIGATORIU dacă depășești 395.000 lei cifră de afaceri. OPȚIONAL sub acest plafon.
+
+Q9: Pot lucra de acasă cu PFA?
+A: DA. Poți avea sediul PFA la domiciliu. Poate fi necesar acordul asociației de proprietari în anumite cazuri.
+
+Q10: Cum plătesc contribuțiile (CAS, CASS)?
+A: Prin Declarația Unică, până pe 25 mai a anului următor. Plata în cont unic Trezorerie (online banking, ghiseul.ro, sau la bancă).
+
+Q11: Dacă am pierdere, plătesc taxe?
+A: NU plătești impozit pe venit dacă ai pierdere. Din 2025, NU datorezi nici CASS dacă ai pierdere. CAS depinde de alte venituri.
+
+Q12: Pot închide PFA oricând?
+A: DA, dacă nu ai datorii. Radierea e gratuită și durează câteva zile.
+
+Q13: Dacă am PFA, pot beneficia de șomaj tehnic sau alte facilități?
+A: De obicei NU. PFA e considerat activitate independentă. Există excepții în situații speciale (ex: pandemie).
+
+Q14: Pot emite facturi fără să fiu înregistrat la TVA?
+A: DA. Emiți facturi fără TVA (facturi simple).
+
+Q15: Ce diferență e între PFA și II (Întreprindere Individuală)?
+A: Foarte similare. II poate avea nume de firmă distinct (fără numele titularului). Fiscalitatea e identică.
+
+Q16: Trebuie să am cont bancar pentru PFA?
+A: Nu e OBLIGATORIU, dar e FOARTE RECOMANDAT. Contul bancar (pe CUI) îți facilitează operațiunile și evidența.
+
+Q17: Pot transfera PFA altei persoane?
+A: NU. PFA e legat de persoana fizică titulară. Nu se poate transfera, vinde, sau dona.
+
+Q18: Ce coduri CAEN pot alege?
+A: Orice coduri CAEN relevante pentru activitățile pe care le desfășori. Poți avea mai multe. Unul va fi principal.
+
+Q19: Dacă mă mut în alt județ, ce fac cu PFA?
+A: Depui declarație de mențiuni la ONRC pentru schimbarea sediului. Notifici și ANAF (de obicei automat).
+
+Q20: Pot avea PFA dacă am cazier?
+A: Depinde de condamnare. Anumite condamnări (escrocherie, înșelăciune, bancrută frauduloasă) pot interzice activitatea comercială.
+
+Q21: Trebuie să am ștampilă pentru PFA?
+A: Nu e OBLIGATORIE legal, dar e UTILĂ și profesională. Mulți o folosesc.
+
+Q22: Cum raportez veniturile în valută?
+A: Converti în lei la cursul BNR din ziua încasării. Raportezi în lei în RJIP/contabilitate.
+
+Q23: Pot avea sponsori sau pot face sponsorizări cu PFA?
+A: DA. Sponsorizările sunt cheltuieli deductibile în limita a 5% din cifra de afaceri (în sistem real).
+
+Q24: Dacă uit să depun Declarația Unică?
+A: Riști amendă și ANAF poate estima din oficiu obligațiile tale (nefavorabil). Depune cât mai repede, chiar cu întârziere.
+
+Q25: Care e diferența între venit brut și venit net?
+A: Venit brut = total încasări. Venit net = încasări - cheltuieli deductibile (în sistem real) SAU Venit net = norma de venit (la normă).
+
+================================================================================
+SECȚIUNEA 14: GLOSAR DE TERMENI
+================================================================================
+
+ANAF - Agenția Națională de Administrare Fiscală
+Instituția care administrează taxele și impozitele în România.
+
+Bază de calcul
+Suma asupra căreia se aplică o cotă de impozit sau contribuție pentru a obține suma datorată.
+
+CAS - Contribuția de Asigurări Sociale
+Contribuția la sistemul public de pensii. Cotă: 25%.
+
+CASS - Contribuția de Asigurări Sociale de Sănătate
+Contribuția pentru asigurarea medicală. Cotă: 10%.
+
+Cheltuieli deductibile
+Cheltuieli efectuate în scopul realizării de venituri, care reduc baza impozabilă (în sistem real).
+
+Cifra de afaceri
+Totalul veniturilor din vânzări de bunuri și prestări de servicii.
+
+CNP - Cod Numeric Personal
+Codul unic de identificare a persoanei fizice în România (13 cifre).
+
+Cod CAEN
+Clasificarea Activităților din Economia Națională. Cod care identifică tipul de activitate economică.
+
+CUI - Cod Unic de Înregistrare
+Codul de identificare fiscală al PFA-ului, atribuit de ONRC.
+
+Declarația Unică (Formularul 212)
+Declarația anuală prin care persoanele fizice declară veniturile și contribuțiile sociale.
+
+II - Întreprindere Individuală
+Formă de organizare similară cu PFA, dar poate avea nume de firmă distinct.
+
+IF - Întreprindere Familială
+Formă de organizare pentru activități desfășurate de membrii unei familii.
+
+Impozit pe venit
+Impozit de 10% aplicat asupra venitului net impozabil.
+
+Normă de venit
+Suma fixă anuală stabilită de ANAF pentru anumite activități, pe baza căreia se calculează impozitul (sistem forfetar).
+
+ONRC - Oficiul Național al Registrului Comerțului
+Instituția la care se înregistrează PFA-urile și alte forme de organizare.
+
+Perioadă fiscală
+Intervalul pentru care se calculează și se plătește un impozit (de obicei, an fiscal = 1 ianuarie - 31 decembrie).
+
+PFA - Persoană Fizică Autorizată
+Formă juridică pentru desfășurarea de activități economice de către persoane fizice.
+
+Pierdere fiscală
+Situația în care cheltuielile deductibile depășesc veniturile (în sistem real).
+
+Plafon de scutire TVA
+Limita cifrei de afaceri sub care nu e obligatorie înregistrarea în scopuri de TVA (395.000 lei în 2025).
+
+Plătitor de TVA
+Persoană înregistrată în scopuri de TVA care colectează și plătește TVA.
+
+Profesii liberale
+Activități reglementate de legi speciale (avocați, medici, arhitecți, etc.).
+
+Radiere PFA
+Închiderea oficială a PFA-ului prin scoaterea din Registrul Comerțului.
+
+RJIP - Registrul Jurnal de Încasări și Plăți
+Registru contabil simplificat pentru PFA la normă de venit.
+
+Salariu minim brut pe țară
+Salariul minim legal stabilit prin HG. În 2025: 4.050 lei. Bază pentru calculul contribuțiilor sociale.
+
+SPV - Spațiul Privat Virtual
+Platforma online ANAF pentru contribuabili.
+
+Sistem real
+Regim de impozitare în care impozitul se calculează pe baza veniturilor și cheltuielilor efective.
+
+TVA - Taxa pe Valoarea Adăugată
+Impozit indirect pe consum. Cotă standard: 19%.
+
+Venit brut
+Totalul sumelor încasate (înainte de deducerea cheltuielilor).
+
+Venit impozabil
+Venitul net după deducerea CAS, CASS și pierderilor reportate, pe baza căruia se calculează impozitul.
+
+Venit net
+Venitul brut minus cheltuielile deductibile (în sistem real) SAU norma de venit (la normă).
+
+Venit net recalculat
+Venitul net minus pierderile fiscale reportate din anii anteriori.
+
+================================================================================
+SECȚIUNEA 15: RESURSE ȘI CONTACT ANAF
+================================================================================
+
+15.1. RESURSE ONLINE UTILE
+--------------------------------------
+Portal ANAF: www.anaf.ro
+- Formulare fiscale
+- Ghiduri și instrucțiuni
+- Legislație fiscală
+- Nomenclatoare (CAEN, norme de venit)
+- Coduri IBAN pentru plăți
+
+Spațiul Privat Virtual: www.anaf.ro → Autentificare SPV
+- Depunere declarații online
+- Vizualizare situație fiscală
+- Descărcare certificate
+
+Portal ONRC: portal.onrc.ro
+- Înregistrare/radiere PFA online
+- Verificare disponibilitate denumire
+- Descărcare certificate
+
+Ghiseul.ro: www.ghiseul.ro
+- Plăți online către stat
+- Verificare și plată taxe
+
+E-guvernare: www.e-guvernare.ro
+- Depunere declarații
+- Alte servicii publice online
+
+15.2. CONTACT ANAF
+--------------------------------------
+Call Center ANAF: 031.403.91.60
+- Program: Luni-Vineri, 8:00-18:00
+- Asistență telefonic contribuabili
+
+E-mail Contact Center: contact.center@anaf.ro
+
+Programări online:
+- Accesează www.anaf.ro → Programări online
+- Selectezi serviciul și unitatea fiscală
+- Programare la dată/oră convenabilă
+
+Adrese unități fiscale:
+- Găsești pe www.anaf.ro → Contact unități fiscale
+- Fiecare județ are Administrația Județeană a Finanțelor Publice (AJFP)
+
+15.3. GHIDURI ȘI MATERIALE INFORMATIVE ANAF
+--------------------------------------
+ANAF publică periodic ghiduri detaliate pentru contribuabili:
+
+- Ghid Declarație Unică
+- Ghid TVA
+- Ghid pentru activități independente
+- Ghid pentru activități specifice (ex: frumusețe, IT, etc.)
+- Ghid RO e-Factura
+- Alte materiale
+
+Găsești pe: www.anaf.ro → Asistență contribuabili → Ghiduri și materiale informative
+
+15.4. SEMINARII WEB ANAF
+--------------------------------------
+ANAF organizează seminarii web (webinarii) gratuite pentru contribuabili pe diverse teme fiscale.
+
+Informații: www.anaf.ro → Asistență contribuabili → Seminarii web
+
+Avantaje:
+- Gratuite
+- Online (de acasă)
+- Prezentări de la specialiști ANAF
+- Sesiuni Q&A
+
+15.5. LEGISLAȚIE DE REFERINȚĂ
+--------------------------------------
+Principalele acte normative:
+
+Codul Fiscal: Legea nr. 227/2015
+- Reglementează impozitele, taxele și contribuțiile
+- Actualizat periodic
+- Disponibil pe www.anaf.ro
+
+Codul de Procedură Fiscală: Legea nr. 207/2015
+- Reglementează procedurile fiscale
+- Drepturi și obligații contribuabili
+- Sancțiuni
+
+OUG 44/2008: Privind desfășurarea activităților economice de către PFA, II, IF
+- Baza legală pentru PFA
+
+Normele metodologice de aplicare a Codului Fiscal
+- Detalii de aplicare a prevederilor Codului Fiscal
+
+================================================================================
+SECȚIUNEA 16: EXEMPLE PRACTICE COMPLETE
+================================================================================
+
+EXEMPLU COMPLET 1: PFA LA NORMĂ DE VENIT
+--------------------------------------
+Profil:
+- Maria, coafor în Brașov
+- Normă de venit 2025: 15.000 lei/an
+- Venituri reale: 85.000 lei/an (sub 25.000 EUR)
+
+Calcul fiscal:
+
+Impozit pe venit:
+- Bază: 15.000 lei (norma)
+- Impozit: 15.000 × 10% = 1.500 lei
+
+CAS:
+- Normă 15.000 lei < 24.300 lei 

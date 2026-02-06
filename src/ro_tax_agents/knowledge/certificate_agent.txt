@@ -1,0 +1,1110 @@
+================================================================================
+GHID COMPLET PRIVIND CERTIFICATUL DE ATESTARE FISCALĂ ÎN ROMÂNIA - 2025
+================================================================================
+Document oficial: Agenția Națională de Administrare Fiscală (ANAF)
+An de referință: 2025
+Ultima actualizare: 2025
+Legislație aplicabilă: Legea 207/2015 (Codul de Procedură Fiscală), OPANAF 3654/2015
+
+================================================================================
+SECȚIUNEA 1: CE ESTE CERTIFICATUL DE ATESTARE FISCALĂ
+================================================================================
+
+1.1. DEFINIȚIE ȘI SCOP
+--------------------------------------
+Certificatul de Atestare Fiscală (CAF) = document oficial emis de ANAF sau de administrațiile fiscale locale prin care se atestă situația fiscală a unui contribuabil în raport cu obligațiile sale de plată către bugetul de stat sau bugetele locale.
+
+Scopul certificatului:
+- Atestă modul de îndeplinire a obligațiilor fiscale
+- Confirmă existența sau absența datoriilor fiscale
+- Servește ca dovadă a „bunei-credințe fiscale"
+- Este necesar pentru diverse operațiuni juridice și comerciale
+
+Bază legală:
+- Art. 112-113 din Legea nr. 207/2015 (Codul de Procedură Fiscală)
+- OPANAF nr. 3654/2015 privind aprobarea procedurii de eliberare a certificatului de atestare fiscală
+
+1.2. TIPURI DE CERTIFICATE DE ATESTARE FISCALĂ
+--------------------------------------
+Există DOUĂ tipuri principale de certificate:
+
+A. CERTIFICAT DE ATESTARE FISCALĂ - BUGET CENTRAL (emis de ANAF)
+Cuprinde:
+- Obligații fiscale către bugetul de stat (ANAF)
+- Impozit pe venit / profit
+- TVA
+- Contribuții sociale (CAS, CASS)
+- Accize
+- Alte taxe și impozite centrale
+
+B. CERTIFICAT DE ATESTARE FISCALĂ - BUGET LOCAL (emis de primării/DITL)
+Cuprinde:
+- Obligații către bugetul local
+- Impozit pe clădiri
+- Impozit pe teren
+- Taxă de salubritate
+- Taxe locale diverse
+- Alte impozite locale
+
+IMPORTANT: Pentru o situație fiscală completă, de multe ori sunt necesare AMBELE certificate (central + local).
+
+1.3. CINE POATE SOLICITA CERTIFICATUL
+--------------------------------------
+Pot solicita certificat de atestare fiscală:
+
+A. CONTRIBUABILUL ÎNSUȘI (titular):
+- Persoană fizică
+- Persoană juridică (SRL, SA, etc.)
+- PFA, II, IF
+- Asociații, fundații, ONG-uri
+- Alte entități
+
+B. REPREZENTANT LEGAL / ÎMPUTERNICIT:
+- Cu procură specială sau împuternicire
+- Pentru persoane juridice: administrator, director
+- Pentru persoane fizice: reprezentant cu procură
+
+C. ALTE PERSOANE / AUTORITĂȚI (în anumite condiții):
+- Persoane care dețin titluri de participare la o societate
+- Notari publici (pentru succesiuni)
+- Autorități publice (în cazurile prevăzute de lege)
+- Terți cu acordul scris al contribuabilului
+
+================================================================================
+SECȚIUNEA 2: CONȚINUTUL CERTIFICATULUI DE ATESTARE FISCALĂ
+================================================================================
+
+2.1. INFORMAȚII CUPRINSE ÎN CERTIFICAT
+--------------------------------------
+Certificatul de atestare fiscală conține următoarele secțiuni:
+
+SECȚIUNEA A: Date de identificare
+- Nume/denumire contribuabil
+- CNP (pentru persoane fizice) sau CUI (pentru persoane juridice)
+- Adresa/sediul fiscal
+- Organ fiscal emitent
+
+SECȚIUNEA B: Obligații fiscale RESTANTE
+- Obligații neachitate până la data emiterii certificatului
+- Detaliate pe tipuri de impozite/taxe
+- Valori principale + dobânzi + penalități
+- Data scadentă inițială
+
+SECȚIUNEA C: Obligații fiscale SCADENTE (pentru certificate locale)
+- Obligații care devin scadente în prima zi a lunii următoare depunerii cererii
+- Relevante pentru certificate locale (ex: impozite locale cu scadențe viitoare)
+
+SECȚIUNEA D: Sume de RAMBURSAT/RESTITUIT
+- TVA de rambursat
+- Alte sume de restituit către contribuabil
+- Pot compensa obligații restante
+
+SECȚIUNEA E: Alte mențiuni
+- Eșalonări la plată în derulare
+- Compensări efectuate
+- Creanțe fiscale în litigiu
+- Proceduri de executare silită
+- Mențiunea "FĂRĂ OBLIGAȚII RESTANTE" (dacă e cazul)
+
+2.2. OBLIGAȚII FISCALE ÎNSCRISE ÎN CERTIFICAT
+--------------------------------------
+Certificatul cuprinde:
+
+✓ Obligații fiscale RESTANTE în sold la ultima zi a lunii anterioare depunerii cererii
+✓ Obligații NESTINSE până la data eliberării certificatului
+✓ Creanțe bugetare individualizate în TITLURI EXECUTORII
+✓ Obligații în curs de executare silită
+
+NU cuprinde:
+✗ Obligații viitoare (nescadente)
+✗ Obligații prescrise
+✗ Obligații stinse prin plată, compensare, prescripție
+
+2.3. MENȚIUNEA "FĂRĂ OBLIGAȚII RESTANTE"
+--------------------------------------
+Certificatul va menționa "FĂRĂ OBLIGAȚII RESTANTE" când:
+
+✓ Contribuabilul NU are datorii fiscale la data emiterii
+SAU
+✓ Suma obligațiilor restante este MAI MICĂ sau EGALĂ cu sumele de rambursat/restituit
+
+Exemplu:
+- Obligații restante: 1.000 lei
+- TVA de rambursat: 2.000 lei
+- Rezultat: Certificat cu mențiunea "FĂRĂ OBLIGAȚII RESTANTE" (TVA de rambursat acoperă datoriile)
+
+================================================================================
+SECȚIUNEA 3: CÂND ESTE NECESAR CERTIFICATUL DE ATESTARE FISCALĂ
+================================================================================
+
+3.1. SITUAȚII ÎN CARE ESTE OBLIGATORIU
+--------------------------------------
+Certificatul de atestare fiscală este OBLIGATORIU în următoarele cazuri:
+
+A. TRANZACȚII IMOBILIARE:
+✓ Vânzarea unui imobil (apartament, casă, teren)
+✓ Vânzarea unui autovehicul
+✓ Donații de imobile
+✓ Schimb de imobile
+✓ Alte transferuri de proprietate
+
+B. LICITAȚII PUBLICE ȘI ACHIZIȚII:
+✓ Participare la licitații publice
+✓ Participare la achiziții publice (ca ofertant)
+✓ Contracte cu instituții publice
+
+C. OPERAȚIUNI COMERCIALE:
+✓ Contracte cu unele companii (dacă solicită)
+✓ Participare la concursuri de oferte
+✓ Obținere autorizații/licențe (în unele domenii)
+
+D. OPERAȚIUNI BANCARE ȘI FINANCIARE:
+✓ Obținerea unor credite (la cererea băncii)
+✓ Garanții bancare
+✓ Operațiuni de finanțare
+
+E. PROCEDURI LEGALE:
+✓ Dezbaterea succesiunilor (la notar)
+✓ Lichidare voluntară societăți
+✓ Reorganizări, fuziuni, divizări
+✓ Proceduri de insolvență
+
+F. ÎNFIINȚARE / MODIFICARE FIRME:
+✓ Modificări în acționariat
+✓ Vânzarea de acțiuni/părți sociale
+✓ Majorări de capital (în anumite cazuri)
+
+G. OBȚINEREA DE AUTORIZAȚII:
+✓ Autorizații de construcție (în unele localități)
+✓ Licențe de funcționare
+✓ Alte autorizații administrative
+
+3.2. SITUAȚII ÎN CARE ESTE RECOMANDAT (DAR NU OBLIGATORIU)
+--------------------------------------
+Chiar dacă nu este obligatoriu legal, certificatul poate fi util pentru:
+
+- Verificarea propriei situații fiscale
+- Negocieri contractuale (dovadă de bonitate)
+- Due diligence în tranzacții
+- Aplicare la finanțări europene
+- Relații cu parteneri comerciali
+
+================================================================================
+SECȚIUNEA 4: VALABILITATEA CERTIFICATULUI
+================================================================================
+
+4.1. TERMENE DE VALABILITATE
+--------------------------------------
+Valabilitatea certificatului DIFERĂ în funcție de tipul de contribuabil:
+
+PERSOANE JURIDICE (SRL, SA, PFA, II, IF, ONG):
+- Valabilitate: 30 DE ZILE de la data emiterii
+- Se calculează în zile CALENDARISTICE
+
+PERSOANE FIZICE:
+- Valabilitate: 90 DE ZILE de la data emiterii
+- Se calculează în zile CALENDARISTICE
+
+Exemplu persoane juridice:
+- Data emiterii: 15 ianuarie 2025
+- Valabil până la: 14 februarie 2025
+
+Exemplu persoane fizice:
+- Data emiterii: 15 ianuarie 2025
+- Valabil până la: 15 aprilie 2025
+
+4.2. UTILIZARE DUPĂ EXPIRARE
+--------------------------------------
+Dacă certificatul a expirat:
+✗ NU mai poate fi folosit pentru scopul inițial
+✗ Trebuie solicitat un certificat NOU
+✗ Unele instituții pot refuza certificatul expirat
+
+Recomandare: Solicită certificatul cu câteva zile înainte de a-l folosi efectiv, pentru a evita expirarea.
+
+4.3. PRELUNGIREA VALABILITĂȚII
+--------------------------------------
+NU există posibilitatea de a prelungi valabilitatea unui certificat deja emis.
+Trebuie solicitat un certificat NOU dacă cel vechi a expirat.
+
+================================================================================
+SECȚIUNEA 5: CUM SE SOLICITĂ CERTIFICATUL - PROCEDURI
+================================================================================
+
+5.1. MODALITĂȚI DE SOLICITARE
+--------------------------------------
+Există TREI modalități principale de a solicita certificatul:
+
+A. ONLINE prin Spațiul Privat Virtual (SPV) - RECOMANDAT
+B. FIZIC la ghișeul ANAF/Primărie
+C. PRIN POȘTĂ (cu confirmare de primire)
+
+5.2. SOLICITARE ONLINE PRIN SPV (SPAȚIUL PRIVAT VIRTUAL)
+--------------------------------------
+Aceasta este metoda PREFERATĂ și cea mai rapidă.
+
+PAȘI pentru solicitare online:
+
+Pasul 1: Accesarea SPV
+- Intră pe www.anaf.ro
+- Click pe "Autentificare SPV" (colțul dreapta-sus)
+- SAU acces direct: https://www.anaf.ro/SpatiulPrivatVirtual/
+
+Pasul 2: Autentificare
+Metode de autentificare:
+a) Cu certificat digital calificat (semnătură electronică)
+b) Cu username + parolă (dacă ai cont SPV)
+c) Cu CNP + parolă (pentru persoane fizice înregistrate)
+
+Pasul 3: Navigare la secțiunea certificate
+- În meniul principal: click pe "Servicii Online"
+- Selectează: "Solicitări/Eliberare documente"
+- Alege: "Certificat de atestare fiscală"
+
+Pasul 4: Completare formular electronic
+- Selectează tipul de certificat (central sau local)
+- Completează scopul pentru care solici certificatul (opțional, dar recomandat)
+- Bifează dacă dorești detalii suplimentare
+
+Pasul 5: Transmitere solicitare
+- Verifică datele
+- Semnează electronic (cu certificatul digital SAU cu parola SPV)
+- Click "Transmite"
+- Primești număr de înregistrare
+
+Pasul 6: Descărcare certificat
+- După procesare (2-5 zile lucrătoare), certificatul apare în SPV
+- Secțiunea: "Documente" sau "Mesaje primite"
+- Descarcă certificatul (format PDF)
+- Certificatul este SEMNAT ELECTRONIC de ANAF
+
+Pasul 7: Verificare autenticitate (opțional)
+- Pe www.anaf.ro → Servicii online → Verificare documente electronice
+- Introduci numărul certificatului pentru verificare
+
+AVANTAJE SPV:
+✓ Rapid (fără deplasare)
+✓ Disponibil 24/7
+✓ Certificat PDF semnat electronic
+✓ Arhivare automată în cont
+✓ Istoric solicitări
+✓ Fără cozi, fără programări
+
+5.3. SOLICITARE FIZICĂ LA GHIȘEU ANAF/PRIMĂRIE
+--------------------------------------
+Dacă preferi metoda tradițională sau nu ai acces online:
+
+PAȘI pentru solicitare fizică:
+
+Pasul 1: Pregătirea documentelor
+Documente necesare:
+a) Cerere de eliberare certificat de atestare fiscală (formular standard)
+b) Act de identitate (CI/BI) - ORIGINAL + COPIE
+c) Pentru reprezentant: Procură/Împuternicire + CI reprezentant
+
+Pentru persoane juridice suplimentar:
+d) Certificat de înregistrare firmă (copie)
+e) Dovada calității de reprezentant legal (extras ONRC, decizie numire)
+
+Pasul 2: Completarea cererii
+- Formular disponibil la ghișeu SAU descărcat de pe www.anaf.ro
+- Completezi: date identificare, scopul solicitării, semnătură
+
+Pasul 3: Depunerea la registratură
+Unde depui:
+- ANAF: la registratura organului fiscal competent (după domiciliul fiscal)
+- Primărie: la ghișeul taxe și impozite locale (pentru certificate locale)
+
+Pasul 4: Obținerea dovezii de depunere
+- Primești dovadă cu număr de înregistrare și dată
+- PĂSTREAZĂ dovada pentru ridicarea certificatului
+
+Pasul 5: Ridicarea certificatului
+- Termen: 2-5 zile lucrătoare (poate varia)
+- Ridici de la același ghișeu
+- Cu dovada de depunere + CI
+
+DEZAVANTAJE:
+✗ Necesită deplasare (2 deplasări: depunere + ridicare)
+✗ Program de ghișeu (de obicei 8:00-16:00)
+✗ Posibile cozi
+✗ Risc de erori la completare
+
+5.4. SOLICITARE PRIN POȘTĂ
+--------------------------------------
+Poți trimite cererea prin poștă cu confirmare de primire.
+
+PAȘI:
+
+Pasul 1: Pregătire dosar
+- Cerere completată și semnată
+- Copie CI legalizată (la notar) sau semnată "conform cu originalul"
+- Alte documente necesare (procură, dacă e cazul)
+
+Pasul 2: Trimitere
+- Scrisoare recomandată cu confirmare de primire
+- La adresa organului fiscal competent
+
+Pasul 3: Primire certificat
+- ANAF trimite certificatul prin poștă la adresa solicitantului
+- SAU îl poți ridica personal
+
+ATENȚIE: Această metodă este cea mai LENTĂ (10-15 zile).
+
+5.5. SOLICITARE DE CĂTRE TERȚI
+--------------------------------------
+Altă persoană poate solicita certificatul în numele tău DOAR cu:
+
+✓ Procură specială (notarială sau sub semnătură privată)
+✓ Împuternicire scrisă din partea titularului
+✓ CI al reprezentantului
+
+Excepții (nu necesită acord):
+- Notarii publici pentru succesiuni
+- Autorități publice în cazurile legale
+- Persoane cu titluri de participare la societăți (pentru certificate societăți)
+
+================================================================================
+SECȚIUNEA 6: TERMENE DE ELIBERARE A CERTIFICATULUI
+================================================================================
+
+6.1. TERMENE STANDARD
+--------------------------------------
+ANAF are următoarele termene de eliberare:
+
+CERTIFICAT BUGET CENTRAL (ANAF):
+- Termen: Maximum 5 ZILE LUCRĂTOARE de la înregistrarea cererii
+
+CERTIFICAT BUGET LOCAL (Primărie/DITL):
+- Termen: Maximum 2 ZILE LUCRĂTOARE de la solicitare
+
+IMPORTANT: Termenele se calculează în ZILE LUCRĂTOARE (nu calendaristice).
+
+6.2. PRELUNGIREA TERMENULUI
+--------------------------------------
+Termenul de eliberare se poate PRELUNGI dacă:
+
+✗ Contribuabilul NU a depus declarațiile fiscale obligatorii
+✗ Există neconcordanțe în evidența fiscală
+✗ Sunt necesare verificări suplimentare
+
+În acest caz:
+- ANAF trimite ÎNȘTIINȚARE contribuabilului
+- Solicită depunerea declarațiilor lipsă
+- Termenul se prelungește cu perioada dintre înștiințare și depunerea declarațiilor
+- SAU ANAF emite decizie de impunere din oficiu (dacă declarațiile nu sunt depuse)
+
+6.3. URGENTAREA ELIBERĂRII
+--------------------------------------
+NU există procedură oficială de urgentare.
+
+Recomandări:
+- Solicită din timp (cu minim 7 zile înainte de a-l folosi)
+- Verifică situația fiscală înainte (prin SPV)
+- Asigură-te că ai depus toate declarațiile
+
+================================================================================
+SECȚIUNEA 7: COSTUL CERTIFICATULUI DE ATESTARE FISCALĂ
+================================================================================
+
+7.1. TARIFE
+--------------------------------------
+CERTIFICATUL DE ATESTARE FISCALĂ ESTE GRATUIT.
+
+NU se percepe nicio taxă pentru:
+✓ Eliberarea certificatului
+✓ Numărul de certificate solicitate
+✓ Modalitatea de solicitare (online sau fizic)
+
+7.2. COSTURI INDIRECTE POSIBILE
+--------------------------------------
+Deși certificatul în sine este gratuit, pot apărea costuri pentru:
+
+- Legalizare copii (dacă trimiti prin poștă): 5-10 lei/pagină
+- Traducere autorizată (pentru uz în străinătate): 50-150 lei
+- Apostilă (pentru uz internațional): ~20 lei
+- Taxe notariale (pentru procuri): variabil
+
+================================================================================
+SECȚIUNEA 8: CERTIFICATE SPECIALE
+================================================================================
+
+8.1. CERTIFICAT DE ATESTARE FISCALĂ PENTRU VÂNZAREA AUTO
+--------------------------------------
+Pentru vânzarea unui autovehicul, procedura specifică:
+
+Certificat necesar:
+- Certificat de atestare fiscală BUGET LOCAL
+- Emis de primăria în a cărei evidență este înmatriculat vehiculul
+- SAU de primăria unde locuiește proprietarul (dacă mașina e în altă localitate)
+
+Ce trebuie să ateste:
+- Că NU există taxe/impozite locale restante pentru vehiculul respectiv
+- Impozitul pe mijlocul de transport achitat
+
+Procedură:
+1. Soliciți la primărie (serviciul taxe și impozite locale)
+2. Specificați în cerere: marca, model, număr înmatriculare
+3. Certificatul se eliberează în 1-2 zile
+4. Valabilitate: 30 zile
+
+Costuri: GRATUIT
+
+8.2. CERTIFICAT PENTRU SUCCESIUNI
+--------------------------------------
+La dezbaterea unei succesiuni, notarul PUBLIC solicită certificat fiscal pentru defunctul/defunct.
+
+Particularități:
+- Notarul poate solicita direct (fără acord moștenitori)
+- Certificat BUGET CENTRAL + BUGET LOCAL
+- Atestă obligațiile fiscale ale persoanei decedate
+- Necesare pentru calculul masei succesorale
+
+Moștenitorii răspund pentru datoriile fiscale ale defunctului în limita valorii moștenirii.
+
+8.3. CERTIFICAT PENTRU LICITAȚII PUBLICE
+--------------------------------------
+Pentru participarea la licitații publice (SICAP, e-licitație):
+
+Cerințe:
+- Certificat fiscal fără obligații restante
+- Valabil la data depunerii ofertei
+- Atât central (ANAF) cât și local (primărie)
+
+Specificitate:
+- De obicei se solicită certificat emis cu MAX 30 zile înainte de depunere ofertă
+- Chiar dacă pentru PF valabilitatea e 90 zile, licitațiile pot solicita certificat recent
+
+8.4. CERTIFICAT PRIVIND ATESTAREA IMPOZITULUI PLĂTIT (PENTRU NEREZIDENTI)
+--------------------------------------
+Pentru persoane/firme străine care au plătit impozite în România și vor să le deducă în țara de rezidență (pentru evitarea dublei impuneri):
+
+Formular specific:
+- Cerere Z09 (pentru persoane juridice străine)
+- Cerere Z11 (pentru persoane fizice nerezidente)
+
+Conține:
+- Impozitele reținute la sursă în România
+- Venituri realizate din România
+- Confirmarea plății impozitelor
+
+Se solicită prin SPV, se anexează:
+- Certificat de rezidență fiscală
+- Contracte
+- Dovezi plăți
+- Declarații fiscale
+
+================================================================================
+SECȚIUNEA 9: PROBLEME FRECVENTE ȘI SOLUȚII
+================================================================================
+
+9.1. "AM DATORII, POT OBȚINE CERTIFICAT?"
+--------------------------------------
+DA, poți obține certificat chiar dacă ai datorii.
+
+Certificatul va menționa:
+- Obligațiile restante (sumele datorate)
+- Detalii pe tipuri de impozite
+- Scadențe
+- Dobânzi și penalități
+
+Certificatul NU va menționa "fără obligații restante", dar îl vei primi oricum.
+
+Când te afectează:
+- Dacă scopul solicitării necesită "obligații la zi" (ex: licitații publice)
+- Vânzări imobiliare (cumpărătorul poate refuza tranzacția)
+
+Soluție:
+- Achită datoriile ÎNAINTE de solicitarea certificatului
+- SAU solicită eșalonare la plată și menționează în certificat
+
+9.2. "CERTIFICATUL ARATĂ DATORII PE CARE LE-AM PLĂTIT"
+--------------------------------------
+Cauze posibile:
+- Plata recentă (nu s-a înregistrat încă în sistem)
+- Plata eronată (cont bancar greșit, detalii incomplete)
+- Eroare în evidența ANAF
+
+Soluție:
+Pasul 1: Verifică în SPV (secțiunea "Situație fiscală")
+Pasul 2: Dacă plata apare în cont, așteaptă 2-3 zile lucrătoare pentru actualizare
+Pasul 3: Dacă plata NU apare:
+  - Depune dovada plății la ANAF (extras bancar, ordin de plată)
+  - Solicită regularizare
+  - Solicită certificat NOU după regularizare
+
+9.3. "NU AM DEPUS O DECLARAȚIE FISCALĂ"
+--------------------------------------
+Dacă lipsesc declarații fiscale, ANAF va:
+
+1. Trimite ÎNȘTIINȚARE că nu poate emite certificat până la depunerea declarațiilor
+2. Prelungi termenul de eliberare
+3. Dacă nu depui declarațiile, ANAF poate emite DECIZIE DE IMPUNERE DIN OFICIU
+
+Soluție:
+- Depune declarațiile lipsă URGENT
+- După depunere, ANAF va emite certificatul
+- Dacă ai depus între timp solicitarea, certificatul va fi emis automat
+
+9.4. "CERTIFICATUL NU APARE ÎN SPV"
+--------------------------------------
+Dacă ai solicitat online, dar certificatul nu apare după termen:
+
+Verificări:
+1. Secțiunea "Documente" în SPV
+2. Secțiunea "Mesaje primite"
+3. Secțiunea "Istoric solicitări"
+
+Dacă nu apare:
+- Contactează ANAF (call center: 031.403.91.60)
+- Mergi la ghișeu cu dovada solicitării
+- Posibil să fie eroare tehnică → rezolvare la sediu
+
+9.5. "CERTIFICATUL ESTE GREȘIT (DATE INCORECTE)"
+--------------------------------------
+Dacă observi erori în certificat:
+
+Tipuri de erori:
+- Date de identificare greșite (nume, CNP, CUI)
+- Sume incorecte
+- Obligații care nu îți aparțin
+
+Soluție:
+1. Depune CONTESTAȚIE la ANAF (în scris)
+2. Anexează dovezi (documente, plăți)
+3. ANAF are obligația să verifice și să corecteze
+4. Se emite certificat NOU corectat
+
+Termen contestație: 30 zile de la luarea la cunoștință
+
+9.6. "NU POT ACCESA SPV (AM UITAT PAROLA)"
+--------------------------------------
+Soluții:
+
+Opțiunea 1: Resetare parolă online
+- Click "Am uitat parola" pe pagina de autentificare
+- Urmează pașii de resetare (email sau SMS)
+
+Opțiunea 2: Reînregistrare la ANAF
+- Mergi la sediul ANAF cu CI
+- Soliciți credențiale noi pentru SPV
+- Primești user + parolă temporară
+
+Opțiunea 3: Folosește certificat digital calificat
+- Dacă ai semnătură electronică, autentificare directă
+
+================================================================================
+SECȚIUNEA 10: DIFERENȚA ÎNTRE CERTIFICATE FISCALE
+================================================================================
+
+10.1. CERTIFICAT DE ATESTARE FISCALĂ vs. CERTIFICAT DE ÎNREGISTRARE FISCALĂ
+--------------------------------------
+CERTIFICAT DE ATESTARE FISCALĂ:
+- Atestă situația fiscală (datorii/plăți)
+- Se emite la cerere
+- Valabilitate: 30 zile (PJ) / 90 zile (PF)
+- Conține obligații restante
+- Necesar pentru tranzacții, licitații
+
+CERTIFICAT DE ÎNREGISTRARE FISCALĂ:
+- Confirmă înregistrarea în evidența fiscală
+- Se emite la înregistrarea inițială (sau modificări)
+- Fără termen de valabilitate (până la modificare)
+- Conține: CUI, date de identificare, cod TVA (dacă e cazul)
+- Necesar pentru deschidere cont bancar, contracte
+
+10.2. CERTIFICAT DE ATESTARE FISCALĂ vs. ADEVERINȚĂ DE VENIT
+--------------------------------------
+CERTIFICAT DE ATESTARE FISCALĂ:
+- Situația fiscală (datorii)
+- Emis de ANAF/Primărie
+- Confirmare obligații plătite/neplatite
+
+ADEVERINȚĂ DE VENIT:
+- Confirmă veniturile realizate
+- Emisă de angajator (pentru salariați) sau de ANAF (pentru alți contribuabili)
+- Necesară pentru credite, beneficii sociale
+- Conține: venituri brute, impozite plătite
+
+10.3. CERTIFICAT DE ATESTARE FISCALĂ vs. CAZIER FISCAL
+--------------------------------------
+CERTIFICAT DE ATESTARE FISCALĂ:
+- Situația curentă a obligațiilor fiscale
+- Datorii prezente
+- Actualizare permanentă
+
+CAZIER FISCAL:
+- Istoric al faptelor de evaziune fiscală
+- Condamnări penale fiscale
+- Antecedente fiscale
+- Se emite de ANAF la cerere
+- Necesar pentru anumite autorizații
+
+================================================================================
+SECȚIUNEA 11: VERIFICAREA AUTENTICITĂȚII CERTIFICATULUI
+================================================================================
+
+11.1. DE CE ESTE IMPORTANTĂ VERIFICAREA
+--------------------------------------
+Verificarea autenticității este esențială pentru:
+- Evitarea fraudelor (certificate false)
+- Confirmare validitate (nu a fost revocat)
+- Asigurare conformitate (pentru terți care primesc certificatul)
+
+11.2. CUM SE VERIFICĂ UN CERTIFICAT ELECTRONIC (PDF DIN SPV)
+--------------------------------------
+Pași pentru verificare:
+
+Pasul 1: Accesează www.anaf.ro
+
+Pasul 2: Mergi la: Servicii Online → Verificare documente electronice eliberate în SPV
+
+Pasul 3: Selectează tipul de document: "Certificat de atestare fiscală"
+
+Pasul 4: Introdu datele solicitate:
+- Numărul certificatului (de pe document)
+- CNP/CUI al contribuabilului
+- Cod de verificare (dacă e solicitat)
+
+Pasul 5: Click "Verifică"
+
+Pasul 6: Sistemul afișează:
+✓ Certificatul este AUTENTIC → confirmare validitate
+✗ Certificatul NU este găsit → posibil fals sau date greșite
+
+11.3. CUM SE VERIFICĂ UN CERTIFICAT FIZIC (PE HÂRTIE)
+--------------------------------------
+Elemente de verificat:
+
+✓ Ștampila ANAF/Primăriei (în relief, cu detalii clare)
+✓ Semnătura conducătorului organului fiscal
+✓ Număr de înregistrare (format standard)
+✓ Data emiterii (verifică valabilitatea)
+✓ Hârtie cu antet oficial ANAF
+
+Verificare la sursă:
+- Sună la ANAF (031.403.91.60) cu numărul certificatului
+- SAU mergi la sediul emitent pentru confirmare
+
+================================================================================
+SECȚIUNEA 12: UTILIZAREA CERTIFICATULUI ÎN CONTEXTE SPECIFICE
+================================================================================
+
+12.1. PENTRU VÂNZAREA UNUI IMOBIL (APARTAMENT/CASĂ)
+--------------------------------------
+Procedură completă:
+
+Pasul 1: Solicitare certificat ANAF (buget central)
+- Online sau fizic
+- Fără obligații restante (ideal)
+
+Pasul 2: Solicitare certificat PRIMĂRIE (buget local)
+- Specific pentru imobilul ce se vânzare
+- Confirmă plata impozitelor locale (clădire, teren)
+
+Pasul 3: Prezentare la notar
+- Ambele certificate (central + local)
+- Valabile la data autentificării vânzării
+- Notarul verifică lipsa datoriilor
+
+Pasul 4: Autentificare vânzare
+- Cu certificate în regulă, notarul autentifică
+- Transferul de proprietate se înregistrează
+
+ATENȚIE:
+- Dacă ai datorii fiscale pentru imobil, notarul poate REFUZA autentificarea
+- Soluție: achită datoriile înainte sau scade din preț (cu acordul cumpărătorului)
+
+12.2. PENTRU PARTICIPAREA LA LICITAȚII PUBLICE
+--------------------------------------
+Cerințe standard licitații:
+
+✓ Certificat ANAF (fără obligații restante)
+✓ Certificat PRIMĂRIE (fără obligații restante)
+✓ Valabile la data depunerii ofertei
+✓ Originale sau copii legalizate (conform cerințe)
+
+Specific SEAP (Sistemul Electronic de Achiziții Publice):
+- Upload PDF certificat în platformă
+- Verificare automată valabilitate
+- Respingere ofertă dacă certificate expirate sau cu datorii
+
+Recomandare:
+- Solicită certificatele cu 5-7 zile înainte de deadline licitație
+- Verifică că nu ai nicio datorie (chiar mică)
+
+12.3. PENTRU OBȚINEREA UNUI CREDIT BANCAR
+--------------------------------------
+Bănci pot solicita certificat fiscal pentru:
+
+- Credite ipotecare (imobiliare)
+- Credite de consum mari
+- Credite pentru firme
+- Refinanțări
+
+Ce verifică banca:
+- Bonitatea fiscală (fără datorii la stat)
+- Risc de poprire salarii/conturi
+- Corecta raportare a veniturilor
+
+Procedură:
+1. Banca solicită certificat în dosarul de credit
+2. Obții certificatul (ANAF și/sau local)
+3. Depui la bancă
+4. Banca evaluează (certificat e doar unul dintre criterii)
+
+12.4. PENTRU ÎNFIINȚAREA/MODIFICAREA UNEI FIRME
+--------------------------------------
+În anumite situații e necesar:
+
+- Modificare acționariat (vânzare acțiuni/părți sociale)
+- Majorare capital social (aport în natură - imobile)
+- Fuziuni, divizări
+- Lichidare voluntară
+
+Procedură la ONRC:
+- Certificate fiscale pentru toți asociații/acționari
+- Confirmă lipsa datoriilor
+- ONRC verifică înainte de înregistrare modificare
+
+12.5. PENTRU EȘALONAREA LA PLATĂ
+--------------------------------------
+Dacă vrei să eșalonezi datorii fiscale:
+
+Pasul 1: Solicită certificat de atestare fiscală
+- Pentru a vedea EXACT sumele datorate
+- Defalcare pe tipuri de impozite, dobânzi, penalități
+
+Pasul 2: Depui cerere de eșalonare la ANAF
+- Anexezi certificatul (ca dovadă a datoriilor)
+- Propui un plan de plată
+
+Pasul 3: ANAF evaluează și aprobă/respinge
+- Dacă aprobă: primești decizie de eșalonare
+- În noul certificat va apărea mențiunea "eșalonare în derulare"
+
+Avantaj:
+- Cu eșalonare activă, în certificate apare că ai plan de plată
+- Unele instituții acceptă (ex: nu ești considerat cu datorii restante)
+
+================================================================================
+SECȚIUNEA 13: SITUAȚII SPECIALE ȘI EXCEPȚII
+================================================================================
+
+13.1. CERTIFICATE PENTRU PERSOANE FIZICE FĂRĂ VENITURI
+--------------------------------------
+Situație: Persoană fizică care nu are venituri impozabile (pensionar, șomer, student).
+
+Întrebare: Poate obține certificat?
+Răspuns: DA.
+
+Certificatul va menționa:
+- Date de identificare
+- "FĂRĂ OBLIGAȚII RESTANTE" (dacă nu are datorii vechi)
+- SAU obligații restante vechi (dacă are)
+
+Când e necesar:
+- Vânzare moștenire (imobil, teren)
+- Donații
+- Alte tranzacții juridice
+
+13.2. CERTIFICATE PENTRU FIRME ÎN INSOLVENȚĂ
+--------------------------------------
+Firme în procedură de insolvență POT solicita certificat.
+
+Particularități:
+- Certificatul va menționa procedura de insolvență
+- Va include creanțe fiscale înscrise la masa credală
+- Poate fi solicitat de administrator judiciar
+
+Utilizare:
+- În cadrul procedurii de insolvență
+- Pentru raportări către creditori
+- Pentru reorganizare/lichidare
+
+13.3. CERTIFICATE PENTRU PERSOANE JURIDICE RADIATE
+--------------------------------------
+După radierea firmei:
+- NU se mai emit certificate noi
+- Certificatele emise anterior rămân valabile până la expirare
+- Datoriile firmei radiate pot fi urmărite la foști asociați/administratori (în anumite condiții)
+
+13.4. CERTIFICATE ÎN CONTEXTUL UNOR LITIGII FISCALE
+--------------------------------------
+Dacă ai un litigiu fiscal în curs (contestație, recurs):
+
+Certificatul va menționa:
+- Obligațiile fiscale în litigiu
+- Suma contestată
+- Stadiul procedurii
+
+Efecte:
+- Unele instituții consideră că ai "litigii în curs" (nu același lucru cu "datorii")
+- Poate afecta sau nu, în funcție de cerințe (ex: licitații pot accepta cu litigiu în suspensie)
+
+Soluție:
+- Constituie garanție pentru suma litigioasă (dacă e posibil)
+- SAU obții amânare executării până la soluționarea litigiului
+
+13.5. CERTIFICATE PENTRU VENITURI DIN STRĂINĂTATE
+--------------------------------------
+Persoane fizice/juridice cu venituri din străinătate:
+
+Certificatul de atestare fiscală românesc:
+- Confirmă obligații față de bugetul ROMÂNIEI
+- NU include impozite plătite în străinătate
+
+Pentru atestarea impozitelor plătite în România (către autorități străine):
+- Solicită "Certificat privind atestarea impozitului plătit în România" (formular special)
+- Necesar pentru evitarea dublei impuneri
+
+================================================================================
+SECȚIUNEA 14: ÎNTREBĂRI FRECVENTE (FAQ)
+================================================================================
+
+Q1: Cât costă certificatul de atestare fiscală?
+A: Este GRATUIT. Nu se percepe nicio taxă.
+
+Q2: Cât timp durează să obțin certificatul?
+A: 2-5 zile lucrătoare (ANAF: max 5 zile; Primărie: max 2 zile).
+
+Q3: Cum solicit certificatul online?
+A: Prin Spațiul Privat Virtual (SPV) pe www.anaf.ro → Autentificare → Solicitări/Eliberare documente → Certificat de atestare fiscală.
+
+Q4: Certificatul este valabil cât timp?
+A: 30 zile pentru persoane juridice, 90 zile pentru persoane fizice.
+
+Q5: Pot obține certificat dacă am datorii?
+A: DA. Certificatul va menționa datoriile, dar va fi emis.
+
+Q6: Am nevoie de certificat pentru vânzarea mașinii?
+A: DA, certificat de atestare fiscală de la bugetul local (primărie).
+
+Q7: Pot solicita certificatul altcuiva în numele meu?
+A: DA, cu procură sau împuternicire.
+
+Q8: Cum verific dacă certificatul este autentic?
+A: Pe www.anaf.ro → Servicii online → Verificare documente electronice, introduci numărul certificatului.
+
+Q9: Ce fac dacă certificatul meu a expirat?
+A: Solicită unul NOU. Nu se poate prelungi.
+
+Q10: Certificatul din SPV (PDF) este valabil la notar/bănci?
+A: DA, dacă este semnat electronic de ANAF. Poți printa și prezenta.
+
+Q11: Diferența între certificat ANAF și certificat Primărie?
+A: ANAF = obligații buget central (impozit pe venit, TVA, CAS, CASS). Primărie = obligații buget local (impozit clădiri, teren, taxe locale).
+
+Q12: Trebuie ambele certificate (ANAF + Primărie)?
+A: Depinde de situație. Pentru imobile de obicei DA (ambele). Pentru licitații DE OBICEI da. Verifică cerințele specifice.
+
+Q13: Pot vedea detalii despre datoriile mele înainte de a solicita certificatul?
+A: DA, în SPV, secțiunea "Situație cont fiscal" îți arată toate obligațiile.
+
+Q14: Am plătit o datorie azi. Când apare în certificat?
+A: După 2-3 zile lucrătoare (timpul de înregistrare a plății în sistem).
+
+Q15: Certificatul arată și eșalonările la plată?
+A: DA, dacă ai eșalonare activă, apare mențiunea în certificat.
+
+Q16: Pot obține certificat pentru o altă persoană fără acordul ei?
+A: NU, în general. Excepții: notari (pentru succesiuni), autorități publice (cazuri legale).
+
+Q17: Certificatul poate fi folosit în străinătate?
+A: DA, dar poate necesita traducere autorizată și apostilă.
+
+Q18: Ce fac dacă certificatul conține erori?
+A: Depui contestație la ANAF cu dovezi. Se va emite certificat corectat.
+
+Q19: Certificatul se emite și pentru persoane decedate?
+A: DA, pentru dezbaterea succesiunii (solicitat de notar sau moștenitori).
+
+Q20: Pot obține certificatul într-o zi (urgent)?
+A: NU există procedură de urgentare oficială. Termen standard: 2-5 zile.
+
+Q21: Ce înseamnă "fără obligații restante"?
+A: Nu ai datorii fiscale SAU datoriile sunt acoperite de sume de rambursat/restituit.
+
+Q22: Certificatul se poate revoca după emitere?
+A: NU se revocă, dar devine nevalid după termen SAU dacă situația fiscală se modifică (apar datorii noi).
+
+Q23: Trebuie să plătesc pentru copii ale certificatului?
+A: NU. Poți solicita multiple exemplare gratuit sau poți face copii xerox.
+
+Q24: Certificatul electronic (PDF) are aceeași valoare cu cel pe hârtie?
+A: DA, dacă este semnat electronic de ANAF.
+
+Q25: Cum obțin certificat dacă sunt în străinătate?
+A: Online prin SPV (cea mai simplă) SAU prin reprezentant cu procură în România.
+
+================================================================================
+SECȚIUNEA 15: GLOSAR DE TERMENI
+================================================================================
+
+ANAF - Agenția Națională de Administrare Fiscală
+Instituția centrală care administrează impozitele și taxele în România.
+
+Apostilă
+Procedură prin care un document românesc este certificat pentru utilizare internațională (Convenția de la Haga).
+
+Buget central
+Bugetul statului administrat de ANAF (impozit pe venit/profit, TVA, accize, contribuții sociale).
+
+Buget local
+Bugetul administrației locale (primărie) - impozite pe clădiri, terenuri, taxe locale.
+
+CAF - Certificat de Atestare Fiscală
+Document oficial care atestă situația fiscală a unui contribuabil.
+
+CAS - Contribuția de Asigurări Sociale
+Contribuția la sistemul public de pensii.
+
+CASS - Contribuția de Asigurări Sociale de Sănătate
+Contribuția pentru sistemul public de sănătate.
+
+CNP - Cod Numeric Personal
+Cod unic de identificare a persoanei fizice (13 cifre).
+
+Contribuabil
+Persoană fizică sau juridică care datorează impozite, taxe sau contribuții.
+
+Creanță fiscală
+Suma datorată de contribuabil către buget (impozite, taxe, contribuții, dobânzi, penalități).
+
+CUI - Cod Unic de Înregistrare
+Cod de identificare fiscală al persoanelor juridice.
+
+DITL - Direcția de Impozite și Taxe Locale
+Structură a primăriei care administrează impozitele și taxele locale.
+
+Eșalonare la plată
+Procedură prin care datoriile fiscale pot fi plătite în rate, cu aprobarea ANAF.
+
+Obligație fiscală restantă
+Obligație fiscală scadentă și neachitată la termenul legal.
+
+Organ fiscal competent
+ANAF sau primăria în a cărei evidență este înregistrat contribuabilul.
+
+Persoană fizică
+Individ, om (spre deosebire de persoană juridică - firmă).
+
+Persoană juridică
+Entitate cu personalitate juridică (SRL, SA, PFA, asociație, fundație, etc.).
+
+Procură
+Document prin care o persoană împuternicește alta să acționeze în numele său.
+
+SPV - Spațiul Privat Virtual
+Platforma online ANAF pentru contribuabili (www.anaf.ro/SpatiulPrivatVirtual/).
+
+Titlu executoriu
+Document cu putere executorie (permite executare silită fără proces).
+
+TVA - Taxa pe Valoarea Adăugată
+Impozit indirect pe consum (19% cotă standard).
+
+Valabilitate
+Perioada în care certificatul poate fi utilizat legal (30 zile PJ, 90 zile PF).
+
+================================================================================
+SECȚIUNEA 16: MODELE ȘI FORMULARE
+================================================================================
+
+16.1. MODEL CERERE CERTIFICAT DE ATESTARE FISCALĂ (SIMPLIFICAT)
+--------------------------------------
+CERERE
+pentru eliberarea certificatului de atestare fiscală
+
+Către: [Administrația Județeană a Finanțelor Publice / Direcția Generală Regională a Finanțelor Publice / Primăria ...]
+
+Subsemnatul/Subsemnata: ________________________________
+CNP/CUI: _______________________________________________
+Domiciliat/cu sediul în: _____________________________
+Strada: _________________ Nr: ___ Bl: ___ Sc: ___ Et: ___ Ap: ___
+Localitatea: _____________ Județul: _________ Cod poștal: _______
+Telefon: ________________ Email: _________________________
+
+Solicit eliberarea certificatului de atestare fiscală pentru:
+☐ Bugetul de stat (ANAF)
+☐ Bugetul local (Primărie)
+
+În scopul: _________________________________________________
+___________________________________________________________
+
+Certific veridicitatea datelor și documentelor prezentate.
+
+Data: __________           Semnătura: _______________
+
+Anexe:
+- Copie CI/BI
+- [alte documente, dacă e cazul]
+
+16.2. MENȚIUNI STANDARD ÎN CERTIFICAT
+--------------------------------------
+Certificatul de atestare fiscală conține de obicei:
+
+ANTET:
+- Logo ANAF / Primărie
+- Denumirea organului fiscal emitent
+- Nr. înregistrare și data
+
+CORP:
+- Date identificare contribuabil
+- Obligații restante (detaliate) SAU "FĂRĂ OBLIGAȚII RESTANTE"
+- Sume de rambursat/restituit (dacă e cazul)
+- Alte mențiuni (eșalonări, litigii, etc.)
+
+FINAL:
+- Semnătura conducătorului organului fiscal
+- Ștampila
+- Mențiune valabilitate
+
+================================================================================
+SECȚIUNEA 17: RESURSE ȘI CONTACT ANAF
+================================================================================
+
+17.1. RESURSE ONLINE
+--------------------------------------
+Portal ANAF: www.anaf.ro
+Spațiul Privat Virtual: www.anaf.ro/SpatiulPrivatVirtual/
+Verificare documente electronice: www.anaf.ro → Servicii online → Verificare documente
+Formulare: www.anaf.ro → Asistență contribuabili → Formulare
+
+17.2. CONTACT ANAF
+--------------------------------------
+Call Center ANAF: 031.403.91.60
+Program: Luni-Vineri, 8:00-18:00
+
+Email: contact.center@anaf.ro
+
+Programări online: www.anaf.ro → Programări online
+
+17.3. LEGISLAȚIE DE REFERINȚĂ
+--------------------------------------
+- Legea nr. 207/2015 (Codul de Procedură Fiscală) - Art. 112, 113, 250
+- OPANAF nr. 3654/2015 privind aprobarea procedurii de eliberare a certificatului de atestare fiscală
+- OPANAF nr. 3008/2019 pentru modificarea OPANAF 3654/2015
+
+================================================================================
+DOCUMENT FINAL - PUNCTE CHEIE DE REȚINUT
+================================================================================
+
+✓ Certificatul de atestare fiscală = document GRATUIT
+✓ Atestă situația fiscală (datorii/plăți)
+✓ Necesar pentru: vânzări imobile/auto, licitații, credite, succesiuni
+✓ 2 tipuri: ANAF (buget central) + Primărie (buget local)
+✓ Valabilitate: 30 zile (PJ) / 90 zile (PF)
+✓ Termen eliberare: 2-5 zile lucrătoare
+✓ Solicitare: online (SPV - recomandat), fizic (ghișeu), poștă
+✓ Online în SPV: cel mai rapid și simplu
+✓ Se emite chiar dacă ai datorii (vor fi menționate)
+✓ Verificare autenticitate: www.anaf.ro → Verificare documente
+✓ NU se poate prelungi (dacă expiră, solicită unul nou)
+✓ Pentru imobile: necesare AMBELE certificate (ANAF + Primărie)
+
+================================================================================
+DOCUMENT GENERAT PENTRU SISTEME RAG (RETRIEVAL-AUGMENTED GENERATION)
+Sursa: ANAF + Legislație fiscală română actualizată 2025
+Structură optimizată pentru: indexare, căutare semantică, răspunsuri contextualizate
+================================================================================
