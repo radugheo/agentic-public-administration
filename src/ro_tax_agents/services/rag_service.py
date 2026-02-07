@@ -93,7 +93,7 @@ class RAGService:
             cale_fisier = KNOWLEDGE_DIR / nume_fisier
 
             if not cale_fisier.exists():
-                print(f"[RAG] ATENȚIE: Fișierul {cale_fisier} nu a fost găsit, se sare peste.")
+                print(f"Fișierul {cale_fisier} nu a fost găsit.")
                 continue
 
             # Citește conținutul fișierului
@@ -124,11 +124,11 @@ class RAGService:
                 persist_directory=cale_colectie,
             )
 
-            print(f"[RAG] Încărcat: {nume_fisier} → {len(documente)} chunks pentru '{tip_agent}'")
+            print(f"Fisier: {nume_fisier} - {len(documente)} chunks pentru '{tip_agent}'")
 
         self._initializat = True
         agenti = list(self._vector_stores.keys())
-        print(f"[RAG] Inițializare completă. Agenți disponibili: {agenti}")
+        print(f"Inițializare completă. Agenți disponibili: {agenti}")
 
     def retrieve(self, query: str, tip_agent: str, k: int = 3) -> list[Document]:
         """Returnează cele mai relevante documente pentru o întrebare.
@@ -185,5 +185,5 @@ class RAGService:
         return raspuns.content
 
 
-# Instanță singleton - coechipierul o poate importa direct
+# instanta singleton, de importat mai departe
 rag_service = RAGService()

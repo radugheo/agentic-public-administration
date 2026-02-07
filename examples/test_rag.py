@@ -9,16 +9,16 @@ from ro_tax_agents.services.rag_service import rag_service
 
 def main():
     print("=" * 60)
-    print("       Test RAG Interactiv - Legislație Fiscală RO")
+    print("       Test RAG ")
     print("=" * 60)
 
     # Inițializează serviciul RAG
-    print("\nSe inițializează baza de cunoștințe...\n")
+    print("\nInitializare Knowledge Base\n")
     rag_service.initializeaza()
 
     print("\n" + "-" * 60)
-    print("Agenți disponibili: pfa, rental_income, certificate")
-    print("Scrie 'exit' pentru a ieși.")
+    print("Agenti: pfa, rental_income, certificate")
+    print("'exit' pentru a iesi")
     print("-" * 60)
 
     # Alege agentul o singură dată
@@ -26,7 +26,7 @@ def main():
         tip_agent = input("\nAgent: ").strip().lower()
 
         if tip_agent == "exit":
-            print("La revedere!")
+           
             return
 
         if tip_agent not in ("pfa", "rental_income", "certificate"):
