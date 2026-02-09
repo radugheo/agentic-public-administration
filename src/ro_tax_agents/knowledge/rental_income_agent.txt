@@ -1,0 +1,1830 @@
+1. ÎNREGISTRARE ȘI DECLARAȚII (ANAF)
+Spațiul Privat Virtual (SPV): Platforma unde se depun toate documentele online.
+
+https://pfinternet.anaf.ro/
+
+Formularul 168 (Cerere înregistrare contracte): Descarcă PDF-ul inteligent pentru înregistrarea chiriei.
+
+https://static.anaf.ro/static/10/Anaf/Declaratii_R/168.html
+
+Declarația Unică (D212): Pentru declararea veniturilor și calculul impozitului/CASS.
+
+https://static.anaf.ro/static/10/Anaf/Declaratii_R/212.html
+
+Ghidul ANAF pentru Chirii: Broșura oficială explicativă pentru persoanele fizice.
+
+https://www.anaf.ro/anaf/internet/ANAF/asistenta_contribuabili/ghiduri_informative/
+
+2. PLĂȚI ȘI VERIFICĂRI
+Ghișeul.ro: Plata rapidă a impozitului pe chirie (secțiunea "Impozit pe venituri din cedarea folosinței bunurilor").
+
+https://www.ghiseul.ro/ghiseul/public/
+
+Calculator Curs Valutar BNR: Dacă chiria este în EUR, transformarea în RON pentru taxe se face la cursul mediu anual comunicat de BNR sau la cursul din ziua precedentă depunerii declarației (depinde de contextul fiscal).
+
+https://www.bnr.ro/Cursul-de-schimb-3544.aspx
+
+3. MODELE DE DOCUMENTE (UTILE)
+Model Contract de Închiriere (Standard): Recomandat să fie completat cu clauze privind garanția și indexarea cu inflația.
+
+https://www.notari.ro/modele-acte/contract-de-inchiriere (Exemplu de structură juridică).
+
+Proces Verbal de Predare-Primire: Esențial pentru inventarul obiectelor din casă și citirea contoarelor (apă, gaz, curent).
+
+Căutați pe Google: "Model proces verbal predare primire apartament PDF"
+
+CADRUL LEGAL PRINCIPAL
+
+Relația este guvernată de Codul Civil (Art. 1777-1835) și Legea locuinței.
+
+Contractul este valabil din momentul semnării, dar înregistrarea la ANAF este obligatorie pentru proprietar (în 30 de zile).
+
+Contractul înregistrat la ANAF sau autentificat la notar devine "Titlu Executoriu". Asta înseamnă că proprietarul poate recupera chiriile restante sau evacua chiriașul după expirarea termenului fără a trece prin ani de procese în instanță.
+
+OBLIGAȚIILE PROPRIETARULUI (LOCATOR)
+
+Predarea locuinței în stare bună de funcționare (curată, cu utilități funcționale).
+
+Efectuarea reparațiilor MARE (structură, acoperiș, țevi sparte în pereți, centrală termică defectă din uzură normală).
+
+Menținerea liniștii chiriașului: Proprietarul NU are voie să intre în casă fără acordul chiriașului (se consideră violare de domiciliu), decât în situații de urgență sau inspecții anunțate anterior (de obicei o dată pe lună).
+
+Notificarea Asociației de Proprietari: Proprietarul este obligat prin lege să anunțe asociația despre prezența chiriașilor în termen de 10 zile de la semnarea contractului.
+
+OBLIGAȚIILE CHIRIAȘULUI (LOCATAR)
+
+Plata chiriei și a utilităților la termenele stabilite.
+
+Reparațiile MICI de întreținere curentă (becuri, baterii la robinet, întreținerea obiectelor din inventar).
+
+Utilizarea spațiului conform destinației (ex: nu poți face sediu de firmă sau atelier într-un apartament de locuit fără acord scris).
+
+Notificarea imediată a proprietarului în cazul unei defecțiuni care necesită reparații majore.
+
+Respectarea orelor de liniște și a regulamentului blocului.
+
+GARANȚIA (DEPPOZITUL)
+
+Nu există un plafon legal fix, dar practica obișnuită este echivalentul a 1-2 luni de chirie.
+
+Garanția servește exclusiv pentru acoperirea utilităților neplătite la final sau a stricăciunilor cauzate de chiriaș.
+
+Garanția NU poate fi folosită de chiriaș ca plată pentru ultima lună de chirie, decât dacă se convine explicit acest lucru.
+
+ÎNCETAREA CONTRACTULUI ȘI PREAVIZUL (CONDIȚII LEGALE)
+
+Contract pe durată determinată: Chiriașul poate pleca cu un preaviz de MINIM 60 de zile.
+
+Contract pe durată nedeterminată: a) Dacă plata este lunară: Preaviz de 60 de zile pentru ambele părți. b) Dacă plata este sub o lună: Preaviz de 15 zile.
+
+Rezilierea pentru culpă: Dacă una din părți nu își respectă obligațiile (neplată, distrugere), cealaltă parte poate cere rezilierea imediată.
+
+VÂNZAREA LOCUINȚEI ÎNCHIRIATE
+
+Dacă proprietarul vinde apartamentul, noul cumpărător este OBLIGAT să respecte contractul de închiriere existent până la expirare, cu condiția ca acesta să fi fost înregistrat la ANAF sau să aibă o dată certă.
+
+REGULA "CELEI DE-A DOUA PERSOANE"
+
+Chiriașul are dreptul să locuiască cu familia sau rudele apropiate. Subînchirierea (închirierea către alte persoane) este interzisă prin lege, cu excepția cazului în care proprietarul își dă acordul scris în contract.
+
+GHID DE SOLUȚIONARE A CONFLICTELOR: PROPRIETAR VS. CHIRIAȘ (ROMÂNIA 2026)
+PROPRIETARUL REFUZĂ REPARAȚIILE NECESARE
+
+Regula: Reparațiile structurale sau de echipamente (centrală, țevi, acoperiș) cad în sarcina proprietarului.
+
+Soluție: Chiriașul trebuie să trimită o notificare scrisă (e-mail, WhatsApp sau notificare prin poștă).
+
+Dacă nu se rezolvă: Chiriașul poate efectua reparația pe cheltuială proprie și poate deduce suma din chirie, DOAR DACĂ a notificat proprietarul în prealabil și acesta nu a acționat într-un termen rezonabil.
+
+CHIRIAȘUL NU PLĂTEȘTE CHIRIA SAU UTILITĂȚILE
+
+Regula: Neplata este motiv de reziliere a contractului.
+
+Soluție: Dacă contractul este înregistrat la ANAF, acesta este TITLU EXECUTORIU. Proprietarul nu trebuie să dea chiriașul în judecată pentru a-și recupera banii, ci poate merge direct la un Executor Judecătoresc.
+
+Procedură: Se trimite o notificare de întârziere (somație). Dacă după termenul prevăzut în contract (ex: 15 zile) nu se face plata, se demarează executarea silită a conturilor chiriașului.
+
+CONFLICTE CU VECINII SAU ASOCIAȚIA DE PROPRIETARI
+
+Regula: Proprietarul răspunde în fața asociației pentru amenzile cauzate de chiriaș (ex: zgomot, gunoi).
+
+Soluție: Proprietarul poate recupera contravaloarea amenzilor de la chiriaș prin reținerea garanției.
+
+Evacuare: Dacă chiriașul perturbă repetat liniștea publică, proprietarul are dreptul să rezilieze unilateral contractul pentru nerespectarea clauzelor de conduită civilizată.
+
+REFUZUL DE RESTITUIRE A GARANȚIEI
+
+Regula: Garanția se returnează integral dacă nu există stricăciuni sau datorii.
+
+Soluție: La plecare, se semnează un Proces-Verbal de predare-primire. Dacă proprietarul refuză fără dovezi (facturi de reparații, chitanțe utilități), chiriașul îl poate acționa în instanță.
+
+Sfat: Chiriașul trebuie să facă poze și video la intrarea în apartament și la ieșire pentru a dovedi starea imobilului.
+
+EVACUAREA (CÂND CHIRIAȘUL REFUZĂ SĂ PLECE)
+
+ATENȚIE: Este ilegală evacuarea forțată prin schimbarea yalei sau aruncarea lucrurilor în stradă fără un executor judecătoresc.
+
+Soluție Legală: Dacă contractul este titlu executoriu (înregistrat la ANAF), se apelează la un executor pentru evacuare silită.
+
+Dacă contractul NU a fost înregistrat: Proprietarul trebuie să obțină o hotărâre judecătorească de evacuare, proces care poate dura între 6 luni și 1 an.
+
+REZILIEREA ANTICIPATĂ (DENUNȚAREA UNILATERALĂ)
+
+Dacă chiriașul vrea să plece mai devreme de termen, trebuie să respecte preavizul de minim 60 de zile (sau cel stabilit în contract).
+
+Dacă proprietarul vrea să vândă sau să se mute înapoi, trebuie să ofere același preaviz, dar numai dacă această clauză de denunțare a fost inclusă în contract. Altfel, trebuie să aștepte expirarea termenului contractual.
+
+================================================================================
+GHID COMPLET PRIVIND VENITURILE DIN CHIRII ȘI ÎNREGISTRAREA 
+CONTRACTELOR DE ÎNCHIRIERE ÎN ROMÂNIA - 2025
+================================================================================
+Document oficial: Agenția Națională de Administrare Fiscală (ANAF)
+An fiscal: 2025
+Salariu minim brut pe țară 2025: 4.050 lei
+Ultima actualizare: 2025
+Legislație aplicabilă: OUG 115/2023, OUG 128/2024, Ordin ANAF 161/2025
+
+================================================================================
+SECȚIUNEA 1: DEFINIȚII ȘI CONCEPTE FUNDAMENTALE
+================================================================================
+
+1.1. CE SUNT VENITURILE DIN CEDAREA FOLOSINȚEI BUNURILOR
+--------------------------------------
+Definiție conform Codului Fiscal:
+Veniturile din cedarea folosinței bunurilor = sumele de bani și/sau veniturile în natură obținute odată cu cedarea bunurilor mobile sau imobile de către proprietar, uzufructuar sau alt deținător legal, altele decât veniturile din activități independente.
+
+În limbaj comun: CHIRII, ÎNCHIRIERI, LOCAȚIUNI
+
+Bază legală: Art. 84 din Legea nr. 227/2015 (Codul Fiscal)
+
+1.2. CE ESTE CONTRACTUL DE LOCAȚIUNE (ÎNCHIRIERE)
+--------------------------------------
+Definiție conform Codului Civil (Art. 1.777):
+Locațiunea este contractul prin care o parte, numită LOCATOR, se obligă să asigure celeilalte părţi, numită LOCATAR, folosinţa unui bun pentru o anumită perioadă, în schimbul unui preţ, denumit CHIRIE.
+
+Termeni echivalenți (sinonime):
+- Locațiune = Închiriere = Cedarea folosinței = Dare în chirie
+- Locator = Proprietar = Cel care dă în chirie
+- Locatar = Chiriaș = Cel care ia în chirie
+- Chirie = Plată pentru folosință
+
+1.3. CATEGORII DE VENITURI DIN CEDAREA FOLOSINȚEI BUNURILOR
+--------------------------------------
+Conform legislației fiscale, se includ:
+
+A. Închirieri și subînchirieri de bunuri imobile din patrimoniul personal:
+- Locuințe (apartamente, case, garsoniere)
+- Case de vacanță
+- Garaje
+- Terenuri
+- Spații comerciale
+- Birouri
+- Depozite
+- Orice alte bunuri imobile
+
+B. Închirieri de bunuri mobile din patrimoniul personal:
+- Autovehicule
+- Echipamente
+- Utilaje
+- Alte bunuri mobile
+
+C. Arendarea bunurilor agricole din patrimoniul personal
+(Tratată separat - vezi ghid specific pentru arendă)
+
+D. Închirierea în scop turistic a camerelor din locuințe proprietate personală
+(Regim fiscal special - vezi secțiunea dedicată)
+
+E. Alte forme de cedare a folosinței:
+- Uzufruct
+- Comodat (cu contraprestation)
+- Alte contracte civile similare
+
+1.4. CE NU ESTE CONSIDERAT VENIT DIN CEDAREA FOLOSINȚEI
+--------------------------------------
+NU se încadrează în această categorie:
+
+✗ Comodatul GRATUIT (împrumut gratuit) - dacă nu există contraprestation, nu e venit impozabil
+✗ Închirierile care constituie activitate independentă (peste 5 contracte în derulare la 31 dec anul anterior - cu excepții)
+✗ Închirierile efectuate de PFA/SRL (sunt venituri din activități independente/cifra de afaceri)
+✗ Veniturile din vânzarea bunurilor (sunt câștiguri din transferul proprietății)
+
+================================================================================
+SECȚIUNEA 2: ÎNREGISTRAREA CONTRACTELOR DE ÎNCHIRIERE LA ANAF
+================================================================================
+
+2.1. OBLIGAȚIA DE ÎNREGISTRARE A CONTRACTULUI
+--------------------------------------
+IMPORTANT: Din ianuarie 2025, obligația de înregistrare a contractelor de închiriere la ANAF este OBLIGATORIE pentru persoanele fizice care obțin venituri din cedarea folosinței bunurilor.
+
+Bază legală: 
+- Art. 84 alin. (3¹) din Codul Fiscal (introdus prin OUG 128/2024)
+- Ordin ANAF nr. 161/2025 (MO 109/06.02.2025)
+
+Cine are obligația:
+Persoanele fizice (proprietari, uzufructuari sau alți deținători legali) care închiriază bunuri din patrimoniul personal și obțin venituri.
+
+La ce organ fiscal:
+Organul fiscal competent = organul fiscal în a cărui evidență este înregistrat contribuabilul (de obicei, la domiciliul fiscal).
+
+2.2. TERMEN DE ÎNREGISTRARE
+--------------------------------------
+Termen OBLIGATORIU: Maxim 30 DE ZILE de la:
+- Data ÎNCHEIERII contractului de închiriere SAU
+- Data MODIFICĂRII contractului existent
+
+Exemplu:
+- Contract semnat pe 15 ianuarie 2025
+- Termen limită înregistrare: 14 februarie 2025 (30 zile)
+
+ATENȚIE: Termenul se calculează în zile CALENDARISTICE, nu zile lucrătoare.
+
+2.3. DOCUMENTE NECESARE PENTRU ÎNREGISTRARE
+--------------------------------------
+Pentru înregistrarea contractului la ANAF, trebuie:
+
+A. Formularul C168 - "Cerere de înregistrare a contractelor de locațiune"
+- Formular tipizat ANAF
+- Disponibil pe www.anaf.ro
+- Se completează de către proprietar (locator)
+
+B. Copia contractului de închiriere
+- Copie după contractul original semnat
+- Cu mențiunea "Conform cu originalul" și semnătura
+- Toate paginile contractului
+
+Documente OPȚIONALE (dacă se solicită titlu executoriu):
+- Act de proprietate (copie)
+- Act de identitate (copie)
+
+2.4. CONȚINUTUL OBLIGATORIU AL CONTRACTULUI DE ÎNCHIRIERE
+--------------------------------------
+Un contract de închiriere valid trebuie să conțină MINIM:
+
+Elemente esențiale:
+✓ Părțile contractante:
+  - Locator (proprietar): Nume, prenume, CNP, domiciliu, CI/BI
+  - Locatar (chiriaș): Nume, prenume, CNP/CUI, domiciliu/sediu, CI/BI
+
+✓ Obiectul contractului:
+  - Descrierea exactă a bunului închiriat
+  - Adresa completă (pentru imobile)
+  - Suprafața (mp)
+  - Caracteristici (nr. camere, dotări etc.)
+
+✓ Destinația bunului:
+  - Locuință
+  - Spațiu comercial
+  - Birou
+  - Depozit
+  - Altele
+
+✓ Chiria:
+  - Cuantum (sumă exactă)
+  - Monedă (lei sau valută)
+  - Periodicitate plății (lunar, trimestrial etc.)
+  - Termen de plată (data din lună)
+  - Modalitate de plată (numerar, virament bancar)
+
+✓ Durata contractului:
+  - Data de începere
+  - Data de încheiere SAU
+  - Contract pe durată nedeterminată
+
+✓ Semnăturile părților
+
+Elemente recomandate (dar nu obligatorii legal):
+- Garanție (depozit)
+- Cheltuieli de întreținere și utilități (cine le suportă)
+- Clauze speciale (animale, subfîncjiriere, reparații etc.)
+- Modalitate de reziliere
+- Indexare chirie (dacă e cazul)
+
+2.5. MODALITĂȚI DE DEPUNERE A CERERII DE ÎNREGISTRARE
+--------------------------------------
+Poți depune Cererea de înregistrare (Formularul C168) în următoarele moduri:
+
+A. ONLINE prin Spațiul Privat Virtual (SPV) - RECOMANDAT:
+- Accesează: www.anaf.ro → Autentificare SPV
+- Secțiunea: "Depunere declarație unică și alte formulare"
+- Încarci: Formularul C168 + Contractul (format PDF)
+- Semnezi electronic (certificat calificat sau parola SPV)
+- Transmiți online
+- Primești confirmare electronică
+
+B. ONLINE prin e-guvernare.ro:
+- Accesează: www.e-guvernare.ro
+- Necesită certificat digital calificat
+- Procedură similară cu SPV
+
+C. FIZIC la registratura ANAF:
+- Te deplasezi la sediul ANAF competent (după domiciliu fiscal)
+- Depui formularul + contractul (copie) la ghișeu
+- Primești dovada de înregistrare (ștampilă pe copie)
+
+D. PRIN POȘTĂ (cu confirmare de primire):
+- Trimiți formularul + contractul (copie)
+- La adresa organului fiscal competent
+- Scrisoare recomandată cu confirmare de primire
+
+E. PRIN ÎMPUTERNICIT:
+- Altă persoană poate depune în numele tău
+- Necesită procură/împuternicire
+- Se anexează la dosar
+
+2.6. REGULI SPECIALE PENTRU BUNURI ÎN COPROPRIETATE (DIN 2025)
+--------------------------------------
+MODIFICARE IMPORTANTĂ din ianuarie 2025 (Ordin ANAF 161/2025):
+
+Situație: Bunul închiriat este deținut de MAI MULȚI PROPRIETARI (coproprietate)
+
+Regulă NOUĂ:
+În contractul de închiriere (sau actul adițional) trebuie DESEMNAT UN SINGUR proprietar, uzufructuar sau deținător legal care va avea obligația de a înregistra contractul la ANAF.
+
+Cum se desemnează:
+- Prin clauză expresă în contract: "Părțile desemnează pe [Nume Prenume] ca fiind persoana responsabilă cu înregistrarea prezentului contract la ANAF."
+- SAU prin act adițional (pentru contracte vechi)
+
+Exemplu:
+Soți Maria și Ion Popescu dețin împreună un apartament în coproprietate.
+În contractul de închiriere: "Părțile desemnează pe Maria Popescu, CNP 2851015..., ca fiind persoana responsabilă cu înregistrarea contractului la ANAF."
+→ Doar Maria va depune Formularul C168 la ANAF.
+
+ATENȚIE: Această obligație se aplică DOAR pentru:
+- Contracte noi semnate după 1 ianuarie 2025 SAU
+- Modificări ale contractelor vechi realizate după 1 ianuarie 2025
+
+NU se aplică retroactiv pentru contracte în derulare încheiate înainte de 1 ianuarie 2025 (cu excepția modificărilor ulterioare).
+
+2.7. CE SE ÎNTÂMPLĂ DUPĂ ÎNREGISTRAREA CONTRACTULUI
+--------------------------------------
+După depunerea Cererii de înregistrare:
+
+Pasul 1: ANAF verifică documentele
+- Termen: câteva zile lucrătoare
+- Verifică completitudinea formularului și contractului
+
+Pasul 2: ANAF înregistrează contractul în evidențele fiscale
+- Atribuie un număr de înregistrare
+- Actualizează baza de date cu contribuabilul
+
+Pasul 3: Emiterea dovezii de înregistrare
+- Dacă depus fizic: ștampilă pe copie
+- Dacă online: confirmare electronică în SPV
+
+Pasul 4: Contract înregistrat = titlu executoriu (OPȚIONAL)
+Dacă ai solicitat în Cererea C168, contractul înregistrat devine TITLU EXECUTORIU pentru:
+- Plata chiriei
+- La termenele și modalitățile din contract
+- În caz de neplată, poți executa silit fără proces
+
+Avantaj titlu executoriu:
+Dacă chiriașul nu plătește, poți merge direct la executorul judecătoresc (fără judecată prealabilă) pentru recuperarea datoriei.
+
+2.8. ÎNREGISTRAREA MODIFICĂRILOR CONTRACTULUI
+--------------------------------------
+Orice modificare a contractului de închiriere trebuie înregistrată la ANAF în maxim 30 de zile.
+
+Modificări care trebuie înregistrate:
+- Schimbarea chiriei (majorare/reducere)
+- Prelungirea/scurtarea duratei
+- Schimbarea locatarului
+- Schimbarea locatorului (de ex. vânzare imobil)
+- Modificarea obiectului închiriat (ex: creștere suprafață)
+- Orice altă modificare substanțială
+
+Procedură:
+- Întocmești ACT ADIȚIONAL la contract
+- Depui Formularul C168 + copia actului adițional
+- În termen de 30 zile de la semnarea actului adițional
+
+2.9. REZILIEREA (ÎNCETAREA) CONTRACTULUI
+--------------------------------------
+Când contractul de închiriere încetează (prin reziliere, expirare, denunțare unilaterală), NU ai obligația de a anunța ANAF.
+
+ANAF va lua la cunoștință despre încetare prin:
+- Declarația Unică (în care nu vei mai declara venituri din acel contract)
+- SAU dacă depui o notificare de încetare (opțional, dar recomandat pentru claritate)
+
+Recomandare: Păstrează dovada încetării (reziliere, act adițional de încheiere etc.) pentru eventuale verificări viitoare.
+
+2.10. SANCȚIUNI PENTRU NEÎNREGISTRAREA CONTRACTULUI
+--------------------------------------
+Neînregistrarea contractului de închiriere în termenul de 30 de zile constituie CONTRAVENȚIE.
+
+Sancțiuni posibile:
+- Amendă conform Codului de Procedură Fiscală
+- Cuantum: între 50 - 500 lei (pentru nedepunerea declarațiilor)
+- Posibilă estimare din oficiu a veniturilor de către ANAF
+- Imposibilitatea de a folosi contractul ca titlu executoriu
+
+Risc suplimentar:
+Dacă ANAF descoperă contractul neînregistrat, poate:
+- Solicita impozite și contribuții retroactive
+- Aplica dobânzi și penalități de întârziere
+- Iniția proceduri de control fiscal
+
+Recomandare: ÎNREGISTREAZĂ ÎNTOTDEAUNA contractul în termen!
+
+================================================================================
+SECȚIUNEA 3: STABILIREA VENITULUI BRUT ȘI NET DIN CHIRII
+================================================================================
+
+3.1. VENITUL BRUT DIN CHIRII
+--------------------------------------
+Definiție:
+Venitul brut = totalitatea sumelor în bani și/sau echivalentul în lei al veniturilor în natură stipulate în contractul de închiriere.
+
+Ce se include în venitul brut:
+✓ Chiria lunară/anuală (suma fixată în contract)
+✓ Chirii în avans (se impozitează în anul încasării)
+✓ Garanția utilizată pentru plata chiriei (dacă e cazul)
+✓ Plăți suplimentare de la chiriaș (dacă sunt stipulate ca venit al proprietarului)
+✓ Venituri în natură (evaluate la valoarea de piață)
+
+Ce NU se include în venitul brut:
+✗ Garanția (depozitul de garanție) - dacă e restituit la final
+✗ Utilitățile plătite de chiriaș direct furnizorului
+✗ Cheltuielile de întreținere suportate de chiriaș (dacă nu sunt deduse din chirie)
+
+3.2. CHIRIA EXPRIMATĂ ÎN VALUTĂ
+--------------------------------------
+Dacă chiria este stipulată într-o monedă străină (EUR, USD etc.):
+
+Regula de conversie:
+Venitul brut anual se determină pe baza chiriei lunare evaluate la CURSUL DE SCHIMB MEDIU ANUAL al pieței valutare, comunicat de BNR, din anul de realizare a venitului.
+
+Exemplu:
+- Contract: chirie 500 EUR/lună
+- Curs mediu anual BNR 2024: 4,9746 lei/EUR
+- Venit brut anual: 500 EUR/lună × 12 luni × 4,9746 = 29.847,60 lei
+
+Unde găsești cursul mediu anual BNR:
+- Site BNR: www.bnr.ro
+- ANAF publică pe site cursurile medii anuale
+
+ATENȚIE: Nu se folosește cursul zilnic de încasare, ci cursul MEDIU ANUAL.
+
+3.3. VENITURI ÎN NATURĂ
+--------------------------------------
+Dacă primești chirie în natură (bunuri, servicii), acestea trebuie evaluate în lei.
+
+Evaluare:
+- La valoarea de piață a bunurilor/serviciilor primite
+- Conform prețurilor practicate în zona respectivă
+- Documentare: factură, bon fiscal, evaluare de specialitate
+
+Exemplu:
+- Închiriezi garaj unui mecanic
+- Acesta îți repară mașina lunar (în loc de bani)
+- Valoarea reparației: 300 lei/lună
+- Venit brut anual în natură: 300 × 12 = 3.600 lei
+
+3.4. GARANȚIA (DEPOZITUL DE GARANȚIE)
+--------------------------------------
+Reguli fiscale pentru garanție:
+
+Situația 1: Garanție restitută la final
+- NU se impozitează
+- Nu se include în venit brut
+- E doar o sumă păstrată temporar
+
+Situația 2: Garanție utilizată pentru plata chiriei
+- SE impozitează
+- Se include în venitul brut al anului în care a fost utilizată pentru chirie
+- Exemplu: chiriașul pleacă fără să plătească ultima lună → garanția = chirie → venit impozabil
+
+Situația 3: Garanție reținută pentru daune
+- NU se impozitează ca venit din chirii
+- Poate fi venit din alte surse (despăgubiri)
+- Tratament fiscal special
+
+3.5. VENITUL NET DIN CHIRII - SISTEMUL COTELOR FORFETARE
+--------------------------------------
+Pentru majoritatea contribuabililor, venitul net se calculează prin DEDUCEREA unor CHELTUIELI FORFETARE din venitul brut.
+
+Formula de calcul (sistem STANDARD):
+
+Venit net = Venit brut - Cheltuieli forfetare
+
+Cheltuieli forfetare = Venit brut × COTĂ FORFETARĂ
+
+Cote forfetare în funcție de tipul chiriei:
+
+A. Chiria exprimată în LEI:
+Cotă forfetară = 20%
+Cheltuieli forfetare = Venit brut × 20%
+Venit net = Venit brut × 80%
+
+B. Chiria exprimată în VALUTĂ (echivalent în lei):
+Cotă forfetară = 40%
+Cheltuieli forfetare = Venit brut × 40%
+Venit net = Venit brut × 60%
+
+IMPORTANT: Aceste cote forfetare sunt FIXE, NU poți alege altă cotă.
+
+Exemplu calcul (chirie în lei):
+- Venit brut anual: 24.000 lei (2.000 lei/lună × 12)
+- Cheltuieli forfetare: 24.000 × 20% = 4.800 lei
+- Venit net: 24.000 - 4.800 = 19.200 lei
+
+Exemplu calcul (chirie în valută):
+- Venit brut anual: 30.000 lei (echivalent 500 EUR/lună)
+- Cheltuieli forfetare: 30.000 × 40% = 12.000 lei
+- Venit net: 30.000 - 12.000 = 18.000 lei
+
+3.6. VENITUL NET ÎN SISTEM REAL (PE BAZA CONTABILITĂȚII)
+--------------------------------------
+ATENȚIE: Din 2024, sistemul real pentru chirii are aplicabilitate FOARTE LIMITATĂ.
+
+Sistem real = Venit net calculat ca: Venituri - Cheltuieli efective justificate cu documente
+
+Când se aplică sistem real (OBLIGATORIU):
+- Când la data de 31 decembrie a anului ANTERIOR aveai în derulare un număr de PESTE 5 contracte de închiriere
+
+Când POȚI OPTA pentru sistem real:
+- Chiar dacă ai sub 5 contracte, poți opta pentru sistem real
+- Opțiunea e OBLIGATORIE pe 2 ani fiscali consecutivi
+- Se declară prin Declarația Unică
+
+În sistem real:
+- Ții contabilitate în partidă simplă
+- Înregistrezi venituri și cheltuieli efective
+- Cheltuieli deductibile: reparații, întreținere, utilități (dacă le plătești tu), impozite locale, comisioane, amortizare etc.
+- Necesită documente justificative (facturi, bonuri)
+
+Revizuire: Majoritatea contribuabililor NU vor aplica sistem real, deoarece regula "peste 5 contracte" are EXCEPȚII (vezi secțiunea dedicată).
+
+3.7. CHELTUIELI FORFETARE vs. CHELTUIELI EFECTIVE
+--------------------------------------
+Comparație:
+
+CHELTUIELI FORFETARE (sistem standard):
+✓ Simple de calculat
+✓ Fără nevoia de documente justificative
+✓ Cote fixe: 20% (lei) sau 40% (valută)
+✓ Aplicare automată
+✗ Nu reflectă cheltuielile reale
+✗ Dacă ai cheltuieli mari efective, pierzi
+
+CHELTUIELI EFECTIVE (sistem real):
+✓ Reflectă situația reală
+✓ Dacă ai cheltuieli mari, plătești impozit mai mic
+✗ Necesită contabilitate
+✗ Documente justificative obligatorii
+✗ Mai complex
+✗ Opțiune pe minim 2 ani
+
+De obicei, cheltuielile forfetare sunt suficiente și avantajoase pentru majoritatea proprietarilor.
+
+================================================================================
+SECȚIUNEA 4: CALCULAREA IMPOZITULUI PE VENIT DIN CHIRII
+================================================================================
+
+4.1. COTA DE IMPOZITARE
+--------------------------------------
+Cotă impozit pe venit din chirii: 10%
+
+Caracteristică: Impozit FINAL (nu se mai recalculează, nu se depune declarație pentru regularizare dacă e reținut la sursă).
+
+4.2. CALCULUL IMPOZITULUI - FORMULA GENERALĂ
+--------------------------------------
+Formula de bază:
+
+Impozit pe venit = Venit net × 10%
+
+Unde:
+- Venit net = Venit brut - Cheltuieli forfetare (sau cheltuieli efective în sistem real)
+
+4.3. IMPOZITARE CÂND CHIRIAȘUL ESTE PERSOANĂ JURIDICĂ (FIRMĂ)
+--------------------------------------
+Situație: Închiriezi către o PERSOANĂ JURIDICĂ sau altă entitate care ține contabilitate (SRL, SA, PFA, II, asociație, fundație etc.).
+
+Regula IMPORTANTĂ din 2024:
+Chiriașul (persoana juridică) are obligația de a:
+✓ CALCULA impozitul pe venit
+✓ REȚINE impozitul la sursă din chiria datorată
+✓ PLĂTI impozitul la buget
+✓ DECLARA impozitul
+
+Procedură:
+
+Pasul 1: Chiriașul calculează impozitul
+- La fiecare plată a chiriei
+- Formula: (Chirie brută - Cheltuieli forfetare) × 10%
+
+Pasul 2: Chiriașul reține impozitul din suma datorată
+- Proprietarul primește: Chirie brută - Impozit reținut
+
+Pasul 3: Chiriașul plătește impozitul la buget
+- Termen: până la data de 25 INCLUSIV a lunii următoare celei în care a reținut impozitul
+
+Pasul 4: Chiriașul declară impozitul
+- Formular: Declarația 100 (declarația privind obligațiile de plată la bugetul de stat)
+- Termen: până la 25 a lunii următoare
+
+Exemplu numeric:
+- Contract: chirie 3.000 lei/lună (în lei)
+- Cheltuieli forfetare: 3.000 × 20% = 600 lei
+- Venit net: 3.000 - 600 = 2.400 lei
+- Impozit: 2.400 × 10% = 240 lei
+- Chiriașul plătește proprietarului: 3.000 - 240 = 2.760 lei
+- Chiriașul plătește la buget: 240 lei (până pe 25 a lunii următoare)
+- Proprietarul NU mai are obligații (impozitul e final, reținut la sursă)
+
+4.4. IMPOZITARE CÂND CHIRIAȘUL ESTE PERSOANĂ FIZICĂ
+--------------------------------------
+Situație: Închiriezi către o PERSOANĂ FIZICĂ (care NU ține contabilitate).
+
+Regula:
+Chiriașul (persoana fizică) NU are obligația de a reține impozit.
+Proprietarul (tu) vei declara și plăti impozitul prin Declarația Unică.
+
+Procedură:
+
+Pasul 1: Încasezi chiria integral de la chiriaș
+- Chiriașul plătește chiria completă (fără reținere)
+
+Pasul 2: Declari venitul prin Declarația Unică (Formular 212)
+- Capitol I: Venituri realizate
+- Secțiunea pentru venituri din cedarea folosinței bunurilor
+- Termen: până la 25 MAI a anului următor
+
+Pasul 3: Calculezi și plătești impozitul
+- Formula: (Venit brut anual - Cheltuieli forfetare) × 10%
+- Termen plată: 25 MAI a anului următor
+
+Exemplu numeric (chirie anuală):
+- Venit brut 2024: 24.000 lei (2.000 lei/lună × 12)
+- Cheltuieli forfetare: 24.000 × 20% = 4.800 lei
+- Venit net: 19.200 lei
+- Impozit: 19.200 × 10% = 1.920 lei
+- Depui Declarația Unică până pe 25 mai 2025
+- Plătești 1.920 lei până pe 25 mai 2025
+
+4.5. COMPARAȚIE CHIRIAȘ PERSOANĂ JURIDICĂ vs. PERSOANĂ FIZICĂ
+--------------------------------------
+CHIRIAȘ = PERSOANĂ JURIDICĂ (SRL, SA, PFA etc.):
+✓ Chiriașul calculează și reține impozitul
+✓ Chiriașul plătește impozitul lunar la buget
+✓ Chiriașul declară prin D100
+✓ Proprietarul primește chirie netă (după reținere impozit)
+✓ Proprietarul NU mai are obligații pentru impozitul pe venit (e final)
+✓ Proprietarul poate avea obligații pentru CASS (vezi secțiunea dedicată)
+
+CHIRIAȘ = PERSOANĂ FIZICĂ:
+✓ Proprietarul primește chirie brută (integral)
+✓ Proprietarul calculează și plătește impozitul prin Declarația Unică
+✓ Termen: 25 mai anul următor
+✓ Proprietarul declară și CASS (dacă e cazul)
+
+================================================================================
+SECȚIUNEA 5: CONTRIBUȚIA DE ASIGURĂRI SOCIALE DE SĂNĂTATE (CASS)
+================================================================================
+
+5.1. CÂND SE DATOREAZĂ CASS PENTRU VENITURILE DIN CHIRII
+--------------------------------------
+Regula generală (din 2025):
+CASS se datorează dacă veniturile din cedarea folosinței bunurilor, CUMULATE cu alte venituri specificate, sunt cel puțin egale cu plafonul de 6 salarii minime brute pe țară.
+
+Plafon CASS 2025:
+6 salarii minime brute = 6 × 4.050 lei = 24.300 lei
+
+Deci:
+- Venit net anual din chirii + alte venituri < 24.300 lei → NU se datorează CASS
+- Venit net anual din chirii + alte venituri ≥ 24.300 lei → SE datorează CASS
+
+5.2. CATEGORII DE VENITURI CARE SE CUMULEAZĂ PENTRU CASS
+--------------------------------------
+Pentru stabilirea pragului de 24.300 lei, se CUMULEAZĂ următoarele venituri:
+
+a) Venituri din cedarea folosinței bunurilor (chirii)
+b) Venituri din drepturi de proprietate intelectuală (drepturi de autor)
+c) Venituri distribuite din asocieri cu persoane juridice
+d) Venituri/câștiguri din investiții
+e) Venituri din activități agricole, silvicultură, piscicultură
+f) Venituri din alte surse
+
+NU se iau în calcul:
+- Veniturile din salarii (CASS se reține la sursă)
+- Veniturile din pensii (pensionarii sunt asigurați)
+- Veniturile din PFA/activități independente (CASS se calculează separat)
+
+5.3. BAZA DE CALCUL CASS PENTRU VENITURI DIN CHIRII
+--------------------------------------
+Dacă venit net anual cumulat ≥ 24.300 lei, baza de calcul CASS este:
+
+Situația 1: Venit net între 24.300 - 48.600 lei (6-12 salarii minime)
+Bază calcul CASS: 24.300 lei (6 salarii minime)
+CASS: 24.300 × 10% = 2.430 lei/an
+
+Situația 2: Venit net între 48.600 - 97.200 lei (12-24 salarii minime)
+Bază calcul CASS: 48.600 lei (12 salarii minime)
+CASS: 48.600 × 10% = 4.860 lei/an
+
+Situația 3: Venit net ≥ 97.200 lei (≥ 24 salarii minime)
+Bază calcul CASS: 97.200 lei (24 salarii minime)
+CASS: 97.200 × 10% = 9.720 lei/an
+
+Cotă CASS: 10% (aplicată asupra bazei de calcul)
+
+5.4. MODIFICARE IMPORTANTĂ DIN 2025 - ELIMINAREA ESTIMĂRII
+--------------------------------------
+Până în 2024:
+- Trebuia să ESTIMEZI veniturile la începutul anului
+- Declarai CASS estimată
+- La sfârșitul anului regularizai
+
+Din 2025:
+- NU se mai face estimare
+- CASS se declară DOAR pentru veniturile REALIZATE efectiv în anul anterior
+- Declarație prin Formularul 212, Capitol I
+- Termen: până pe 25 mai a anului următor
+
+Avantaj: Mai puțin birocratic, fără risc de subestimare/supraestimare.
+
+5.5. DECLARAREA ȘI PLATA CASS
+--------------------------------------
+Procedură:
+
+Pasul 1: Calculezi venitul net anual din chirii (și alte venituri cumulate)
+- La sfârșitul anului 2024 (sau în cursul anului 2025 pentru venituri 2024)
+
+Pasul 2: Verifici încadrarea în praguri
+- Sub 24.300 lei → fără CASS
+- Peste 24.300 lei → cu CASS
+
+Pasul 3: Calculezi CASS datorată
+- Conform bazei de calcul (6, 12 sau 24 salarii minime)
+
+Pasul 4: Depui Declarația Unică (Formularul 212)
+- Capitol I: Date privind veniturile realizate
+- Secțiunea pentru CASS
+- Termen: până pe 25 MAI 2025 (pentru venituri 2024)
+
+Pasul 5: Plătești CASS
+- Termen: până pe 25 MAI 2025
+- În contul unic Trezorerie (IBAN specific județului)
+
+5.6. CASS CÂND CHIRIAȘUL ESTE PERSOANĂ JURIDICĂ
+--------------------------------------
+IMPORTANT: Chiar dacă chiriașul (persoană juridică) reține impozitul pe venit la sursă, el NU reține CASS.
+
+CASS rămâne obligația PROPRIETARULUI și se declară/plătește prin Declarația Unică.
+
+Excepție: Dacă ai și alte venituri (ex: salarii) pentru care se plătește CASS la sursă, se ia în calcul la cumulare.
+
+5.7. OPȚIUNEA PENTRU PLATA CASS (ASIGURARE VOLUNTARĂ)
+--------------------------------------
+Dacă venitul tău din chirii (și altele) este SUB 24.300 lei, NU datorezi CASS obligatoriu.
+
+ÎNSĂ: Poți OPTA să plătești CASS pentru a deveni ASIGURAT în sistemul public de sănătate.
+
+Cuantum opțiune CASS 2025:
+- Bază de calcul: 6 salarii minime = 24.300 lei
+- CASS: 24.300 × 10% = 2.430 lei/an
+
+Cum se exercită opțiunea:
+- Prin Declarația Unică (Formular 212), Capitol II
+- Poate fi depusă oricând în cursul anului pentru anul curent
+- Plata: 25% la depunere, rest până pe 25 mai anul următor
+
+Beneficiu:
+- Dobândești calitatea de ASIGURAT
+- Acces la servicii medicale publice
+- Compensări medicamente
+- Concedii medicale (dacă aplicabil)
+
+Cine ar trebui să opteze:
+- Persoane fără alt loc de muncă (fără asigurare)
+- Persoane care nu sunt coasigurate
+- Persoane care doresc accesul la servicii medicale publice
+
+5.8. EXEMPLE CALCUL CASS
+--------------------------------------
+EXEMPLU 1: Venit mic, fără CASS
+- Venit brut chirii 2024: 18.000 lei (1.500 lei/lună)
+- Cheltuieli forfetare (20%): 3.600 lei
+- Venit net: 14.400 lei
+- Încadrare: < 24.300 lei → fără CASS obligatorie
+- Opțiune CASS: DA (2.430 lei pentru a fi asigurat)
+
+EXEMPLU 2: Venit mediu, cu CASS
+- Venit brut chirii 2024: 36.000 lei (3.000 lei/lună)
+- Cheltuieli forfetare (20%): 7.200 lei
+- Venit net: 28.800 lei
+- Încadrare: între 24.300 - 48.600 → cu CASS
+- Bază calcul: 24.300 lei
+- CASS: 2.430 lei
+- Impozit: 28.800 × 10% = 2.880 lei
+- Total taxe: 2.430 + 2.880 = 5.310 lei
+
+EXEMPLU 3: Venit mare, cu CASS la plafon maxim
+- Venit brut chirii 2024: 120.000 lei (10.000 lei/lună)
+- Cheltuieli forfetare (20%): 24.000 lei
+- Venit net: 96.000 lei
+- Încadrare: între 48.600 - 97.200 → cu CASS la 12 salarii
+- Bază calcul: 48.600 lei
+- CASS: 4.860 lei
+- Impozit: 96.000 × 10% = 9.600 lei
+- Total taxe: 4.860 + 9.600 = 14.460 lei
+
+EXEMPLU 4: Chirii + alte venituri
+- Venit net chirii: 15.000 lei
+- Venit net drepturi autor: 12.000 lei
+- Total cumulat: 27.000 lei
+- Încadrare: între 24.300 - 48.600 → cu CASS
+- Bază calcul: 24.300 lei
+- CASS: 2.430 lei (se repartizează proporțional între cele două surse)
+
+================================================================================
+SECȚIUNEA 6: DECLARAȚIA UNICĂ - FORMULARUL 212
+================================================================================
+
+6.1. CE ESTE DECLARAȚIA UNICĂ
+--------------------------------------
+Declarația Unică privind impozitul pe venit și contribuțiile sociale datorate de persoanele fizice (Formularul 212) este documentul prin care persoanele fizice declară anual veniturile realizate și contribuțiile sociale datorate.
+
+6.2. CINE DEPUNE DECLARAȚIA UNICĂ PENTRU VENITURI DIN CHIRII
+--------------------------------------
+Obligația de depunere:
+
+DA, trebuie să depui Declarația Unică dacă:
+✓ Ai venituri din chirii și chiriașul este PERSOANĂ FIZICĂ (impozit NU reținut la sursă)
+✓ Ai venituri din chirii și chiriașul este persoană juridică, DAR datorezi CASS
+✓ Ai venituri din chirii determinate în sistem real (peste 5 contracte - cu excepții)
+✓ Ai venituri din închiriere în scop turistic (camere în locuință personală)
+✓ Chiria este exprimată în VALUTĂ
+
+NU trebuie să depui Declarația Unică dacă:
+✗ Ai venituri din chirii doar de la persoane juridice (impozit reținut la sursă)
+ȘI
+✗ NU datorezi CASS (venit sub 24.300 lei)
+ȘI
+✗ Chiria este în LEI
+ȘI
+✗ NU optezi pentru CASS
+
+6.3. STRUCTURA DECLARAȚIEI UNICE PENTRU CHIRII
+--------------------------------------
+Declarația Unică are 2 CAPITOLE:
+
+CAPITOLUL I: Date privind veniturile REALIZATE
+- Pentru veniturile din anul ANTERIOR
+- Se declară: venituri, cheltuieli, impozit (dacă nu a fost reținut la sursă), CASS
+- Secțiunea relevantă: Secțiunea I.2 - Venituri din cedarea folosinței bunurilor
+
+CAPITOLUL II: Date privind CASS pentru anul CURENT (opțiune voluntară)
+- Doar dacă OPTEZI pentru plata CASS în anul curent (fără a avea obligația)
+- Pentru persoane cu venituri sub prag sau fără venituri
+
+6.4. COMPLETAREA SECȚIUNII I.2 - VENITURI DIN CEDAREA FOLOSINȚEI
+--------------------------------------
+Pași pentru completare:
+
+Pas 1: Date de identificare contribuabil
+- CNP
+- Nume, prenume
+- Domiciliu fiscal
+
+Pas 2: Secțiunea I.2.1 - Date privind veniturile și cheltuielile
+Pentru fiecare sursă (contract de închiriere):
+
+a) Tipul venitului:
+- Închiriere bunuri imobile (apartament, casă, garaj, teren etc.)
+- Închiriere bunuri mobile
+- Arendare (dacă e cazul)
+- Închiriere în scop turistic
+
+b) Date despre bunul închiriat:
+- Adresa (pentru imobile)
+- Descriere
+
+c) Date despre chiriaș:
+- Numele, CNP/CUI
+- Dacă e persoană fizică sau juridică
+
+d) Perioada de închiriere:
+- Data de început
+- Data de încheiere (dacă aplicabil)
+
+e) Venitul brut:
+- Suma totală încasată în anul de raportare
+- Dacă chirie în valută: suma în lei (la cursul mediu anual BNR)
+
+f) Cheltuieli forfetare:
+- 20% (pentru chirii în lei)
+- 40% (pentru chirii în valută)
+- Se calculează automat în formular
+
+g) Venitul net:
+- Venit brut - Cheltuieli forfetare
+- Se calculează automat
+
+Pas 3: Secțiunea I.2.2 - Calculul impozitului (dacă nu a fost reținut la sursă)
+- Venit net total din toate sursele
+- Impozit: Venit net × 10%
+- Dacă impozitul a fost deja reținut de chiriaș (PJ), se menționează și nu se mai calculează
+
+Pas 4: Secțiunea I.2.3 - CASS
+- Verificare încadrare în praguri
+- Bază de calcul CASS
+- CASS datorată: Bază × 10%
+
+Pas 5: Semnare și transmitere
+- Semnătură electronică (online) sau olografă (fizic)
+- Depunere la ANAF
+
+6.5. TERMENE DECLARAȚIE UNICĂ
+--------------------------------------
+Termen general de depunere:
+Până la data de 25 MAI inclusiv, a anului următor celui de realizare a veniturilor.
+
+Pentru veniturile din 2024:
+- Depunere Declarație Unică: până pe 26 mai 2025 (25 mai = duminică)
+
+Pentru veniturile din 2025:
+- Depunere Declarație Unică: până pe 25 mai 2026
+
+Termen de plată impozit și CASS:
+- Același cu termenul de depunere: 25 mai (inclusiv)
+
+6.6. DEPUNEREA DECLARAȚIEI UNICE
+--------------------------------------
+Modalități de depunere:
+
+1. ONLINE prin Spațiul Privat Virtual (SPV) - RECOMANDAT:
+- Accesează: www.anaf.ro → Autentificare SPV
+- Secțiune: "Depunere declarație unică și alte formulare SPV-PF"
+- Completezi formularul 212 electronic
+- Semnezi cu semnătură electronică (certificat calificat sau parola SPV)
+- Transmiți online
+- Primești confirmare imediată
+
+2. ONLINE prin e-guvernare.ro:
+- Accesează: www.e-guvernare.ro
+- Necesită certificat digital calificat
+- Procedură similară SPV
+
+3. FIZIC la ANAF:
+- Completezi formularul 212 (descărcat sau luat de la ghișeu)
+- Depui la registratura ANAF competentă (după domiciliu fiscal)
+- Personal sau prin împuternicit
+- Primești dovada de depunere
+
+4. PRIN POȘTĂ:
+- Trimiți formularul completat cu confirmare de primire
+- La adresa organului fiscal competent
+
+6.7. SANCȚIUNI PENTRU NEDEPUNEREA DECLARAȚIEI UNICE
+--------------------------------------
+Nedepunerea la termen:
+- Constituie contravenție (art. 336 Cod Procedură Fiscală)
+- Amendă: între 50 - 500 lei
+
+Nedepunerea în 30 de zile de la expirare:
+- ANAF poate estima din oficiu obligațiile fiscale
+- Estimare nefavorabilă contribuabilului
+
+Declarare incorectă:
+- Decizie de impunere din oficiu
+- Obligația corectă + dobânzi + penalități
+
+================================================================================
+SECȚIUNEA 7: ÎNCHIRIEREA ÎN SCOP TURISTIC
+================================================================================
+
+7.1. CE ESTE ÎNCHIRIEREA ÎN SCOP TURISTIC
+--------------------------------------
+Definiție:
+Închirierea în scop turistic = închirierea de camere situate în LOCUINȚE PROPRIETATE PERSONALĂ, indiferent de numărul de locuințe în care sunt situate aceste camere.
+
+Exemple:
+- Închiriezi 2 camere din apartamentul tău pe Airbnb/Booking
+- Ai o casă de vacanță cu 4 camere pe care le închiriezi turiștilor
+- Ai 3 apartamente diferite, din care închiriezi camere pe perioade scurte
+
+Caracteristici:
+- Locuință proprietate PERSONALĂ (nu PFA, nu SRL)
+- Închiriere pe perioade scurte (zile, săptămâni)
+- De obicei prin platforme (Airbnb, Booking) sau direct
+- Destinație: turism, vacanță, șederi temporare
+
+7.2. REGIM FISCAL SPECIAL - NORMĂ DE VENIT
+--------------------------------------
+Pentru închirierea în scop turistic, veniturile se determină pe bază de NORMĂ DE VENIT, nu cheltuieli forfetare.
+
+Normă de venit = sumă fixă anuală stabilită de ANAF pentru fiecare cameră închiriată.
+
+Norme de venit pentru închiriere turistică 2025:
+- Stabilite de ANAF prin ordin anual
+- Diferențiate pe județe și localități
+- Variază în funcție de zona turistică
+- Publicate pe: www.anaf.ro → Asistență contribuabili → Norme de venit
+
+Exemplu norme de venit (orientativ, verifică pe site ANAF pentru 2025):
+- București: 8.000 - 12.000 lei/cameră/an
+- Brașov (zonă turistică): 6.000 - 10.000 lei/cameră/an
+- Constanța (litoral): 7.000 - 11.000 lei/cameră/an
+- Localități mai puțin turistice: 3.000 - 6.000 lei/cameră/an
+
+7.3. CALCULUL IMPOZITULUI PENTRU ÎNCHIRIERE TURISTICĂ
+--------------------------------------
+Formula:
+
+Impozit pe venit = (Normă de venit pe cameră × Număr camere × Ajustare perioadă) × 10%
+
+Ajustare perioadă:
+Dacă închiriezi doar o parte din an (nu tot anul), norma se ajustează proporțional.
+
+Formula ajustare:
+Normă ajustată = Normă anuală × (Număr luni închiriere / 12)
+
+Exemplu calcul:
+- Închiriezi 3 camere în București
+- Normă: 10.000 lei/cameră/an
+- Perioada: tot anul (12 luni)
+- Normă totală: 10.000 × 3 = 30.000 lei
+- Impozit: 30.000 × 10% = 3.000 lei/an
+
+Exemplu cu perioadă parțială:
+- Închiriezi 2 camere în Brașov
+- Normă: 8.000 lei/cameră/an
+- Perioada: 6 luni (sezon estival)
+- Normă ajustată: 8.000 × (6/12) = 4.000 lei/cameră
+- Normă totală: 4.000 × 2 = 8.000 lei
+- Impozit: 8.000 × 10% = 800 lei
+
+7.4. CASS PENTRU ÎNCHIRIERE TURISTICĂ
+--------------------------------------
+Reguli CASS:
+- Se aplică aceleași praguri ca pentru chirii normale (6, 12, 24 salarii minime)
+- Bază de calcul: NORMA de venit (nu venitul real încasat)
+- Se cumulează cu alte venituri pentru praguri
+
+Exemplu:
+- Normă totală închiriere turistică: 25.000 lei
+- Depășește 24.300 lei → datorezi CASS
+- Bază calcul: 24.300 lei (6 salarii minime)
+- CASS: 2.430 lei
+
+7.5. DIFERENȚA ÎNTRE ÎNCHIRIERE TURISTICĂ ȘI ÎNCHIRIERE NORMALĂ
+--------------------------------------
+ÎNCHIRIERE TURISTICĂ:
+- Camere în locuință personală
+- Perioade scurte, turiști
+- Impozit pe bază de NORMĂ DE VENIT
+- Normă/cameră/an
+- Ajustare pe luni
+- Declarație Unică obligatorie
+
+ÎNCHIRIERE NORMALĂ (clasică):
+- Apartamente/case întregi
+- Contracte pe termen lung (6 luni, 1 an etc.)
+- Impozit pe bază de CHELTUIELI FORFETARE (20% sau 40%)
+- Chirie efectiv încasată
+- Reținere la sursă (dacă chiriaș = PJ)
+- Declarație Unică (condiționat)
+
+7.6. OBLIGAȚII DECLARATIVE PENTRU ÎNCHIRIERE TURISTICĂ
+--------------------------------------
+Trebuie să depui DECLARAȚIA UNICĂ (Formularul 212):
+- Capitol I, Secțiunea I.2 (Venituri din cedarea folosinței bunurilor)
+- Subsecțiune specială pentru închiriere în scop turistic
+- Declari: număr camere, normă de venit, perioadă, impozit, CASS
+- Termen: 25 mai a anului următor
+
+Înregistrare contracte:
+- NU e obligatorie înregistrarea fiecărui contract de închiriere pe termen scurt (zile/săptămâni)
+- DAR: poți fi solicitat să prezinți evidența veniturilor
+- Recomandare: ține evidență clară a rezervărilor și încasărilor
+
+7.7. EXEMPLE PRACTICE ÎNCHIRIERE TURISTICĂ
+--------------------------------------
+EXEMPLU 1: Airbnb în București
+- Închiriezi 1 cameră din apartament pe Airbnb
+- Venituri reale încasate 2024: 35.000 lei
+- Normă ANAF pentru București: 10.000 lei/cameră/an
+- Perioada: tot anul
+- Impozit: 10.000 × 10% = 1.000 lei
+- CASS: NU (normă 10.000 < 24.300 lei)
+- Declarație Unică: DA (până pe 25 mai 2025)
+
+Observație: Plătești impozit pe NORMĂ (10.000 lei), nu pe venitul real (35.000 lei) → avantajos dacă ai venituri mari.
+
+EXEMPLU 2: Casă de vacanță litoral
+- Închiriezi 4 camere în Constanța
+- Normă: 9.000 lei/cameră/an
+- Perioada: 4 luni (iunie-septembrie)
+- Normă ajustată: 9.000 × (4/12) = 3.000 lei/cameră
+- Normă totală: 3.000 × 4 = 12.000 lei
+- Impozit: 12.000 × 10% = 1.200 lei
+- CASS: NU (sub 24.300 lei)
+
+EXEMPLU 3: Multiple proprietăți turistice
+- 2 apartamente cu câte 2 camere = 4 camere total
+- Normă: 8.000 lei/cameră/an
+- Perioada: tot anul
+- Normă totală: 8.000 × 4 = 32.000 lei
+- Impozit: 32.000 × 10% = 3.200 lei
+- CASS: DA (32.000 > 24.300)
+  * Bază calcul: 24.300 lei
+  * CASS: 2.430 lei
+- Total taxe: 3.200 + 2.430 = 5.630 lei
+
+================================================================================
+SECȚIUNEA 8: SITUAȚII SPECIALE ȘI CAZURI PARTICULARE
+================================================================================
+
+8.1. REGULA "PESTE 5 CONTRACTE" - CLARIFICĂRI 2025
+--------------------------------------
+Regula veche (până în 2023):
+Dacă la 31 decembrie a anului anterior aveai în derulare PESTE 5 contracte de închiriere → OBLIGATORIU treceai la sistem real (ca pentru activități independente).
+
+Schimbări din 2024-2025:
+Regula "peste 5 contracte" NU se mai aplică pentru:
+- Închirieri normale (cu cheltuieli forfetare 20% sau 40%)
+- Închirieri în scop turistic (pe bază de normă)
+
+Sistem real SE APLICĂ doar dacă:
+- OPTEZI explicit pentru sistem real (minim 2 ani) SAU
+- Ai activitate de închiriere care constituie ACTIVITATE INDEPENDENTĂ (foarte rar)
+
+Concluzie practică 2025:
+Majoritatea proprietarilor care închiriază 6, 10, 20 de apartamente vor folosi în continuare cheltuieli forfetare (20% sau 40%), NU sistem real.
+
+8.2. SUBÎNCHIRIEREA
+--------------------------------------
+Situație: Ești chiriaș și subînchiriezi bunul către altcineva.
+
+Tratament fiscal:
+- Subînchirierea = cedare a folosinței bunurilor
+- Venitul din subînchiriere = venit impozabil
+- Se aplică aceleași reguli ca la închiriere (cheltuieli forfetare 20%/40%, impozit 10%)
+
+Atenție la contract:
+- Contractul principal trebuie să PERMITĂ subînchirierea
+- Altfel, subînchirierea e nelegală (chiar dacă fiscal rămâne impozabilă)
+
+Exemplu:
+- Ești chiriaș, plătești 2.000 lei/lună chirie
+- Subînchiriezi cu 2.500 lei/lună
+- Venit brut din subînchiriere: 2.500 × 12 = 30.000 lei
+- Cheltuieli forfetare: 30.000 × 20% = 6.000 lei
+- Venit net: 24.000 lei
+- Impozit: 24.000 × 10% = 2.400 lei
+
+Poți deduce chiria plătită de tine în sistem real, dar trebuie să optezi pentru sistem real (minim 2 ani).
+
+8.3. ÎNCHIRIEREA UNEI PĂRȚI DIN LOCUINȚA ÎN CARE LOCUIEȘTI
+--------------------------------------
+Situație: Închiriezi o cameră din apartamentul în care locuiești tu.
+
+Tratament fiscal:
+- Este venit impozabil
+- Se declară și se impozitează normal
+- Cheltuieli forfetare 20% (dacă chirie în lei)
+
+NU este scutită de impozit doar pentru că locuiești în aceeași locuință.
+
+Tip închiriere:
+- Dacă închiriezi pe termen lung (6 luni+): închiriere normală
+- Dacă închiriezi pe perioade scurte turiștilor: închiriere în scop turistic (normă de venit)
+
+8.4. COMODATUL (ÎMPRUMUTUL GRATUIT)
+--------------------------------------
+Situație: Dai bunul în folosință GRATUIT (fără contraprestation).
+
+Tratament fiscal:
+- Dacă NU primești nimic în schimb → NU este venit impozabil
+- NU plătești impozit
+- NU ai obligații fiscale
+
+DAR: Trebuie să dovedești caracterul GRATUIT:
+- Contract de comodat scris (recomandat)
+- Dovezi că nu ai primit bani
+
+Risc:
+- ANAF poate considera că există venit nedeclarat dacă are suspiciuni
+- Recomandare: contract scris clar "comodat gratuit, fără contraprestation"
+
+8.5. SCHIMBUL DE LOCUINȚE (SWAP)
+--------------------------------------
+Situație: Schimbi folosința locuinței tale cu altcineva (fără bani).
+
+Tratament fiscal:
+- Dacă schimbul e ECHIVALENT (aceeași valoare) → poate fi considerat NIMPOZABIL (schimb de servicii echivalente)
+- Dacă există DIFERENȚĂ de valoare plătită în bani → acea diferență e venit impozabil
+
+Prudență: Zona gri fiscal, recomandabil să consulți specialist fiscal.
+
+8.6. CHIRIE PLĂTITĂ DE ANGAJATOR PENTRU ANGAJAT
+--------------------------------------
+Situație: Angajatorul închiriază apartament de la tine pentru angajatul său.
+
+Tratament fiscal pentru tine (proprietar):
+- Venit normal din chirii
+- Chiriașul = angajatorul (persoană juridică)
+- Angajatorul reține impozit la sursă
+- Tu declari CASS (dacă e cazul)
+
+Tratament fiscal pentru angajat:
+- Poate fi beneficiu în natură (impozabil la angajat)
+- Depinde de aranjamentul cu angajatorul
+
+8.7. GARANȚII BANCARE/CAUȚIUNI
+--------------------------------------
+Situație: Chiriașul depune garanție bancară (scrisoare de garanție) în loc de cash.
+
+Tratament fiscal:
+- Garanția bancară în sine NU este venit
+- Dacă se execută garanția și primești bani → acel moment = venit (dacă e pentru chirie)
+
+8.8. CHIRII RESTANTE/NEÎNCASATE
+--------------------------------------
+Situație: Chiriașul nu plătește, ai chirii restante.
+
+Tratament fiscal (sistem cheltuieli forfetare):
+- Impozitul se calculează pe veniturile ÎNCASATE
+- Dacă nu ai încasat, nu declari ca venit
+- Principiul de CASĂ (cash accounting)
+
+Sistem real:
+- Poți deduce creanțele neîncasate în anumite condiții
+- Necesită documentare și proceduri speciale
+
+8.9. VÂNZAREA IMOBILULUI ÎN CURSUL PERIOADEI DE ÎNCHIRIERE
+--------------------------------------
+Situație: Vinzi apartamentul pe care îl închiriezi.
+
+Obligații:
+- Declari veniturile din chirii până la data vânzării
+- Contractul de închiriere se poate transfera către noul proprietar SAU
+- Reziliezi contractul înainte de vânzare
+
+Tratament fiscal:
+- Venituri din chirii: impozit 10% (+ CASS dacă e cazul)
+- Câștigul din vânzarea apartamentului: impozit separat (3% sau scutit după 3 ani)
+
+8.10. ÎNCHIRIEREA CĂTRE RUDE
+--------------------------------------
+Situație: Închiriezi apartament către fiul/fiica/părinții tău.
+
+Tratament fiscal:
+- Este venit impozabil NORMAL
+- Nu există scutiri pentru închirieri între rude
+- Se aplică aceleași reguli
+
+Atenție:
+- ANAF poate verifica dacă chiria e la nivelul pieței
+- Chirii sub prețul pieței pot fi suspecte de evaziune
+
+Recomandare: Chirie la nivel rezonabil de piață, contract legal.
+
+================================================================================
+SECȚIUNEA 9: TVA PENTRU ÎNCHIRIEREA BUNURILOR IMOBILE
+================================================================================
+
+9.1. REGULA GENERALĂ TVA PENTRU CHIRII
+--------------------------------------
+Închirierea de bunuri imobile este SCUTITĂ de TVA conform art. 292 alin. (2) lit. e) din Codul Fiscal.
+
+Ce înseamnă:
+- NU colectezi TVA de la chiriaș
+- NU ai drept de deducere TVA la achiziții pentru imobil
+- NU te înregistrezi în scopuri de TVA doar pentru chirii
+
+Excepție:
+Poți OPTA pentru TAXAREA operațiunilor de închiriere (cu TVA 19%).
+
+9.2. OPȚIUNEA PENTRU TAXARE TVA
+--------------------------------------
+Decizie:
+Poți alege să aplici TVA 19% la închirieri (în loc de scutire).
+
+Avantaje opțiune:
+✓ Deduci TVA la achiziții (renovări, mobilier, echipamente)
+✓ Util dacă ai investiții mari în imobil
+✓ Chiriașii PJ pot deduce TVA (avantaj pentru ei)
+
+Dezavantaje:
+✗ Chiria devine mai scumpă pentru chiriaș (+ 19%)
+✗ Obligații declarative TVA (D300, D394)
+✗ Complicații administrative
+
+Când merită opțiunea:
+- Dacă ai investiții mari cu TVA (renovări costisitoare)
+- Dacă chiriașii sunt exclusiv firme (pot deduce TVA)
+- Dacă vrei să recuperezi TVA la achiziții
+
+9.3. PROCEDURA DE OPȚIUNE PENTRU TAXARE TVA
+--------------------------------------
+Pași:
+
+Pasul 1: Înregistrare în scopuri de TVA
+- Depui Formularul 070 la ANAF
+- Primești cod de înregistrare TVA (RO + CUI)
+
+Pasul 2: Notificare opțiune
+- Depui "Notificare privind opțiunea de taxare a operațiunilor prevăzute la art. 292 alin.(2) lit. e)"
+- Se exercită de la data înscrisă în notificare
+
+Pasul 3: Facturare cu TVA
+- Emiti facturi cu TVA 19%
+- Colectezi TVA de la chiriaș
+
+Pasul 4: Declarații TVA
+- Formular 300 (Decont TVA): lunar sau trimestrial
+- Formular 394 (Declarație informativă): lunar sau trimestrial
+
+9.4. ANULAREA OPȚIUNII DE TAXARE TVA
+--------------------------------------
+Dacă nu mai dorești să aplici TVA:
+
+Pasul 1: Notificare anulare opțiune
+- Formular: "Notificare privind anularea opțiunii de taxare..."
+- Aplicarea scutirii de la data înscrisă
+
+Pasul 2: Declarație de mențiuni
+- Formular 070 sau 700
+- Anulezi înregistrarea în scopuri de TVA
+
+9.5. TVA PENTRU UTILITĂȚI
+--------------------------------------
+Situație: Chiriașul plătește utilități către tine, iar tu plătești furnizorului.
+
+Tratament TVA:
+- Dacă NU există contoare individuale → utilitățile intră în baza de impozitare TVA a chiriei
+- Dacă EXISTĂ contoare individuale → utilitățile sunt separate, nu intră în TVA chirie
+
+Practică comună:
+- Chiriașul plătește direct furnizorii (contract pe nume chiriaș)
+- Sau chiriașul îți rambursează costul exact (fără TVA suplimentar)
+
+================================================================================
+SECȚIUNEA 10: EXEMPLE COMPLETE ȘI SCENARII PRACTICE
+================================================================================
+
+EXEMPLU COMPLET 1: Închiriere apartament către persoană fizică
+--------------------------------------
+Profil:
+- Maria, proprietar apartament București
+- Chiriaș: Ion (persoană fizică)
+- Chirie: 2.500 lei/lună (în lei)
+- Contract: 1 an (12 luni)
+- An: 2024
+
+Calcul fiscal:
+
+Venit brut 2024:
+- 2.500 lei/lună × 12 = 30.000 lei
+
+Cheltuieli forfetare (chirie în lei):
+- 30.000 × 20% = 6.000 lei
+
+Venit net:
+- 30.000 - 6.000 = 24.000 lei
+
+Impozit pe venit:
+- 24.000 × 10% = 2.400 lei
+
+CASS:
+- Venit net 24.000 lei < 24.300 lei → NU se datorează CASS obligatorie
+- Opțiune CASS: DA (2.430 lei pentru a fi asigurată)
+
+Obligații:
+- Înregistrare contract la ANAF: în 30 zile de la semnare
+- Încasare chirie de la Ion: 2.500 lei/lună (integral, fără rețineri)
+- Declarație Unică: până pe 25 mai 2025
+- Plată impozit: 2.400 lei până pe 25 mai 2025
+- Opțiune CASS (dacă dorește): 2.430 lei
+
+Total taxe (fără opțiune CASS): 2.400 lei
+Total taxe (cu opțiune CASS): 4.830 lei
+
+EXEMPLU COMPLET 2: Închiriere spațiu comercial către SRL
+--------------------------------------
+Profil:
+- Andrei, proprietar spațiu comercial Cluj
+- Chiriaș: ABC SRL (persoană juridică)
+- Chirie: 5.000 lei/lună (în lei)
+- Contract: 2 ani
+- An: 2024
+
+Calcul fiscal:
+
+Venit brut 2024:
+- 5.000 lei/lună × 12 = 60.000 lei
+
+Cheltuieli forfetare:
+- 60.000 × 20% = 12.000 lei
+
+Venit net:
+- 60.000 - 12.000 = 48.000 lei
+
+Impozit pe venit (reținut de ABC SRL):
+- Lunar: (5.000 - 1.000) × 10% = 400 lei
+- Anual: 400 × 12 = 4.800 lei
+- ABC SRL reține și plătește la buget lunar
+
+CASS (obligație Andrei):
+- Venit net 48.000 lei se încadrează între 24.300 - 48.600 (6-12 salarii)
+- Bază calcul: 24.300 lei
+- CASS: 2.430 lei
+
+Obligații Andrei:
+- Înregistrare contract: în 30 zile
+- Primește de la ABC SRL: 5.000 - 400 = 4.600 lei/lună
+- Declarație Unică: DA (pentru CASS), până pe 25 mai 2025
+- Plată CASS: 2.430 lei până pe 25 mai 2025
+- Impozitul e deja plătit de ABC SRL → fără obligație suplimentară
+
+Obligații ABC SRL:
+- Reține impozit lunar: 400 lei
+- Plătește impozit la buget: până pe 25 a lunii următoare
+- Declară prin D100: lunar
+
+Total taxe Andrei: 4.800 (impozit) + 2.430 (CASS) = 7.230 lei
+Net primit anual: 60.000 - 4.800 = 55.200 lei
+
+EXEMPLU COMPLET 3: Închiriere în valută (EUR)
+--------------------------------------
+Profil:
+- Elena, proprietar apartament București
+- Chiriaș: Expat (persoană fizică)
+- Chirie: 800 EUR/lună
+- Contract: 1 an
+- Curs mediu anual BNR 2024: 4,9746 lei/EUR
+- An: 2024
+
+Calcul fiscal:
+
+Venit brut 2024 (în lei):
+- 800 EUR/lună × 12 × 4,9746 = 47.756,16 lei
+
+Cheltuieli forfetare (chirie în valută):
+- 47.756,16 × 40% = 19.102,46 lei
+
+Venit net:
+- 47.756,16 - 19.102,46 = 28.653,70 lei
+
+Impozit pe venit:
+- 28.653,70 × 10% = 2.865,37 lei
+
+CASS:
+- Venit net 28.653,70 lei se încadrează între 24.300 - 48.600
+- Bază calcul: 24.300 lei
+- CASS: 2.430 lei
+
+Obligații:
+- Declarație Unică: OBLIGATORIE (chirie în valută)
+- Termen: până pe 25 mai 2025
+- Plată impozit: 2.865,37 lei
+- Plată CASS: 2.430 lei
+
+Total taxe: 5.295,37 lei
+Rată efectivă de impozitare: 11,1% din venit brut (datorită cheltuielilor forfetare 40%)
+
+EXEMPLU COMPLET 4: Airbnb - închiriere turistică
+--------------------------------------
+Profil:
+- Mihai, proprietar apartament Brașov (zonă turistică)
+- 3 camere închiriate pe Airbnb
+- Normă de venit ANAF: 7.000 lei/cameră/an
+- Venituri reale încasate: 55.000 lei
+- Perioada: tot anul
+- An: 2024
+
+Calcul fiscal:
+
+Bază de impozitare (normă, nu venit real):
+- 7.000 lei/cameră × 3 camere = 21.000 lei
+
+Impozit pe venit:
+- 21.000 × 10% = 2.100 lei
+
+CASS:
+- Normă 21.000 lei < 24.300 lei → NU se datorează CASS
+
+Obligații:
+- Declarație Unică: OBLIGATORIE (închiriere turistică)
+- Termen: până pe 25 mai 2025
+- Plată impozit: 2.100 lei
+
+Total taxe: 2.100 lei
+Venit net după taxe: 55.000 - 2.100 = 52.900 lei
+Rată efectivă: 3,8% (foarte avantajos datorită normei de venit)
+
+Observație: Plătești impozit pe NORMĂ (21.000 lei), nu pe venitul REAL (55.000 lei).
+
+EXEMPLU COMPLET 5: Multiple proprietăți, venituri mari
+--------------------------------------
+Profil:
+- Sorin, proprietar:
+  * 4 apartamente închiriate (contract lung)
+  * 1 spațiu comercial închiriat
+- Venituri totale brute 2024: 180.000 lei (toate în lei)
+- Toți chiriașii: persoane fizice
+
+Calcul fiscal:
+
+Venit brut 2024:
+- 180.000 lei
+
+Cheltuieli forfetare (chirii în lei):
+- 180.000 × 20% = 36.000 lei
+
+Venit net:
+- 180.000 - 36.000 = 144.000 lei
+
+Impozit pe venit:
+- 144.000 × 10% = 14.400 lei
+
+CASS:
+- Venit net 144.000 lei > 97.200 lei (peste 24 salarii minime)
+- Bază calcul: 97.200 lei (plafon maxim)
+- CASS: 97.200 × 10% = 9.720 lei
+
+Obligații:
+- Înregistrare toate contractele (5 contracte)
+- Declarație Unică: până pe 25 mai 2025
+- Plată impozit: 14.400 lei
+- Plată CASS: 9.720 lei
+
+Total taxe: 24.120 lei
+Venit net după taxe: 180.000 - 24.120 = 155.880 lei
+Rată efectivă: 13,4%
+
+EXEMPLU COMPLET 6: Chirii + alte venituri
+--------------------------------------
+Profil:
+- Ana, are:
+  * Venit net din chirii: 20.000 lei
+  * Venit net din drepturi de autor: 10.000 lei
+  * Venit din dividende: 5.000 lei
+- Total cumulat: 35.000 lei
+
+Calcul CASS:
+
+Venituri care se cumulează pentru CASS:
+- Chirii: 20.000 lei
+- Drepturi autor: 10.000 lei
+- Dividende: 5.000 lei (dacă sunt peste prag)
+- Total: 35.000 lei
+
+Încadrare CASS:
+- 35.000 lei se încadrează între 24.300 - 48.600 (6-12 salarii)
+- Bază calcul CASS: 24.300 lei
+- CASS: 2.430 lei
+
+Repartizare CASS proporțional:
+- Chirii: 2.430 × (20.000/35.000) = 1.388,57 lei
+- Drepturi autor: 2.430 × (10.000/35.000) = 694,29 lei
+- Dividende: 2.430 × (5.000/35.000) = 347,14 lei
+
+Obligații:
+- Declarație Unică: toate veniturile
+- Plată CASS totală: 2.430 lei
+
+================================================================================
+SECȚIUNEA 11: ÎNTREBĂRI FRECVENTE (FAQ)
+================================================================================
+
+Q1: Trebuie să înregistrez contractul de închiriere la ANAF?
+A: DA, obligatoriu în 30 de zile de la semnare sau modificare (din ianuarie 2025).
+
+Q2: Ce se întâmplă dacă nu înregistrez contractul?
+A: Riști amendă (50-500 lei), estimare din oficiu a veniturilor, imposibilitatea de a folosi contractul ca titlu executoriu.
+
+Q3: Cum înregistrez contractul online?
+A: Prin Spațiul Privat Virtual (SPV) pe www.anaf.ro → depui Formularul C168 + copie contract.
+
+Q4: Plătesc impozit pe garanția primită de la chiriaș?
+A: NU, dacă o restituie la final. DA, dacă o folosești pentru plata chiriei.
+
+Q5: Cât este impozitul pe venituri din chirii?
+A: 10% din venitul net (venit brut - cheltuieli forfetare 20% sau 40%).
+
+Q6: Ce sunt cheltuielile forfetare?
+A: Cheltuieli calculate automat: 20% (chirie în lei) sau 40% (chirie în valută). Nu trebuie documente justificative.
+
+Q7: Când datorez CASS pentru chirii?
+A: Dacă venitul net anual din chirii (+ alte venituri) ≥ 24.300 lei (6 salarii minime).
+
+Q8: Cât este CASS pentru chirii?
+A: 10% din baza de calcul (24.300 lei, 48.600 lei sau 97.200 lei, în funcție de venit).
+
+Q9: Chiriașul meu este SRL. Cine plătește impozitul?
+A: SRL-ul calculează, reține și plătește impozitul la buget. Tu primești chiria netă și declari CASS (dacă e cazul).
+
+Q10: Chiriașul meu este persoană fizică. Cine plătește impozitul?
+A: Tu declari și plătești impozitul prin Declarația Unică (până pe 25 mai anul următor).
+
+Q11: Trebuie să depun Declarația Unică dacă am chirii?
+A: Depinde: DA dacă chiriașul e persoană fizică, sau dacă datorezi CASS, sau dacă chiria e în valută. NU dacă chiriașul e SRL (reține la sursă) și nu datorezi CASS.
+
+Q12: Când se depune Declarația Unică?
+A: Până la 25 MAI a anului următor celui de realizare a veniturilor.
+
+Q13: Pot deduce cheltuieli efective (reparații, utilități)?
+A: NU în sistemul standard (cheltuieli forfetare). DA dacă optezi pentru sistem real (minim 2 ani, necesită contabilitate).
+
+Q14: Ce este închirierea în scop turistic?
+A: Închirierea de camere din locuința ta personală către turiști (Airbnb, Booking etc.). Impozit pe bază de normă de venit, nu chirie reală.
+
+Q15: Cum se calculează impozitul pentru Airbnb?
+A: Pe bază de NORMĂ de venit/cameră/an (stabilită de ANAF). Impozit = Normă × Număr camere × 10%.
+
+Q16: Închiriez mai multe apartamente. Trebuie să deschid PFA?
+A: NU. Închirierile din patrimoniul personal rămân venituri din cedarea folosinței bunurilor, nu activitate independentă (cu rare excepții).
+
+Q17: Trebuie să emit facturi pentru chirii?
+A: NU e obligatoriu dacă ești persoană fizică. Poți emite chitanțe sau doar contract + dovezi plată.
+
+Q18: Trebuie să plătesc TVA pentru chirii?
+A: NU, închirierea bunurilor imobile este scutită de TVA. Poți OPTA pentru taxare dacă vrei (cu avantaje/dezavantaje).
+
+Q19: Închiriez către un prieten/rudă. Plătesc impozit?
+A: DA, închirierea către orice persoană (inclusiv rude) este impozabilă. Nu există scutiri.
+
+Q20: Pot da în chirie GRATUIT fără impozit?
+A: DA, dacă e comodat GRATUIT (fără contraprestation). Recomandabil contract scris că e gratuit.
+
+Q21: Ce fac dacă am mai multe proprietari (coproprietate)?
+A: Din 2025, desemnați UN SINGUR proprietar responsabil cu înregistrarea contractului (prin clauză în contract).
+
+Q22: Pot schimba chiria în cursul anului?
+A: DA, prin act adițional. Trebuie înregistrat la ANAF în 30 zile.
+
+Q23: Ce fac dacă chiriașul nu plătește?
+A: Contractul înregistrat la ANAF poate deveni titlu executoriu. Poți merge la executorul judecătoresc fără judecată.
+
+Q24: Trebuie să plătesc impozit lunar sau anual?
+A: Dacă chiriașul e PJ: reține lunar (el plătește). Dacă chiriașul e PF: tu plătești anual (25 mai).
+
+Q25: Pot avea și PFA și chirii?
+A: DA, sunt venituri separate. Chirii = venituri din cedarea folosinței. PFA = activități independente. Se declară separat, dar se cumulează pentru CASS.
+
+================================================================================
+SECȚIUNEA 12: GLOSAR DE TERMENI
+================================================================================
+
+ANAF - Agenția Națională de Administrare Fiscală
+Instituția care administrează impozitele și taxele în România.
+
+Bază de calcul
+Suma asupra căreia se aplică cota de impozit sau contribuție.
+
+CASS - Contribuția de Asigurări Sociale de Sănătate
+Contribuția pentru sistemul public de sănătate. Cotă: 10%.
+
+Cedarea folosinței bunurilor
+Termen legal pentru închiriere, dare în chirie, locațiune.
+
+Cheltuieli forfetare
+Cheltuieli calculate automat ca procent din venit (20% sau 40%), fără documente justificative.
+
+Chiriaș (Locatar)
+Persoana care închiriază bunul și plătește chiria.
+
+Chirie (Locațiune)
+Suma plătită pentru folosința bunului închiriat.
+
+CNP - Cod Numeric Personal
+Codul unic de identificare a persoanei fizice (13 cifre).
+
+Comodat
+Contract de împrumut gratuit al unui bun.
+
+Contract de locațiune
+Contract de închiriere (sinonim).
+
+Coproprietate
+Situația în care un bun este deținut de mai mulți proprietari.
+
+Curs mediu anual BNR
+Cursul de schimb valutar mediu pe un an, comunicat de Banca Națională a României.
+
+Declarația Unică (Formularul 212)
+Declarația anuală pentru impozit pe venit și contribuții sociale.
+
+Depozit de garanție (Garanție)
+Sumă depusă de chiriaș la începutul contractului, restituită la final (dacă nu sunt daune).
+
+Formularul C168
+Cerere de înregistrare a contractelor de locațiune la ANAF.
+
+Închiriere în scop turistic
+Închiriere de camere din locuință personală către turiști (perioade scurte).
+
+Impozit final
+Impozit care nu se mai recalculează, este definitiv.
+
+Locator (Proprietar)
+Persoana care dă în chirie bunul și primește chiria.
+
+Locațiune
+Sinonim pentru închiriere, chirie.
+
+Normă de venit
+Sumă fixă anuală stabilită de ANAF pentru anumite activități (ex: închiriere turistică).
+
+Persoană fizică
+Individ (om), spre deosebire de persoană juridică (firmă).
+
+Persoană juridică
+Entitate cu personalitate juridică (SRL, SA, PFA, asociație etc.).
+
+Proprietar (Locator, Arendator)
+Persoana care deține bunul și îl dă în chirie.
+
+Reținere la sursă
+Procedura prin care plătitorul de venit (ex: SRL chiriaș) calculează și reține impozitul înainte de a plăti beneficiarul.
+
+Salariu minim brut pe țară
+Salariul minim legal (2025: 4.050 lei). Bază pentru calculul contribuțiilor sociale.
+
+SPV - Spațiul Privat Virtual
+Platforma online ANAF pentru contribuabili (www.anaf.ro).
+
+Subînchiriere
+Închirierea de către chiriaș a bunului primit în chirie (necesită acordul proprietarului).
+
+Sistem real
+Regim de impozitare în care venitul net = venituri - cheltuieli efective (cu documente).
+
+Titlu executoriu
+Document cu putere executorie (poți merge direct la executare silită fără judecată).
+
+TVA - Taxa pe Valoarea Adăugată
+Impozit indirect pe consum (19% standard). Închirierile sunt scutite (cu opțiune de taxare).
+
+Uzufruct
+Drept de a folosi și culege roadele unui bun aparținând altcuiva.
+
+Venit brut
+Suma totală încasată (înainte de deduceri).
+
+Venit net
+Venit brut minus cheltuieli (forfetare sau efective).
+
+================================================================================
+SECȚIUNEA 13: RESURSE ȘI CONTACT ANAF
+================================================================================
+
+13.1. RESURSE ONLINE
+--------------------------------------
+Portal ANAF: www.anaf.ro
+- Formulare (C168, 212, etc.)
+- Ghiduri și instrucțiuni
+- Legislație fiscală
+- Coduri IBAN pentru plăți
+
+Spațiul Privat Virtual: www.anaf.ro → Autentificare SPV
+- Depunere declarații online
+- Înregistrare contracte
+- Vizualizare situație fiscală
+
+Norme de venit închiriere turistică:
+www.anaf.ro → Asistență contribuabili → Declararea obligațiilor → Norme de venit
+
+13.2. CONTACT ANAF
+--------------------------------------
+Call Center ANAF: 031.403.91.60
+Program: Luni-Vineri, 8:00-18:00
+
+E-mail: contact.center@anaf.ro
+
+Programări online:
+www.anaf.ro → Programări online
+
+13.3. LEGISLAȚIE DE REFERINȚĂ
+--------------------------------------
+- Legea nr. 227/2015 (Codul Fiscal) - Art. 84-88
+- Legea nr. 207/2015 (Codul de Procedură Fiscală)
+- OUG nr. 115/2023 (modificări fiscale 2024)
+- OUG nr. 128/2024 (modificări fiscale 2025)
+- Ordin ANAF nr. 161/2025 (înregistrare contracte coproprietate)
+- Legea nr. 287/2009 (Codul Civil) - Art. 1777 și urm.
+
+================================================================================
+DOCUMENT FINAL - PUNCTE CHEIE DE REȚINUT
+================================================================================
+
+✓ ÎNREGISTRARE CONTRACT obligatorie în 30 zile (Formular C168)
+✓ Coproprietate: desemnare responsabil în contract (din 2025)
+✓ IMPOZIT: 10% din venit net (brut - cheltuieli forfetare)
+✓ Cheltuieli forfetare: 20% (lei) sau 40% (valută)
+✓ CASS: 10% dacă venit net ≥ 24.300 lei (6 salarii minime)
+✓ Chiriaș PJ: reține impozit la sursă, tu declari CASS
+✓ Chiriaș PF: tu declari și plătești impozit + CASS
+✓ DECLARAȚIA UNICĂ: până pe 25 MAI anul următor
+✓ Închiriere turistică: impozit pe NORMĂ de venit (nu venit real)
+✓ TVA: scutită (cu opțiune de taxare)
+✓ Garanție: NU se impozitează (dacă e restituită)
+✓ Sancțiuni: 50-500 lei amendă pentru nedepunere declarații
+
+================================================================================
+DOCUMENT GENERAT PENTRU SISTEME RAG (RETRIEVAL-AUGMENTED GENERATION)
+Sursa: ANAF + Legislație fiscală română actualizată 2025
+Structură optimizată pentru: indexare, căutare semantică, răspunsuri contextualizate
+================================================================================
