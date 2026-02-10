@@ -1,8 +1,8 @@
-"""Tests for the Calculation Agent Service."""
+"""Tests for the Calculation Service."""
 
 import pytest
-from ro_tax_agents.services.calculation_agent import calculation_agent_service
-from ro_tax_agents.orchestration.main_graph import get_initial_state
+from ro_tax_agents.services.calculation import calculation_service
+from ro_tax_agents.graph import get_initial_state
 
 
 class TestPropertySaleTaxCalculation:
@@ -17,7 +17,7 @@ class TestPropertySaleTaxCalculation:
             "calculation_type": "property_sale_tax",
         }
 
-        result = calculation_agent_service.process(state)
+        result = calculation_service.process(state)
 
         assert result["shared_context"]["tax_rate"] == 0.03
         assert result["shared_context"]["calculated_tax"] == 3000.0
@@ -31,7 +31,7 @@ class TestPropertySaleTaxCalculation:
             "calculation_type": "property_sale_tax",
         }
 
-        result = calculation_agent_service.process(state)
+        result = calculation_service.process(state)
 
         assert result["shared_context"]["tax_rate"] == 0.01
         assert result["shared_context"]["calculated_tax"] == 1000.0
@@ -45,7 +45,7 @@ class TestPropertySaleTaxCalculation:
             "calculation_type": "property_sale_tax",
         }
 
-        result = calculation_agent_service.process(state)
+        result = calculation_service.process(state)
 
         assert result["shared_context"]["tax_rate"] == 0.01
         assert result["shared_context"]["calculated_tax"] == 2000.0
@@ -62,7 +62,7 @@ class TestPFAContributionsCalculation:
             "calculation_type": "pfa_contributions",
         }
 
-        result = calculation_agent_service.process(state)
+        result = calculation_service.process(state)
 
         # CAS: 25% of 12 minimum salaries (3300 * 12 * 0.25 = 9900)
         # CASS: 10% of 6 minimum salaries (3300 * 6 * 0.10 = 1980)
@@ -78,7 +78,7 @@ class TestPFAContributionsCalculation:
             "calculation_type": "pfa_contributions",
         }
 
-        result = calculation_agent_service.process(state)
+        result = calculation_service.process(state)
 
         assert result["shared_context"]["cas_amount"] == 0.0
         assert result["shared_context"]["cass_amount"] == 1980.0
@@ -91,7 +91,7 @@ class TestPFAContributionsCalculation:
             "calculation_type": "pfa_contributions",
         }
 
-        result = calculation_agent_service.process(state)
+        result = calculation_service.process(state)
 
         assert result["shared_context"]["cas_amount"] == 0.0
         assert result["shared_context"]["cass_amount"] == 0.0
@@ -109,7 +109,7 @@ class TestRentalTaxCalculation:
             "calculation_type": "rental_income_tax",
         }
 
-        result = calculation_agent_service.process(state)
+        result = calculation_service.process(state)
 
         # 500 * 12 = 6000 annual, 10% = 600
         assert result["shared_context"]["annual_rent"] == 6000.0

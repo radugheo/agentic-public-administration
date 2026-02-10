@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-from ro_tax_agents.services.rag_service import rag_service
+from ro_tax_agents.services.rag import rag_service
 
 
 def main():

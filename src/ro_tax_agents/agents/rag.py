@@ -1,4 +1,4 @@
-"""RAG Agent Service - Tax Code Knowledge expert, powered by retrieval-augmented generation."""
+"""RAG Agent - Tax Code Knowledge expert, powered by retrieval-augmented generation."""
 
 from typing import Any
 from langchain_openai import ChatOpenAI
@@ -7,15 +7,15 @@ from langchain_core.messages import SystemMessage, AIMessage, HumanMessage
 from ro_tax_agents.state.base import BaseAgentState
 from ro_tax_agents.config.prompts import RAG_AGENT_SYSTEM_PROMPT
 from ro_tax_agents.config.settings import settings
-from ro_tax_agents.services.rag_service import rag_service, AGENT_INDEXES
+from ro_tax_agents.services.rag import rag_service, AGENT_INDEXES
 
 
-class RAGAgentService:
-    """Tax Code Knowledge expert service, powered by RAG.
+class RAGAgent:
+    """Tax Code Knowledge expert, powered by RAG.
 
-    This service provides expertise on Romanian tax legislation
-    by retrieving relevant knowledge from the RAG vector store
-    across all available agent knowledge bases.
+    Provides expertise on Romanian tax legislation by retrieving
+    relevant knowledge from the RAG vector store across all
+    available agent knowledge bases.
     """
 
     def __init__(self):
@@ -101,10 +101,10 @@ class RAGAgentService:
             },
         }
 
-    def __call__(self, state: BaseAgentState) -> dict[str, Any]:
-        """Make the service callable as a LangGraph node."""
-        return self.process(state)
+
+_rag_agent = RAGAgent()
 
 
-# Singleton instance
-rag_agent_service = RAGAgentService()
+def rag_node(state: BaseAgentState) -> dict[str, Any]:
+    """LangGraph node function for RAG agent."""
+    return _rag_agent.process(state)

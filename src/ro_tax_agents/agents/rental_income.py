@@ -1,18 +1,16 @@
 """Rental Income Agent - Contract registration and rental tax."""
 
 from typing import Any
-from langchain_openai import ChatOpenAI
 from langchain_core.messages import SystemMessage
 
 from ro_tax_agents.state.base import BaseAgentState
 from ro_tax_agents.config.prompts import RENTAL_INCOME_AGENT_SYSTEM_PROMPT
-from ro_tax_agents.config.settings import settings
-from ro_tax_agents.services import calculation_agent_service
-from ro_tax_agents.services import rag_service
+from ro_tax_agents.services import calculation_service
 from ro_tax_agents.mocks.tools import mock_spv_register_contract
+from ro_tax_agents.agents._base import RAGEnabledAgentMixin
 
 
-class RentalIncomeAgent:
+class RentalIncomeAgent(RAGEnabledAgentMixin):
     """Rental Income agent for contract registration and tax calculation.
 
     This agent handles:
@@ -24,37 +22,6 @@ class RentalIncomeAgent:
     """
 
     RAG_AGENT_TYPE = "rental_income"
-
-    def __init__(self):
-        self._llm = None
-
-    def _get_rag_context(self, state: BaseAgentState) -> str:
-        """Retrieve relevant tax knowledge from RAG vector store."""
-        messages = state.get("messages", [])
-        if not messages:
-            return ""
-        last_msg = messages[-1]
-        query = last_msg.content if hasattr(last_msg, "content") else ""
-        if not query:
-            return ""
-        try:
-            docs = rag_service.retrieve(query, self.RAG_AGENT_TYPE, k=3)
-            if docs:
-                return "\n\n---\n\n".join(doc.page_content for doc in docs)
-        except Exception:
-            pass
-        return ""
-
-    @property
-    def llm(self):
-        """Lazy initialization of the LLM."""
-        if self._llm is None:
-            self._llm = ChatOpenAI(
-                model=settings.openai_model,
-                temperature=0,
-                api_key=settings.openai_api_key or None,
-            )
-        return self._llm
 
     def process(self, state: BaseAgentState) -> dict[str, Any]:
         """Process rental income related requests.
@@ -96,7 +63,7 @@ class RentalIncomeAgent:
         }
 
         calc_state = {**state, "shared_context": updated_context}
-        calc_result = calculation_agent_service.process(calc_state)
+        calc_result = calculation_service.process(calc_state)
 
         # Get calculation results
         rental_tax = calc_result["shared_context"].get("rental_tax", 0)
@@ -124,7 +91,7 @@ class RentalIncomeAgent:
         return {
             "messages": [response],
             "shared_context": calc_result["shared_context"],
-            "current_agent": "rental_income_agent",
+            "current_agent": "rental_income",
             "workflow_status": "in_progress",
         }
 
@@ -160,7 +127,7 @@ class RentalIncomeAgent:
 
         return {
             "messages": [response],
-            "current_agent": "rental_income_agent",
+            "current_agent": "rental_income",
             "shared_context": {
                 **shared_context,
                 "awaiting_rental_data": True,
@@ -219,15 +186,14 @@ class RentalIncomeAgent:
                 "contract_registration_status": result["status"],
                 "contract_registration_number": result.get("registration_number"),
             },
-            "current_agent": "rental_income_agent",
+            "current_agent": "rental_income",
             "workflow_status": workflow_status,
         }
 
 
-# Create singleton instance
 _rental_income_agent = RentalIncomeAgent()
 
 
-def rental_income_agent_node(state: BaseAgentState) -> dict[str, Any]:
+def rental_income_node(state: BaseAgentState) -> dict[str, Any]:
     """LangGraph node function for Rental Income agent."""
     return _rental_income_agent.process(state)

@@ -1,6 +1,6 @@
 [project]
 name = "ro-tax-agents"
-version = "0.1.1"
+version = "0.1.2"
 description = "Multi-agent system for Romanian tax services using LangGraph"
 authors = [{ name = "Radu Gheorghe", email = "radu.gheorghe@uipath.com" }]
 readme = "README.md"

@@ -7,7 +7,7 @@ tax-related queries.
 import uuid
 from dotenv import load_dotenv
 
-from ro_tax_agents.orchestration.main_graph import compile_graph
+from ro_tax_agents.graph import compile_graph
 
 # Load environment variables
 load_dotenv()

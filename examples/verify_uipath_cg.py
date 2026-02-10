@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 from uipath_langchain.retrievers import ContextGroundingRetriever
-from ro_tax_agents.services.rag_service import AGENT_INDEXES
+from ro_tax_agents.services.rag import AGENT_INDEXES
 from ro_tax_agents.config.settings import settings
 
 print("=" * 60)

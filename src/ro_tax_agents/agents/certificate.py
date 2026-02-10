@@ -1,54 +1,22 @@
 """Certificate Agent - Fiscal attestation certificates."""
 
 from typing import Any
-from langchain_openai import ChatOpenAI
 from langchain_core.messages import SystemMessage, HumanMessage
 
 from ro_tax_agents.state.base import BaseAgentState
 from ro_tax_agents.config.prompts import CERTIFICATE_AGENT_SYSTEM_PROMPT
-from ro_tax_agents.config.settings import settings
-from ro_tax_agents.services import rag_service
 from ro_tax_agents.mocks.tools import mock_fiscal_certificate_request
+from ro_tax_agents.agents._base import RAGEnabledAgentMixin
 
 
-class CertificateAgent:
+class CertificateAgent(RAGEnabledAgentMixin):
     """Certificate agent for fiscal attestation requests.
 
     Uses LLM for all responses, grounded in RAG tax code knowledge.
     """
 
     RAG_AGENT_TYPE = "certificate"
-
-    def __init__(self):
-        self._llm = None
-
-    def _get_rag_context(self, state: BaseAgentState) -> str:
-        """Retrieve relevant tax knowledge from RAG vector store."""
-        messages = state.get("messages", [])
-        if not messages:
-            return ""
-        last_msg = messages[-1]
-        query = last_msg.content if hasattr(last_msg, "content") else ""
-        if not query:
-            return ""
-        try:
-            docs = rag_service.retrieve(query, self.RAG_AGENT_TYPE, k=3)
-            if docs:
-                return "\n\n---\n\n".join(doc.page_content for doc in docs)
-        except Exception:
-            pass
-        return ""
-
-    @property
-    def llm(self):
-        """Lazy initialization of the LLM."""
-        if self._llm is None:
-            self._llm = ChatOpenAI(
-                model=settings.openai_model,
-                temperature=0.3,
-                api_key=settings.openai_api_key or None,
-            )
-        return self._llm
+    LLM_TEMPERATURE = 0.3
 
     def process(self, state: BaseAgentState) -> dict[str, Any]:
         """Process fiscal certificate requests using LLM."""
@@ -88,7 +56,7 @@ class CertificateAgent:
 
         return {
             "messages": [response],
-            "current_agent": "certificate_agent",
+            "current_agent": "certificate",
             "shared_context": shared_context,
             "workflow_status": "in_progress",
         }
@@ -128,7 +96,7 @@ class CertificateAgent:
                 "certificate_request_status": result["status"],
                 "certificate_request_id": result.get("request_id"),
             },
-            "current_agent": "certificate_agent",
+            "current_agent": "certificate",
             "workflow_status": workflow_status,
         }
 
@@ -136,6 +104,6 @@ class CertificateAgent:
 _certificate_agent = CertificateAgent()
 
 
-def certificate_agent_node(state: BaseAgentState) -> dict[str, Any]:
+def certificate_node(state: BaseAgentState) -> dict[str, Any]:
     """LangGraph node function for Certificate agent."""
     return _certificate_agent.process(state)

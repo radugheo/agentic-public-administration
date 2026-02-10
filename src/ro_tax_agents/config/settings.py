@@ -44,6 +44,15 @@ class Settings(BaseSettings):
         default=0.01, description="Property sale tax rate for >= 3 years ownership (1%)"
     )
 
+    @property
+    def rag_index_mapping(self) -> dict[str, str]:
+        """Map agent types to their UiPath Context Grounding index names."""
+        return {
+            "pfa": self.uipath_index_pfa,
+            "rental_income": self.uipath_index_rental_income,
+            "certificate": self.uipath_index_certificate,
+        }
+
     model_config = {"env_file": ".env", "env_file_encoding": "utf-8", "extra": "ignore"}
 
 

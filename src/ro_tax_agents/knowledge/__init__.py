@@ -1,1 +1,1 @@
-"""Pachet knowledge - fișiere cu informații pentru RAG."""
+"""Knowledge package - files used as RAG data sources."""

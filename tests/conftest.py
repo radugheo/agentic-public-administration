@@ -3,7 +3,7 @@
 import pytest
 from unittest.mock import patch, MagicMock
 
-from ro_tax_agents.orchestration.main_graph import compile_graph, get_initial_state
+from ro_tax_agents.graph import compile_graph, get_initial_state
 
 
 @pytest.fixture

@@ -1,36 +1,21 @@
 """Property Sale Agent - Tax calculation for property sales."""
 
 from typing import Any
-from langchain_openai import ChatOpenAI
 from langchain_core.messages import SystemMessage
 
 from ro_tax_agents.state.base import BaseAgentState
 from ro_tax_agents.config.prompts import PROPERTY_SALE_AGENT_SYSTEM_PROMPT
-from ro_tax_agents.config.settings import settings
-from ro_tax_agents.services import calculation_agent_service
+from ro_tax_agents.services import calculation_service
+from ro_tax_agents.agents._base import RAGEnabledAgentMixin
 
 
-class PropertySaleAgent:
+class PropertySaleAgent(RAGEnabledAgentMixin):
     """Property Sale agent for calculating property sale taxes.
 
     Tax rates:
     - 3% if property owned less than 3 years
     - 1% if property owned 3 years or more
     """
-
-    def __init__(self):
-        self._llm = None
-
-    @property
-    def llm(self):
-        """Lazy initialization of the LLM."""
-        if self._llm is None:
-            self._llm = ChatOpenAI(
-                model=settings.openai_model,
-                temperature=0,
-                api_key=settings.openai_api_key or None,
-            )
-        return self._llm
 
     def process(self, state: BaseAgentState) -> dict[str, Any]:
         """Process property sale tax calculation requests.
@@ -49,10 +34,8 @@ class PropertySaleAgent:
         ownership_years = extracted_entities.get("ownership_years") or shared_context.get("ownership_duration_years")
 
         if property_value is not None and ownership_years is not None:
-            # We have all data - calculate tax
             return self._calculate_tax(state, float(property_value), int(ownership_years))
         else:
-            # Need more information
             return self._request_information(state, property_value, ownership_years)
 
     def _calculate_tax(self, state: BaseAgentState, property_value: float, ownership_years: int) -> dict[str, Any]:
@@ -80,7 +63,7 @@ class PropertySaleAgent:
         calc_state = {**state, "shared_context": updated_context}
 
         # Call calculation service
-        calc_result = calculation_agent_service.process(calc_state)
+        calc_result = calculation_service.process(calc_state)
 
         # Get calculation results
         calculated_tax = calc_result["shared_context"].get("calculated_tax", 0)
@@ -105,7 +88,7 @@ class PropertySaleAgent:
         return {
             "messages": [response],
             "shared_context": calc_result["shared_context"],
-            "current_agent": "property_sale_agent",
+            "current_agent": "property_sale",
             "workflow_status": "in_progress",
         }
 
@@ -149,7 +132,7 @@ class PropertySaleAgent:
 
         return {
             "messages": [response],
-            "current_agent": "property_sale_agent",
+            "current_agent": "property_sale",
             "shared_context": {
                 **shared_context,
                 "awaiting_property_data": True,
@@ -160,10 +143,9 @@ class PropertySaleAgent:
         }
 
 
-# Create singleton instance
 _property_sale_agent = PropertySaleAgent()
 
 
-def property_sale_agent_node(state: BaseAgentState) -> dict[str, Any]:
+def property_sale_node(state: BaseAgentState) -> dict[str, Any]:
     """LangGraph node function for Property Sale agent."""
     return _property_sale_agent.process(state)

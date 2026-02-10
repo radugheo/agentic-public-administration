@@ -4,7 +4,7 @@ from unittest.mock import patch, MagicMock
 
 import pytest
 
-from ro_tax_agents.services.rag_service import (
+from ro_tax_agents.services.rag import (
     RAGService,
     AGENT_INDEXES,
 )
@@ -38,7 +38,7 @@ class TestRAGServiceInstance:
     def test_invalid_agent_type_raises_error(self):
         """Querying with invalid agent type should raise ValueError."""
         service = RAGService()
-        with pytest.raises(ValueError, match="Tip agent invalid"):
+        with pytest.raises(ValueError, match="Invalid agent type"):
             service._get_retriever("nonexistent_agent")
 
     def test_retrieve_returns_documents(self):
@@ -75,7 +75,7 @@ class TestRAGServiceInstance:
         assert "pfa" not in service._retrievers
 
         with patch(
-            "ro_tax_agents.services.rag_service.ContextGroundingRetriever"
+            "ro_tax_agents.services.rag.ContextGroundingRetriever"
         ) as MockRetriever:
             retriever = service._get_retriever("pfa")
             MockRetriever.assert_called_once()
@@ -87,7 +87,7 @@ class TestRAGServiceInstance:
         service = RAGService()
 
         with patch(
-            "ro_tax_agents.services.rag_service.ContextGroundingRetriever"
+            "ro_tax_agents.services.rag.ContextGroundingRetriever"
         ) as MockRetriever:
             r1 = service._get_retriever("pfa")
             r2 = service._get_retriever("pfa")
@@ -101,27 +101,27 @@ class TestRAGAgentIntegration:
 
     def test_pfa_agent_has_rag(self):
         """PFA agent should reference RAG service."""
-        from ro_tax_agents.agents.pfa_agent import PFAAgent
+        from ro_tax_agents.agents.pfa import PFAAgent
         agent = PFAAgent()
         assert agent.RAG_AGENT_TYPE == "pfa"
         assert hasattr(agent, "_get_rag_context")
 
     def test_rental_income_agent_has_rag(self):
         """Rental income agent should reference RAG service."""
-        from ro_tax_agents.agents.rental_income_agent import RentalIncomeAgent
+        from ro_tax_agents.agents.rental_income import RentalIncomeAgent
         agent = RentalIncomeAgent()
         assert agent.RAG_AGENT_TYPE == "rental_income"
         assert hasattr(agent, "_get_rag_context")
 
     def test_certificate_agent_has_rag(self):
         """Certificate agent should reference RAG service."""
-        from ro_tax_agents.agents.certificate_agent import CertificateAgent
+        from ro_tax_agents.agents.certificate import CertificateAgent
         agent = CertificateAgent()
         assert agent.RAG_AGENT_TYPE == "certificate"
         assert hasattr(agent, "_get_rag_context")
 
     def test_rag_agent_uses_rag(self):
-        """RAG agent service should use RAG for knowledge retrieval."""
-        from ro_tax_agents.services.rag_agent import RAGAgentService
-        agent = RAGAgentService()
+        """RAG agent should use RAG for knowledge retrieval."""
+        from ro_tax_agents.agents.rag import RAGAgent
+        agent = RAGAgent()
         assert hasattr(agent, "_retrieve_across_all_bases")

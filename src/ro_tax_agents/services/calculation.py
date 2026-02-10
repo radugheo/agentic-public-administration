@@ -1,4 +1,4 @@
-"""Calculation Agent Service - Tax computation."""
+"""Calculation Service - Tax computation."""
 
 from typing import Any
 from decimal import Decimal
@@ -8,7 +8,7 @@ from ro_tax_agents.state.base import BaseAgentState
 from ro_tax_agents.config.settings import settings
 
 
-class CalculationAgentService:
+class CalculationService:
     """Tax computation service.
 
     This service performs various Romanian tax calculations including:
@@ -37,7 +37,7 @@ class CalculationAgentService:
             return self._calculate_rental_tax(state)
         else:
             return {
-                "error_message": f"Tip de calcul necunoscut: {calculation_type}",
+                "error_message": f"Unknown calculation type: {calculation_type}",
                 "workflow_status": "error",
                 "messages": [AIMessage(content=f"Nu pot efectua calculul pentru tipul: {calculation_type}")],
             }
@@ -185,4 +185,4 @@ class CalculationAgentService:
 
 
 # Singleton instance
-calculation_agent_service = CalculationAgentService()
+calculation_service = CalculationService()

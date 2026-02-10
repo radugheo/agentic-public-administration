@@ -1,19 +1,20 @@
-"""Main graph composition - ties all components together."""
+"""Main graph composition - ties all agents together."""
 
 from langgraph.graph import StateGraph, START, END
 from langgraph.checkpoint.memory import MemorySaver
 
 from ro_tax_agents.state.base import BaseAgentState, GraphInput, GraphOutput
-from ro_tax_agents.orchestration.entry_agent import entry_agent_node, request_clarification_node
-from ro_tax_agents.orchestration.router import route_to_domain_agent
 from ro_tax_agents.agents import (
-    pfa_agent_node,
-    property_sale_agent_node,
-    rental_income_agent_node,
-    certificate_agent_node,
-    efactura_agent_node,
+    entry_node,
+    route_after_entry,
+    clarification_node,
+    pfa_node,
+    property_sale_node,
+    rental_income_node,
+    certificate_node,
+    efactura_node,
+    rag_node,
 )
-from ro_tax_agents.services import rag_agent_service
 
 
 def _set_response(node_fn):
@@ -42,48 +43,48 @@ def create_graph() -> StateGraph:
     """
     builder = StateGraph(BaseAgentState, input_schema=GraphInput, output_schema=GraphOutput)
 
-    # Entry Agent (reads state["query"] directly, populates messages)
-    builder.add_node("entry_agent", entry_agent_node)
+    # Entry node (reads state["query"] directly, populates messages)
+    builder.add_node("entry", entry_node)
 
-    # Domain Agent nodes (wrapped to auto-set response)
-    builder.add_node("pfa_agent", _set_response(pfa_agent_node))
-    builder.add_node("property_sale_agent", _set_response(property_sale_agent_node))
-    builder.add_node("rental_income_agent", _set_response(rental_income_agent_node))
-    builder.add_node("certificate_agent", _set_response(certificate_agent_node))
-    builder.add_node("efactura_agent", _set_response(efactura_agent_node))
+    # Domain agent nodes (wrapped to auto-set response)
+    builder.add_node("pfa", _set_response(pfa_node))
+    builder.add_node("property_sale", _set_response(property_sale_node))
+    builder.add_node("rental_income", _set_response(rental_income_node))
+    builder.add_node("certificate", _set_response(certificate_node))
+    builder.add_node("efactura", _set_response(efactura_node))
 
     # RAG agent (for general tax questions)
-    builder.add_node("rag_agent", _set_response(rag_agent_service))
+    builder.add_node("rag", _set_response(rag_node))
 
     # Clarification node
-    builder.add_node("request_clarification", _set_response(request_clarification_node))
+    builder.add_node("clarification", _set_response(clarification_node))
 
     # Edges
-    builder.add_edge(START, "entry_agent")
+    builder.add_edge(START, "entry")
 
-    # Entry Agent -> Domain Agents (conditional routing)
+    # Entry -> Domain agents (conditional routing)
     builder.add_conditional_edges(
-        "entry_agent",
-        route_to_domain_agent,
+        "entry",
+        route_after_entry,
         {
-            "pfa_agent": "pfa_agent",
-            "property_sale_agent": "property_sale_agent",
-            "rental_income_agent": "rental_income_agent",
-            "certificate_agent": "certificate_agent",
-            "efactura_agent": "efactura_agent",
-            "rag_agent": "rag_agent",
-            "request_clarification": "request_clarification",
+            "pfa": "pfa",
+            "property_sale": "property_sale",
+            "rental_income": "rental_income",
+            "certificate": "certificate",
+            "efactura": "efactura",
+            "rag": "rag",
+            "clarification": "clarification",
         },
     )
 
-    # Domain agents -> End
-    builder.add_edge("pfa_agent", END)
-    builder.add_edge("property_sale_agent", END)
-    builder.add_edge("rental_income_agent", END)
-    builder.add_edge("certificate_agent", END)
-    builder.add_edge("efactura_agent", END)
-    builder.add_edge("rag_agent", END)
-    builder.add_edge("request_clarification", END)
+    # All terminal nodes -> End
+    builder.add_edge("pfa", END)
+    builder.add_edge("property_sale", END)
+    builder.add_edge("rental_income", END)
+    builder.add_edge("certificate", END)
+    builder.add_edge("efactura", END)
+    builder.add_edge("rag", END)
+    builder.add_edge("clarification", END)
 
     return builder
 
@@ -110,7 +111,7 @@ def compile_graph(checkpointer=None):
 graph = compile_graph()
 
 
-def get_initial_state(session_id: str, user_id: str = None) -> BaseAgentState:
+def get_initial_state(session_id: str, user_id: str = None) -> BaseAgentState: # type: ignore
     """Create an initial state for a new conversation.
 
     Args:
@@ -131,4 +132,4 @@ def get_initial_state(session_id: str, user_id: str = None) -> BaseAgentState:
         "workflow_status": "pending",
         "error_message": None,
         "shared_context": {},
-    }
+    } # type: ignore

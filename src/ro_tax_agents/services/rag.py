@@ -9,13 +9,9 @@ from ro_tax_agents.config.settings import settings
 
 
 # Mapping of agent types to UiPath Context Grounding index names
-AGENT_INDEXES = {
-    "pfa": settings.uipath_index_pfa,
-    "rental_income": settings.uipath_index_rental_income,
-    "certificate": settings.uipath_index_certificate,
-}
+AGENT_INDEXES = settings.rag_index_mapping
 
-# Prompt de sistem pentru răspunsurile RAG
+# System prompt for RAG responses
 RAG_SYSTEM_PROMPT = """Ești un expert în legislația fiscală din România.
 Răspunde întrebărilor utilizatorului DOAR pe baza contextului furnizat mai jos.
 Dacă informația nu se găsește în context, spune clar că nu ai informația necesară.
@@ -37,19 +33,19 @@ class RAGService:
         self._retrievers: dict[str, ContextGroundingRetriever] = {}
         self._llm = None
 
-    def _get_retriever(self, tip_agent: str) -> ContextGroundingRetriever:
+    def _get_retriever(self, agent_type: str) -> ContextGroundingRetriever:
         """Get or create a retriever for the given agent type."""
-        if tip_agent not in self._retrievers:
-            if tip_agent not in AGENT_INDEXES:
-                tipuri_valide = list(AGENT_INDEXES.keys())
+        if agent_type not in self._retrievers:
+            if agent_type not in AGENT_INDEXES:
+                valid_types = list(AGENT_INDEXES.keys())
                 raise ValueError(
-                    f"Tip agent invalid: '{tip_agent}'. Tipuri valide: {tipuri_valide}"
+                    f"Invalid agent type: '{agent_type}'. Valid types: {valid_types}"
                 )
-            self._retrievers[tip_agent] = ContextGroundingRetriever(
-                index_name=AGENT_INDEXES[tip_agent],
+            self._retrievers[agent_type] = ContextGroundingRetriever(
+                index_name=AGENT_INDEXES[agent_type],
                 folder_path=settings.uipath_folder_path or None,
             )
-        return self._retrievers[tip_agent]
+        return self._retrievers[agent_type]
 
     @property
     def llm(self) -> ChatOpenAI:
@@ -62,12 +58,12 @@ class RAGService:
             )
         return self._llm
 
-    def retrieve(self, query: str, tip_agent: str, k: int = 3) -> list[Document]:
+    def retrieve(self, query: str, agent_type: str, k: int = 3) -> list[Document]:
         """Retrieve the most relevant documents for a query.
 
         Args:
             query: User question
-            tip_agent: Agent type (pfa, rental_income, certificate)
+            agent_type: Agent type (pfa, rental_income, certificate)
             k: Number of documents to return
 
         Returns:
@@ -76,32 +72,32 @@ class RAGService:
         Raises:
             ValueError: If agent type is invalid
         """
-        retriever = self._get_retriever(tip_agent)
+        retriever = self._get_retriever(agent_type)
         retriever.number_of_results = k
         return retriever.invoke(query)
 
-    def query(self, intrebare: str, tip_agent: str, k: int = 3) -> str:
+    def query(self, question: str, agent_type: str, k: int = 3) -> str:
         """Full RAG query: retrieval + LLM answer generation.
 
         Args:
-            intrebare: User question
-            tip_agent: Agent type (pfa, rental_income, certificate)
+            question: User question
+            agent_type: Agent type (pfa, rental_income, certificate)
             k: Number of documents to use as context
 
         Returns:
             LLM-generated answer based on retrieved context
         """
-        documente = self.retrieve(intrebare, tip_agent, k=k)
-        context = "\n\n---\n\n".join(doc.page_content for doc in documente)
+        documents = self.retrieve(question, agent_type, k=k)
+        context = "\n\n---\n\n".join(doc.page_content for doc in documents)
 
-        prompt_sistem = RAG_SYSTEM_PROMPT.format(context=context)
+        system_prompt = RAG_SYSTEM_PROMPT.format(context=context)
 
-        raspuns = self.llm.invoke([
-            SystemMessage(content=prompt_sistem),
-            HumanMessage(content=intrebare),
+        response = self.llm.invoke([
+            SystemMessage(content=system_prompt),
+            HumanMessage(content=question),
         ])
 
-        return raspuns.content
+        return response.content
 
 
 # Singleton instance

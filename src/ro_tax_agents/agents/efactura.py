@@ -1,16 +1,15 @@
 """E-Factura Agent - Electronic invoicing B2B/B2C."""
 
 from typing import Any
-from langchain_openai import ChatOpenAI
 from langchain_core.messages import SystemMessage
 
 from ro_tax_agents.state.base import BaseAgentState
 from ro_tax_agents.config.prompts import EFACTURA_AGENT_SYSTEM_PROMPT
-from ro_tax_agents.config.settings import settings
 from ro_tax_agents.mocks.tools import mock_efactura_submit, mock_efactura_status
+from ro_tax_agents.agents._base import RAGEnabledAgentMixin
 
 
-class EFacturaAgent:
+class EFacturaAgent(RAGEnabledAgentMixin):
     """E-Factura agent for electronic invoicing.
 
     This agent handles:
@@ -18,20 +17,6 @@ class EFacturaAgent:
     - B2C electronic invoicing
     - Invoice submission and status tracking
     """
-
-    def __init__(self):
-        self._llm = None
-
-    @property
-    def llm(self):
-        """Lazy initialization of the LLM."""
-        if self._llm is None:
-            self._llm = ChatOpenAI(
-                model=settings.openai_model,
-                temperature=0,
-                api_key=settings.openai_api_key or None,
-            )
-        return self._llm
 
     def process(self, state: BaseAgentState) -> dict[str, Any]:
         """Process E-Factura requests.
@@ -104,7 +89,7 @@ class EFacturaAgent:
                 "efactura_status": result["status"],
                 "efactura_upload_index": result.get("upload_index"),
             },
-            "current_agent": "efactura_agent",
+            "current_agent": "efactura",
             "workflow_status": workflow_status,
         }
 
@@ -148,7 +133,7 @@ class EFacturaAgent:
                 **shared_context,
                 "efactura_check_status": result["status"],
             },
-            "current_agent": "efactura_agent",
+            "current_agent": "efactura",
             "workflow_status": "completed",
         }
 
@@ -197,7 +182,7 @@ class EFacturaAgent:
 
         return {
             "messages": [response],
-            "current_agent": "efactura_agent",
+            "current_agent": "efactura",
             "shared_context": {
                 **shared_context,
                 "invoice_type": invoice_type,
@@ -207,10 +192,9 @@ class EFacturaAgent:
         }
 
 
-# Create singleton instance
 _efactura_agent = EFacturaAgent()
 
 
-def efactura_agent_node(state: BaseAgentState) -> dict[str, Any]:
+def efactura_node(state: BaseAgentState) -> dict[str, Any]:
     """LangGraph node function for E-Factura agent."""
     return _efactura_agent.process(state)

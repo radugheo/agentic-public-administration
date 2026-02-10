@@ -1,4 +1,4 @@
-"""Payment Agent Service - Ghiseul.ro integration."""
+"""Payment Service - Ghiseul.ro integration."""
 
 from typing import Any
 from decimal import Decimal
@@ -9,7 +9,7 @@ from ro_tax_agents.mocks.tools import mock_ghiseul_payment
 from ro_tax_agents.models.payments import PaymentRequest
 
 
-class PaymentAgentService:
+class PaymentService:
     """Ghiseul.ro payment integration service.
 
     This service handles tax payment processing through the
@@ -87,4 +87,4 @@ class PaymentAgentService:
 
 
 # Singleton instance
-payment_agent_service = PaymentAgentService()
+payment_service = PaymentService()

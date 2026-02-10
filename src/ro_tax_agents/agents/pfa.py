@@ -1,18 +1,17 @@
 """PFA/Freelancer Agent - D212 filing and CAS/CASS contributions."""
 
 from typing import Any
-from langchain_openai import ChatOpenAI
 from langchain_core.messages import SystemMessage
 
 from ro_tax_agents.state.base import BaseAgentState
 from ro_tax_agents.config.prompts import PFA_AGENT_SYSTEM_PROMPT
 from ro_tax_agents.config.settings import settings
-from ro_tax_agents.services import calculation_agent_service
-from ro_tax_agents.services import rag_service
+from ro_tax_agents.services import calculation_service
 from ro_tax_agents.mocks.tools import mock_spv_submit_d212
+from ro_tax_agents.agents._base import RAGEnabledAgentMixin
 
 
-class PFAAgent:
+class PFAAgent(RAGEnabledAgentMixin):
     """PFA/Freelancer agent for D212 filing and CAS/CASS calculations.
 
     This agent handles:
@@ -25,37 +24,6 @@ class PFAAgent:
 
     RAG_AGENT_TYPE = "pfa"
 
-    def __init__(self):
-        self._llm = None
-
-    def _get_rag_context(self, state: BaseAgentState) -> str:
-        """Retrieve relevant tax knowledge from RAG vector store."""
-        messages = state.get("messages", [])
-        if not messages:
-            return ""
-        last_msg = messages[-1]
-        query = last_msg.content if hasattr(last_msg, "content") else ""
-        if not query:
-            return ""
-        try:
-            docs = rag_service.retrieve(query, self.RAG_AGENT_TYPE, k=3)
-            if docs:
-                return "\n\n---\n\n".join(doc.page_content for doc in docs)
-        except Exception:
-            pass
-        return ""
-
-    @property
-    def llm(self):
-        """Lazy initialization of the LLM."""
-        if self._llm is None:
-            self._llm = ChatOpenAI(
-                model=settings.openai_model,
-                temperature=0,
-                api_key=settings.openai_api_key or None,
-            )
-        return self._llm
-
     def process(self, state: BaseAgentState) -> dict[str, Any]:
         """Process PFA-related requests.
 
@@ -66,17 +34,14 @@ class PFAAgent:
             State updates with PFA guidance or calculations
         """
         shared_context = state.get("shared_context", {})
-        detected_intent = state.get("detected_intent", "")
         extracted_entities = shared_context.get("extracted_entities", {})
 
         # Check if we have income information to calculate contributions
         annual_income = extracted_entities.get("annual_income") or shared_context.get("annual_income")
 
         if annual_income:
-            # We have income data - calculate contributions
             return self._calculate_contributions(state, float(annual_income))
         else:
-            # No income data - provide guidance and ask for information
             return self._provide_guidance(state)
 
     def _calculate_contributions(self, state: BaseAgentState, annual_income: float) -> dict[str, Any]:
@@ -102,7 +67,7 @@ class PFAAgent:
         calc_state = {**state, "shared_context": updated_context}
 
         # Call calculation service
-        calc_result = calculation_agent_service.process(calc_state)
+        calc_result = calculation_service.process(calc_state)
 
         # Get calculation results
         cas_amount = calc_result["shared_context"].get("cas_amount", 0)
@@ -131,7 +96,7 @@ class PFAAgent:
         return {
             "messages": [response],
             "shared_context": calc_result["shared_context"],
-            "current_agent": "pfa_agent",
+            "current_agent": "pfa",
             "workflow_status": "in_progress",
         }
 
@@ -165,7 +130,7 @@ class PFAAgent:
 
         return {
             "messages": [response],
-            "current_agent": "pfa_agent",
+            "current_agent": "pfa",
             "shared_context": {
                 **shared_context,
                 "awaiting_income_data": True,
@@ -224,15 +189,14 @@ class PFAAgent:
                 "d212_submission_status": result.status,
                 "d212_submission_id": result.submission_id,
             },
-            "current_agent": "pfa_agent",
+            "current_agent": "pfa",
             "workflow_status": workflow_status,
         }
 
 
-# Create singleton instance
 _pfa_agent = PFAAgent()
 
 
-def pfa_agent_node(state: BaseAgentState) -> dict[str, Any]:
+def pfa_node(state: BaseAgentState) -> dict[str, Any]:
     """LangGraph node function for PFA agent."""
     return _pfa_agent.process(state)

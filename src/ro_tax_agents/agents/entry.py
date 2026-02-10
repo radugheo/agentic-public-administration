@@ -1,6 +1,6 @@
-"""Entry Agent - Intent detection and routing."""
+"""Entry Agent - Intent detection, routing, and clarification."""
 
-from typing import Literal
+from typing import Any, Literal
 from langchain_core.messages import SystemMessage, AIMessage, HumanMessage
 from langchain_openai import ChatOpenAI
 from pydantic import BaseModel, Field
@@ -8,6 +8,20 @@ from pydantic import BaseModel, Field
 from ro_tax_agents.state.base import BaseAgentState
 from ro_tax_agents.config.prompts import ENTRY_AGENT_SYSTEM_PROMPT
 from ro_tax_agents.config.settings import settings
+
+
+# Single source of truth: maps detected intents to graph node names
+INTENT_TO_NODE = {
+    "pfa_d212_filing": "pfa",
+    "pfa_cas_cass": "pfa",
+    "property_sale_tax": "property_sale",
+    "rental_contract_registration": "rental_income",
+    "fiscal_certificate": "certificate",
+    "efactura_b2b": "efactura",
+    "efactura_b2c": "efactura",
+    "general_question": "rag",
+    "unclear": "clarification",
+}
 
 
 class ExtractedEntities(BaseModel):
@@ -46,7 +60,23 @@ class IntentClassification(BaseModel):
     model_config = {"extra": "forbid"}
 
 
-def entry_agent_node(state: BaseAgentState) -> dict:
+# Module-level lazy LLM singleton
+_llm = None
+
+
+def _get_llm() -> ChatOpenAI:
+    """Get or create the entry agent LLM instance."""
+    global _llm
+    if _llm is None:
+        _llm = ChatOpenAI(
+            model=settings.openai_model,
+            temperature=0,
+            api_key=settings.openai_api_key or None,
+        )
+    return _llm
+
+
+def entry_node(state: BaseAgentState) -> dict[str, Any]:
     """Entry agent that detects intent and routes to appropriate domain agent.
 
     This is the main entry point for user requests. It analyzes the user's
@@ -59,12 +89,7 @@ def entry_agent_node(state: BaseAgentState) -> dict:
     Returns:
         State updates with intent classification and routing decision
     """
-    llm = ChatOpenAI(
-        model=settings.openai_model,
-        temperature=0,
-        api_key=settings.openai_api_key or None,
-    )
-
+    llm = _get_llm()
     query = state["query"]
     user_message = HumanMessage(content=query)
 
@@ -76,27 +101,14 @@ def entry_agent_node(state: BaseAgentState) -> dict:
             user_message,
         ])
 
-        # Map intents to domain agents
-        intent_to_agent = {
-            "pfa_d212_filing": "pfa",
-            "pfa_cas_cass": "pfa",
-            "property_sale_tax": "property_sale",
-            "rental_contract_registration": "rental_income",
-            "fiscal_certificate": "certificate",
-            "efactura_b2b": "efactura",
-            "efactura_b2c": "efactura",
-            "general_question": "rag",  # Route general questions to RAG agent
-            "unclear": "clarify",
-        }
-
-        next_agent = intent_to_agent.get(result.intent, "clarify")
+        next_node = INTENT_TO_NODE.get(result.intent, "clarification")
 
         return {
             "messages": [user_message],
             "detected_intent": result.intent,
             "intent_confidence": result.confidence,
-            "next_agent": next_agent,
-            "current_agent": "entry_agent",
+            "next_agent": next_node,
+            "current_agent": "entry",
             "shared_context": {
                 **state.get("shared_context", {}),
                 "intent_reasoning": result.reasoning,
@@ -116,8 +128,8 @@ def entry_agent_node(state: BaseAgentState) -> dict:
             ],
             "detected_intent": "unclear",
             "intent_confidence": 0.0,
-            "next_agent": "clarify",
-            "current_agent": "entry_agent",
+            "next_agent": "clarification",
+            "current_agent": "entry",
             "shared_context": {
                 **state.get("shared_context", {}),
                 "entry_agent_error": str(e),
@@ -126,7 +138,27 @@ def entry_agent_node(state: BaseAgentState) -> dict:
         }
 
 
-def request_clarification_node(state: BaseAgentState) -> dict:
+def route_after_entry(state: BaseAgentState) -> str:
+    """Routing function for conditional edges from entry agent.
+
+    Determines which domain agent should handle the request based on
+    the detected intent and confidence level.
+
+    Args:
+        state: Current agent state
+
+    Returns:
+        Name of the next node to route to
+    """
+    confidence = state.get("intent_confidence", 0.0)
+
+    if confidence < settings.intent_confidence_threshold:
+        return "clarification"
+
+    return state.get("next_agent", "clarification")
+
+
+def clarification_node(state: BaseAgentState) -> dict[str, Any]:
     """Node that requests clarification from the user.
 
     Args:
@@ -135,8 +167,6 @@ def request_clarification_node(state: BaseAgentState) -> dict:
     Returns:
         State updates with clarification request
     """
-    intent_reasoning = state.get("shared_context", {}).get("intent_reasoning", "")
-
     message = (
         "Nu am inteles exact ce doriti sa faceti. "
         "Va rog sa specificati unul dintre urmatoarele servicii:\n\n"
