@@ -1,7 +1,7 @@
 """Entry Agent - Intent detection and routing."""
 
 from typing import Literal
-from langchain_core.messages import SystemMessage, AIMessage
+from langchain_core.messages import SystemMessage, AIMessage, HumanMessage
 from langchain_openai import ChatOpenAI
 from pydantic import BaseModel, Field
 
@@ -65,15 +65,16 @@ def entry_agent_node(state: BaseAgentState) -> dict:
         api_key=settings.openai_api_key or None,
     )
 
+    query = state["query"]
+    user_message = HumanMessage(content=query)
+
     try:
         structured_llm = llm.with_structured_output(IntentClassification)
 
-        messages = [
+        result: IntentClassification = structured_llm.invoke([
             SystemMessage(content=ENTRY_AGENT_SYSTEM_PROMPT),
-            *state["messages"]
-        ]
-
-        result: IntentClassification = structured_llm.invoke(messages)
+            user_message,
+        ])
 
         # Map intents to domain agents
         intent_to_agent = {
@@ -84,13 +85,14 @@ def entry_agent_node(state: BaseAgentState) -> dict:
             "fiscal_certificate": "certificate",
             "efactura_b2b": "efactura",
             "efactura_b2c": "efactura",
-            "general_question": "rao",  # Route general questions to RAO agent
+            "general_question": "rag",  # Route general questions to RAG agent
             "unclear": "clarify",
         }
 
         next_agent = intent_to_agent.get(result.intent, "clarify")
 
         return {
+            "messages": [user_message],
             "detected_intent": result.intent,
             "intent_confidence": result.confidence,
             "next_agent": next_agent,
@@ -106,6 +108,12 @@ def entry_agent_node(state: BaseAgentState) -> dict:
     except Exception as e:
         # Fallback if LLM fails - ask for clarification
         return {
+            "messages": [
+                user_message,
+                AIMessage(
+                    content="Nu am putut procesa cererea. Va rugam sa reformulati intrebarea sau sa specificati mai clar ce serviciu doriti."
+                ),
+            ],
             "detected_intent": "unclear",
             "intent_confidence": 0.0,
             "next_agent": "clarify",
@@ -114,9 +122,6 @@ def entry_agent_node(state: BaseAgentState) -> dict:
                 **state.get("shared_context", {}),
                 "entry_agent_error": str(e),
             },
-            "messages": [AIMessage(
-                content="Nu am putut procesa cererea. Va rugam sa reformulati intrebarea sau sa specificati mai clar ce serviciu doriti."
-            )],
             "workflow_status": "in_progress",
         }
 

@@ -1,0 +1,7 @@
+{
+    "dependencies": ["."],
+    "graphs": {
+        "agent": "./src/ro_tax_agents/orchestration/main_graph.py:graph"
+    },
+    "env": ".env"
+}

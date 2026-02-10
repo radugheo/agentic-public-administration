@@ -8,6 +8,7 @@ from ro_tax_agents.state.base import BaseAgentState
 from ro_tax_agents.config.prompts import RENTAL_INCOME_AGENT_SYSTEM_PROMPT
 from ro_tax_agents.config.settings import settings
 from ro_tax_agents.services import calculation_agent_service
+from ro_tax_agents.services import rag_service
 from ro_tax_agents.mocks.tools import mock_spv_register_contract
 
 
@@ -18,10 +19,31 @@ class RentalIncomeAgent:
     - Rental contract registration with ANAF
     - Rental income tax calculation (10%)
     - Landlord tax obligation guidance
+
+    Uses RAG to ground responses in actual tax code knowledge.
     """
+
+    RAG_AGENT_TYPE = "rental_income"
 
     def __init__(self):
         self._llm = None
+
+    def _get_rag_context(self, state: BaseAgentState) -> str:
+        """Retrieve relevant tax knowledge from RAG vector store."""
+        messages = state.get("messages", [])
+        if not messages:
+            return ""
+        last_msg = messages[-1]
+        query = last_msg.content if hasattr(last_msg, "content") else ""
+        if not query:
+            return ""
+        try:
+            docs = rag_service.retrieve(query, self.RAG_AGENT_TYPE, k=3)
+            if docs:
+                return "\n\n---\n\n".join(doc.page_content for doc in docs)
+        except Exception:
+            pass
+        return ""
 
     @property
     def llm(self):
@@ -80,7 +102,8 @@ class RentalIncomeAgent:
         rental_tax = calc_result["shared_context"].get("rental_tax", 0)
         annual_rental_income = calc_result["shared_context"].get("annual_rental_income", 0)
 
-        # Use LLM to present the results
+        # Use LLM to present the results, grounded in RAG knowledge
+        rag_context = self._get_rag_context(state)
         context_message = (
             f"Rental tax calculation completed. Present these results to the user:\n"
             f"- Monthly rent: {monthly_rent:,.2f} RON\n"
@@ -90,11 +113,13 @@ class RentalIncomeAgent:
             f"Offer to help with contract registration."
         )
 
-        response = self.llm.invoke([
-            SystemMessage(content=RENTAL_INCOME_AGENT_SYSTEM_PROMPT),
-            *state["messages"],
-            SystemMessage(content=context_message),
-        ])
+        messages = [SystemMessage(content=RENTAL_INCOME_AGENT_SYSTEM_PROMPT)]
+        if rag_context:
+            messages.append(SystemMessage(content=f"Relevant tax code knowledge:\n{rag_context}"))
+        messages.extend(state["messages"])
+        messages.append(SystemMessage(content=context_message))
+
+        response = self.llm.invoke(messages)
 
         return {
             "messages": [response],
@@ -114,7 +139,8 @@ class RentalIncomeAgent:
         """
         shared_context = state.get("shared_context", {})
 
-        # Build context for LLM
+        # Build context for LLM, grounded in RAG knowledge
+        rag_context = self._get_rag_context(state)
         context_parts = [
             "Key information about rental income in Romania:",
             "- Rental contracts must be registered with ANAF within 30 days",
@@ -124,11 +150,13 @@ class RentalIncomeAgent:
             "Ask the user for monthly rent amount to calculate the tax.",
         ]
 
-        response = self.llm.invoke([
-            SystemMessage(content=RENTAL_INCOME_AGENT_SYSTEM_PROMPT),
-            SystemMessage(content="\n".join(context_parts)),
-            *state["messages"],
-        ])
+        messages = [SystemMessage(content=RENTAL_INCOME_AGENT_SYSTEM_PROMPT)]
+        if rag_context:
+            messages.append(SystemMessage(content=f"Relevant tax code knowledge:\n{rag_context}"))
+        messages.append(SystemMessage(content="\n".join(context_parts)))
+        messages.extend(state["messages"])
+
+        response = self.llm.invoke(messages)
 
         return {
             "messages": [response],
@@ -175,11 +203,14 @@ class RentalIncomeAgent:
             context_message = f"Contract registration failed: {result.get('message', 'Unknown error')}. Explain what went wrong and offer to help retry."
             workflow_status = "error"
 
-        response = self.llm.invoke([
-            SystemMessage(content=RENTAL_INCOME_AGENT_SYSTEM_PROMPT),
-            *state["messages"],
-            SystemMessage(content=context_message),
-        ])
+        rag_context = self._get_rag_context(state)
+        messages = [SystemMessage(content=RENTAL_INCOME_AGENT_SYSTEM_PROMPT)]
+        if rag_context:
+            messages.append(SystemMessage(content=f"Relevant tax code knowledge:\n{rag_context}"))
+        messages.extend(state["messages"])
+        messages.append(SystemMessage(content=context_message))
+
+        response = self.llm.invoke(messages)
 
         return {
             "messages": [response],

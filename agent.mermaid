@@ -1,0 +1,26 @@
+flowchart TB
+  __start__(__start__)
+  entry_agent(entry_agent)
+  pfa_agent(pfa_agent)
+  property_sale_agent(property_sale_agent)
+  rental_income_agent(rental_income_agent)
+  certificate_agent(certificate_agent)
+  efactura_agent(efactura_agent)
+  rag_agent(rag_agent)
+  request_clarification(request_clarification)
+  __end__(__end__)
+  __start__ --> entry_agent
+  entry_agent --> certificate_agent
+  entry_agent --> efactura_agent
+  entry_agent --> pfa_agent
+  entry_agent --> property_sale_agent
+  entry_agent --> rag_agent
+  entry_agent --> rental_income_agent
+  entry_agent --> request_clarification
+  certificate_agent --> __end__
+  efactura_agent --> __end__
+  pfa_agent --> __end__
+  property_sale_agent --> __end__
+  rag_agent --> __end__
+  rental_income_agent --> __end__
+  request_clarification --> __end__

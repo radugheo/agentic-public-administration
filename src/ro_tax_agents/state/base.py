@@ -1,16 +1,36 @@
 """Base state definitions for the agent system."""
 
-from typing import TypedDict, Annotated, Literal, Optional, Any
+from typing import Annotated, Literal, Optional, Any
+from typing_extensions import TypedDict
 from langgraph.graph.message import add_messages
 from langchain_core.messages import BaseMessage
 
 
-class BaseAgentState(TypedDict):
-    """Base state shared across all agents in the system.
+class GraphInput(TypedDict):
+    """Input schema - what the user provides."""
+    query: str
 
-    This state is used by the main orchestration graph and contains
-    fields needed for routing and cross-agent communication.
+
+class GraphOutput(TypedDict):
+    """Output schema - what the user receives."""
+    response: str
+    detected_intent: Optional[str]
+    intent_confidence: float
+    workflow_status: Literal["pending", "in_progress", "completed", "error"]
+
+
+class BaseAgentState(TypedDict):
+    """Full internal state shared across all agents in the system.
+
+    Includes all fields from GraphInput and GraphOutput plus
+    internal routing and communication fields.
     """
+
+    # --- Input ---
+    query: str
+
+    # --- Output ---
+    response: str
 
     # Conversation history - uses add_messages reducer for proper aggregation
     messages: Annotated[list[BaseMessage], add_messages]

@@ -1,0 +1,206 @@
+{
+    "$schema": "https://cloud.uipath.com/draft/2024-12/entry-point",
+    "$id": "entry-points.json",
+    "entryPoints": [
+        {
+            "filePath": "agent",
+            "uniqueId": "52ad8e85-8ad0-4a64-9e5d-982e3acb61af",
+            "type": "agent",
+            "input": {
+                "type": "object",
+                "properties": {
+                    "query": {
+                        "title": "Query",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "query"
+                ]
+            },
+            "output": {
+                "type": "object",
+                "properties": {
+                    "response": {
+                        "title": "Response",
+                        "type": "string"
+                    },
+                    "detected_intent": {
+                        "type": "string"
+                    },
+                    "intent_confidence": {
+                        "title": "Intent Confidence",
+                        "type": "number"
+                    },
+                    "workflow_status": {
+                        "enum": [
+                            "pending",
+                            "in_progress",
+                            "completed",
+                            "error"
+                        ],
+                        "title": "Workflow Status",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "response",
+                    "detected_intent",
+                    "intent_confidence",
+                    "workflow_status"
+                ]
+            },
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "__start__",
+                        "name": "__start__",
+                        "type": "__start__",
+                        "subgraph": null,
+                        "metadata": {}
+                    },
+                    {
+                        "id": "entry_agent",
+                        "name": "entry_agent",
+                        "type": "node",
+                        "subgraph": null,
+                        "metadata": {}
+                    },
+                    {
+                        "id": "pfa_agent",
+                        "name": "pfa_agent",
+                        "type": "node",
+                        "subgraph": null,
+                        "metadata": {}
+                    },
+                    {
+                        "id": "property_sale_agent",
+                        "name": "property_sale_agent",
+                        "type": "node",
+                        "subgraph": null,
+                        "metadata": {}
+                    },
+                    {
+                        "id": "rental_income_agent",
+                        "name": "rental_income_agent",
+                        "type": "node",
+                        "subgraph": null,
+                        "metadata": {}
+                    },
+                    {
+                        "id": "certificate_agent",
+                        "name": "certificate_agent",
+                        "type": "node",
+                        "subgraph": null,
+                        "metadata": {}
+                    },
+                    {
+                        "id": "efactura_agent",
+                        "name": "efactura_agent",
+                        "type": "node",
+                        "subgraph": null,
+                        "metadata": {}
+                    },
+                    {
+                        "id": "rag_agent",
+                        "name": "rag_agent",
+                        "type": "node",
+                        "subgraph": null,
+                        "metadata": {}
+                    },
+                    {
+                        "id": "request_clarification",
+                        "name": "request_clarification",
+                        "type": "node",
+                        "subgraph": null,
+                        "metadata": {}
+                    },
+                    {
+                        "id": "__end__",
+                        "name": "__end__",
+                        "type": "__end__",
+                        "subgraph": null,
+                        "metadata": {}
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "__start__",
+                        "target": "entry_agent",
+                        "label": null
+                    },
+                    {
+                        "source": "entry_agent",
+                        "target": "certificate_agent",
+                        "label": null
+                    },
+                    {
+                        "source": "entry_agent",
+                        "target": "efactura_agent",
+                        "label": null
+                    },
+                    {
+                        "source": "entry_agent",
+                        "target": "pfa_agent",
+                        "label": null
+                    },
+                    {
+                        "source": "entry_agent",
+                        "target": "property_sale_agent",
+                        "label": null
+                    },
+                    {
+                        "source": "entry_agent",
+                        "target": "rag_agent",
+                        "label": null
+                    },
+                    {
+                        "source": "entry_agent",
+                        "target": "rental_income_agent",
+                        "label": null
+                    },
+                    {
+                        "source": "entry_agent",
+                        "target": "request_clarification",
+                        "label": null
+                    },
+                    {
+                        "source": "certificate_agent",
+                        "target": "__end__",
+                        "label": null
+                    },
+                    {
+                        "source": "efactura_agent",
+                        "target": "__end__",
+                        "label": null
+                    },
+                    {
+                        "source": "pfa_agent",
+                        "target": "__end__",
+                        "label": null
+                    },
+                    {
+                        "source": "property_sale_agent",
+                        "target": "__end__",
+                        "label": null
+                    },
+                    {
+                        "source": "rag_agent",
+                        "target": "__end__",
+                        "label": null
+                    },
+                    {
+                        "source": "rental_income_agent",
+                        "target": "__end__",
+                        "label": null
+                    },
+                    {
+                        "source": "request_clarification",
+                        "target": "__end__",
+                        "label": null
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -16,6 +16,20 @@ class Settings(BaseSettings):
         default=0.7, description="Minimum confidence for intent routing"
     )
 
+    # UiPath Context Grounding
+    uipath_folder_path: str = Field(
+        default="", description="UiPath Orchestrator folder path (required for CG)"
+    )
+    uipath_index_pfa: str = Field(
+        default="pfa-knowledge", description="UiPath CG index name for PFA agent"
+    )
+    uipath_index_rental_income: str = Field(
+        default="rental-income-knowledge", description="UiPath CG index name for Rental Income agent"
+    )
+    uipath_index_certificate: str = Field(
+        default="certificate-knowledge", description="UiPath CG index name for Certificate agent"
+    )
+
     # Tax calculation parameters (simplified 2024 values)
     minimum_gross_salary: float = Field(
         default=3300.0, description="Minimum gross salary in RON"
@@ -30,7 +44,7 @@ class Settings(BaseSettings):
         default=0.01, description="Property sale tax rate for >= 3 years ownership (1%)"
     )
 
-    model_config = {"env_file": ".env", "env_file_encoding": "utf-8"}
+    model_config = {"env_file": ".env", "env_file_encoding": "utf-8", "extra": "ignore"}
 
 
 settings = Settings()

@@ -6,9 +6,8 @@ tax-related queries.
 
 import uuid
 from dotenv import load_dotenv
-from langchain_core.messages import HumanMessage
 
-from ro_tax_agents.orchestration.main_graph import compile_graph, get_initial_state
+from ro_tax_agents.orchestration.main_graph import compile_graph
 
 # Load environment variables
 load_dotenv()
@@ -28,23 +27,23 @@ def run_demo():
     demos = [
         {
             "name": "PFA Contributions Calculation",
-            "message": "Am un PFA si am avut venituri de 150000 RON anul trecut. Cat am de platit CAS si CASS?",
+            "query": "Am un PFA si am avut venituri de 150000 RON anul trecut. Cat am de platit CAS si CASS?",
         },
         {
             "name": "Property Sale Tax",
-            "message": "Am vandut un apartament cu 100000 euro, l-am detinut 5 ani. Care este impozitul?",
+            "query": "Am vandut un apartament cu 100000 euro, l-am detinut 5 ani. Care este impozitul?",
         },
         {
             "name": "Rental Income",
-            "message": "Vreau sa inchiriez un apartament cu 500 EUR pe luna. Ce taxe trebuie sa platesc?",
+            "query": "Vreau sa inchiriez un apartament cu 500 EUR pe luna. Ce taxe trebuie sa platesc?",
         },
         {
             "name": "E-Factura B2B",
-            "message": "Trebuie sa emit o factura electronica catre o firma. Cum procedez?",
+            "query": "Trebuie sa emit o factura electronica catre o firma. Cum procedez?",
         },
         {
             "name": "Fiscal Certificate",
-            "message": "Am nevoie de un certificat de atestare fiscala pentru firma mea.",
+            "query": "Am nevoie de un certificat de atestare fiscala pentru firma mea.",
         },
     ]
 
@@ -52,31 +51,17 @@ def run_demo():
         print(f"\n{'='*60}")
         print(f"Demo: {demo['name']}")
         print(f"{'='*60}")
-        print(f"\nUser: {demo['message']}\n")
+        print(f"\nUser: {demo['query']}\n")
 
-        # Create a new session for each demo
         session_id = str(uuid.uuid4())
         config = {"configurable": {"thread_id": session_id}}
 
-        # Create initial state with user message
-        initial_state = get_initial_state(session_id)
-        initial_state["messages"] = [HumanMessage(content=demo["message"])]
-
         try:
-            # Run the graph
-            result = graph.invoke(initial_state, config)
+            result = graph.invoke({"query": demo["query"]}, config)
 
-            # Print the response
             print("Agent Response:")
             print("-" * 40)
-
-            # Get the last AI message
-            for msg in reversed(result.get("messages", [])):
-                if hasattr(msg, "content") and msg.type == "ai":
-                    print(msg.content)
-                    break
-
-            # Print detected intent
+            print(result.get("response", "No response"))
             print(f"\n[Intent: {result.get('detected_intent', 'N/A')} "
                   f"(confidence: {result.get('intent_confidence', 0):.0%})]")
 
@@ -96,8 +81,6 @@ def interactive_demo():
     print("\nInitializing system...")
 
     graph = compile_graph()
-    session_id = str(uuid.uuid4())
-    config = {"configurable": {"thread_id": session_id}}
 
     print("System ready! Type 'quit' to exit.\n")
     print("Available services:")
@@ -118,20 +101,12 @@ def interactive_demo():
         if not user_input:
             continue
 
-        # Create state with user message
-        state = get_initial_state(session_id)
-        state["messages"] = [HumanMessage(content=user_input)]
+        session_id = str(uuid.uuid4())
+        config = {"configurable": {"thread_id": session_id}}
 
         try:
-            result = graph.invoke(state, config)
-
-            # Print response
-            print("\nAgent:", end=" ")
-            for msg in reversed(result.get("messages", [])):
-                if hasattr(msg, "content") and msg.type == "ai":
-                    print(msg.content)
-                    break
-            print()
+            result = graph.invoke({"query": user_input}, config)
+            print(f"\nAgent: {result.get('response', 'No response')}\n")
 
         except Exception as e:
             print(f"\nError: {e}")

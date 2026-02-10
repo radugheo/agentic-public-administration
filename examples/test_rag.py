@@ -12,11 +12,8 @@ def main():
     print("       Test RAG ")
     print("=" * 60)
 
-    # Inițializează serviciul RAG
-    print("\nInitializare Knowledge Base\n")
-    rag_service.initializeaza()
-
-    print("\n" + "-" * 60)
+    print("\nUiPath Context Grounding RAG ready.\n")
+    print("-" * 60)
     print("Agenti: pfa, rental_income, certificate")
     print("'exit' pentru a iesi")
     print("-" * 60)

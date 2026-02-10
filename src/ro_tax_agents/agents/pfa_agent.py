@@ -8,6 +8,7 @@ from ro_tax_agents.state.base import BaseAgentState
 from ro_tax_agents.config.prompts import PFA_AGENT_SYSTEM_PROMPT
 from ro_tax_agents.config.settings import settings
 from ro_tax_agents.services import calculation_agent_service
+from ro_tax_agents.services import rag_service
 from ro_tax_agents.mocks.tools import mock_spv_submit_d212
 
 
@@ -18,10 +19,31 @@ class PFAAgent:
     - D212 (Declaratia Unica) form guidance and submission
     - CAS/CASS contribution calculations
     - Tax obligation explanations for self-employed
+
+    Uses RAG to ground responses in actual tax code knowledge.
     """
+
+    RAG_AGENT_TYPE = "pfa"
 
     def __init__(self):
         self._llm = None
+
+    def _get_rag_context(self, state: BaseAgentState) -> str:
+        """Retrieve relevant tax knowledge from RAG vector store."""
+        messages = state.get("messages", [])
+        if not messages:
+            return ""
+        last_msg = messages[-1]
+        query = last_msg.content if hasattr(last_msg, "content") else ""
+        if not query:
+            return ""
+        try:
+            docs = rag_service.retrieve(query, self.RAG_AGENT_TYPE, k=3)
+            if docs:
+                return "\n\n---\n\n".join(doc.page_content for doc in docs)
+        except Exception:
+            pass
+        return ""
 
     @property
     def llm(self):
@@ -87,7 +109,8 @@ class PFAAgent:
         cass_amount = calc_result["shared_context"].get("cass_amount", 0)
         total = cas_amount + cass_amount
 
-        # Use LLM to present the calculation results
+        # Use LLM to present the calculation results, grounded in RAG knowledge
+        rag_context = self._get_rag_context(state)
         context_message = (
             f"Calculation completed. Present these results to the user:\n"
             f"- Annual income: {annual_income:,.2f} RON\n"
@@ -97,11 +120,13 @@ class PFAAgent:
             f"Also ask if they want to submit the D212 declaration or have other questions."
         )
 
-        response = self.llm.invoke([
-            SystemMessage(content=PFA_AGENT_SYSTEM_PROMPT),
-            *state["messages"],
-            SystemMessage(content=context_message),
-        ])
+        messages = [SystemMessage(content=PFA_AGENT_SYSTEM_PROMPT)]
+        if rag_context:
+            messages.append(SystemMessage(content=f"Relevant tax code knowledge:\n{rag_context}"))
+        messages.extend(state["messages"])
+        messages.append(SystemMessage(content=context_message))
+
+        response = self.llm.invoke(messages)
 
         return {
             "messages": [response],
@@ -121,7 +146,8 @@ class PFAAgent:
         """
         shared_context = state.get("shared_context", {})
 
-        # Build context for LLM
+        # Build context for LLM, grounded in RAG knowledge
+        rag_context = self._get_rag_context(state)
         context_parts = [
             f"Current tax thresholds (based on minimum salary {settings.minimum_gross_salary:,.0f} RON):",
             f"- CAS threshold: {settings.minimum_gross_salary * 12:,.2f} RON (12 minimum salaries)",
@@ -129,11 +155,13 @@ class PFAAgent:
             "Ask the user for their annual income to calculate contributions.",
         ]
 
-        response = self.llm.invoke([
-            SystemMessage(content=PFA_AGENT_SYSTEM_PROMPT),
-            SystemMessage(content="\n".join(context_parts)),
-            *state["messages"],
-        ])
+        messages = [SystemMessage(content=PFA_AGENT_SYSTEM_PROMPT)]
+        if rag_context:
+            messages.append(SystemMessage(content=f"Relevant tax code knowledge:\n{rag_context}"))
+        messages.append(SystemMessage(content="\n".join(context_parts)))
+        messages.extend(state["messages"])
+
+        response = self.llm.invoke(messages)
 
         return {
             "messages": [response],
@@ -180,11 +208,14 @@ class PFAAgent:
             context_message = f"D212 submission failed with error: {result.message}. Explain what went wrong and offer to help retry."
             workflow_status = "error"
 
-        response = self.llm.invoke([
-            SystemMessage(content=PFA_AGENT_SYSTEM_PROMPT),
-            *state["messages"],
-            SystemMessage(content=context_message),
-        ])
+        rag_context = self._get_rag_context(state)
+        messages = [SystemMessage(content=PFA_AGENT_SYSTEM_PROMPT)]
+        if rag_context:
+            messages.append(SystemMessage(content=f"Relevant tax code knowledge:\n{rag_context}"))
+        messages.extend(state["messages"])
+        messages.append(SystemMessage(content=context_message))
+
+        response = self.llm.invoke(messages)
 
         return {
             "messages": [response],

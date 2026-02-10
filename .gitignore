@@ -12,5 +12,8 @@ wheels/
 
 .env
 
-
+.uipath/
+__uipath/
+.pytest_cache/
 .chroma/
+.claude/

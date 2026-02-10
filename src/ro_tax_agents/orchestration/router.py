@@ -12,7 +12,7 @@ INTENT_TO_AGENT = {
     "fiscal_certificate": "certificate",
     "efactura_b2b": "efactura",
     "efactura_b2c": "efactura",
-    "general_question": "rao",
+    "general_question": "rag",
     "unclear": "clarify",
 }
 
@@ -43,7 +43,7 @@ def route_to_domain_agent(state: BaseAgentState) -> str:
         "rental_income": "rental_income_agent",
         "certificate": "certificate_agent",
         "efactura": "efactura_agent",
-        "rao": "rao_service",
+        "rag": "rag_agent",
         "clarify": "request_clarification",
     }
 

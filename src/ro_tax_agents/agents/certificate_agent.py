@@ -7,17 +7,37 @@ from langchain_core.messages import SystemMessage, HumanMessage
 from ro_tax_agents.state.base import BaseAgentState
 from ro_tax_agents.config.prompts import CERTIFICATE_AGENT_SYSTEM_PROMPT
 from ro_tax_agents.config.settings import settings
+from ro_tax_agents.services import rag_service
 from ro_tax_agents.mocks.tools import mock_fiscal_certificate_request
 
 
 class CertificateAgent:
     """Certificate agent for fiscal attestation requests.
 
-    Uses LLM for all responses - no hardcoded text.
+    Uses LLM for all responses, grounded in RAG tax code knowledge.
     """
+
+    RAG_AGENT_TYPE = "certificate"
 
     def __init__(self):
         self._llm = None
+
+    def _get_rag_context(self, state: BaseAgentState) -> str:
+        """Retrieve relevant tax knowledge from RAG vector store."""
+        messages = state.get("messages", [])
+        if not messages:
+            return ""
+        last_msg = messages[-1]
+        query = last_msg.content if hasattr(last_msg, "content") else ""
+        if not query:
+            return ""
+        try:
+            docs = rag_service.retrieve(query, self.RAG_AGENT_TYPE, k=3)
+            if docs:
+                return "\n\n---\n\n".join(doc.page_content for doc in docs)
+        except Exception:
+            pass
+        return ""
 
     @property
     def llm(self):
@@ -57,11 +77,14 @@ class CertificateAgent:
 
         context = "\n".join(context_parts) if context_parts else "No additional context available."
 
-        response = self.llm.invoke([
-            SystemMessage(content=CERTIFICATE_AGENT_SYSTEM_PROMPT),
-            SystemMessage(content=f"Current context:\n{context}"),
-            *state["messages"],
-        ])
+        rag_context = self._get_rag_context(state)
+        messages = [SystemMessage(content=CERTIFICATE_AGENT_SYSTEM_PROMPT)]
+        if rag_context:
+            messages.append(SystemMessage(content=f"Relevant tax code knowledge:\n{rag_context}"))
+        messages.append(SystemMessage(content=f"Current context:\n{context}"))
+        messages.extend(state["messages"])
+
+        response = self.llm.invoke(messages)
 
         return {
             "messages": [response],
@@ -89,11 +112,14 @@ class CertificateAgent:
 
         workflow_status = "completed" if result["status"] == "success" else "error"
 
-        response = self.llm.invoke([
-            SystemMessage(content=CERTIFICATE_AGENT_SYSTEM_PROMPT),
-            SystemMessage(content=result_info),
-            HumanMessage(content="Present the certificate request result to the user in a friendly, informative way."),
-        ])
+        rag_context = self._get_rag_context(state)
+        messages = [SystemMessage(content=CERTIFICATE_AGENT_SYSTEM_PROMPT)]
+        if rag_context:
+            messages.append(SystemMessage(content=f"Relevant tax code knowledge:\n{rag_context}"))
+        messages.append(SystemMessage(content=result_info))
+        messages.append(HumanMessage(content="Present the certificate request result to the user in a friendly, informative way."))
+
+        response = self.llm.invoke(messages)
 
         return {
             "messages": [response],
