@@ -8,6 +8,7 @@ import uuid
 
 from ro_tax_agents.models.payments import PaymentRequest, PaymentResult
 from ro_tax_agents.models.documents import OCRResult
+from ro_tax_agents.mocks.fault_injection import with_fault_injection
 
 
 @dataclass
@@ -20,6 +21,7 @@ class SPVSubmissionResult:
     timestamp: str
 
 
+@with_fault_injection("mock_spv_login")
 def mock_spv_login(username: str, password: str) -> dict:
     """Mock SPV (ANAF) login.
 
@@ -38,6 +40,7 @@ def mock_spv_login(username: str, password: str) -> dict:
     }
 
 
+@with_fault_injection("mock_spv_submit_d212")
 def mock_spv_submit_d212(d212_data: dict) -> SPVSubmissionResult:
     """Mock D212 form submission to SPV.
 
@@ -55,6 +58,7 @@ def mock_spv_submit_d212(d212_data: dict) -> SPVSubmissionResult:
     )
 
 
+@with_fault_injection("mock_spv_register_contract")
 def mock_spv_register_contract(contract_data: dict) -> dict:
     """Mock rental contract registration with ANAF.
 
@@ -72,6 +76,7 @@ def mock_spv_register_contract(contract_data: dict) -> dict:
     }
 
 
+@with_fault_injection("mock_ghiseul_payment")
 def mock_ghiseul_payment(request: PaymentRequest) -> PaymentResult:
     """Mock Ghiseul.ro payment processing.
 
@@ -90,6 +95,7 @@ def mock_ghiseul_payment(request: PaymentRequest) -> PaymentResult:
     )
 
 
+@with_fault_injection("mock_ocr_document")
 def mock_ocr_document(document_path: str) -> OCRResult:
     """Mock OCR document processing.
 
@@ -147,6 +153,7 @@ def mock_ocr_document(document_path: str) -> OCRResult:
         )
 
 
+@with_fault_injection("mock_efactura_submit")
 def mock_efactura_submit(invoice_xml: str, seller_cui: str) -> dict:
     """Mock E-Factura XML submission.
 
@@ -166,6 +173,7 @@ def mock_efactura_submit(invoice_xml: str, seller_cui: str) -> dict:
     }
 
 
+@with_fault_injection("mock_efactura_status")
 def mock_efactura_status(upload_index: str) -> dict:
     """Mock E-Factura status check.
 
@@ -184,6 +192,7 @@ def mock_efactura_status(upload_index: str) -> dict:
     }
 
 
+@with_fault_injection("mock_fiscal_certificate_request")
 def mock_fiscal_certificate_request(cnp_cui: str, certificate_type: str) -> dict:
     """Mock fiscal certificate request.
 

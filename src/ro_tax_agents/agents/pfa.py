@@ -36,6 +36,14 @@ class PFAAgent(RAGEnabledAgentMixin):
         shared_context = state.get("shared_context", {})
         extracted_entities = shared_context.get("extracted_entities", {})
 
+        # If contributions were already calculated and workflow is still in progress,
+        # the user is confirming the submission — proceed to submit D212.
+        if (
+            state.get("workflow_status") == "in_progress"
+            and shared_context.get("cas_amount") is not None
+        ):
+            return self.submit_d212(state)
+
         # Check if we have income information to calculate contributions
         annual_income = extracted_entities.get("annual_income") or shared_context.get("annual_income")
 
