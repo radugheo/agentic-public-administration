@@ -255,16 +255,15 @@ Table~\ref{tab:cost} projects monthly costs for three institution sizes, assumin
 \begin{table}[h]
 \caption{Estimated monthly LLM inference costs (GPT-4o pricing).}
 \label{tab:cost}
-\small
-\begin{tabular}{lrrr}
-\hline
+\begin{tabular*}{\hsize}{@{\extracolsep{\fill}}llll@{}}
+\toprule
 Institution size & Sessions/day & Sessions/month & Cost/month \\
-\hline
+\colrule
 Small office     & 50           & 1{,}100         & \$77        \\
 Medium office    & 500          & 11{,}000        & \$770       \\
 Large agency     & 5{,}000     & 110{,}000       & \$7{,}700   \\
-\hline
-\end{tabular}
+\botrule
+\end{tabular*}
 \end{table}
 
 Even for a large agency handling 5{,}000 citizen interactions per day, the monthly LLM cost remains under \$8{,}000, a fraction of the salary cost of a single full-time human operator. These estimates exclude UiPath platform licensing, infrastructure, and maintenance costs, which are institution-dependent, but they demonstrate that the LLM inference component itself does not constitute a barrier to adoption. Furthermore, costs can be reduced by substituting smaller models (e.g., GPT-4o-mini at roughly one-tenth the cost) for intent classification and simple routing tasks, reserving the full GPT-4o model only for domain reasoning and RAG-grounded generation.
