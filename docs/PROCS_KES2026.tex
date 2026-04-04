@@ -170,7 +170,7 @@ The Tools Layer exposes four primary mocked tool functions that replicate the re
 \begin{figure}[t]
 \centering
 \includegraphics[width=\columnwidth]{PROCS_KES2026_LATEX_Template/l3pdf.drawio.pdf}
-\caption{Fault injection decision flow. When an agent calls a mocked tool, the tool builds its nominal response and passes it to the \texttt{EnvironmentFaultInjector}. A seeded Bernoulli trial determines whether injection occurs: on a pass-through the original payload is returned unchanged; otherwise one of four chaos operators is selected uniformly---\emph{timeout} (raises \texttt{TimeoutError}), \emph{delay} (sleeps and returns payload), \emph{partial} (nulls one field), or \emph{corruption} (replaces one field with a sentinel)---and a warning is emitted to the fault log before the result is returned to the agent.}
+\caption{Fault injection decision flow. When an agent calls a mocked tool, the tool builds its nominal response and passes it to the \texttt{EnvironmentFaultInjector}. A seeded Bernoulli trial determines whether injection occurs: on a pass-through the original payload is returned unchanged; otherwise one of four chaos operators is selected uniformly: \emph{timeout} (raises \texttt{TimeoutError}), \emph{delay} (sleeps and returns payload), \emph{partial} (nulls one field), or \emph{corruption} (replaces one field with a sentinel). A warning is emitted to the fault log before the result is returned to the agent.}
 \label{fig:finjarchitecture}
 \end{figure}
 
@@ -195,9 +195,13 @@ Injection is decoupled from mock implementations via a Python decorator \texttt{
 
 The prototype is implemented in Python~3.11 with LangGraph~0.2, \texttt{langchain-openai} for LLM calls (GPT-4o via the UiPath LLM Gateway), and \texttt{pydantic-settings} for configuration management. All external government system calls are handled through the mocked boundary layer; no live network connections are required during evaluation.
 
-To characterise fault injection behaviour, we executed $N = 100$ boundary-crossing calls---sampled across all 8 function-level mock tools proportionally to their invocation frequency in the five canonical demo scenarios---under five injection rates $\eta \in \{0.00,\allowbreak\ 0.25,\allowbreak\ 0.50,\allowbreak\ 0.75,\allowbreak\ 1.00\}$ with fixed seed $s = 17$ and $\Delta t_{\max} = 250$\,ms. We classified each injected fault as \emph{detectable} if the agent's downstream response correctly indicated a failure (exception propagation, error message, or degraded-service notice), and as a \emph{silent pass-through} otherwise.
+To characterise fault injection behaviour, we executed $N = 100$ boundary-crossing calls, sampled across all 8 function-level mock tools proportionally to their invocation frequency in the five demo scenarios, under five injection rates $\eta \in \{0.00,\allowbreak\ 0.25,\allowbreak\ 0.50,\allowbreak\ 0.75,\allowbreak\ 1.00\}$ with fixed seed $s = 17$ and $\Delta t_{\max} = 250$\,ms. We classified each injected fault as \emph{detectable} if the agent's downstream response correctly indicated a failure (exception propagation, error message, or degraded-service notice), and as a \emph{silent pass-through} otherwise.
 
-A fault is structurally silent when: (i)~the \textbf{delay} operator leaves the payload intact, adding only latency; or (ii)~the \textbf{partial} or \textbf{corruption} operator perturbs a non-critical field so that the downstream success predicate (typically \texttt{status == "success"}) still evaluates to true, after which the LLM may generate a plausible response despite receiving a partially null or corrupted context.
+A fault is structurally silent when: 
+\begin{itemize}
+    \item the \textbf{delay} operator leaves the payload intact, adding only latency; or
+    \item the \textbf{partial} or \textbf{corruption} operator perturbs a non-critical field so that the downstream success predicate (typically \texttt{status == "success"}) still evaluates to true, after which the LLM may generate a plausible response despite receiving a partially null or corrupted context.
+\end{itemize}
 
 \subsection{Qualitative results}
 \label{subsec:qualitative}
@@ -208,9 +212,9 @@ We trace a D212 submission triggered by a citizen reporting PFA income of 150{,}
 \small\texttt{[WARN] fault injected | op=mock\_spv\_submit\_d212 | type=partial}
 \end{center}
 
-The partial operator selected the \texttt{message} field of the \texttt{SPVSubmissionResult} dataclass uniformly at random and set it to \texttt{None}. Because the \texttt{status} field was not affected and remained \texttt{"success"}, the agent followed the success branch and the LLM generated: \emph{``Declara\c{t}ia D212 a fost depus\u{a} cu succes! ID: D212-01B66C85C3, Timestamp: 2026-03-27T22:20:32.''} The citizen received a plausible success confirmation while one field of the underlying response object was null---a silent pass-through in which the fault was neither detected nor surfaced.
+The partial operator selected the \texttt{message} field of the \texttt{SPVSubmissionResult} dataclass uniformly at random and set it to \texttt{None}. Because the \texttt{status} field was not affected and remained \texttt{"success"}, the agent followed the success branch and the LLM generated: \emph{``Declara\c{t}ia D212 a fost depus\u{a} cu succes! ID: D212-01B66C85C3, Timestamp: 2026-03-27T22:20:32.''} The citizen received a plausible success confirmation while one field of the underlying response object was null, a silent pass-through in which the fault was neither detected nor surfaced.
 
-This behaviour is structurally guaranteed for any partial or corruption fault that does not perturb the branching predicate: the probability of a silent pass-through for a single-field perturbation on a response object with $|\mathcal{F}|$ fields is $1 - 1/|\mathcal{F}|$, which equals 0.75 for the four-field \texttt{SPVSubmissionResult}.
+This behaviour is structurally guaranteed for any partial or corruption fault that does not perturb the branching predicate: the probability of a silent pass-through for a single-field perturbation on a response object with $|\mathcal{F}|$ fields is $1 - \frac{1}{|\mathcal{F}|}$, which equals 0.75 for the four-field \texttt{SPVSubmissionResult}.
 
 \subsection{Quantitative results}
 \label{subsec:quantitative}
@@ -220,34 +224,62 @@ Table~\ref{tab:faults} reports operator distributions and pass-through rates acr
 \begin{table}[h]
 \caption{Fault injection results ($N=100$ calls, $s=17$, $\Delta t_{\max}=250$\,ms).}
 \label{tab:faults}
-\small
-\begin{tabular}{rrrrrrrr}
-\hline
+\begin{tabular*}{\hsize}{@{\extracolsep{\fill}}llllllll@{}}
+\toprule
 $\eta$ & Faults & TO & DL & PT & CR & Silent & Detectable \\
-\hline
+\colrule
 0.00 & 0   & 0  & 0  & 0  & 0  & 0\,(\,---\,) & 0\,(\,---\,) \\
 0.25 & 25  & 6  & 6  & 7  & 6  & 16\,(64\%) & 9\,(36\%) \\
 0.50 & 50  & 12 & 13 & 12 & 13 & 32\,(64\%) & 18\,(36\%) \\
 0.75 & 75  & 19 & 19 & 18 & 19 & 47\,(63\%) & 28\,(37\%) \\
 1.00 & 100 & 25 & 25 & 25 & 25 & 63\,(63\%) & 37\,(37\%) \\
-\hline
-\end{tabular}
+\botrule
+\end{tabular*}
 \end{table}
 
 Across all non-zero injection rates, approximately 63\% of injected faults propagated silently. This is consistent with the theoretical expectation: delay faults (25\% of operators) are structurally silent; partial and corruption faults are each silent with probability 0.75, yielding an expected silent rate of $0.25 + 2 \times 0.25 \times 0.75 = 0.625$. Timeout faults (25\% of operators) are always detectable as they raise an unhandled exception. Because this silent rate is a structural property of the operator mix and the response schema, it remains stable at 63--64\% regardless of $\eta$: higher injection rates increase the absolute volume of silent faults proportionally without changing the ratio.
 
 Delay faults introduced a mean overhead of $125.5 \pm 72.2$\,ms per affected call (theoretical mean for uniform sampling over $[1, 250]$\,ms). At $\eta = 0.50$, this corresponds to an expected per-scenario latency increase of approximately 65\,ms integrated over mock-call frequency.
 
-These results demonstrate that a substantial majority of realistic integration faults---those affecting non-critical fields or adding only latency---are invisible to an agent that conditions its behaviour solely on a service-reported status flag. This structural gap motivates the addition of a response validation layer that checks agent outputs against formally specified contracts, independent of the service's own status indicator.
+These results demonstrate that a substantial majority of realistic integration faults (those affecting non-critical fields or adding only latency) are invisible to an agent that conditions its behaviour solely on a service-reported status flag. This structural gap motivates the addition of a response validation layer that checks agent outputs against formally specified contracts, independent of the service's own status indicator.
+
+\subsection{Cost feasibility}
+\label{subsec:cost}
+
+A practical deployment consideration for public institutions is the operational cost of LLM inference. We estimate per-session costs based on the GPT-4o model (May 2025 pricing: \$2.50 per 1\,M input tokens, \$10.00 per 1\,M output tokens), which serves as the backbone of all agent LLM calls through the UiPath LLM Gateway.
+
+A typical citizen session involves: (i)~one Entry Agent intent classification call (${\sim}2{,}000$ input tokens for the system prompt, conversation context, and intent schema; ${\sim}200$ output tokens for the structured classification), (ii)~two to three domain agent turns (${\sim}5{,}000$ input tokens per turn including the domain system prompt, accumulated conversation history, and tool results; ${\sim}500$ output tokens per response), and (iii)~one RAG retrieval-grounded generation (${\sim}3{,}000$ input tokens for retrieved passages plus query; ${\sim}400$ output tokens). This yields an estimated total of ${\sim}20{,}000$ input tokens and ${\sim}2{,}100$ output tokens per session, corresponding to a per-session cost of approximately \$0.07.
+
+Table~\ref{tab:cost} projects monthly costs for three institution sizes, assuming 22 working days per month.
+
+\begin{table}[h]
+\caption{Estimated monthly LLM inference costs (GPT-4o pricing).}
+\label{tab:cost}
+\small
+\begin{tabular}{lrrr}
+\hline
+Institution size & Sessions/day & Sessions/month & Cost/month \\
+\hline
+Small office     & 50           & 1{,}100         & \$77        \\
+Medium office    & 500          & 11{,}000        & \$770       \\
+Large agency     & 5{,}000     & 110{,}000       & \$7{,}700   \\
+\hline
+\end{tabular}
+\end{table}
+
+Even for a large agency handling 5{,}000 citizen interactions per day, the monthly LLM cost remains under \$8{,}000, a fraction of the salary cost of a single full-time human operator. These estimates exclude UiPath platform licensing, infrastructure, and maintenance costs, which are institution-dependent, but they demonstrate that the LLM inference component itself does not constitute a barrier to adoption. Furthermore, costs can be reduced by substituting smaller models (e.g., GPT-4o-mini at roughly one-tenth the cost) for intent classification and simple routing tasks, reserving the full GPT-4o model only for domain reasoning and RAG-grounded generation.
+
 
 \section{Conclusion}
 \label{sec:conclusion}
 
-We have presented a multi-agent architecture for Romanian tax administration and a complementary fault injection framework for systematic robustness evaluation at external service boundaries. The system covers five tax service domains---PFA contributions, property sale tax, rental income, fiscal certificates, and electronic invoicing---orchestrated through a LangGraph state machine with intent-based routing, RAG-grounded domain agents, and shared services for tax computation, document processing, and payment handling. The fault injection framework instruments 19 boundary operations with four chaos operators applied at configurable rates and with deterministic reproducibility via a seeded RNG, while remaining architecturally decoupled from the mock implementations.
+We have presented a multi-agent architecture for Romanian tax administration and a complementary fault injection framework for systematic robustness evaluation at external service boundaries. The system covers five tax service domains (PFA contributions, property sale tax, rental income, fiscal certificates, and electronic invoicing) orchestrated through a LangGraph state machine with intent-based routing, RAG-grounded domain agents, and shared services for tax computation, document processing, and payment handling. The fault injection framework instruments 19 boundary operations with four chaos operators applied at configurable rates and with deterministic reproducibility via a seeded RNG, while remaining architecturally decoupled from the mock implementations.
 
-Empirical evaluation across $N = 100$ boundary calls reveals a structural silent pass-through rate of approximately 63\%: faults that do not perturb the branching predicate evaluated by the downstream agent logic are entirely invisible to both the agent and the citizen, even when the LLM receives a response containing null or sentinel-valued fields. This finding has a direct implication for agentic system design: reactive agents that condition behaviour solely on service status flags cannot detect the majority of boundary faults, and the addition of a response validation layer---one that evaluates outputs against formally specified contracts and triggers a mitigation path on violation---is necessary for trustworthy deployment in public administration contexts.
+Empirical evaluation across $N = 100$ boundary calls reveals a structural silent pass-through rate of approximately 63\%: faults that do not perturb the branching predicate evaluated by the downstream agent logic are entirely invisible to both the agent and the citizen, even when the LLM receives a response containing null or sentinel-valued fields. This finding underscores a critical gap in the current state of agentic AI: the absence of dedicated quality assurance frameworks capable of detecting such silent failures before they reach end users. As Paduraru et~al.~\cite{Paduraru2026} argue, agentic AI systems require trace-based assurance frameworks that instrument executions as structured message-action traces with explicit contracts, enabling deterministic replay, fault localisation, and runtime governance through action mediation. Without such frameworks, the 63\% silent pass-through rate we observe would remain entirely undetected in a production deployment, potentially leading to citizens receiving incorrect tax guidance or confirmation of failed submissions.
 
-Future work will address this gap through a monitoring and assertion layer that evaluates agent outputs against contracts specifying, for instance, that a submission identifier must be non-null, that a payment code must match the expected format, and that a fiscal certificate response must include a valid download URL. Together with the domain-specific agents and fault injection capability presented here, such a layer would complete an end-to-end assurance framework suitable for production deployment of agentic AI in regulated public services.
+The cost feasibility analysis further supports the viability of institutional adoption: even for a large agency processing 5{,}000 daily interactions, LLM inference costs remain under \$8{,}000 per month, a negligible fraction compared to human operator salaries.
+
+Future work will address the quality assurance gap by integrating the trace-based contract verification approach proposed by Paduraru et~al.~\cite{Paduraru2026}, defining output contracts that specify, for instance, that a submission identifier must be non-null, that a payment code must match the expected format, and that a fiscal certificate response must include a valid download URL. Such contracts, combined with runtime governance mechanisms that can rewrite or block unsafe agent actions, would close the silent pass-through gap identified in this work. Together with the domain-specific agents and fault injection capability presented here, a trace-based assurance layer would complete an end-to-end quality assurance pipeline suitable for production deployment of agentic AI in regulated public services.
 
 \section*{Acknowledgements}
 
@@ -310,6 +342,8 @@ Owotogbe, J. (2025) ``Assessing and enhancing the robustness of LLM-based multi-
 \bibitem{Gupta2026}
 Gupta, A. (2026) ``ReliabilityBench: Evaluating LLM agent reliability under production-like stress conditions,'' \textit{arXiv preprint}, arXiv:2601.06112.
 
+\bibitem{Paduraru2026}
+Paduraru, C., Bouruc, P.-L. and Stefanescu, A. (2026) ``A trace-based assurance framework for agentic AI orchestration: Contracts, testing, and governance,'' \textit{arXiv preprint}, arXiv:2603.18096.
 
 \end{thebibliography}
 
