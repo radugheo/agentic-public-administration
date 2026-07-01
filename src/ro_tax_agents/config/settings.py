@@ -44,6 +44,31 @@ class Settings(BaseSettings):
         default=0.01, description="Property sale tax rate for >= 3 years ownership (1%)"
     )
 
+    # L3 controlled fault injection (mocked environment boundary only)
+    l3_fault_injection_enabled: bool = Field(
+        default=False,
+        description="Enable L3 controlled fault injection on mocked external environment",
+    )
+    l3_fault_injection_rate: float = Field(
+        default=0.0,
+        ge=0.0,
+        le=1.0,
+        description="Probability of injecting a fault at each mocked environment operation",
+    )
+    l3_fault_injection_seed: int = Field(
+        default=17,
+        description="Deterministic seed for L3 fault scheduling",
+    )
+    l3_fault_max_delay_ms: int = Field(
+        default=250,
+        ge=0,
+        description="Upper bound for injected delay faults",
+    )
+    l3_fault_log_level: str = Field(
+        default="INFO",
+        description="Python log level for L3 injection events",
+    )
+
     @property
     def rag_index_mapping(self) -> dict[str, str]:
         """Map agent types to their UiPath Context Grounding index names."""
