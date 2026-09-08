@@ -133,8 +133,8 @@
 %% ======================================================= one-slide summary ==
 \begin{frame}{The one-slide summary}
   \begin{block}{Problem}
-    An agentic assistant for public services can return a fluent, confident answer built on a
-    service response that \hl{timed out, arrived incomplete, or came back corrupted}.
+    An agentic assistant for public services can answer confidently on the basis of a service
+    response that \hl{timed out, arrived incomplete, or came back corrupted}.
     In a regulated setting, \risk{nothing signals that anything went wrong}.
   \end{block}
   \begin{block}{Idea}
@@ -144,9 +144,9 @@
   \end{block}
   \begin{block}{Result (100 boundary calls, five injection rates)}
     \risk{63\%} of injected faults pass silently, stable across every non-zero rate and
-    matching the closed form $0.25 + 2 \times 0.25 \times 0.75 = 0.625$. That rate is a
-    property of the \hl{response schema} rather than an implementation defect. Inference
-    costs about \$0.05 per session.
+    matching the closed form $0.25 + 2 \times 0.25 \times 0.75 = 0.625$. The rate follows from
+    the shape of the \hl{response schema}, so no amount of debugging the implementation will
+    move it. Inference costs about \$0.05 per session.
   \end{block}
 \end{frame}
 
@@ -170,8 +170,8 @@
       no shared state.
       \medskip
       \begin{block}{Consequence}
-        The arithmetic is trivial. What costs the citizen time is \hl{coordinating the
-        procedures and interpreting the rules}, and that is the part an agent can absorb.
+        The arithmetic is trivial. The citizen's time goes into \hl{coordinating the
+        procedures and interpreting the rules}, and that is where an agent helps.
       \end{block}
     \end{column}
     \begin{column}{0.40\textwidth}
@@ -207,8 +207,8 @@
   \end{block}
   \vfill
   \centering
-  \hl{Both gaps concern the boundary between a probabilistic model and a deterministic
-  service contract.}
+  \hl{Both gaps sit at the same place: the boundary between a probabilistic model and a
+  deterministic service contract.}
 \end{frame}
 
 \begin{frame}{A concrete request}
@@ -240,7 +240,7 @@
   \end{columns}
   \vfill
   \centering
-  \hl{The paper measures how often that happens, and what governs the number.}
+  \hl{We measure how often this happens, and what determines the rate.}
 \end{frame}
 
 \begin{frame}{Contributions}
@@ -275,7 +275,8 @@
       \end{block}
       \begin{block}{Domain agents: five workflows}
         \small PFA/freelancer (D212), property sale, rental income, fiscal certificate,
-        RO e-Factura. Each takes the shared state, calls shared services, returns updated state.
+        RO e-Factura. Each one reads the shared state, calls the shared services and writes
+        the state back.
       \end{block}
     \end{column}
     \begin{column}{0.48\textwidth}
@@ -318,7 +319,7 @@
   \vfill
   \begin{itemize}
     \item The LLM classifies; it does not decide the route. A fixed table turns the predicted
-      intent into a graph node, so the routing step itself stays inspectable.
+      intent into a graph node, so the routing step itself can be inspected.
     \item Below the confidence threshold the request goes to clarification, even when an intent
       was assigned. Dispatching the wrong specialist here means \hl{computing the wrong tax}.
   \end{itemize}
@@ -463,7 +464,7 @@
         ID: D212-01B66C85C3, Timestamp: 2026-03-27T22:20:32.''}
       \end{alertblock}
       \medskip
-      \cmt{Four fields, one of them gating: a single-field fault stays invisible with
+      \cmt{Four fields, one of which gates the branch: a single-field fault goes unnoticed with
       probability $0.75$. The same arithmetic applies to any response whose branch reads
       one field.}
     \end{column}
@@ -490,7 +491,7 @@
   \end{table}
   \vfill
   \begin{itemize}
-    \item The measured rate sits on the predicted \risk{0.625}. Raising $\eta$ raises the
+    \item The measured rate matches the predicted \risk{0.625}. Raising $\eta$ raises the
       \emph{count} of silent faults, but the proportion does not move.
     \item Delay faults added $125.5 \pm 72.2$\,ms per affected call, matching the mean of
       $\mathcal{U}[1,250]$; at $\eta = 0.50$ roughly 65\,ms per scenario.
@@ -525,18 +526,18 @@
     \item About 20,000 input and 2,100 output tokens per session, priced at \$1.25 per million
       input and \$10.00 per million output tokens, over 22 working days a month. Licensing,
       infrastructure and maintenance are excluded.
-    \item Cost scales linearly and stays modest. Routing with a smaller model, keeping the
-      capable one for domain reasoning, pushes it lower.
+    \item Cost scales linearly with volume and remains low at institutional scale. Routing with
+      a smaller model and reserving the capable one for domain reasoning lowers it further.
   \end{itemize}
   \vfill
   \centering
-  \hl{What stands in the way of deployment is assurance, not arithmetic.}
+  \hl{At these volumes, cost is not what blocks deployment. Assurance is.}
 \end{frame}
 
 \begin{frame}{Analysis and limitations}
   \begin{columns}[T]
     \begin{column}{0.48\textwidth}
-      \begin{block}{What the rate does and does not depend on}
+      \begin{block}{What fixes the rate}
         \small It is fixed by the operator mix and the number of fields in the response object,
         so it holds at every injection rate. It says nothing about how often faults occur in
         production, only about what fraction of them the agent can see.
@@ -544,9 +545,9 @@
     \end{column}
     \begin{column}{0.48\textwidth}
       \begin{block}{Where the fix belongs}
-        \small Not in the branch, which is already correct with respect to the flag it reads,
-        but in an \hl{output contract} evaluated after the response is assembled and before it
-        reaches the citizen.
+        \small The branch is already correct with respect to the flag it reads, so the fix has to
+        go elsewhere: an \hl{output contract} evaluated once the response is assembled and
+        before it reaches the citizen.
       \end{block}
     \end{column}
   \end{columns}
@@ -557,8 +558,8 @@
         failure distributions in production will differ.
       \item The unit of analysis is a single boundary call. Faults compounding across a full
         citizen session are not measured here.
-      \item Detectability is judged from the citizen-facing response, a behavioural proxy
-        rather than a formal correctness criterion.
+      \item Detectability is judged from the citizen-facing response. This is a behavioural
+        criterion, and we make no claim that it is a formal one.
     \end{itemize}
   \end{alertblock}
 \end{frame}
@@ -572,15 +573,15 @@
     \begin{itemize}\small
       \item A silent pass-through rate of \risk{63\%}, stable across injection rates and
         matching a closed-form prediction.
-      \item The cause is structural: response schemas and branching predicates, not
-        incidental bugs. \hl{Interface coherence is not evidence of execution correctness.}
+      \item The cause is structural, in the response schemas and the branching predicates.
+        \hl{A coherent interface is no evidence that the execution behind it was correct.}
       \item Inference cost stays modest at institutional volumes.
     \end{itemize}
   \end{block}
   \begin{block}{Contribution}
     \small An operational multi-agent architecture for a national fiscal setting, together with
-    a boundary-level fault study that explains \emph{why} faults pass silently rather than only
-    reporting that they do.
+    a boundary-level fault study that reports how often faults pass silently and accounts for
+    \emph{why} they do.
   \end{block}
   \begin{block}{Future work}
     \small Output contracts checked before a response reaches the citizen; trace-based
@@ -664,8 +665,8 @@
       \end{block}
       \begin{block}{RAG}
         \small Retrieval over dedicated indices of the Romanian Tax Code and procedural
-        guidance, so an answer can be traced to a source instead of resting on parametric
-        model knowledge.
+        guidance, so every answer can be traced to a passage in the law and none of it rests
+        on what the model happens to remember.
       \end{block}
     \end{column}
     \begin{column}{0.48\textwidth}
@@ -688,18 +689,18 @@
   \begin{columns}[T]
     \begin{column}{0.31\textwidth}
       \textbf{Agentic orchestration}\\[0.3em]
-      \cmt{LangGraph models control flow as a typed state machine: explicit and auditable,
-      unlike open-ended conversation. That matters when the service is regulated.}
+      \cmt{LangGraph models control flow as a typed state machine, so each transition is
+      explicit and can be audited. That matters when the service is regulated.}
     \end{column}
     \begin{column}{0.31\textwidth}
       \textbf{Retrieval}\\[0.3em]
       \cmt{Tax law is specific and amended often. Retrieval grounds explanations in the
-      Romanian Tax Code and stays separate from the deterministic computation.}
+      Romanian Tax Code and is kept separate from the deterministic computation.}
     \end{column}
     \begin{column}{0.31\textwidth}
       \textbf{Chaos engineering}\\[0.3em]
-      \cmt{Deliberate faults, observed effects. Recently applied to LLM agents, but usually
-      in generic or synthetic testbeds.}
+      \cmt{Faults are introduced deliberately and their effects observed. The technique reached
+      LLM agents recently, though mostly in generic or synthetic testbeds.}
     \end{column}
   \end{columns}
   \vfill
