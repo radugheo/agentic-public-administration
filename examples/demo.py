@@ -91,6 +91,9 @@ def interactive_demo():
     print("- E-Factura (B2B/B2C)")
     print()
 
+    session_id = str(uuid.uuid4())
+    config = {"configurable": {"thread_id": session_id}}
+
     while True:
         user_input = input("You: ").strip()
 
@@ -100,9 +103,6 @@ def interactive_demo():
 
         if not user_input:
             continue
-
-        session_id = str(uuid.uuid4())
-        config = {"configurable": {"thread_id": session_id}}
 
         try:
             result = graph.invoke({"query": user_input}, config)

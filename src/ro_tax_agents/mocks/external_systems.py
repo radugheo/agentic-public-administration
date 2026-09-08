@@ -5,6 +5,8 @@ from dataclasses import dataclass
 from datetime import datetime
 import uuid
 
+from ro_tax_agents.mocks.fault_injection import with_fault_injection
+
 
 @dataclass
 class ANAFSPVResponse:
@@ -47,6 +49,7 @@ class MockANAFSPV:
     tax declarations and certificate requests.
     """
 
+    @with_fault_injection("external.anaf.authenticate")
     def authenticate(self, certificate_path: str, password: str) -> ANAFSPVResponse:
         """Authenticate with ANAF SPV using digital certificate.
 
@@ -68,6 +71,7 @@ class MockANAFSPV:
             },
         )
 
+    @with_fault_injection("external.anaf.submit_declaration")
     def submit_declaration(
         self, declaration_type: str, xml_content: str
     ) -> ANAFSPVResponse:
@@ -90,6 +94,7 @@ class MockANAFSPV:
             },
         )
 
+    @with_fault_injection("external.anaf.get_fiscal_certificate")
     def get_fiscal_certificate(
         self, cnp_cui: str, certificate_type: str
     ) -> ANAFSPVResponse:
@@ -113,6 +118,7 @@ class MockANAFSPV:
             },
         )
 
+    @with_fault_injection("external.anaf.check_declaration_status")
     def check_declaration_status(self, submission_id: str) -> ANAFSPVResponse:
         """Check status of a submitted declaration.
 
@@ -140,6 +146,7 @@ class MockGhiseulRo:
     Simulates the Ghiseul.ro payment platform for tax payments.
     """
 
+    @with_fault_injection("external.ghiseul.initiate_payment")
     def initiate_payment(
         self, amount: float, payment_type: str, reference: str
     ) -> GhiseulResponse:
@@ -161,6 +168,7 @@ class MockGhiseulRo:
             message=f"Plata de {amount} RON initiata cu succes",
         )
 
+    @with_fault_injection("external.ghiseul.check_payment_status")
     def check_payment_status(self, payment_code: str) -> GhiseulResponse:
         """Check payment status.
 
@@ -176,6 +184,7 @@ class MockGhiseulRo:
             message="Plata a fost confirmata",
         )
 
+    @with_fault_injection("external.ghiseul.get_payment_receipt")
     def get_payment_receipt(self, payment_code: str) -> GhiseulResponse:
         """Get payment receipt.
 
@@ -199,6 +208,7 @@ class MockEFacturaSystem:
     Simulates the Romanian E-Factura electronic invoicing system.
     """
 
+    @with_fault_injection("external.efactura.upload_invoice")
     def upload_invoice(self, xml_content: str, cif: str) -> EFacturaResponse:
         """Upload an invoice to E-Factura.
 
@@ -215,6 +225,7 @@ class MockEFacturaSystem:
             download_id=f"EF-{datetime.now().strftime('%Y%m%d%H%M%S')}-{uuid.uuid4().hex[:6].upper()}",
         )
 
+    @with_fault_injection("external.efactura.check_status")
     def check_status(self, download_id: str) -> EFacturaResponse:
         """Check invoice processing status.
 
@@ -230,6 +241,7 @@ class MockEFacturaSystem:
             download_id=download_id,
         )
 
+    @with_fault_injection("external.efactura.download_invoice")
     def download_invoice(self, download_id: str) -> bytes:
         """Download processed invoice.
 
@@ -241,6 +253,7 @@ class MockEFacturaSystem:
         """
         return b"<?xml version='1.0'?><Invoice>Mock invoice content</Invoice>"
 
+    @with_fault_injection("external.efactura.get_messages")
     def get_messages(self, cif: str, days: int = 60) -> list[dict]:
         """Get E-Factura messages for a company.
 
