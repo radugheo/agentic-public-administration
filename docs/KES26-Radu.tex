@@ -140,7 +140,8 @@
   \begin{block}{Idea}
     Build the assistant as a multi-agent state machine over the real fiscal workflows, then
     \hl{instrument every external service boundary} with controlled fault injection (timeout,
-    delay, partial response, corruption) and classify what the citizen actually sees.
+    delay, partial response, corruption) and classify each fault by the answer the citizen
+    receives: detected, or passed through silently.
   \end{block}
   \begin{block}{Result (100 boundary calls, five injection rates)}
     \risk{63\%} of injected faults pass silently, stable across every non-zero rate and
