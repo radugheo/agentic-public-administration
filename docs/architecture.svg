@@ -1,0 +1,186 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 850" font-family="Segoe UI, Arial, sans-serif" font-size="13">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#555"/>
+    </marker>
+    <marker id="redarrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#c62828"/>
+    </marker>
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="104%">
+      <feDropShadow dx="1" dy="1" stdDeviation="2" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- ============ 1) LAYER BACKGROUNDS (bottom-most) ============ -->
+  <rect x="50" y="10" width="1100" height="65" rx="10" fill="#fff3e0" stroke="#e65100" stroke-width="2"/>
+  <rect x="50" y="85" width="1100" height="65" rx="10" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
+  <rect x="50" y="160" width="1100" height="80" rx="10" fill="#f3e5f5" stroke="#6a1b9a" stroke-width="2"/>
+  <rect x="50" y="250" width="1100" height="225" rx="10" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2"/>
+  <rect x="50" y="485" width="1100" height="85" rx="10" fill="#fff8e1" stroke="#f57f17" stroke-width="2"/>
+  <rect x="50" y="580" width="1100" height="80" rx="10" fill="#e0f7fa" stroke="#00695c" stroke-width="2"/>
+  <rect x="50" y="670" width="1100" height="85" rx="10" fill="#fce4ec" stroke="#b71c1c" stroke-width="2"/>
+
+  <!-- ============ 2) LAYER TITLES ============ -->
+  <text x="65" y="30" font-weight="bold" fill="#e65100" font-size="12">Layer 1 — User Interface</text>
+  <text x="65" y="103" font-weight="bold" fill="#1565c0" font-size="12">Layer 2 — Orchestration</text>
+  <text x="65" y="177" font-weight="bold" fill="#6a1b9a" font-size="12">Layer 3 — Domain Agents</text>
+  <text x="65" y="268" font-weight="bold" fill="#2e7d32" font-size="12">Layer 4 — Shared Services</text>
+  <text x="65" y="503" font-weight="bold" fill="#f57f17" font-size="12">Layer 5 — UiPath Python SDK</text>
+  <text x="65" y="598" font-weight="bold" fill="#00695c" font-size="12">Layer 6 — Tools</text>
+  <text x="65" y="688" font-weight="bold" fill="#b71c1c" font-size="12">Layer 7 — External Systems</text>
+
+  <!-- ============ 3) ARROWS (middle layer - visible above backgrounds, below nodes) ============ -->
+
+  <!-- L1→L2 -->
+  <line x1="600" y1="62" x2="600" y2="108" stroke="#555" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- L2→L3 -->
+  <line x1="530" y1="140" x2="160" y2="190" stroke="#555" stroke-width="1.3" marker-end="url(#arrow)"/>
+  <line x1="555" y1="140" x2="355" y2="190" stroke="#555" stroke-width="1.3" marker-end="url(#arrow)"/>
+  <line x1="600" y1="140" x2="555" y2="190" stroke="#555" stroke-width="1.3" marker-end="url(#arrow)"/>
+  <line x1="645" y1="140" x2="755" y2="190" stroke="#555" stroke-width="1.3" marker-end="url(#arrow)"/>
+  <line x1="670" y1="140" x2="950" y2="190" stroke="#555" stroke-width="1.3" marker-end="url(#arrow)"/>
+
+  <!-- L3→L4 -->
+  <!-- Property Sale (slot 1) → Doc Intake -->
+  <path d="M 180,232 C 250,250 260,275 240,290" fill="none" stroke="#555" stroke-width="1.3" marker-end="url(#arrow)"/>
+  <!-- PFA (slot 2) → Doc Intake -->
+  <line x1="330" y1="232" x2="280" y2="290" stroke="#555" stroke-width="1.3" marker-end="url(#arrow)"/>
+  <!-- PFA (slot 2) → RAG -->
+  <line x1="390" y1="232" x2="600" y2="290" stroke="#555" stroke-width="1.3" marker-end="url(#arrow)"/>
+  <!-- Rental Income (slot 3) → Doc Intake -->
+  <line x1="530" y1="232" x2="300" y2="290" stroke="#555" stroke-width="1.3" marker-end="url(#arrow)"/>
+  <!-- Rental Income (slot 3) → RAG -->
+  <line x1="580" y1="232" x2="640" y2="290" stroke="#555" stroke-width="1.3" marker-end="url(#arrow)"/>
+  <!-- Certificate (slot 4) → RAG -->
+  <line x1="755" y1="232" x2="680" y2="290" stroke="#555" stroke-width="1.3" marker-end="url(#arrow)"/>
+
+  <!-- L4 internal: Doc Intake → Calculation Agent -->
+  <line x1="270" y1="338" x2="310" y2="355" stroke="#555" stroke-width="1.3" marker-end="url(#arrow)"/>
+  <!-- L4 internal: Calculation Agent → Payment Agent -->
+  <line x1="390" y1="403" x2="480" y2="430" stroke="#555" stroke-width="1.3" marker-end="url(#arrow)"/>
+
+  <!-- L4→L5: Doc Intake → Buckets — curves left around Calc/Payment boxes -->
+  <path d="M 130,320 C 80,320 80,515 155,515" fill="none" stroke="#555" stroke-width="1.3" marker-end="url(#arrow)"/>
+  <!-- L4→L5: RAG → Context Grounding (slot 5, x=925) -->
+  <line x1="720" y1="338" x2="925" y2="515" stroke="#555" stroke-width="1.3" marker-end="url(#arrow)"/>
+  <!-- L4→L5: Calculation Agent → Create Task (Escalate Complex Cases) — straight line -->
+  <line x1="310" y1="403" x2="340" y2="515" stroke="#555" stroke-width="1.3" marker-end="url(#arrow)"/>
+  <text x="300" y="450" text-anchor="end" fill="#555" font-size="11" font-style="italic">Escalate Complex Cases</text>
+  <!-- L4→L5: Payment Agent → InvokeProcess (slot 3, x=525) -->
+  <line x1="560" y1="466" x2="525" y2="515" stroke="#555" stroke-width="1.3" marker-end="url(#arrow)"/>
+
+  <!-- L5→L6: InvokeProcess → all tools -->
+  <line x1="500" y1="560" x2="225" y2="610" stroke="#555" stroke-width="1.3" marker-end="url(#arrow)"/>
+  <line x1="510" y1="560" x2="435" y2="610" stroke="#555" stroke-width="1.3" marker-end="url(#arrow)"/>
+  <line x1="540" y1="560" x2="660" y2="610" stroke="#555" stroke-width="1.3" marker-end="url(#arrow)"/>
+  <line x1="555" y1="560" x2="885" y2="610" stroke="#555" stroke-width="1.3" marker-end="url(#arrow)"/>
+
+  <!-- L6→L7 -->
+  <!-- Ghiseul_Payment (slot 1) → ghiseul.ro (slot 1) -->
+  <line x1="225" y1="654" x2="245" y2="700" stroke="#555" stroke-width="1.3" marker-end="url(#arrow)"/>
+  <!-- SPV_Submit_D212 (slot 2) → ANAF SPV (slot 2) -->
+  <line x1="435" y1="654" x2="520" y2="700" stroke="#555" stroke-width="1.3" marker-end="url(#arrow)"/>
+  <!-- SPV_Register_Contract (slot 3) → ANAF SPV (slot 2) -->
+  <line x1="660" y1="654" x2="580" y2="700" stroke="#555" stroke-width="1.3" marker-end="url(#arrow)"/>
+  <!-- SPV_Login (slot 4) → ANAF SPV (slot 2) -->
+  <line x1="885" y1="654" x2="600" y2="700" stroke="#555" stroke-width="1.3" marker-end="url(#arrow)"/>
+
+  <!-- E-Factura → RO e-Factura bypass (smooth curve from right edge down to RO e-Factura) -->
+  <path d="M 1040,211 C 1140,211 1140,725 1030,725" fill="none" stroke="#555" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- ============ 4) NODE BOXES + TEXT (top-most, above arrows) ============ -->
+
+  <!-- L1: Citizen -->
+  <rect x="470" y="25" width="260" height="40" rx="8" fill="#ffe0b2" stroke="#e65100" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="600" y="50" text-anchor="middle" fill="#333" font-size="13">Citizen / Business</text>
+
+  <!-- L2: Entry Agent -->
+  <rect x="420" y="100" width="360" height="40" rx="8" fill="#bbdefb" stroke="#1565c0" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="600" y="117" text-anchor="middle" fill="#333" font-size="12">Entry Agent</text>
+  <text x="600" y="132" text-anchor="middle" fill="#555" font-size="10">Intent Detection &amp; Routing</text>
+
+  <!-- L3: Domain Agents -->
+  <rect x="70" y="190" width="180" height="42" rx="8" fill="#e1bee7" stroke="#6a1b9a" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="160" y="207" text-anchor="middle" fill="#333" font-size="11">Property Sale Agent</text>
+  <text x="160" y="222" text-anchor="middle" fill="#555" font-size="9">1%/3% Tax Calculation</text>
+
+  <rect x="265" y="190" width="180" height="42" rx="8" fill="#e1bee7" stroke="#6a1b9a" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="355" y="207" text-anchor="middle" fill="#333" font-size="11">PFA/Freelancer Agent</text>
+  <text x="355" y="222" text-anchor="middle" fill="#555" font-size="9">D212 Filing, CAS/CASS</text>
+
+  <rect x="460" y="190" width="190" height="42" rx="8" fill="#e1bee7" stroke="#6a1b9a" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="555" y="207" text-anchor="middle" fill="#333" font-size="11">Rental Income Agent</text>
+  <text x="555" y="222" text-anchor="middle" fill="#555" font-size="9">Contract Registration</text>
+
+  <rect x="665" y="190" width="180" height="42" rx="8" fill="#e1bee7" stroke="#6a1b9a" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="755" y="207" text-anchor="middle" fill="#333" font-size="11">Certificate Agent</text>
+  <text x="755" y="222" text-anchor="middle" fill="#555" font-size="9">Fiscal Attestation</text>
+
+  <rect x="860" y="190" width="180" height="42" rx="8" fill="#e1bee7" stroke="#6a1b9a" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="950" y="207" text-anchor="middle" fill="#333" font-size="11">E-Factura Agent</text>
+  <text x="950" y="222" text-anchor="middle" fill="#555" font-size="9">B2B/B2C Invoicing</text>
+
+  <!-- L4: Shared Services -->
+  <rect x="130" y="290" width="240" height="48" rx="8" fill="#c8e6c9" stroke="#2e7d32" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="250" y="310" text-anchor="middle" fill="#333" font-size="12">Document Intake</text>
+  <text x="250" y="326" text-anchor="middle" fill="#555" font-size="10">OCR &amp; Validation</text>
+
+  <rect x="530" y="290" width="240" height="48" rx="8" fill="#c8e6c9" stroke="#2e7d32" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="650" y="310" text-anchor="middle" fill="#333" font-size="12">RAG Agent</text>
+  <text x="650" y="326" text-anchor="middle" fill="#555" font-size="10">Tax Code Knowledge</text>
+
+  <rect x="190" y="355" width="240" height="48" rx="8" fill="#c8e6c9" stroke="#2e7d32" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="310" y="375" text-anchor="middle" fill="#333" font-size="12">Calculation Agent</text>
+  <text x="310" y="391" text-anchor="middle" fill="#555" font-size="10">Tax Computation</text>
+
+  <rect x="480" y="418" width="240" height="48" rx="8" fill="#c8e6c9" stroke="#2e7d32" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="600" y="438" text-anchor="middle" fill="#333" font-size="12">Payment Agent</text>
+  <text x="600" y="454" text-anchor="middle" fill="#555" font-size="10">ghiseul.ro Integration</text>
+
+  <!-- L5: UiPath Python SDK — reordered: Buckets, Create Task, InvokeProcess (center), Queues, Context Grounding -->
+  <rect x="70" y="515" width="170" height="48" rx="8" fill="#ffecb3" stroke="#f57f17" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="155" y="535" text-anchor="middle" fill="#333" font-size="12">Buckets</text>
+  <text x="155" y="551" text-anchor="middle" fill="#555" font-size="10">Document Storage</text>
+
+  <rect x="255" y="515" width="170" height="48" rx="8" fill="#ffecb3" stroke="#f57f17" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="340" y="535" text-anchor="middle" fill="#333" font-size="12">Create Task</text>
+  <text x="340" y="551" text-anchor="middle" fill="#555" font-size="10">Human-In-The-Loop</text>
+
+  <rect x="440" y="515" width="170" height="48" rx="8" fill="#ffecb3" stroke="#f57f17" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="525" y="544" text-anchor="middle" fill="#333" font-size="12">InvokeProcess</text>
+
+  <rect x="625" y="515" width="170" height="48" rx="8" fill="#ffecb3" stroke="#f57f17" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="710" y="535" text-anchor="middle" fill="#333" font-size="12">Queues</text>
+  <text x="710" y="551" text-anchor="middle" fill="#555" font-size="10">Batch Processing</text>
+
+  <rect x="810" y="515" width="230" height="48" rx="8" fill="#ffecb3" stroke="#f57f17" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="925" y="535" text-anchor="middle" fill="#333" font-size="12">Context Grounding</text>
+  <text x="925" y="551" text-anchor="middle" fill="#555" font-size="10">Knowledge Search</text>
+
+  <!-- L6: Tools -->
+  <rect x="130" y="610" width="190" height="44" rx="8" fill="#b2ebf2" stroke="#00695c" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="225" y="637" text-anchor="middle" fill="#333" font-size="12">Ghiseul_Payment</text>
+
+  <rect x="340" y="610" width="190" height="44" rx="8" fill="#b2ebf2" stroke="#00695c" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="435" y="637" text-anchor="middle" fill="#333" font-size="12">SPV_Submit_D212</text>
+
+  <rect x="550" y="610" width="220" height="44" rx="8" fill="#b2ebf2" stroke="#00695c" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="660" y="637" text-anchor="middle" fill="#333" font-size="12">SPV_Register_Contract</text>
+
+  <rect x="790" y="610" width="190" height="44" rx="8" fill="#b2ebf2" stroke="#00695c" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="885" y="637" text-anchor="middle" fill="#333" font-size="12">SPV_Login</text>
+
+  <!-- L7: External Systems -->
+  <rect x="130" y="700" width="230" height="48" rx="8" fill="#f8bbd0" stroke="#b71c1c" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="245" y="720" text-anchor="middle" fill="#333" font-size="12">ghiseul.ro</text>
+  <text x="245" y="736" text-anchor="middle" fill="#555" font-size="10">Payments</text>
+
+  <rect x="440" y="700" width="230" height="48" rx="8" fill="#f8bbd0" stroke="#b71c1c" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="555" y="720" text-anchor="middle" fill="#333" font-size="12">ANAF SPV</text>
+  <text x="555" y="736" text-anchor="middle" fill="#555" font-size="10">Tax Portal</text>
+
+  <rect x="800" y="700" width="230" height="48" rx="8" fill="#f8bbd0" stroke="#b71c1c" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="915" y="720" text-anchor="middle" fill="#333" font-size="12">RO e-Factura</text>
+  <text x="915" y="736" text-anchor="middle" fill="#555" font-size="10">Invoicing</text>
+</svg>
