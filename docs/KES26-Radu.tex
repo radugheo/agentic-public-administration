@@ -1,0 +1,768 @@
+%% Presentation for KES 2026
+%% Paper: Robust Agentic AI for Public Administration:
+%%        A Multi-Agent Architecture and Controlled Fault Injection Evaluation
+%%
+%% Layout follows the structure of KES26-model.pdf in this directory
+%% (part dividers, block-driven slides, three-cell footline), with its own
+%% palette: deep teal, slate, rust.
+%%
+%% Compile with: pdflatex KES26-Radu.tex   (run twice, for the frame counter)
+
+\documentclass[aspectratio=169,10pt]{beamer}
+
+\usetheme{default}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, positioning}
+
+\graphicspath{{./}{PROCS_KES2026_LATEX_Template/}}
+
+%% ---------------------------------------------------------------- palette --
+\definecolor{teal}{RGB}{13,78,85}      % primary: title bar, structure, emphasis
+\definecolor{slate}{RGB}{58,66,86}     % block headers
+\definecolor{rust}{RGB}{158,68,32}     % alert headers, risk emphasis
+\definecolor{mist}{RGB}{242,244,245}   % block bodies
+\definecolor{stone}{RGB}{110,116,122}  % captions, footline
+
+\setbeamercolor{structure}{fg=teal}
+\setbeamercolor{alerted text}{fg=rust}
+\setbeamercolor{frametitle}{bg=teal, fg=white}
+\setbeamercolor{footline}{fg=stone}
+\setbeamercolor{block title}{bg=slate, fg=white}
+\setbeamercolor{block body}{bg=mist, fg=black}
+\setbeamercolor{block title alerted}{bg=rust, fg=white}
+\setbeamercolor{block body alerted}{bg=mist, fg=black}
+\setbeamercolor{block title example}{bg=teal, fg=white}
+\setbeamercolor{block body example}{bg=mist, fg=black}
+\setbeamercolor{itemize item}{fg=teal}
+\setbeamercolor{itemize subitem}{fg=teal}
+\setbeamercolor{enumerate item}{fg=teal}
+
+\setbeamertemplate{blocks}[default]
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{itemize items}[square]
+\setbeamertemplate{itemize subitem}[square]
+
+\setbeamerfont{frametitle}{size=\large, series=\bfseries}
+\setbeamerfont{block title}{size=\small, series=\bfseries}
+\setbeamerfont{footline}{size=\tiny}
+
+%% ------------------------------------------------- frame title and footer --
+\setbeamertemplate{frametitle}{%
+  \nointerlineskip%
+  \begin{beamercolorbox}[wd=\paperwidth, ht=3.0ex, dp=1.6ex,
+                         leftskip=0.30cm, rightskip=0.30cm]{frametitle}%
+    \usebeamerfont{frametitle}\insertframetitle%
+  \end{beamercolorbox}%
+}
+
+\newif\ifbackupslide
+\setbeamertemplate{footline}{%
+  \hbox{%
+    \begin{beamercolorbox}[wd=0.34\paperwidth, ht=2.6ex, dp=1.4ex,
+                           leftskip=0.30cm]{footline}%
+      \usebeamerfont{footline}\insertshorttitle{} $\cdot$ KES 2026%
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=0.32\paperwidth, ht=2.6ex, dp=1.4ex,
+                           center]{footline}%
+      \usebeamerfont{footline}\insertsection%
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=0.34\paperwidth, ht=2.6ex, dp=1.4ex,
+                           rightskip=0.30cm]{footline}%
+      \usebeamerfont{footline}\hfill
+      \ifbackupslide backup\else\insertframenumber/\inserttotalframenumber\fi%
+    \end{beamercolorbox}%
+  }%
+}
+
+%% -------------------------------------------------------- small utilities --
+\newcommand{\hl}[1]{\textcolor{teal}{\textbf{#1}}}      % emphasis
+\newcommand{\risk}[1]{\textcolor{rust}{\textbf{#1}}}    % failure, silent rate
+\newcommand{\cmt}[1]{{\color{stone}\small #1}}          % caption under content
+
+% part divider
+\newcommand{\keypart}[2]{%
+  \begin{frame}[plain, noframenumbering]
+    \vfill
+    \centering
+    {\color{stone}\small #1}\\[0.35em]
+    {\color{teal}\Large\bfseries #2}\\[0.9em]
+    {\color{rust}\rule{0.25\paperwidth}{1.2pt}}
+    \vfill\vfill
+  \end{frame}%
+}
+
+%% ------------------------------------------------------------------ title --
+\title[Robust Agentic AI]{Robust Agentic AI for Public Administration}
+\author{Radu-Mihai Gheorghe, Petru-Liviu Bouruc, Ciprian Paduraru, Alin Stefanescu}
+\date{KES 2026}
+
+\begin{document}
+
+%% ================================================================== title ==
+\begin{frame}[plain, noframenumbering]
+  \vfill
+  \centering
+  {\color{teal}\large\bfseries
+   Robust Agentic AI for Public Administration:\\[0.15em]
+   A Multi-Agent Architecture and\\[0.15em]
+   Controlled Fault Injection Evaluation}\\[0.8em]
+  {\color{rust}\rule{0.42\paperwidth}{1pt}}\\[1.1em]
+
+  Radu-Mihai Gheorghe$^{1,2}$ \quad Petru-Liviu Bouruc$^{2}$ \quad
+  Ciprian Paduraru$^{2}$ \quad Alin Stefanescu$^{2,3}$\\[0.9em]
+
+  {\footnotesize $^{1}$UiPath, Romania}\\[0.3em]
+  {\footnotesize $^{2}$University of Bucharest, Romania}\\[0.3em]
+  {\footnotesize $^{3}$Institute for Logic and Data Science, Romania}\\[1.2em]
+
+  30th International Conference on Knowledge-Based and\\
+  Intelligent Information \& Engineering Systems (KES 2026)\\[1.1em]
+
+  {\color{stone}\footnotesize Artifact:
+   \texttt{github.com/radugheo/agentic-public-administration}}
+  \vfill
+\end{frame}
+
+%% ======================================================= one-slide summary ==
+\begin{frame}{The one-slide summary}
+  \begin{block}{Problem}
+    An agentic assistant for public services can return a fluent, confident answer built on a
+    service response that \hl{timed out, arrived incomplete, or came back corrupted}.
+    In a regulated setting, \risk{nothing signals that anything went wrong}.
+  \end{block}
+  \begin{block}{Idea}
+    Build the assistant as a multi-agent state machine over the real fiscal workflows, then
+    \hl{instrument every external service boundary} with controlled fault injection (timeout,
+    delay, partial response, corruption) and classify what the citizen actually sees.
+  \end{block}
+  \begin{block}{Result (100 boundary calls, five injection rates)}
+    \risk{63\%} of injected faults pass silently, stable across every non-zero rate and
+    matching the closed form $0.25 + 2 \times 0.25 \times 0.75 = 0.625$. That rate is a
+    property of the \hl{response schema} rather than an implementation defect. Inference
+    costs about \$0.05 per session.
+  \end{block}
+\end{frame}
+
+%% ============================================================== PART 1 ======
+\keypart{PART 1}{Motivation}
+\section{Motivation}
+
+\begin{frame}{Fragmented services, one citizen}
+  \begin{columns}[T]
+    \begin{column}{0.56\textwidth}
+      Romania has digitised its fiscal services, but each portal keeps its own interface,
+      vocabulary and procedural logic:
+      \begin{itemize}
+        \item \textbf{SPV}: declarations and fiscal record
+        \item \textbf{Ghi\c{s}eul.ro}: payments
+        \item \textbf{RO e-Factura}: national e-invoicing
+      \end{itemize}
+      \medskip
+      One freelancer, one year: declare annual income, pay pension and health contributions,
+      register a rental contract, issue an electronic invoice. Four procedures, three portals,
+      no shared state.
+      \medskip
+      \begin{block}{Consequence}
+        The arithmetic is trivial. What costs the citizen time is \hl{coordinating the
+        procedures and interpreting the rules}, and that is the part an agent can absorb.
+      \end{block}
+    \end{column}
+    \begin{column}{0.40\textwidth}
+      \centering
+      \begin{tikzpicture}[node distance=4.5mm, every node/.style={font=\scriptsize},
+          b/.style={draw=teal!55, fill=teal!6, rounded corners=2pt, align=center,
+                    inner sep=3.5pt, text width=40mm},
+          ar/.style={-{Stealth[length=2mm]}, draw=teal, line width=0.7pt}]
+        \node[b] (q) {Citizen request\\ \emph{``what do I owe as a freelancer?''}};
+        \node[b, below=of q] (r) {Entry Agent classifies and routes};
+        \node[b, below=of r] (a) {Domain agent calls SPV, Ghi\c{s}eul.ro, e-Factura};
+        \node[b, below=of a] (s) {\texttt{status == "success"} \checkmark};
+        \node[b, below=of s, draw=rust!70, fill=rust!7] (v)
+             {\risk{\ldots{} but was the payload intact?}};
+        \draw[ar] (q) -- (r); \draw[ar] (r) -- (a); \draw[ar] (a) -- (s);
+        \draw[ar, draw=rust] (s) -- (v);
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Two gaps}
+  \begin{block}{1. Operational coverage $\neq$ evidence of robustness}
+    Published work on AI for tax and government services stops at advisory question answering
+    and single-agent document processing. No system integrates orchestration, domain routing,
+    retrieval, deterministic computation and payment for a concrete national setting, and none
+    reports what happens when those services misbehave.
+  \end{block}
+  \begin{block}{2. Boundary faults are invisible to agent control flow}
+    Fault injection has reached LLM agents, but in generic or synthetic testbeds. No study
+    applies it to a regulated public service, measures the fraction of faults that propagate
+    silently, or ties that fraction to the structure of the response schema.
+  \end{block}
+  \vfill
+  \centering
+  \hl{Both gaps concern the boundary between a probabilistic model and a deterministic
+  service contract.}
+\end{frame}
+
+\begin{frame}{A concrete request}
+  \begin{columns}[T]
+    \begin{column}{0.47\textwidth}
+      \textbf{The task (small)}\\[0.3em]
+      \emph{``I earned 150,000 lei as a freelancer last year. What do I owe?''}
+      \medskip
+      \begin{itemize}\small
+        \item classify the intent and route it
+        \item compute the pension contribution (25\%) and the health contribution (10\%)
+          against the 2026 thresholds
+        \item ground the explanation in the Romanian Tax Code
+        \item submit the D212 declaration through SPV and confirm
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.47\textwidth}
+      \textbf{What the citizen never sees}\\[0.3em]
+      Every one of those steps crosses a service boundary. The SPV call can
+      \begin{itemize}\small
+        \item time out
+        \item return several hundred milliseconds late
+        \item come back with one field set to \texttt{None}
+        \item come back with one field replaced by a sentinel
+      \end{itemize}
+      \medskip
+      and in all but the first case the agent \risk{usually answers as if nothing happened}.
+    \end{column}
+  \end{columns}
+  \vfill
+  \centering
+  \hl{The paper measures how often that happens, and what governs the number.}
+\end{frame}
+
+\begin{frame}{Contributions}
+  \begin{enumerate}
+    \item \textbf{Architecture.} A multi-agent system for public administration: an Entry Agent
+      classifies intent and routes to one of five domain agents over four shared services.
+    \item \textbf{Instantiation.} Romanian tax and fiscal administration on the UiPath Python
+      SDK and LangGraph, covering D212 filing, property sale, rental income, fiscal
+      certificates and RO e-Factura.
+    \item \textbf{Fault injection framework.} 19 external service boundary operations
+      instrumented with four chaos operators, at configurable rates, replayable from a seed.
+    \item \textbf{Result.} A structural silent pass-through rate of \risk{63\%}, stable across
+      injection rates and explained in closed form by the operator mix and the response schema.
+    \item \textbf{Artifact.} Open implementation and evaluation setup.
+  \end{enumerate}
+  \vfill
+  \centering
+  \texttt{\small https://github.com/radugheo/agentic-public-administration}
+\end{frame}
+
+%% ============================================================== PART 2 ======
+\keypart{PART 2}{The system}
+\section{The system}
+
+\begin{frame}{Five layers, one state machine}
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      \begin{block}{Orchestration: the Entry Agent}
+        \small Sole entry point. Structured LLM classification into intent, confidence,
+        reasoning and extracted entities. A fixed table maps intent to a graph node, and low
+        confidence diverts to clarification.
+      \end{block}
+      \begin{block}{Domain agents: five workflows}
+        \small PFA/freelancer (D212), property sale, rental income, fiscal certificate,
+        RO e-Factura. Each takes the shared state, calls shared services, returns updated state.
+      \end{block}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \begin{block}{Shared services: four capabilities}
+        \small Document intake (OCR and schema validation), RAG over the Romanian Tax Code,
+        deterministic calculation in decimal arithmetic, payment through Ghi\c{s}eul.ro.
+      \end{block}
+      \begin{block}{Infrastructure: UiPath Python SDK}
+        \small Model gateway, retrieval indices, storage buckets, queues, human review tasks.
+        Government boundaries are mocked, keeping the request and response schemas of the
+        real services.
+      \end{block}
+    \end{column}
+  \end{columns}
+  \vfill
+  \cmt{Hierarchical supervisor pattern, implemented as a LangGraph \texttt{StateGraph} with
+  typed shared state and conditional routing.}
+\end{frame}
+
+\begin{frame}{The architecture}
+  \vspace{-1mm}
+  \centering
+  \includegraphics[width=\textwidth, height=0.87\textheight, keepaspectratio]%
+                  {updated_architecture_diagram.png}
+\end{frame}
+
+\begin{frame}{Orchestration: one entry, confidence-gated routing}
+  \begin{center}
+  \begin{tikzpicture}[node distance=6mm, every node/.style={font=\small},
+      box/.style={draw=teal!55, fill=teal!6, rounded corners=2pt, align=center,
+                  inner sep=4pt, text width=27mm, minimum height=15mm},
+      ar/.style={-{Stealth[length=2.2mm]}, draw=teal, line width=0.8pt}]
+    \node[box] (q) {\textbf{Citizen request}\\[2pt]\cmt{``I earned 150,000 lei as a freelancer''}};
+    \node[box, right=of q] (c) {\textbf{Structured classification}\\[2pt]\cmt{intent, confidence, reasoning, entities}};
+    \node[box, right=of c] (m) {\textbf{Deterministic mapping}\\[2pt]\cmt{intent $\rightarrow$ graph node}};
+    \node[box, right=of m] (g) {\textbf{Confidence gate}\\[2pt]\cmt{high $\to$ agent\\low $\to$ clarification}};
+    \draw[ar] (q) -- (c); \draw[ar] (c) -- (m); \draw[ar] (m) -- (g);
+  \end{tikzpicture}
+  \end{center}
+  \vfill
+  \begin{itemize}
+    \item The LLM classifies; it does not decide the route. A fixed table turns the predicted
+      intent into a graph node, so the routing step itself stays inspectable.
+    \item Below the confidence threshold the request goes to clarification, even when an intent
+      was assigned. Dispatching the wrong specialist here means \hl{computing the wrong tax}.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{The fault injector}
+  \begin{columns}[T]
+    \begin{column}{0.46\textwidth}
+      \begin{block}{Mechanism}
+        \small A decorator wraps each mocked boundary. \hl{One Bernoulli draw per call}
+        decides whether a fault fires; if it does, exactly one operator is applied to that
+        call. Every event is logged with the operation and the operator type.
+      \end{block}
+      \begin{block}{Parameters}
+        \small
+        $s$: seed, for deterministic replay\\
+        $\eta$: per-call injection rate\\
+        $\Delta t_{\max}$: bound on the induced delay\\[0.3em]
+        At $\eta = 0$ the nominal system is recovered unchanged.
+      \end{block}
+    \end{column}
+    \begin{column}{0.50\textwidth}
+      \small
+      \begin{tabular}{@{}lll@{}}
+        \toprule
+        \textbf{Operator} & \textbf{Effect} & \textbf{Visible?}\\
+        \midrule
+        Timeout    & raises \texttt{TimeoutError}   & \hl{always}\\
+        Delay      & sleeps, payload intact          & \risk{never}\\
+        Partial    & one field $\to$ \texttt{None}   & \risk{usually not}\\
+        Corruption & one field $\to$ sentinel        & \risk{usually not}\\
+        \bottomrule
+      \end{tabular}
+      \medskip
+
+      \cmt{19 instrumented boundary operations: 8 function-level mock tools and 11
+      class-method wrappers across three mocked external systems. Operators are drawn
+      uniformly, so each accounts for a quarter of injected faults. The injector is a separate
+      wrapper layer; the nominal service logic is untouched.}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Injection decision flow}
+  \vspace{-1mm}
+  \centering
+  \includegraphics[width=\textwidth, height=0.87\textheight, keepaspectratio]%
+                  {l3pngbigtext.drawio.png}
+\end{frame}
+
+\begin{frame}{Why the faults are silent}
+  Agent control flow usually turns on a single field: a predicate such as
+  \texttt{status == "success"}. The rest of the response object carries content the branch
+  never inspects.
+  \vfill
+  \begin{center}
+  \begin{tikzpicture}[every node/.style={font=\small},
+      f/.style={draw=stone!60, fill=white, rounded corners=2pt, align=center,
+                inner sep=5pt, text width=25mm},
+      gate/.style={draw=rust, fill=rust!7, line width=1pt}]
+    \node[f, gate] (s) {\texttt{status}\\[1pt]\cmt{branching field}};
+    \node[f, right=5mm of s] (m) {\texttt{message}\\[1pt]\cmt{content only}};
+    \node[f, right=5mm of m] (i) {\texttt{id}\\[1pt]\cmt{content only}};
+    \node[f, right=5mm of i] (t) {\texttt{timestamp}\\[1pt]\cmt{content only}};
+  \end{tikzpicture}
+  \end{center}
+  \vfill
+  \begin{columns}[T]
+    \begin{column}{0.50\textwidth}
+      A single-field perturbation that misses \texttt{status} leaves the predicate true, so the
+      agent takes the success branch anyway. For a response with $|\mathcal{F}|$ fields, one of
+      which gates control flow:
+      \[ P(\text{silent}) = 1 - \frac{1}{|\mathcal{F}|} \]
+    \end{column}
+    \begin{column}{0.46\textwidth}
+      \begin{block}{Expected silent rate}
+        \centering
+        \[ \underbrace{0.25}_{\text{delay}} +
+           \underbrace{2 \times 0.25 \times 0.75}_{\text{partial, corruption}} = \risk{0.625} \]
+        \cmt{Timeout, the remaining quarter, always raises.}
+      \end{block}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+%% ============================================================== PART 3 ======
+\keypart{PART 3}{Evaluation}
+\section{Evaluation}
+
+\begin{frame}{Experimental setup}
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      \begin{block}{Prototype}
+        \small Python 3.11, LangGraph 0.2, GPT-4o through the UiPath LLM Gateway.
+        Every government call goes through the mocked boundary layer, so no live network
+        traffic is required.
+      \end{block}
+      \begin{block}{Runs}
+        \small $N = 100$ boundary calls, each an independent trial with at most one injected
+        fault, sampled across the 8 function-level mock tools by call frequency in the five
+        demo workflows.\\[0.3em]
+        $\eta \in \{0,\ 0.25,\ 0.50,\ 0.75,\ 1.00\}$, \quad $s = 17$, \quad
+        $\Delta t_{\max} = 250$\,ms.
+      \end{block}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \begin{block}{Detectable}
+        \small The response signals failure: an exception propagates, or an explicit error or
+        degraded-service notice reaches the user.
+      \end{block}
+      \begin{alertblock}{Silent pass-through}
+        \small Anything else. The citizen-facing answer looks normal.
+      \end{alertblock}
+      \medskip
+      \cmt{The unit of analysis is the call, not the session. A full workflow crosses several
+      boundaries, each with its own draw.}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{One trace, in full}
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      A citizen reports PFA income of 150,000 RON and asks what is owed.
+      \begin{enumerate}\small
+        \item Entry Agent classifies \texttt{pfa\_d212\_filing} with confidence 0.95
+        \item PFA Agent computes pension 9,900 RON and health 1,980 RON, total 11,880 RON
+        \item On the confirmation turn the SPV submission call is intercepted at
+          $\eta = 1.0$, $s = 17$
+      \end{enumerate}
+      \medskip
+      {\scriptsize\ttfamily\color{rust}
+       [WARN] fault injected | op=mock\_spv\_submit\_d212 | type=partial}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      The \texttt{message} field of \texttt{SPVSubmissionResult} was set to \texttt{None}.
+      \texttt{status} stayed \texttt{"success"}, so the agent followed the success branch and
+      answered:
+      \medskip
+      \begin{alertblock}{What the citizen saw}
+        \small\emph{``The D212 declaration was successfully submitted!
+        ID: D212-01B66C85C3, Timestamp: 2026-03-27T22:20:32.''}
+      \end{alertblock}
+      \medskip
+      \cmt{Four fields, one of them gating: a single-field fault stays invisible with
+      probability $0.75$. The same arithmetic applies to any response whose branch reads
+      one field.}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Fault injection results}
+  \begin{table}
+    \small
+    \begin{tabular}{@{}rrrrrrrr@{}}
+      \toprule
+      $\eta$ & Faults & TO & DL & PT & CR & Silent & Detectable\\
+      \midrule
+      0.00 & 0   & 0  & 0  & 0  & 0  & 0 (n/a) & 0 (n/a)\\
+      0.25 & 25  & 6  & 6  & 7  & 6  & 16 (64\%) & 9 (36\%)\\
+      0.50 & 50  & 12 & 13 & 12 & 13 & 32 (64\%) & 18 (36\%)\\
+      0.75 & 75  & 19 & 19 & 18 & 19 & 47 (63\%) & 28 (37\%)\\
+      1.00 & 100 & 25 & 25 & 25 & 25 & \risk{63 (63\%)} & 37 (37\%)\\
+      \bottomrule
+    \end{tabular}
+    \\[0.4em]
+    \cmt{$N = 100$ calls, $s = 17$, $\Delta t_{\max} = 250$\,ms.
+    TO, DL, PT, CR: timeout, delay, partial, corruption.}
+  \end{table}
+  \vfill
+  \begin{itemize}
+    \item The measured rate sits on the predicted \risk{0.625}. Raising $\eta$ raises the
+      \emph{count} of silent faults, but the proportion does not move.
+    \item Delay faults added $125.5 \pm 72.2$\,ms per affected call, matching the mean of
+      $\mathcal{U}[1,250]$; at $\eta = 0.50$ roughly 65\,ms per scenario.
+    \item Because the rate follows from the operator mix and the schema, it can be
+      \hl{predicted before the system runs}, and lowered by changing what the branch inspects.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Cost feasibility}
+  \begin{columns}[T]
+    \begin{column}{0.31\textwidth}
+      \centering
+      \textbf{Per session}\\[0.4em]
+      {\Large\color{teal}\bfseries \$0.05}\\[0.4em]
+      \cmt{one classification, two to three domain turns, one retrieval step}
+    \end{column}
+    \begin{column}{0.31\textwidth}
+      \centering
+      \textbf{Small office}\\[0.4em]
+      {\Large\color{teal}\bfseries \$51}\\[0.4em]
+      \cmt{per month, 50 sessions a day}
+    \end{column}
+    \begin{column}{0.31\textwidth}
+      \centering
+      \textbf{Large agency}\\[0.4em]
+      {\Large\color{teal}\bfseries \$5,060}\\[0.4em]
+      \cmt{per month, 5,000 sessions a day}
+    \end{column}
+  \end{columns}
+  \vfill
+  \begin{itemize}\small
+    \item About 20,000 input and 2,100 output tokens per session, priced at \$1.25 per million
+      input and \$10.00 per million output tokens, over 22 working days a month. Licensing,
+      infrastructure and maintenance are excluded.
+    \item Cost scales linearly and stays modest. Routing with a smaller model, keeping the
+      capable one for domain reasoning, pushes it lower.
+  \end{itemize}
+  \vfill
+  \centering
+  \hl{What stands in the way of deployment is assurance, not arithmetic.}
+\end{frame}
+
+\begin{frame}{Analysis and limitations}
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      \begin{block}{What the rate does and does not depend on}
+        \small It is fixed by the operator mix and the number of fields in the response object,
+        so it holds at every injection rate. It says nothing about how often faults occur in
+        production, only about what fraction of them the agent can see.
+      \end{block}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \begin{block}{Where the fix belongs}
+        \small Not in the branch, which is already correct with respect to the flag it reads,
+        but in an \hl{output contract} evaluated after the response is assembled and before it
+        reaches the citizen.
+      \end{block}
+    \end{column}
+  \end{columns}
+  \vfill
+  \begin{alertblock}{Limitations}
+    \begin{itemize}\small
+      \item Government boundaries are schema-faithful mocks, not live portals; latency and
+        failure distributions in production will differ.
+      \item The unit of analysis is a single boundary call. Faults compounding across a full
+        citizen session are not measured here.
+      \item Detectability is judged from the citizen-facing response, a behavioural proxy
+        rather than a formal correctness criterion.
+    \end{itemize}
+  \end{alertblock}
+\end{frame}
+
+%% ============================================================== PART 4 ======
+\keypart{PART 4}{Conclusion}
+\section{Conclusion}
+
+\begin{frame}{Conclusion}
+  \begin{block}{What the evaluation shows}
+    \begin{itemize}\small
+      \item A silent pass-through rate of \risk{63\%}, stable across injection rates and
+        matching a closed-form prediction.
+      \item The cause is structural: response schemas and branching predicates, not
+        incidental bugs. \hl{Interface coherence is not evidence of execution correctness.}
+      \item Inference cost stays modest at institutional volumes.
+    \end{itemize}
+  \end{block}
+  \begin{block}{Contribution}
+    \small An operational multi-agent architecture for a national fiscal setting, together with
+    a boundary-level fault study that explains \emph{why} faults pass silently rather than only
+    reporting that they do.
+  \end{block}
+  \begin{block}{Future work}
+    \small Output contracts checked before a response reaches the citizen; trace-based
+    assurance with structured message-action traces, deterministic replay and action-level
+    governance; extension to other public-service domains over the same orchestration and
+    shared services layers.
+  \end{block}
+\end{frame}
+
+%% =============================================================== thank you ==
+\begin{frame}[plain, noframenumbering]
+  \vfill
+  \centering
+  {\color{teal}\Large\bfseries Thank you}\\[0.6em]
+  Questions?\\[1.4em]
+
+  {\color{rust}\rule{0.86\paperwidth}{2pt}}\\[-0.2em]
+  \colorbox{mist}{%
+    \begin{minipage}{0.84\paperwidth}
+      \centering\vspace{0.3em}
+      Artifact: implementation and evaluation setup\\[0.3em]
+      {\color{teal}\texttt{https://github.com/radugheo/agentic-public-administration}}
+      \vspace{0.3em}
+    \end{minipage}}\\[1.3em]
+
+  {\small Radu-Mihai Gheorghe \quad$\cdot$\quad Petru-Liviu Bouruc \quad$\cdot$\quad
+   Ciprian Paduraru \quad$\cdot$\quad Alin Stefanescu}\\[0.4em]
+  {\small UiPath \quad$\cdot$\quad University of Bucharest \quad$\cdot$\quad
+   Institute for Logic and Data Science}\\[1.1em]
+
+  {\color{stone}\scriptsize Partially supported by the ``Romanian Hub for Artificial
+   Intelligence (HRIA)'' project, Smart Growth, Digitization and\\ Financial Instruments
+   Programme 2021--2027, MySMIS No. 351416.}
+  \vfill
+\end{frame}
+
+%% ================================================================= backup ==
+\appendix
+\backupslidetrue
+\keypart{BACKUP SLIDES}{Additional material}
+
+\begin{frame}[noframenumbering]{Backup: the five domain agents}
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      \begin{block}{PFA / Freelancer}
+        \small \emph{Declara\c{t}ia Unic\u{a}} (D212). Pension contribution (CAS) 25\%, due
+        above 12 minimum gross salaries (48,600 RON in 2026); health contribution (CASS) 10\%,
+        due above 6. Submission through SPV.
+      \end{block}
+      \begin{block}{Property sale}
+        \small 3\% of the sale value under three years of ownership, 1\% at three years or
+        more. Payment guidance through Ghi\c{s}eul.ro.
+      \end{block}
+      \begin{block}{Rental income}
+        \small Contract registration with ANAF and a 10\% flat tax on annual rent.
+      \end{block}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \begin{block}{Certificate}
+        \small \emph{Certificat de atestare fiscal\u{a}}: identifies the certificate type,
+        checks document requirements, guides submission.
+      \end{block}
+      \begin{block}{RO e-Factura}
+        \small B2B and B2C invoicing: invoice data collection, XML generation to the national
+        standard, submission and status monitoring.
+      \end{block}
+      \medskip
+      \cmt{All five produce a standardised response field from the final model output, which
+      keeps formatting consistent across workflows.}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}[noframenumbering]{Backup: the four shared services}
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      \begin{block}{Document intake}
+        \small OCR plus validation against document-specific schemas for D212 forms, rental
+        contracts and invoices. Returns structured data with confidence scores; below 80\%
+        the document is flagged for manual review.
+      \end{block}
+      \begin{block}{RAG}
+        \small Retrieval over dedicated indices of the Romanian Tax Code and procedural
+        guidance, so an answer can be traced to a source instead of resting on parametric
+        model knowledge.
+      \end{block}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \begin{block}{Calculation}
+        \small Decimal arithmetic, no floating point. Rates and thresholds (minimum salary,
+        contribution percentages) are read from configuration, so annual regulatory updates
+        need no code change.
+      \end{block}
+      \begin{block}{Payment}
+        \small Builds the payment request from the shared context, initiates it through
+        Ghi\c{s}eul.ro and returns the transaction details, including the redirect URL.
+      \end{block}
+    \end{column}
+  \end{columns}
+  \vfill
+  \cmt{Design rule: the model interprets, deterministic code computes.}
+\end{frame}
+
+\begin{frame}[noframenumbering]{Backup: where the work sits}
+  \begin{columns}[T]
+    \begin{column}{0.31\textwidth}
+      \textbf{Agentic orchestration}\\[0.3em]
+      \cmt{LangGraph models control flow as a typed state machine: explicit and auditable,
+      unlike open-ended conversation. That matters when the service is regulated.}
+    \end{column}
+    \begin{column}{0.31\textwidth}
+      \textbf{Retrieval}\\[0.3em]
+      \cmt{Tax law is specific and amended often. Retrieval grounds explanations in the
+      Romanian Tax Code and stays separate from the deterministic computation.}
+    \end{column}
+    \begin{column}{0.31\textwidth}
+      \textbf{Chaos engineering}\\[0.3em]
+      \cmt{Deliberate faults, observed effects. Recently applied to LLM agents, but usually
+      in generic or synthetic testbeds.}
+    \end{column}
+  \end{columns}
+  \vfill
+  \begin{block}{Closest neighbours}
+    \small Work on faults in agentic repositories identifies the boundary between probabilistic
+    model output and deterministic program logic as a dominant failure class. That is the same
+    interface targeted here. Reliability benchmarks for LLM agents include timeout,
+    partial-response and schema-drift conditions, but do not connect the observed silent rate
+    to schema structure in a deployed public-service setting.
+  \end{block}
+\end{frame}
+
+\begin{frame}[noframenumbering]{Backup: cost model}
+  \begin{table}
+    \small
+    \begin{tabular}{@{}lrrr@{}}
+      \toprule
+      \textbf{Institution size} & \textbf{Sessions/day} & \textbf{Sessions/month} & \textbf{Cost/month}\\
+      \midrule
+      Small office  & 50    & 1,100   & \$51\\
+      Medium office & 500   & 11,000  & \$506\\
+      Large agency  & 5,000 & 110,000 & \$5,060\\
+      \bottomrule
+    \end{tabular}
+    \\[0.4em]
+    \cmt{22 working days per month; \$1.25 per 1M input and \$10.00 per 1M output tokens.}
+  \end{table}
+  \vfill
+  \begin{itemize}\small
+    \item Per session: one Entry Agent call ($\approx$ 2,000 input / 200 output tokens),
+      two to three domain turns ($\approx$ 5,000 / 500 each), one retrieval-grounded step
+      ($\approx$ 3,000 / 400). About 20,000 input and 2,100 output tokens in total.
+    \item Costs scale at roughly \$1.01 per daily session per month.
+    \item The prototype runs GPT-4o; the projection uses the pricing of a stronger model as an
+      illustrative deployment scenario.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[noframenumbering]{Backup: reproducibility}
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      \begin{block}{Deterministic replay}
+        \small The injector draws from a seeded generator, so a fixed $(s, \eta,
+        \Delta t_{\max})$ reproduces the same sequence of operators over the same sequence of
+        boundary calls. Runs reported here use $s = 17$.
+      \end{block}
+      \begin{block}{Fault log}
+        \small Each injected event is written as a warning naming the operation and the
+        operator, which is what makes the qualitative trace on the earlier slide checkable:\\[0.3em]
+        {\scriptsize\ttfamily [WARN] fault injected | op=... | type=...}
+      \end{block}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \begin{block}{Turning injection off}
+        \small Setting $\eta = 0$ returns every payload unchanged, so the same code path serves
+        both the nominal system and the perturbed one. The injector never modifies the mock
+        service logic itself.
+      \end{block}
+      \medskip
+      \cmt{Implementation and evaluation artefacts:}\\[0.3em]
+      \texttt{\small github.com/radugheo/\\agentic-public-administration}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\end{document}
