@@ -88,6 +88,16 @@ class EnvironmentFaultInjector:
                 key = self._rng.choice(field_names)
                 return replace(payload, **{key: marker})
 
+        # pydantic BaseModel — several mock boundaries (PaymentResult,
+        # OCRResult) return these, so without this branch partial and
+        # corruption would silently no-op on them.
+        model_fields = getattr(type(payload), "model_fields", None)
+        if model_fields:
+            key = self._rng.choice(list(model_fields))
+            mutated = payload.model_copy()
+            object.__setattr__(mutated, key, marker)
+            return mutated
+
         if isinstance(payload, list) and payload:
             mutated = list(payload)
             idx = self._rng.randrange(len(mutated))

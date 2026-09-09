@@ -446,7 +446,7 @@
       A citizen reports PFA income of 150,000 RON and asks what is owed.
       \begin{enumerate}\small
         \item Entry Agent classifies \texttt{pfa\_d212\_filing} with confidence 0.95
-        \item PFA Agent computes pension 9,900 RON and health 1,980 RON, total 11,880 RON
+        \item PFA Agent computes pension 12,150 RON and health 2,430 RON, total 14,580 RON
         \item On the confirmation turn the SPV submission call is intercepted at
           $\eta = 1.0$, $s = 17$
       \end{enumerate}
@@ -524,14 +524,19 @@
   \vfill
   \begin{itemize}\small
     \item About 20,000 input and 2,100 output tokens per session, priced at \$1.25 per million
-      input and \$10.00 per million output tokens, over 22 working days a month. Licensing,
-      infrastructure and maintenance are excluded.
+      input and \$10.00 per million output tokens,$^{\dagger}$ over 22 working days a month.
+      Licensing, infrastructure and maintenance are excluded.
     \item Cost scales linearly with volume and remains low at institutional scale. Routing with
       a smaller model and reserving the capable one for domain reasoning lowers it further.
   \end{itemize}
   \vfill
   \centering
   \hl{At these volumes, cost is not what blocks deployment. Assurance is.}
+  \vfill
+  \raggedright
+  {\color{stone}\footnotesize $^{\dagger}$ Pricing is the GPT-5 public snapshot at the time of
+   the experiment; the prototype itself runs GPT-4o. The figures indicate order of magnitude
+   under an illustrative deployment scenario, not a fixed deployment cost.}
 \end{frame}
 
 \begin{frame}{Analysis and limitations}

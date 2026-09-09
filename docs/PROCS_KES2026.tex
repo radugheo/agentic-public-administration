@@ -218,7 +218,7 @@ A fault is structurally silent in two main cases:
 \subsection{Qualitative results}
 \label{subsec:qualitative}
 
-One representative trace involves a D212 submission initiated by a citizen reporting PFA income of 150{,}000\,RON. The Entry Agent classified the request as \texttt{pfa\_d212\_filing} with confidence 0.95 and routed it to the PFA Agent. The agent computed CAS\,=\,9{,}900\,RON and CASS\,=\,1{,}980\,RON, for a total of 11{,}880\,RON, and then requested confirmation for submission. On the confirmation turn, the SPV submission call was intercepted with $\eta = 1.0$ and $s = 17$, producing:
+One representative trace involves a D212 submission initiated by a citizen reporting PFA income of 150{,}000\,RON. The Entry Agent classified the request as \texttt{pfa\_d212\_filing} with confidence 0.95 and routed it to the PFA Agent. The agent computed CAS\,=\,12{,}150\,RON and CASS\,=\,2{,}430\,RON, for a total of 14{,}580\,RON, and then requested confirmation for submission. On the confirmation turn, the SPV submission call was intercepted with $\eta = 1.0$ and $s = 17$, producing:
 
 \begin{center}
 \small\texttt{[WARN] fault injected | op=mock\_spv\_submit\_d212 | type=partial}

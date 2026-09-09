@@ -30,9 +30,9 @@ class Settings(BaseSettings):
         default="certificate-knowledge", description="UiPath CG index name for Certificate agent"
     )
 
-    # Tax calculation parameters (simplified 2024 values)
+    # Tax calculation parameters (2026 values)
     minimum_gross_salary: float = Field(
-        default=3300.0, description="Minimum gross salary in RON"
+        default=4050.0, description="Minimum gross salary in RON"
     )
     cas_rate: float = Field(default=0.25, description="CAS contribution rate (25%)")
     cass_rate: float = Field(default=0.10, description="CASS contribution rate (10%)")

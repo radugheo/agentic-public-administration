@@ -64,24 +64,24 @@ class TestPFAContributionsCalculation:
 
         result = calculation_service.process(state)
 
-        # CAS: 25% of 12 minimum salaries (3300 * 12 * 0.25 = 9900)
-        # CASS: 10% of 6 minimum salaries (3300 * 6 * 0.10 = 1980)
-        assert result["shared_context"]["cas_amount"] == 9900.0
-        assert result["shared_context"]["cass_amount"] == 1980.0
-        assert result["shared_context"]["total_contributions"] == 11880.0
+        # CAS: 25% of 12 minimum salaries (4050 * 12 * 0.25 = 12150)
+        # CASS: 10% of 6 minimum salaries (4050 * 6 * 0.10 = 2430)
+        assert result["shared_context"]["cas_amount"] == 12150.0
+        assert result["shared_context"]["cass_amount"] == 2430.0
+        assert result["shared_context"]["total_contributions"] == 14580.0
 
     def test_pfa_below_cas_threshold(self):
         """Income below CAS threshold but above CASS should pay only CASS."""
         state = get_initial_state("test-session")
         state["shared_context"] = {
-            "annual_income": 25000,  # Below 12 min salaries (39600), above 6 (19800)
+            "annual_income": 25000,  # Below 12 min salaries (48600), above 6 (24300)
             "calculation_type": "pfa_contributions",
         }
 
         result = calculation_service.process(state)
 
         assert result["shared_context"]["cas_amount"] == 0.0
-        assert result["shared_context"]["cass_amount"] == 1980.0
+        assert result["shared_context"]["cass_amount"] == 2430.0
 
     def test_pfa_below_both_thresholds(self):
         """Income below both thresholds should pay nothing."""

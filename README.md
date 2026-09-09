@@ -133,10 +133,13 @@ public-administration/
 
 ## Tax Calculations
 
-### PFA Contributions (2024)
-- **CAS (pension)**: 25% of 12 minimum salaries if income >= 39,600 RON
-- **CASS (health)**: 10% of 6 minimum salaries if income >= 19,800 RON
-- Minimum salary: 3,300 RON
+### PFA Contributions (2026)
+- **CAS (pension)**: 25% of 12 minimum salaries if income >= 48,600 RON
+- **CASS (health)**: 10% of 6 minimum salaries if income >= 24,300 RON
+- Minimum salary: 4,050 RON
+
+Rates and thresholds are read from `src/ro_tax_agents/config/settings.py`, so
+annual regulatory updates need no code change.
 
 ### Property Sale Tax
 - **1%** if property owned >= 3 years
@@ -144,6 +147,38 @@ public-administration/
 
 ### Rental Income Tax
 - **10%** flat tax on annual rental income
+
+## Reproducing the paper's fault injection results
+
+Table 1 of the KES 2026 paper is reproduced by:
+
+```bash
+python scripts/run_fault_experiment.py
+```
+
+The harness crosses `N = 100` mocked service boundaries per injection rate,
+applies the four chaos operators through the production
+`EnvironmentFaultInjector`, and classifies each injected fault as *detectable*
+or *silent pass-through*. Detectability is decided structurally — a fault is
+detectable when it raises, or when it perturbs the field the calling agent
+branches on — so the table is reproducible without model access, API keys or
+network calls. Each boundary entry cites the source line carrying its
+branching predicate.
+
+```bash
+# the literal Bernoulli sampling of Section 3.2, to see the sampling noise
+python scripts/run_fault_experiment.py --allocation bernoulli
+
+# tighter estimate, and a CSV
+python scripts/run_fault_experiment.py --n 10000 --csv results.csv
+```
+
+`--allocation stratified` (the default, used for Table 1) fixes the fault count
+at `round(eta * N)` and deals operators round-robin. This is variance
+reduction: the quantity of interest is the silent *rate*, and at `N = 100`
+i.i.d. operator sampling adds noise that has nothing to do with it.
+`--allocation bernoulli` reproduces the injector's literal runtime behaviour
+and shows that spread directly.
 
 ## License
 
