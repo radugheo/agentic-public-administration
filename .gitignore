@@ -33,5 +33,5 @@ __uipath/
 # macOS
 .DS_Store
 
-# Paper build output; docs/paper/KES2026.pdf is the submitted artifact
+# LaTeX build output
 docs/paper/PROCS_KES2026.pdf
