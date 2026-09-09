@@ -29,3 +29,6 @@ __uipath/
 *.fls
 *.fdb_latexmk
 *.synctex.gz
+
+# macOS
+.DS_Store

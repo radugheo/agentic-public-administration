@@ -20,6 +20,7 @@
   urlcolor=blue
 }
 \usepackage{graphicx}
+\graphicspath{{../figures/}}
 \usepackage{amssymb}
 \usepackage{booktabs}
 
@@ -110,7 +111,7 @@ The architecture follows a hierarchical supervisor pattern implemented as a Lang
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=\columnwidth]{updated_architecture_diagram.png}
+\includegraphics[width=\columnwidth]{architecture.png}
 \caption{Multi-agent architecture for Romanian tax administration. The orchestration layer routes citizen requests through an Entry Agent to domain-specific agents. These agents use shared services for document processing, knowledge retrieval, tax computation, and payments. The infrastructure layer exposes UiPath Orchestrator capabilities and external government systems.}
 \label{fig:architecture}
 \end{figure}
@@ -175,7 +176,7 @@ The tools layer exposes mocked functions that mirror the request and response sc
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=\columnwidth]{PROCS_KES2026_LATEX_Template/l3pngbigtext.drawio.png}
+\includegraphics[width=\columnwidth]{fault-injection-flow.png}
 \caption{Fault injection decision flow. When an agent calls a mocked tool, the tool first constructs its nominal response and passes it to the fault injector. A seeded Bernoulli trial determines whether injection occurs. On pass-through, the original payload is returned unchanged. Otherwise, one of four chaos operators is selected uniformly: \emph{timeout} (raises \texttt{TimeoutError}), \emph{delay} (sleeps and returns the payload), \emph{partial} (sets one field to null), or \emph{corruption} (replaces one field with a sentinel value). A warning is written to the fault log before the result is returned to the agent.}
 \label{fig:finjarchitecture}
 \end{figure}
