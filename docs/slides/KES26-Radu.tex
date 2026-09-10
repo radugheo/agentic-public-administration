@@ -135,59 +135,22 @@
 \section{Motivation}
 
 \begin{frame}{The fragmentation problem}
-  \begin{columns}[T]
-    \begin{column}{0.56\textwidth}
-      \small
-      Romania's fiscal services are spread over three national portals, each with its own
-      interface, vocabulary and procedural logic:
-      \begin{itemize}
-        \item \textbf{SPV}, \emph{Spa\c{t}iul Privat Virtual} (Virtual Private Space):
-          filing declarations, consulting your fiscal record
-        \item \textbf{Ghi\c{s}eul.ro}, from \emph{ghi\c{s}eu} (service counter):
-          paying taxes and contributions
-        \item \textbf{RO e-Factura}: national electronic invoicing
-      \end{itemize}
-      \vspace{0.5em}
-      In one year a freelancer declares annual income, pays pension and health contributions,
-      registers a rental contract and issues an invoice, across portals sharing no state.
-      \begin{block}{Where the burden sits}
-        \small Computing the amounts is simple arithmetic. The effort goes into \hl{which
-        declaration applies, under which deadline, on which portal}, and the rules that settle
-        each.
-      \end{block}
-    \end{column}
-    \begin{column}{0.40\textwidth}
-      \centering
-      \begin{tikzpicture}[node distance=3mm, every node/.style={font=\scriptsize},
-          b/.style={draw=teal!55, fill=teal!6, rounded corners=2pt, align=center,
-                    inner sep=3pt, text width=38mm},
-          ar/.style={-{Stealth[length=2mm]}, draw=teal, line width=0.7pt}]
-        \node[b] (q) {Citizen request\\ \emph{``what do I owe as a freelancer?''}};
-        \node[b, below=of q] (r) {Entry Agent classifies and routes};
-        \node[b, below=of r] (a) {Domain agent calls SPV, Ghi\c{s}eul.ro, e-Factura};
-        \node[b, below=of a] (s) {\texttt{status == "success"} \checkmark};
-        \node[b, below=of s, draw=rust!70, fill=rust!7] (v)
-             {\risk{\ldots{} but was the payload intact?}};
-        \draw[ar] (q) -- (r); \draw[ar] (r) -- (a); \draw[ar] (a) -- (s);
-        \draw[ar, draw=rust] (s) -- (v);
-      \end{tikzpicture}
-    \end{column}
-  \end{columns}
-\end{frame}
-
-\begin{frame}{Gaps in existing work}
-  \begin{block}{1. Operational coverage $\neq$ evidence of robustness}
-    Published work on AI for tax and government services stops at advisory question answering
-    and single-agent document processing. No system integrates orchestration, domain routing,
-    retrieval, deterministic computation and payment for a concrete national setting, and none
-    reports what happens when those services misbehave.
-  \end{block}
-  \begin{block}{2. Boundary faults are invisible to agent control flow}
-    Fault injection has reached LLM agents, but in generic or synthetic testbeds. Existing work
-    stops there, leaving the fraction of faults that propagate silently unmeasured for a
-    regulated public service, and unconnected to the structure of the response schema.
-    Both gaps lie on the \hl{boundary between a probabilistic model and a deterministic
-    service contract}.
+  Romania's fiscal services are spread over three national portals, each with its own
+  interface, vocabulary and procedural logic:
+  \begin{itemize}
+    \item \textbf{SPV}, \emph{Spa\c{t}iul Privat Virtual} (Virtual Private Space): filing
+      declarations, consulting your fiscal record
+    \item \textbf{Ghi\c{s}eul.ro}, from \emph{ghi\c{s}eu} (service counter): paying taxes and
+      contributions
+    \item \textbf{RO e-Factura}: national electronic invoicing
+  \end{itemize}
+  \vfill
+  In one year a freelancer declares annual income, pays pension and health contributions,
+  registers a rental contract and issues an invoice, across portals sharing no state.
+  \vfill
+  \begin{block}{Where the burden sits}
+    Computing the amounts is simple arithmetic. The effort goes into \hl{which declaration
+    applies, under which deadline, on which portal}, and the rules that settle each.
   \end{block}
 \end{frame}
 
@@ -214,17 +177,20 @@
 
     \end{column}
     \begin{column}{0.47\textwidth}
-      \textbf{What the citizen never sees}\\[0.3em]
-      Each of those steps crosses a service boundary. The SPV call can
-      \begin{itemize}\small
-        \item time out
-        \item return several hundred milliseconds late
-        \item come back with one field set to \texttt{None}
-        \item come back with one field replaced by a sentinel
-      \end{itemize}
-      \medskip
-      and in all but the first case the agent \risk{usually answers as if nothing happened}.
-      We measure how often that occurs, and what determines the rate.
+      \centering
+      \textbf{What the citizen never sees}\\[0.6em]
+      \begin{tikzpicture}[node distance=3mm, every node/.style={font=\scriptsize},
+          b/.style={draw=teal!55, fill=teal!6, rounded corners=2pt, align=center,
+                    inner sep=3pt, text width=38mm},
+          ar/.style={-{Stealth[length=2mm]}, draw=teal, line width=0.7pt}]
+        \node[b] (r) {Entry Agent classifies and routes};
+        \node[b, below=of r] (a) {Domain agent calls SPV, Ghi\c{s}eul.ro, e-Factura};
+        \node[b, below=of a] (s) {\texttt{status == "success"} \checkmark};
+        \node[b, below=of s, draw=rust!70, fill=rust!7] (v)
+             {\risk{\ldots{} but was the payload intact?}};
+        \draw[ar] (r) -- (a); \draw[ar] (a) -- (s);
+        \draw[ar, draw=rust] (s) -- (v);
+      \end{tikzpicture}
     \end{column}
   \end{columns}
 \end{frame}
@@ -237,9 +203,9 @@
     rental income, fiscal certificates and RO e-Factura.
   \end{block}
   \begin{block}{Break}
-    \small Every call the assistant makes into SPV, Ghi\c{s}eul.ro and e-Factura is instrumented.
-    19 boundary operations, four chaos operators (timeout, delay, partial response, corruption),
-    a configurable rate, replayable from a seed.
+    \small Every call the assistant makes into SPV, Ghi\c{s}eul.ro and e-Factura is instrumented
+    with four chaos operators: timeout, delay, partial response and corruption, at a
+    configurable rate, replayable from a seed.
   \end{block}
   \begin{block}{Measure}
     \small For each injected fault, look at the answer the citizen actually receives. Did the
@@ -351,10 +317,10 @@
 \end{frame}
 
 \begin{frame}{The fault injector}
-  \begin{columns}[T]
+  \begin{columns}[c]
     \begin{column}{0.46\textwidth}
       \begin{block}{Mechanism}
-        \small A decorator wraps each mocked government boundary. \hl{One Bernoulli draw per
+        \small A decorator wraps each simulated government boundary. \hl{One Bernoulli draw per
         call} decides whether a fault fires; if it does, exactly one operator is applied, drawn
         uniformly, so each accounts for a quarter of injected faults. Every event is logged
         with the operation and the operator type.
@@ -369,14 +335,14 @@
     \end{column}
     \begin{column}{0.50\textwidth}
       \small
-      \begin{tabular}{@{}lll@{}}
+      \begin{tabular}{@{}ll@{}}
         \toprule
-        \textbf{Operator} & \textbf{Effect} & \textbf{Visible?}\\
+        \textbf{Operator} & \textbf{Effect on the call}\\
         \midrule
-        Timeout    & raises \texttt{TimeoutError}   & \hl{always}\\
-        Delay      & sleeps, payload intact          & \risk{never}\\
-        Partial    & one field $\to$ \texttt{None}   & \risk{usually not}\\
-        Corruption & one field $\to$ sentinel        & \risk{usually not}\\
+        Timeout    & raises \texttt{TimeoutError}, no payload\\
+        Delay      & sleeps up to $\Delta t_{\max}$, payload intact\\
+        Partial    & one field set to \texttt{None}\\
+        Corruption & one field replaced by a sentinel\\
         \bottomrule
       \end{tabular}
     \end{column}
@@ -408,18 +374,34 @@
   \end{center}
   \vfill
   \begin{columns}[T]
-    \begin{column}{0.50\textwidth}
+    \begin{column}{0.44\textwidth}
       A single-field perturbation that misses \texttt{status} leaves the predicate true, so the
       agent takes the success branch anyway. For a response with $|\mathcal{F}|$ fields whose
       branch reads exactly one of them:
       \[ P(\text{silent}) = 1 - \frac{1}{|\mathcal{F}|} \]
+      The response above has four fields, so a hit misses \texttt{status} three times in four.
     \end{column}
-    \begin{column}{0.46\textwidth}
+    \begin{column}{0.52\textwidth}
+      \vspace*{-1.1em}
       \begin{block}{Expected silent rate}
         \centering
-        \[ \underbrace{0.25}_{\text{delay}} +
-           \underbrace{2 \times 0.25 \times 0.75}_{\text{partial, corruption}} = \risk{0.625} \]
-        \cmt{Timeout, the remaining quarter, always raises.}
+        {\footnotesize
+        \begin{tabular}{@{}lccr@{}}
+          \toprule
+          \textbf{Operator} & \textbf{Share} & \textbf{Silent} & \textbf{Contributes}\\
+          \midrule
+          Timeout    & 0.25 & 0    & 0\\
+          Delay      & 0.25 & 1    & 0.2500\\
+          Partial    & 0.25 & 0.75 & 0.1875\\
+          Corruption & 0.25 & 0.75 & 0.1875\\
+          \midrule
+          \multicolumn{3}{@{}l}{\textbf{Expected silent rate}} & \risk{0.625}\\
+          \bottomrule
+        \end{tabular}}
+        \\[0.4em]
+        {\color{stone}\scriptsize Operators are drawn uniformly, so each is a quarter of
+        injected faults. Delay preserves the payload, timeout always raises, and partial and
+        corruption miss \texttt{status} with probability $0.75$.}
       \end{block}
     \end{column}
   \end{columns}
@@ -433,13 +415,13 @@
   \begin{columns}[T]
     \begin{column}{0.48\textwidth}
       \begin{block}{Prototype}
-        \small Python 3.11, LangGraph 0.2, GPT-4o through the UiPath LLM Gateway, retrieval
-        through UiPath Context Grounding. Every government call goes through the mocked boundary
-        layer, so no live portal traffic is required.
+        \small Python 3.11, LangGraph 0.2, GPT-4o, running on the UiPath platform. Government
+        calls run against a boundary layer that reproduces the portal schemas, so no live portal
+        traffic is required.
       \end{block}
       \begin{block}{Runs}
         \small $N = 100$ boundary calls, each an independent trial with at most one injected
-        fault, sampled across the 8 portal-facing mock tools by call frequency in the five
+        fault, sampled across the 8 portal-facing operations by call frequency in the five
         demo workflows.\\[0.3em]
         $\eta \in \{0,\ 0.25,\ 0.50,\ 0.75,\ 1.00\}$, \quad $s = 17$, \quad
         $\Delta t_{\max} = 250$\,ms.
@@ -513,10 +495,11 @@
   \begin{itemize}
     \item The measured rate matches the predicted \risk{0.625}. Raising $\eta$ raises the
       \emph{count} of silent faults, but the proportion does not move.
-    \item Delay faults added $125.5 \pm 72.2$\,ms per affected call, matching the mean of
-      $\mathcal{U}[1,250]$; at $\eta = 0.50$ roughly 65\,ms per scenario.
-    \item Because the rate follows from the operator mix and the schema, it can be
-      \hl{predicted before the system runs}, and lowered by changing what the branch inspects.
+    \item Delay leaves the payload intact, so it is silent by construction. It is also
+      imperceptible: even at $\eta = 0.50$ it adds around 65\,ms to a whole scenario.
+    \item The same arithmetic carries to other agents: wherever a branch turns on one field,
+      the exposure follows from the response schema, and \hl{widening what the branch inspects
+      is what lowers it}.
   \end{itemize}
 \end{frame}
 
@@ -587,20 +570,19 @@
   measured yet.
   \vfill
   \begin{enumerate}\small
-    \item \textbf{Output contracts.} Validity conditions evaluated on the assembled response
-      before it reaches the citizen: a submission identifier that must be present and well
-      formed, a payment code that must match its shape. The fix the analysis points to; what
-      it recovers is an open number.
+    \item \textbf{Output contracts and guardrails.} Validity conditions on the assembled
+      response before it reaches the citizen, and schema and policy checks at the boundary
+      itself: a submission identifier that must be present and well formed, a payment code that
+      must match its shape. Both catch what a branching predicate structurally cannot, and how
+      much each recovers is an open number.
     \item \textbf{Other agent architectures.} A \hl{ReAct loop} choosing freely among the shared
       tools, or a \hl{skill-driven agent} selecting a procedure at run time, reads different
       fields on different turns. Whether that raises detection or moves the blind spot is
       untested.
-    \item \textbf{Guardrails.} Schema validators and policy checks at the boundary itself,
-      ahead of agent logic, catching what a branching predicate structurally cannot.
     \item \textbf{Trace-based assurance.} Message-action traces, deterministic replay and
       action-level governance, so a silent condition stays recoverable after the fact.
-    \item \textbf{Realistic conditions.} Live portals in place of mocks, and faults compounding
-      across a full session rather than one call at a time.
+    \item \textbf{Realistic conditions.} Live portals in place of simulated ones, and faults
+      compounding across a full session rather than one call at a time.
   \end{enumerate}
 \end{frame}
 
@@ -758,6 +740,11 @@
       \end{block}
     \end{column}
     \begin{column}{0.48\textwidth}
+      \begin{block}{Calibration}
+        \small Delay sleeps for a draw from $\mathcal{U}[1, \Delta t_{\max}]$. Measured across
+        affected calls: $125.5 \pm 72.2$\,ms, against 125.5 and 71.9 predicted for
+        $\mathcal{U}[1,250]$, so the operator draws from the interval it claims.
+      \end{block}
       \begin{block}{Turning injection off}
         \small Setting $\eta = 0$ returns every payload unchanged, so the same code path serves
         both the nominal system and the perturbed one. The injector never modifies the
